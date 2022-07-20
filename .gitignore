@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+*.local
+.idea
+packages/*/dist
+packages/*/.turbo
+packages/*/.pnpm-debug.log

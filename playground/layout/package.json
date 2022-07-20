@@ -1,0 +1,11 @@
+{
+  "name": "@vrx-arco/playgound-pro-layout",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@vrx-arco/pro-layout": "workspace:*"
+  }
+}

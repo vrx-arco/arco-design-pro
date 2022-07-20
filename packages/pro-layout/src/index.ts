@@ -1,0 +1,8 @@
+import '@arco-design/web-vue/es/layout/style'
+import '@arco-design/web-vue/es/space/style'
+import '@arco-design/web-vue/es/typography/style'
+import '@arco-design/web-vue/es/drawer/style'
+import '@arco-design/web-vue/es/menu/style'
+import '@arco-design/web-vue/es/breadcrumb/style'
+export * from './Layout'
+export * from './PageWrapper'
