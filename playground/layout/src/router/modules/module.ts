@@ -1,5 +1,5 @@
 import { RouteRecordRaw } from 'vue-router'
-import { IconApps, IconArchive, IconTag } from '@arco-design/web-vue/es/icon'
+import { IconApps, IconArchive, IconTag, IconUser } from '@arco-design/web-vue/es/icon'
 import { createVNode } from 'vue'
 export const moduleRoute: RouteRecordRaw[] = [
   {
@@ -12,6 +12,15 @@ export const moduleRoute: RouteRecordRaw[] = [
       icon: createVNode(IconApps),
     },
     children: [
+      {
+        name: 'login',
+        path: 'login',
+        component: () => import('../../views/login'),
+        meta: {
+          title: '登陆表单',
+          icon: createVNode(IconUser),
+        },
+      },
       {
         name: '404',
         path: '404',

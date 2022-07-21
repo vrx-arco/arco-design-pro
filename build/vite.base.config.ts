@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { resolve } from 'node:path'
+import { createStyleImportPlugin } from 'vite-plugin-style-import'
 
 const FormatExt = {
   es: '.mjs',
@@ -34,7 +35,22 @@ export const baseConfig = defineConfig({
     minify: false,
     target: 'es2015',
   },
-  plugins: [vue(), vueJsx()],
+  plugins: [
+    vue(),
+    vueJsx(),
+    createStyleImportPlugin({
+      libs: [
+        {
+          libraryName: '@arco-design/web-vue',
+          esModule: true,
+          resolveStyle: (name) => {
+            // less
+            return `@arco-design/web-vue/es/${name}/style/index.js`
+          },
+        },
+      ],
+    }),
+  ],
   resolve: {
     alias: {
       '@vrx-arco/pro-layout': resolve(__dirname, '../packages/pro-layout/src/index.ts'),
