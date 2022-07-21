@@ -34,9 +34,9 @@ export const ProLayout = defineComponent({
                 title={title}
                 logo={logo}
                 v-slots={{
-                  logo: slots.logo?.(),
-                  title: slots.title?.(),
-                  logoContainer: slots.logoContainer?.(),
+                  logo: () => slots.logo?.(),
+                  title: () => slots.title?.(),
+                  logoContainer: () => slots.logoContainer?.(),
                 }}
                 onMenuClick={() => {
                   setMenuModelVisible(true)
