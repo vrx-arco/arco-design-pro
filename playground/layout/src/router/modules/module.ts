@@ -6,6 +6,7 @@ export const moduleRoute: RouteRecordRaw[] = [
     name: 'main',
     path: 'main',
     component: () => import('../../views/main'),
+    redirect: '/main/500',
     meta: {
       title: 'main',
       icon: createVNode(IconApps),

@@ -6,6 +6,7 @@ const css = cB('page-wrapper', [
     padding: '0 20px',
   }),
   cE('header', { padding: '16px 0' }),
+  cE('breadcrumb-item', { cursor: 'pointer' }),
 ])
 
 export const style = createCssRender(css)
