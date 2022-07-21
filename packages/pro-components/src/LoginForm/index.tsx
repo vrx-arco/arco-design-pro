@@ -34,14 +34,13 @@ export const LoginForm = defineComponent({
     remember: bool().def(false),
     title: string(),
     subtitle: string(),
-    onSubmit: func<() => Promise<any>>(),
+    onSubmit: func<(model: LoginFormModel, remember: boolean) => Promise<any>>(),
   },
-  expose: ['setModel'],
   emits: ['submit', 'forget', 'register'],
   setup: (props, { slots, expose, emit }) => {
     style()
 
-    const model = ref({
+    const model = ref<LoginFormModel>({
       username: '',
       password: '',
     })
