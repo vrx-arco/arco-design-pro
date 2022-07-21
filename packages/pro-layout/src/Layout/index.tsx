@@ -48,7 +48,7 @@ export const ProLayout = defineComponent({
             <Layout.Content class="vrx-arco-layout__wrap-container">
               <Layout class="vrx-arco-layout__wrap">
                 {isSmallerLg.value || (
-                  <Layout.Sider class="vrx-arco-layout__sider" breakpoint="xl" collapsible>
+                  <Layout.Sider breakpoint="xl" collapsible>
                     <ProMenu menu={menus} />
                   </Layout.Sider>
                 )}

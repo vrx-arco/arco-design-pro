@@ -6,7 +6,6 @@ const css = cB('navbar', [
     justifyContent: 'space-between',
     height: '100%',
     backgroundColor: 'var(--color-bg-2)',
-    borderBottom: '1px solid var(--color-border)',
     paddingLeft: '20px',
     paddingRight: '20px',
   }),
