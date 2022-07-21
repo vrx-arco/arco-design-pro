@@ -25,9 +25,9 @@ export const ProLayout = defineComponent({
     const [menuModelVisible, setMenuModelVisible] = useToggle(false)
 
     return () => {
-      const { title, logo, menus } = props
+      const { title, logo, menus, loading } = props
       return (
-        <Spin loading class="vrx-arco-layout__spin" size={30}>
+        <Spin loading={loading} class="vrx-arco-layout__spin" size={30}>
           <Layout class="vrx-arco-layout">
             <Layout.Header class="vrx-arco-layout__header">
               <NavBar
