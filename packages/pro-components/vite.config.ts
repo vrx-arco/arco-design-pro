@@ -7,7 +7,7 @@ export default mergeConfig(
   defineConfig({
     build: {
       lib: {
-        name: 'vrx-acro-layout',
+        name: 'vrx-acro-components',
         entry: resolve(__dirname, 'src/index.ts'),
       },
     },

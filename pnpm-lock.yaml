@@ -46,12 +46,6 @@ importers:
       vue: 3.2.37
       vue-router: 4.1.2_vue@3.2.37
 
-  packages/arco-use:
-    specifiers:
-      '@vueuse/core': ^8.9.4
-    dependencies:
-      '@vueuse/core': 8.9.4
-
   packages/css-render:
     specifiers:
       '@css-render/plugin-bem': ^0.15.10
@@ -59,6 +53,18 @@ importers:
     dependencies:
       '@css-render/plugin-bem': 0.15.10_css-render@0.15.10
       css-render: 0.15.10
+
+  packages/pro-components:
+    specifiers:
+      '@vrx-arco/css-render': workspace:*
+      '@vrx-arco/use': workspace:*
+      '@vueuse/core': ^8.9.4
+      vue-types: ^4.1.1
+    dependencies:
+      '@vrx-arco/css-render': link:../css-render
+      '@vrx-arco/use': link:../use
+      '@vueuse/core': 8.9.4
+      vue-types: 4.1.1
 
   packages/pro-layout:
     specifiers:
@@ -68,14 +74,22 @@ importers:
       vue-types: ^4.1.1
     dependencies:
       '@vrx-arco/css-render': link:../css-render
-      '@vrx-arco/use': link:../arco-use
+      '@vrx-arco/use': link:../use
       '@vueuse/core': 8.9.4
       vue-types: 4.1.1
 
+  packages/use:
+    specifiers:
+      '@vueuse/core': ^8.9.4
+    dependencies:
+      '@vueuse/core': 8.9.4
+
   playground/layout:
     specifiers:
+      '@vrx-arco/pro-components': workspace:*
       '@vrx-arco/pro-layout': workspace:*
     dependencies:
+      '@vrx-arco/pro-components': link:../../packages/pro-components
       '@vrx-arco/pro-layout': link:../../packages/pro-layout
 
 packages:

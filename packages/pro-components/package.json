@@ -1,0 +1,45 @@
+{
+  "name": "@vrx-arco/pro-components",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "whitekite",
+    "email": "1075790909@qq.com"
+  },
+  "keywords": [
+    "arco-design",
+    "vue",
+    "arco-pro",
+    "arco-pro-vue",
+    "css-render"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build && tsup-node"
+  },
+  "peerDependencies": {
+    "@arco-design/web-vue": "^2.33.0",
+    "vue": "^3.2.37"
+  },
+  "dependencies": {
+    "vue-types": "^4.1.1",
+    "@vueuse/core": "^8.9.4",
+    "@vrx-arco/use": "workspace:*",
+    "@vrx-arco/css-render": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

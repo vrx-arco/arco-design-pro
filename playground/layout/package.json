@@ -6,6 +6,7 @@
     "dev": "vite"
   },
   "dependencies": {
-    "@vrx-arco/pro-layout": "workspace:*"
+    "@vrx-arco/pro-layout": "workspace:*",
+    "@vrx-arco/pro-components": "workspace:*"
   }
 }
