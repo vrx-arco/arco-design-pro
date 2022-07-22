@@ -4,21 +4,22 @@ import '@arco-design/web-vue/es/avatar/style'
 import '@arco-design/web-vue/es/dropdown/style'
 import { array, string } from 'vue-types'
 import { style } from './style'
+
 export interface UserAvatarDropDownItem {
   value: string
   title: string
   disabled?: boolean
 }
 
-export const UserAvatarDropDown = defineComponent({
-  name: 'vrx-arco-user-avatar-drop-down',
+export const AvatarDropDown = defineComponent({
+  name: 'vrx-arco-avatar-drop-down',
   props: {
     username: string(),
     dropdown: array<UserAvatarDropDownItem>().def([]),
   },
   emits: ['select'],
   setup: (props, { slots, emit }) => {
-    style()
+    const { bemClass } = style()
     return () => {
       const { username, dropdown } = props
       const handleSelect = (select: string) => {
@@ -37,7 +38,7 @@ export const UserAvatarDropDown = defineComponent({
               )),
           }}
         >
-          <Avatar class="vrx-arco-user-avatar-dropdown">{slots.default?.() || username}</Avatar>
+          <Avatar class={bemClass()}>{slots.default?.() || username}</Avatar>
         </Dropdown>
       )
     }
