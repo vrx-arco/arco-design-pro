@@ -7,5 +7,6 @@ export const style = createCssRender(
     cE('wrap', { height: '100%' }),
     cE('content', { backgroundColor: 'var(--color-fill-2)' }),
     c('&__spin', { width: '100%', height: '100%' }),
-  ])
+  ]),
+  { id: 'pro-layout' }
 )

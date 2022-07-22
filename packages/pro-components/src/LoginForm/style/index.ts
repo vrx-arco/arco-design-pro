@@ -13,4 +13,4 @@ const css = cB('login-form', [
   cE('register-btn', { color: 'var(--color-text-3)' }),
 ])
 
-export const style = createCssRender(css)
+export const style = createCssRender(css, { id: 'login-form' })

@@ -18,4 +18,4 @@ const css = cB('navbar', [
   }),
 ])
 
-export const style = createCssRender(css)
+export const style = createCssRender(css, { id: 'pro-layout-navbar' })

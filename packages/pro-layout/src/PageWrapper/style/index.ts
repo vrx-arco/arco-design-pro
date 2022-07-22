@@ -9,4 +9,4 @@ const css = cB('page-wrapper', [
   cE('breadcrumb-item', { cursor: 'pointer' }),
 ])
 
-export const style = createCssRender(css)
+export const style = createCssRender(css, { id: 'page-wrapper' })
