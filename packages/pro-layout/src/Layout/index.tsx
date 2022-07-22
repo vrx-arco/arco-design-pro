@@ -27,7 +27,7 @@ export const ProLayout = defineComponent({
     return () => {
       const { title, logo, menus, loading } = props
       return (
-        <Spin loading={loading} class={bemClass('spin')} size={30}>
+        <Spin loading={loading} class={bemClass('__spin')} size={30}>
           <Layout class={bemClass()}>
             <Layout.Header class={bemClass('__header')}>
               <NavBar

@@ -2,7 +2,7 @@ import { CNodeChildren } from 'css-render'
 import { onBeforeMount } from 'vue'
 import { MountOption } from 'css-render/lib/types'
 import { blockPrefix, cB } from './css-render'
-export { CNodeChildren }
+export { type CNodeChildren }
 export const createCssRender = (
   id: string,
   cssChildren: CNodeChildren,
