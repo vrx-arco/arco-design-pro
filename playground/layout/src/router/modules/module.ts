@@ -13,6 +13,15 @@ export const moduleRoute: RouteRecordRaw[] = [
     },
     children: [
       {
+        name: 'loginPage',
+        path: 'loginPage',
+        component: () => import('../../views/loginPage'),
+        meta: {
+          title: '登陆页面',
+          icon: createVNode(IconUser),
+        },
+      },
+      {
         name: 'login',
         path: 'login',
         component: () => import('../../views/login'),
