@@ -46,6 +46,7 @@ export const moduleRoute: RouteRecordRaw[] = [
         meta: {
           title: '500',
           icon: createVNode(IconTag),
+          hidden: true,
         },
       },
     ],

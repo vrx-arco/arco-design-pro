@@ -8,6 +8,9 @@ interface MenuItemProps {
 }
 
 const MenuItem: FunctionalComponent<MenuItemProps> = ({ menu }) => {
+  if (menu.meta?.hidden) {
+    return
+  }
   if (!menu.children) {
     return (
       <Menu.Item v-slots={{ icon: () => menu.meta?.icon }} key={menu.name as string}>
