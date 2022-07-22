@@ -1,6 +1,6 @@
-import { c, cB, cE, createCssRender } from '@vrx-arco/css-render'
+import { c, cE, CNodeChildren, createCssRender } from '@vrx-arco/css-render'
 
-const css = cB('navbar', [
+const css: CNodeChildren = [
   c('&', {
     display: 'flex',
     justifyContent: 'space-between',
@@ -16,6 +16,6 @@ const css = cB('navbar', [
     justifyContent: 'center',
     alignItems: 'center',
   }),
-])
+]
 
-export const style = createCssRender(css, { id: 'pro-layout-navbar' })
+export const style = createCssRender('pro-layout-navbar', css)

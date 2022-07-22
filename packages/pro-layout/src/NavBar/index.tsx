@@ -4,6 +4,7 @@ import { IconMenuFold } from '@arco-design/web-vue/es/icon'
 import { string } from 'vue-types'
 import { useShareBreakpoints } from '@vrx-arco/use'
 import { style } from './styles'
+
 export const NavBar = defineComponent({
   name: 'vrx-arco-navBar',
   props: {
@@ -14,7 +15,7 @@ export const NavBar = defineComponent({
   },
   emits: ['menuClick'],
   setup: (props, { slots, emit }) => {
-    style()
+    const { bemClass } = style()
     const breakpoints = useShareBreakpoints()
     const isSmallerLg = breakpoints.smaller('lg')
     return () => {
@@ -22,8 +23,8 @@ export const NavBar = defineComponent({
       const logoSlot = slots.logo?.()
       const logoContainerSlot = slots.logoContainer?.()
       return (
-        <div class="vrx-arco-navbar">
-          <div class="vrx-arco-navbar__left-side">
+        <div class={bemClass()}>
+          <div class={bemClass('__left-side')}>
             {logoContainerSlot || (
               <Space direction="horizontal">
                 {logoSlot || <img alt="logo" src={logo} />}
@@ -41,7 +42,7 @@ export const NavBar = defineComponent({
               />
             )}
           </div>
-          <div class="vrx-arco-navbar__right-side">{slots.default?.()}</div>
+          <div class={bemClass('__right-side')}>{slots.default?.()}</div>
         </div>
       )
     }

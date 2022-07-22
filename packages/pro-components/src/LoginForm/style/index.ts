@@ -1,6 +1,6 @@
-import { cB, cE, createCssRender } from '@vrx-arco/css-render'
+import { cE, CNodeChildren, createCssRender } from '@vrx-arco/css-render'
 
-const css = cB('login-form', [
+const css: CNodeChildren = [
   cE('title', {
     color: 'var(--color-text-1)',
     fontWeight: 500,
@@ -11,6 +11,6 @@ const css = cB('login-form', [
   cE('error-msg', { height: '32px', color: 'rgb(var(--red-6))', lineHeight: '32px' }),
   cE('password-actions', { display: 'flex', justifyContent: 'space-between' }),
   cE('register-btn', { color: 'var(--color-text-3)' }),
-])
+]
 
-export const style = createCssRender(css, { id: 'login-form' })
+export const style = createCssRender('login-form', css)

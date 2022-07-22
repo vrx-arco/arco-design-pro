@@ -38,7 +38,7 @@ export const LoginForm = defineComponent({
   },
   emits: ['submit', 'forget', 'register'],
   setup: (props, { slots, expose, emit }) => {
-    style()
+    const { bemClass } = style()
 
     const model = ref<LoginFormModel>({
       username: '',
@@ -109,14 +109,14 @@ export const LoginForm = defineComponent({
     return () => {
       const { register, remember, forget, title, subtitle } = props
       return (
-        <div class="vrx-arco-login-form">
+        <div class={bemClass()}>
           {slots.title?.() || (
             <>
-              <div class="vrx-arco-login-form__title">{title}</div>
-              <div class="vrx-arco-login-form__subtitle">{subtitle}</div>
+              <div class={bemClass('__title')}>{title}</div>
+              <div class={bemClass('__subtitle')}>{subtitle}</div>
             </>
           )}
-          <div class="vrx-arco-login-form__error-msg">{errorMessage.value}</div>
+          <div class={bemClass('__error-msg')}>{errorMessage.value}</div>
           <Form
             model={model.value}
             rules={rules.value}
@@ -139,7 +139,7 @@ export const LoginForm = defineComponent({
             </Form.Item>
             <Space direction="vertical" size={16}>
               {(remember || forget) && (
-                <div class="vrx-arco-login-form__password-actions">
+                <div class={bemClass('__password-actions')}>
                   {remember && <Checkbox v-model={rememberChecked.value}>记住密码</Checkbox>}
                   {forget && <Link onClick={() => emit('forget')}>忘记密码</Link>}
                 </div>
@@ -151,7 +151,7 @@ export const LoginForm = defineComponent({
                 <Button
                   type="text"
                   long
-                  class="vrx-arco-login-form__register-btn"
+                  class={bemClass('__register-btn')}
                   onClick={() => emit('register')}
                 >
                   注册

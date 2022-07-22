@@ -7,7 +7,7 @@ import { useRoute, useRouter } from 'vue-router'
 export const PageWrapper = defineComponent({
   name: 'vrx-arco-page-wrapper',
   setup: (_, { slots }) => {
-    style()
+    const { bemClass } = style()
     const route = useRoute()
     const router = useRouter()
 
@@ -16,8 +16,8 @@ export const PageWrapper = defineComponent({
     }
 
     return () => (
-      <Layout class="vrx-arco-page-wrapper">
-        <Layout.Header class="vrx-arco-page-wrapper__header">
+      <Layout class={bemClass()}>
+        <Layout.Header class={bemClass('__header')}>
           <Breadcrumb>
             <Breadcrumb.Item>
               <IconApps />
@@ -28,7 +28,7 @@ export const PageWrapper = defineComponent({
               }
               return (
                 <Breadcrumb.Item
-                  class="vrx-arco-page-wrapper__breadcrumb-item"
+                  class={bemClass('__breadcrumb-item')}
                   key={item.name as string}
                   {...{ onClick: () => handleRoute(item.name as string) }}
                 >

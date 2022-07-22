@@ -17,7 +17,7 @@ export const ProLayout = defineComponent({
     loading: bool().def(false),
   },
   setup: (props, { slots }) => {
-    style()
+    const { bemClass } = style()
     const breakpoints = useShareBreakpoints()
 
     const isSmallerLg = breakpoints.smaller('lg')
@@ -27,9 +27,9 @@ export const ProLayout = defineComponent({
     return () => {
       const { title, logo, menus, loading } = props
       return (
-        <Spin loading={loading} class="vrx-arco-layout__spin" size={30}>
-          <Layout class="vrx-arco-layout">
-            <Layout.Header class="vrx-arco-layout__header">
+        <Spin loading={loading} class={bemClass('spin')} size={30}>
+          <Layout class={bemClass()}>
+            <Layout.Header class={bemClass('__header')}>
               <NavBar
                 title={title}
                 logo={logo}
@@ -45,8 +45,8 @@ export const ProLayout = defineComponent({
                 {slots.headerToolbox?.()}
               </NavBar>
             </Layout.Header>
-            <Layout.Content class="vrx-arco-layout__wrap-container">
-              <Layout class="vrx-arco-layout__wrap">
+            <Layout.Content class={bemClass('__wrap-container')}>
+              <Layout class={bemClass('__wrap')}>
                 {isSmallerLg.value || (
                   <Layout.Sider breakpoint="xl" collapsible>
                     <ProMenu menu={menus} />
@@ -64,7 +64,7 @@ export const ProLayout = defineComponent({
                     <ProMenu menu={menus} />
                   </Drawer>
                 )}
-                <Layout.Content class="vrx-arco-layout__content">
+                <Layout.Content class={bemClass('__content')}>
                   {slots.default?.() || <RouterView />}
                 </Layout.Content>
               </Layout>
