@@ -38,7 +38,7 @@ export const PageWrapper = defineComponent({
             })}
           </Breadcrumb>
         </Layout.Header>
-        <Layout.Content>{slots.default?.()}</Layout.Content>
+        <Layout.Content class={bemClass('__content')}>{slots.default?.()}</Layout.Content>
       </Layout>
     )
   },
