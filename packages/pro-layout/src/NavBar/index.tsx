@@ -2,7 +2,7 @@ import { defineComponent } from 'vue'
 import { Space, TypographyTitle } from '@arco-design/web-vue'
 import { IconMenuFold } from '@arco-design/web-vue/es/icon'
 import { string } from 'vue-types'
-import { useShareBreakpoints } from '@vrx-arco/use'
+import { propsSlot, useShareBreakpoints } from '@vrx-arco/use'
 import { style } from './styles'
 
 export const NavBar = defineComponent({
@@ -19,9 +19,12 @@ export const NavBar = defineComponent({
     const breakpoints = useShareBreakpoints()
     const isSmallerLg = breakpoints.smaller('lg')
     return () => {
-      const { logo, title } = props
+      const { logo } = props
       const logoSlot = slots.logo?.()
       const logoContainerSlot = slots.logoContainer?.()
+
+      const title = propsSlot(slots, props, 'title')
+
       return (
         <div class={bemClass()}>
           <div class={bemClass('__left-side')}>
@@ -30,7 +33,7 @@ export const NavBar = defineComponent({
                 {logoSlot || <img alt="logo" src={logo} />}
                 {isSmallerLg.value || (
                   <TypographyTitle style={{ margin: 0, fontSize: '18px' }} heading={5}>
-                    {slots.title?.() || title}
+                    {title}
                   </TypographyTitle>
                 )}
               </Space>
