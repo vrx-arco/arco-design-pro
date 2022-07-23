@@ -1,54 +1,5 @@
 import { RouteRecordRaw } from 'vue-router'
-import { IconApps, IconArchive, IconTag, IconUser } from '@arco-design/web-vue/es/icon'
-import { createVNode } from 'vue'
-export const moduleRoute: RouteRecordRaw[] = [
-  {
-    name: 'main',
-    path: 'main',
-    component: () => import('../../views/main'),
-    redirect: '/main/500',
-    meta: {
-      title: 'main',
-      icon: createVNode(IconApps),
-    },
-    children: [
-      {
-        name: 'loginPage',
-        path: 'loginPage',
-        component: () => import('../../views/loginPage'),
-        meta: {
-          title: '登陆页面',
-          icon: createVNode(IconUser),
-        },
-      },
-      {
-        name: 'login',
-        path: 'login',
-        component: () => import('../../views/login'),
-        meta: {
-          title: '登陆表单',
-          icon: createVNode(IconUser),
-        },
-      },
-      {
-        name: '404',
-        path: '404',
-        component: () => import('../../views/404'),
-        meta: {
-          title: '404',
-          icon: createVNode(IconArchive),
-        },
-      },
-      {
-        name: '500',
-        path: '500',
-        component: () => import('../../views/500'),
-        meta: {
-          title: '500',
-          icon: createVNode(IconTag),
-          hidden: true,
-        },
-      },
-    ],
-  },
-]
+import { mainRoutes } from './main'
+import { listModules } from './list'
+
+export const moduleRoute: RouteRecordRaw[] = [...mainRoutes, ...listModules]
