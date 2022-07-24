@@ -6,7 +6,7 @@ const css: CNodeChildren = [
     padding: '0 20px !important',
   }),
   cE('header', { padding: '16px 0' }),
-  cE('content', { paddingBottom: '16px' }),
+  cE('content', { paddingBottom: '16px', minHeight: 0 }),
   cE('breadcrumb-item', { cursor: 'pointer' }),
 ]
 
