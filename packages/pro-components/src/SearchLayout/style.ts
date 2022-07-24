@@ -29,5 +29,6 @@ export const style = createCss('search-layout', [
     background: 'var(--color-bg-2)',
     borderRadius: 'var(--border-radius-none)',
     padding: '16px',
+    minHeight: 0,
   }),
 ])

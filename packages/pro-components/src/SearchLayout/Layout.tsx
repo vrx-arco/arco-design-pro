@@ -9,7 +9,15 @@ import { provideSearchLayout } from './context'
 export const SearchLayout = defineComponent({
   name: 'vrx-arco-search-layout',
   props: {
+    /**
+     * 布局类型
+     * card: 整体布局作为一个卡片类型
+     * normal: 分体式卡片布局
+     */
     type: oneOf(['card', 'normal'] as const).def('normal'),
+    /**
+     * 设置标题
+     */
     title: string(),
   },
   setup: (props, { slots }) => {

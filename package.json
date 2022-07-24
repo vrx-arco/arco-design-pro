@@ -2,7 +2,7 @@
   "name": "vrx-arco-pro-compoentns",
   "version": "0.0.1-beta.12",
   "private": true,
-  "packageManager": "pnpm@7.5.2",
+  "packageManager": "pnpm@7.6.0",
   "scripts": {
     "build": "turbo run build",
     "release": "bumpp package.json packages/*/package.json",
@@ -28,7 +28,6 @@
     "vue": "^3.2.37",
     "vue-router": "^4.1.2",
     "bumpp": "^8.2.1",
-    "changelogen": "^0.1.1",
-    "vite-plugin-style-import": "^2.0.0"
+    "changelogen": "^0.1.1"
   }
 }

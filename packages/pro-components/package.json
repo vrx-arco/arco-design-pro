@@ -37,7 +37,8 @@
     "vue-types": "^4.1.1",
     "@vueuse/core": "^8.9.4",
     "@vrx-arco/use": "workspace:*",
-    "@vrx-arco/css-render": "workspace:*"
+    "@vrx-arco/css-render": "workspace:*",
+    "@vill-v/path-prop": "^0.1.9"
   },
   "publishConfig": {
     "access": "public"
