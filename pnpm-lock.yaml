@@ -59,13 +59,17 @@ importers:
       '@vill-v/path-prop': ^0.1.9
       '@vrx-arco/css-render': workspace:*
       '@vrx-arco/use': workspace:*
+      '@vrx/core': ^0.1.0-beta.1
       '@vueuse/core': ^8.9.4
+      klona: ^2.0.5
       vue-types: ^4.1.1
     dependencies:
       '@vill-v/path-prop': 0.1.9
       '@vrx-arco/css-render': link:../css-render
       '@vrx-arco/use': link:../use
+      '@vrx/core': 0.1.0-beta.1
       '@vueuse/core': 8.9.4
+      klona: 2.0.5
       vue-types: 4.1.1
 
   packages/pro-layout:
@@ -799,6 +803,37 @@ packages:
       vite: 3.0.2_less@4.1.3+sass@1.53.0
       vue: 3.2.37
     dev: true
+
+  /@vrx/core/0.1.0-beta.1:
+    resolution: {integrity: sha512-T0OFLQjbANXuCxkM8r1xn6u9E/N15rX1LJBmKWPR3slz9VcnBz6JID2wD8C8Lineq3Y/ySQeLje5th4RYnIceQ==}
+    peerDependencies:
+      '@vue/composition-api': ^1.1.0
+      vue: ^2.6.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      '@vill-v/type-as': 0.1.9
+      '@vrx/shared': 0.1.0-beta.1
+      vue-demi: 0.13.5
+    dev: false
+
+  /@vrx/shared/0.1.0-beta.1:
+    resolution: {integrity: sha512-ik8XnfU7xTsZTnqRVaXDrtsdqI9hRI4gJZokklm41QtXfB7i8HIS4mJSCwmyV6liwwlO17gdUUN+nwINKKPTFw==}
+    peerDependencies:
+      '@vue/composition-api': ^1.1.0
+      vue: ^2.6.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      '@vill-v/path-prop': 0.1.9
+      vue-demi: 0.13.5
+    dev: false
 
   /@vue/babel-helper-vue-transform-on/1.0.2:
     resolution: {integrity: sha512-hz4R8tS5jMn8lDq6iD+yWL6XNB699pGIVLk7WSJnn1dbpjaazsjZQkieJoRX6gW5zpYSCFqQ7jUquPNY65tQYA==}
@@ -2109,6 +2144,11 @@ packages:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
     dev: true
+
+  /klona/2.0.5:
+    resolution: {integrity: sha512-pJiBpiXMbt7dkzXe8Ghj/u4FfXOOa98fPW+bihOJ4SjnoijweJrNThJfd3ifXpXhREjpoF2mZVH1GfS9LV3kHQ==}
+    engines: {node: '>= 8'}
+    dev: false
 
   /less/4.1.3:
     resolution: {integrity: sha512-w16Xk/Ta9Hhyei0Gpz9m7VS8F28nieJaL/VyShID7cYvP6IL5oHeL6p4TXSDJqZE/lNv0oJ2pGVjJsRkfwm5FA==}

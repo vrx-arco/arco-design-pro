@@ -1,0 +1,35 @@
+import { array, arrayOf, bool, func, number, object, oneOf, oneOfType, string } from 'vue-types'
+import { FieldRule } from '@arco-design/web-vue'
+
+export const formGridItemProps = () => ({
+  gridProps: object().isRequired,
+  field: string().def(''),
+  label: string(),
+  showColon: bool().def(false),
+  noStyle: bool().def(false),
+  disabled: bool(),
+  help: string(),
+  extra: string(),
+  required: bool().def(false),
+  rules: oneOfType([object<FieldRule>(), array<FieldRule>()]),
+  validateStatus: oneOf(['success', 'warning', 'error', 'validating'] as const),
+  validateTrigger: oneOfType([
+    oneOf(['change', 'input', 'focus', 'blur'] as const),
+    arrayOf(oneOf(['change', 'input', 'focus', 'blur'] as const)),
+  ]).def('change'),
+  labelColProps: object(),
+  wrapperColProps: object(),
+  hideLabel: bool().def(false),
+  hideAsterisk: bool().def(false),
+  labelColStyle: object(),
+  wrapperColStyle: object(),
+  rowProps: object(),
+  rowClass: oneOfType([string(), array(), object()]),
+  contentClass: oneOfType([string(), array(), object()]),
+  contentFlex: bool().def(true),
+  mergeProps: oneOfType([bool(), func()]).def(true),
+  labelColFlex: oneOfType([number(), string()]),
+  feedback: bool().def(false),
+  labelComponent: string().def('label'),
+  labelAttrs: object(),
+})

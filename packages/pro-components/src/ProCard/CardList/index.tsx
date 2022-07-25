@@ -1,8 +1,8 @@
-import { computed, defineComponent } from 'vue'
+import { defineComponent, toRef } from 'vue'
 import { Card } from '@arco-design/web-vue'
 import { bool, number, object, oneOfType, string } from 'vue-types'
 import { ProList } from '../../ProList'
-import { useShareBreakpoints } from '@vrx-arco/use'
+import { useGrid } from '@vrx-arco/use'
 import { proPaginationProps } from '../../ProPagination/props'
 
 export interface CardListColumnGrid {
@@ -51,28 +51,9 @@ export const CardList = defineComponent({
     itemClick: (item: any, index: number) => true,
   },
   setup: (props, { emit, slots }) => {
-    const getColumn = (column: number) => Math.ceil(24 / column)
-    const { xxl, xl, lg, md, sm, smaller } = useShareBreakpoints()
-    const xs = smaller('sm')
-    const grid = computed(() => {
-      const grid = {
-        xxl: xxl.value,
-        xl: xl.value,
-        lg: lg.value,
-        md: md.value,
-        sm: sm.value,
-        xs: xs.value,
-      }
-      return Object.keys(grid).find((key) => grid[key]) || 'span'
-    })
-
-    const gridProps = computed(() => {
-      const { gutter, column } = props
-      if (typeof column === 'number') {
-        return { span: getColumn(column), gutter }
-      }
-      return { gutter, span: getColumn(column[grid.value]) || 6 }
-    })
+    const column = toRef(props, 'column')
+    const gutter = toRef(props, 'gutter')
+    const { gridProps } = useGrid(true, column, gutter)
 
     return () => {
       const { pagination, paginationProps, data, rowKey, bottomOffset, loading, dataKey } = props

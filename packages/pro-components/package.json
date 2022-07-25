@@ -38,7 +38,9 @@
     "@vueuse/core": "^8.9.4",
     "@vrx-arco/use": "workspace:*",
     "@vrx-arco/css-render": "workspace:*",
-    "@vill-v/path-prop": "^0.1.9"
+    "@vill-v/path-prop": "^0.1.9",
+    "@vrx/core": "^0.1.0-beta.1",
+    "klona": "^2.0.5"
   },
   "publishConfig": {
     "access": "public"

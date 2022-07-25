@@ -5,16 +5,34 @@
     SearchLayout,
     SearchLayoutContent,
     SearchLayoutHeader,
+    SearchBar,
+    SearchBarItem,
   } from '@vrx-arco/pro-components'
   import { PageWrapper } from '@vrx-arco/pro-layout'
-  import { Avatar } from '@arco-design/web-vue'
+  import { Avatar, Input } from '@arco-design/web-vue'
   import { IconEdit, IconEye, IconMore, IconUser } from '@arco-design/web-vue/es/icon'
 </script>
 <template>
   <PageWrapper>
     <SearchLayout title="搜索布局">
       <SearchLayoutHeader>
-        <div>ssss</div>
+        <SearchBar>
+          <SearchBarItem label="label">
+            <Input />
+          </SearchBarItem>
+          <SearchBarItem label="label">
+            <Input />
+          </SearchBarItem>
+          <SearchBarItem label="label">
+            <Input />
+          </SearchBarItem>
+          <SearchBarItem label="label">
+            <Input />
+          </SearchBarItem>
+          <SearchBarItem label="label">
+            <Input />
+          </SearchBarItem>
+        </SearchBar>
       </SearchLayoutHeader>
       <SearchLayoutContent
         use-tabs
