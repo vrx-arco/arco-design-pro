@@ -4,5 +4,5 @@ export const style = createCss('pro-pagination', [
   c('&', { height: '100%' }),
   cE('content', { overflow: 'auto' }),
   cE('footer', { paddingTop: '16px' }),
-  cE('pagination', { float: 'right' }),
+  cE('pagination', { float: 'right' }, [c('.arco-input-wrapper', { width: '40px' })]),
 ])
