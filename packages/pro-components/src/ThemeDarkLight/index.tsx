@@ -2,8 +2,6 @@ import { defineComponent } from 'vue'
 import { IconMoonFill, IconSunFill } from '@arco-design/web-vue/es/icon'
 import { Button } from '@arco-design/web-vue'
 import { useDark, useToggle } from '@vueuse/core'
-import '@arco-design/web-vue/es/button/style'
-
 /**
  * 亮色暗色切换按钮
  */

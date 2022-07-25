@@ -1,7 +1,5 @@
 import { defineComponent } from 'vue'
 import { Layout } from '@arco-design/web-vue'
-import '@arco-design/web-vue/es/layout/style'
-import '@arco-design/web-vue/es/card/style'
 import { style } from './style'
 import { oneOf, string } from 'vue-types'
 import { provideSearchLayout } from './context'

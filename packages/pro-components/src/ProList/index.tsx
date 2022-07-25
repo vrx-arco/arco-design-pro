@@ -4,7 +4,6 @@ import { List } from '@arco-design/web-vue'
 import { style } from './style'
 import { useElementSize } from '@vueuse/core'
 import { getByPath } from '@vill-v/path-prop'
-import '@arco-design/web-vue/es/list/style'
 import { ProPagination } from '../ProPagination'
 import { proPaginationProps } from '../ProPagination/props'
 

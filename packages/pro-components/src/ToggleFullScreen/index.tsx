@@ -1,6 +1,5 @@
 import { defineComponent } from 'vue'
 import { Button } from '@arco-design/web-vue'
-import '@arco-design/web-vue/es/button/style'
 import { IconFullscreen, IconFullscreenExit } from '@arco-design/web-vue/es/icon'
 import { useFullscreen } from '@vueuse/core'
 

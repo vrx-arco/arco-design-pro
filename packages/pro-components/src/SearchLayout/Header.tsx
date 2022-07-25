@@ -1,7 +1,6 @@
 import { defineComponent } from 'vue'
-import { Card, Layout, Divider } from '@arco-design/web-vue'
+import { Card, Divider, Layout } from '@arco-design/web-vue'
 import { injectSearchLayout } from './context'
-import '@arco-design/web-vue/es/divider/style'
 export const SearchLayoutHeader = defineComponent({
   name: 'vrx-arco-search-layout-header',
   setup: (_, { slots }) => {

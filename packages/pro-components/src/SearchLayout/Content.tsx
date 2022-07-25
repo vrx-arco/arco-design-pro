@@ -1,8 +1,6 @@
 import { defineComponent } from 'vue'
 import { Layout, Tabs } from '@arco-design/web-vue'
 import { injectSearchLayout } from './context'
-import '@arco-design/web-vue/es/layout/style'
-import '@arco-design/web-vue/es/tabs/style'
 import { array, bool } from 'vue-types'
 
 export interface SearchLayoutContentTab {

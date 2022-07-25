@@ -3,7 +3,6 @@ import { Card } from '@arco-design/web-vue'
 import { bool, number, object, oneOfType, string } from 'vue-types'
 import { ProList } from '../../ProList'
 import { useShareBreakpoints } from '@vrx-arco/use'
-import '@arco-design/web-vue/es/card/style'
 import { proPaginationProps } from '../../ProPagination/props'
 
 export interface CardListColumnGrid {

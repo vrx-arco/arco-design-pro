@@ -1,6 +1,5 @@
 import { defineComponent, toRef } from 'vue'
 import { Layout, Pagination } from '@arco-design/web-vue'
-import '@arco-design/web-vue/es/pagination/style'
 import { useProPagination } from '@vrx-arco/use'
 import { style } from './style'
 import { proPaginationProps } from './props'

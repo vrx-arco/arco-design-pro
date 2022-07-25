@@ -1,7 +1,5 @@
 import { defineComponent } from 'vue'
 import { Avatar, Dropdown } from '@arco-design/web-vue'
-import '@arco-design/web-vue/es/avatar/style'
-import '@arco-design/web-vue/es/dropdown/style'
 import { array, string } from 'vue-types'
 import { style } from './style'
 import { propsSlot } from '@vrx-arco/use'

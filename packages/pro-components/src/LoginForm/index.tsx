@@ -11,13 +11,6 @@ import {
 } from '@arco-design/web-vue'
 import { IconLock, IconUser } from '@arco-design/web-vue/es/icon'
 import { bool, func, string } from 'vue-types'
-import '@arco-design/web-vue/es/form/style'
-import '@arco-design/web-vue/es/input/style'
-import '@arco-design/web-vue/es/space/style'
-import '@arco-design/web-vue/es/checkbox/style'
-import '@arco-design/web-vue/es/link/style'
-import '@arco-design/web-vue/es/button/style'
-import '@arco-design/web-vue/es/message/style'
 import { style } from './style'
 import { useToggle } from '@vueuse/core'
 
