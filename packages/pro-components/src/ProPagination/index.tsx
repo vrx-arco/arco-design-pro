@@ -34,8 +34,10 @@ export const ProPagination = defineComponent({
     } = useProPagination(data, pagination, paginationProps)
 
     return () => {
+      const slotsHeader = slots.header?.()
       return pagination.value ? (
         <Layout class={bemClass()}>
+          {slotsHeader && <Layout.Header class={bemClass('__header')}>{slotsHeader}</Layout.Header>}
           <Layout.Content class={bemClass('__content')}>
             {slots.default?.(list.value)}
           </Layout.Content>

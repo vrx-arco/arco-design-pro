@@ -1,6 +1,6 @@
 import { defineComponent, toRef } from 'vue'
 import { Card } from '@arco-design/web-vue'
-import { bool, number, object, oneOfType, string } from 'vue-types'
+import { array, bool, number, object, oneOfType, string } from 'vue-types'
 import { ProList } from '../../ProList'
 import { useGrid } from '@vrx-arco/use'
 import { proPaginationProps } from '../../ProPagination/props'
@@ -14,7 +14,7 @@ export interface CardListColumnGrid {
   xxl: number
 }
 
-export const CardList = defineComponent({
+export const ProCardList = defineComponent({
   name: 'vrx-arco-pro-card-list',
   props: {
     ...proPaginationProps(),
@@ -30,7 +30,7 @@ export const CardList = defineComponent({
       xl: 3,
       xxl: 4,
     }),
-    gutter: number().def(0),
+    gutter: oneOfType<number | [number, number]>([number(), array<number>()]).def(0),
   },
   emits: {
     /**
@@ -77,6 +77,7 @@ export const CardList = defineComponent({
           bottomOffset={bottomOffset}
           gridProps={gridProps.value}
           v-slots={{
+            header: slots.header,
             item: ({ item, index }) => (
               <Card hoverable {...{ onClick: () => emit('itemClick', item, index) }}>
                 {slots.item?.({ item, index })}

@@ -4,7 +4,7 @@ import { computed, Ref, unref } from 'vue'
 export const useGrid = (
   useColumn: boolean,
   column: Ref<Record<string, any> | number>,
-  gutter?: Ref<number>
+  gutter?: Ref<number | [number, number]>
 ) => {
   const getColumn = (column: number) => (useColumn ? Math.ceil(24 / column) : column)
   const { xxl, xl, lg, md, sm, smaller } = useShareBreakpoints()

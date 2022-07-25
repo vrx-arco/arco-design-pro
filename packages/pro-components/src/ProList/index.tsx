@@ -84,6 +84,7 @@ export const ProList = defineComponent({
             emit('pageSizeChange', pageSize)
           }}
           v-slots={{
+            header: slots.header,
             default: (list) => (
               <List
                 class={bemClass()}

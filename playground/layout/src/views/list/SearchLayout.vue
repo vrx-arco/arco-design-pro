@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import {
-    CardList,
+    ProCardList,
     ProCardMeta,
     SearchLayout,
     SearchLayoutContent,
@@ -9,7 +9,7 @@
     SearchBarItem,
   } from '@vrx-arco/pro-components'
   import { PageWrapper } from '@vrx-arco/pro-layout'
-  import { Avatar, Input } from '@arco-design/web-vue'
+  import { Avatar, Input, Button } from '@arco-design/web-vue'
   import { IconEdit, IconEye, IconMore, IconUser } from '@arco-design/web-vue/es/icon'
 </script>
 <template>
@@ -35,13 +35,12 @@
         </SearchBar>
       </SearchLayoutHeader>
       <SearchLayoutContent
-        use-tabs
         :tabs="[
           { key: 'all', title: '全部' },
           { key: 'list', title: '列表' },
         ]"
       >
-        <CardList
+        <ProCardList
           pagination
           :data="
             Array(100)
@@ -49,6 +48,9 @@
               .map((item, index) => index + 1)
           "
         >
+          <template #header>
+            <Button type="primary">新增</Button>
+          </template>
           <template #item="{ item }">
             <ProCardMeta title="title" description="description">
               <template #avatar>
@@ -62,7 +64,7 @@
               </template>
             </ProCardMeta>
           </template>
-        </CardList>
+        </ProCardList>
       </SearchLayoutContent>
     </SearchLayout>
   </PageWrapper>
