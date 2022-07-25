@@ -4,13 +4,15 @@ import { PaginationProps } from '@arco-design/web-vue'
 /**
  * 自动数据分页
  * @param originData
- * @param pagination
+ * @param paginationProps
  */
 export const useAutoProPagination = (
   originData: Ref<any[]>,
-  pagination: Ref<boolean | PaginationProps | undefined>
+  paginationProps: Ref<PaginationProps | undefined>
 ) => {
-  const defaultPageSize = computed(() => (pagination as PaginationProps)?.defaultPageSize || 10)
+  const defaultPageSize = computed(
+    () => (paginationProps.value as PaginationProps)?.defaultPageSize || 10
+  )
 
   const total = computed(() => originData.value.length)
 

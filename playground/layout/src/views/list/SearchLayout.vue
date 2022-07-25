@@ -30,7 +30,6 @@
               .fill(1)
               .map((item, index) => index + 1)
           "
-          scroll
         >
           <template #item="{ item }">
             <ProCardMeta title="title" description="description">

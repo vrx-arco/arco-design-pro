@@ -1,9 +1,11 @@
 import { computed, defineComponent } from 'vue'
-import { Card, PaginationProps } from '@arco-design/web-vue'
-import { array, bool, number, object, oneOfType, string } from 'vue-types'
+import { Card } from '@arco-design/web-vue'
+import { bool, number, object, oneOfType, string } from 'vue-types'
 import { ProList } from '../../ProList'
 import { useShareBreakpoints } from '@vrx-arco/use'
 import '@arco-design/web-vue/es/card/style'
+import { proPaginationProps } from '../../ProPagination/props'
+
 export interface CardListColumnGrid {
   xs: number
   sm: number
@@ -16,9 +18,7 @@ export interface CardListColumnGrid {
 export const CardList = defineComponent({
   name: 'vrx-arco-pro-card-list',
   props: {
-    data: array().def([]),
-    pagination: oneOfType([bool(), object<PaginationProps>()]),
-    scroll: bool().def(false),
+    ...proPaginationProps(),
     bottomOffset: number().def(0),
     rowKey: string(),
     dataKey: string(),
@@ -76,7 +76,7 @@ export const CardList = defineComponent({
     })
 
     return () => {
-      const { pagination, data, rowKey, scroll, bottomOffset, loading, dataKey } = props
+      const { pagination, paginationProps, data, rowKey, bottomOffset, loading, dataKey } = props
 
       return (
         <ProList
@@ -84,6 +84,7 @@ export const CardList = defineComponent({
           bordered={false}
           split={false}
           pagination={pagination}
+          paginationProps={paginationProps}
           onPageChange={(current) => {
             emit('pageChange', current)
           }}
@@ -93,7 +94,6 @@ export const CardList = defineComponent({
           rowKey={rowKey}
           dataKey={dataKey}
           loading={loading}
-          scroll={scroll}
           bottomOffset={bottomOffset}
           gridProps={gridProps.value}
           v-slots={{

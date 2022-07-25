@@ -1,24 +1,26 @@
 import { PaginationProps } from '@arco-design/web-vue'
 import { computed, Ref } from 'vue'
 import { useAutoProPagination } from './useAutoProPagination'
+import { ProPaginationOption } from './types'
 
 export const useProPagination = (
   data: Ref<any[]>,
-  pagination: Ref<boolean | PaginationProps | undefined>
+  pagination: Ref<true | ProPaginationOption | undefined>,
+  paginationProps: Ref<PaginationProps | undefined>
 ) => {
   if (pagination.value === true) {
-    return useAutoProPagination(data, pagination)
+    return useAutoProPagination(data, paginationProps)
   }
 
-  const total = computed(() => (pagination.value as PaginationProps)?.total)
+  const total = computed(() => (pagination.value as ProPaginationOption)?.total || 0)
 
   const current = computed<number>({
-    get: () => (pagination.value as PaginationProps)?.current || 1,
+    get: () => (pagination.value as ProPaginationOption)?.current || 1,
     set: (value) => {
       if (typeof pagination.value !== 'object') {
         return
       }
-      ;(pagination.value as PaginationProps).current = value
+      ;(pagination.value as ProPaginationOption).current = value
     },
   })
 
