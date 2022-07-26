@@ -28,6 +28,7 @@ export const LoginForm = defineComponent({
     title: string(),
     subtitle: string(),
     onSubmit: func<(model: LoginFormModel, remember: boolean) => Promise<any>>(),
+    submitNotice: bool().def(false),
   },
   emits: ['submit', 'forget', 'register'],
   setup: (props, { slots, expose, emit }) => {
@@ -76,11 +77,14 @@ export const LoginForm = defineComponent({
      * 表单提交
      */
     const handleSubmit = () => {
-      const { onSubmit } = props
+      const { submitNotice, onSubmit } = props
       setLoading(true)
       errorMessage.value = ''
       return onSubmit?.(toRaw(model.value), rememberChecked.value)
         .then(() => {
+          if (!submitNotice) {
+            return
+          }
           Message.success('登陆成功')
         })
         .catch((err) => {
@@ -89,6 +93,9 @@ export const LoginForm = defineComponent({
           }
           if (err instanceof Error) {
             errorMessage.value = err.message
+          }
+          if (!submitNotice) {
+            return
           }
           Message.error(errorMessage.value || '登陆出错')
         })
