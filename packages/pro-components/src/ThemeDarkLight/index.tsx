@@ -1,4 +1,4 @@
-import { defineComponent } from 'vue'
+import { defineComponent, watch } from 'vue'
 import { IconMoonFill, IconSunFill } from '@arco-design/web-vue/es/icon'
 import { Button } from '@arco-design/web-vue'
 import { useDark, useToggle } from '@vueuse/core'
@@ -19,11 +19,12 @@ export const ThemeDarkLight = defineComponent({
       valueDark: 'dark',
       valueLight: 'light',
       storageKey: 'arco-theme',
-      onChanged(dark) {
-        emit('change', dark)
-      },
     })
     const toggleDark = useToggle(isDark)
+
+    watch(isDark, (dark) => {
+      emit('change', dark)
+    })
 
     return () => (
       <Button onClick={() => toggleDark()} shape="circle">
