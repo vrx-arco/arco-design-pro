@@ -4,7 +4,7 @@ import { PageWrapper } from '@vrx-arco/pro-layout'
 const MainPage = defineComponent({
   setup: () => {
     return () => {
-      return <PageWrapper>sss</PageWrapper>
+      return <PageWrapper></PageWrapper>
     }
   },
 })
