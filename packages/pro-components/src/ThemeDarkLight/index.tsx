@@ -10,7 +10,7 @@ export const ThemeDarkLight = defineComponent({
   name: 'vrx-arco-theme-dark-light',
   emits: {
     // @ts-ignore
-    change: (dark: boolean) => null,
+    change: (dark: boolean) => true,
   },
   setup: (_, { emit }) => {
     const isDark = useDark({
