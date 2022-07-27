@@ -29,13 +29,13 @@
     "build": "vite build && tsup-node"
   },
   "peerDependencies": {
-    "@arco-design/web-vue": "^2.33.0",
+    "@arco-design/web-vue": "^2.33.1",
     "vue": "^3.2.37",
     "vue-router": "^4.1.2"
   },
   "dependencies": {
-    "vue-types": "^4.1.1",
-    "@vueuse/core": "^8.9.4",
+    "vue-types": "^4.2.0",
+    "@vueuse/core": "^9.0.0",
     "@vrx-arco/use": "workspace:*",
     "@vrx-arco/css-render": "workspace:*"
   },
