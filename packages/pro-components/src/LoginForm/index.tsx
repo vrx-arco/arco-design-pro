@@ -9,7 +9,7 @@ import {
   Message,
   Space,
 } from '@arco-design/web-vue'
-import { IconLock, IconUser } from '@arco-design/web-vue/es/icon'
+import { IconLock, IconUser } from '@vrx-arco/icon'
 import { bool, func, string } from 'vue-types'
 import { style } from './style'
 import { useToggle } from '@vueuse/core'

@@ -22,13 +22,13 @@ export const baseConfig = defineConfig({
     rollupOptions: {
       external: [
         'vue',
-        '@vrx-arco/use',
         'vue-types',
         'vue-router',
         '@arco-design/web-vue',
-        '@vrx-arco/css-render',
         '@vueuse/core',
         RegExp(String.raw`@arco-design/web-vue/es/.*`),
+        RegExp(String.raw`@arco-design/web-vue/lib/.*`),
+        RegExp(String.raw`@vrx-arco/.*`),
       ],
     },
     minify: false,

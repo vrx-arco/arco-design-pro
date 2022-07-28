@@ -1,6 +1,6 @@
 import { defineComponent } from 'vue'
 import { Space, TypographyTitle } from '@arco-design/web-vue'
-import { IconMenuFold } from '@arco-design/web-vue/es/icon'
+import { IconMenuFold } from '@vrx-arco/icon'
 import { string } from 'vue-types'
 import { propsSlot, useShareBreakpoints } from '@vrx-arco/use'
 import { style } from './styles'

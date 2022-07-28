@@ -1,6 +1,6 @@
 import { defineComponent } from 'vue'
 import { Button } from '@arco-design/web-vue'
-import { IconFullscreen, IconFullscreenExit } from '@arco-design/web-vue/es/icon'
+import { IconFullscreen, IconFullscreenExit } from '@vrx-arco/icon'
 import { useFullscreen } from '@vueuse/core'
 
 export const ToggleFullScreen = defineComponent({

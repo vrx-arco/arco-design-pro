@@ -1,9 +1,12 @@
 import { defineComponent } from 'vue'
 import { style } from './style'
 import { Breadcrumb, Layout } from '@arco-design/web-vue'
-import { IconApps } from '@arco-design/web-vue/es/icon'
+import { IconApps } from '@vrx-arco/icon'
 import { useRoute, useRouter } from 'vue-router'
 
+/**
+ * 页面包裹
+ */
 export const PageWrapper = defineComponent({
   name: 'vrx-arco-page-wrapper',
   setup: (_, { slots }) => {

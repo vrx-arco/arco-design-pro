@@ -1,5 +1,5 @@
 import { defineComponent, watch } from 'vue'
-import { IconMoonFill, IconSunFill } from '@arco-design/web-vue/es/icon'
+import { IconMoonFill, IconSunFill } from '@vrx-arco/icon'
 import { Button } from '@arco-design/web-vue'
 import { useDark, useToggle } from '@vueuse/core'
 

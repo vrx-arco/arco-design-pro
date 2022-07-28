@@ -1,14 +1,7 @@
-// Layout
 import '@arco-design/web-vue/es/layout/style'
-// Space
 import '@arco-design/web-vue/es/space/style'
-// Typography
 import '@arco-design/web-vue/es/typography/style'
-// Drawer
 import '@arco-design/web-vue/es/drawer/style'
-// Menu
 import '@arco-design/web-vue/es/menu/style'
-// Breadcrumb
 import '@arco-design/web-vue/es/breadcrumb/style'
-// Spin
 import '@arco-design/web-vue/es/spin/style'
