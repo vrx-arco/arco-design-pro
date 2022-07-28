@@ -9,13 +9,13 @@ export default defineConfig([
   {
     entry: ['src/arco-style.ts'],
     clean: false,
-    format: ['esm'],
+    format: ['esm', 'cjs'],
     outDir: '.',
   },
   {
     entry: ['src/arco-style-css.ts'],
     clean: false,
-    format: ['esm'],
+    format: ['esm', 'cjs'],
     outDir: '.',
   },
 ])
