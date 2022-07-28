@@ -21,10 +21,14 @@
       "import": "./dist/index.mjs",
       "require": "./dist/index.js",
       "types": "./dist/index.d.ts"
-    }
+    },
+    "./arco-style": "./arco-style.mjs",
+    "./arco-style-css": "./arco-style-css.mjs"
   },
   "files": [
-    "dist"
+    "dist",
+    "arco-style-css.mjs",
+    "arco-style.mjs"
   ],
   "scripts": {
     "build": "vite build && tsup-node"

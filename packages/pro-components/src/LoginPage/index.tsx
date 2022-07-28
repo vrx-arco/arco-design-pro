@@ -3,7 +3,6 @@ import { loginPageStyle } from './style'
 import { bool, func, string } from 'vue-types'
 import { LoginBanner } from './Banner'
 import { Layout } from '@arco-design/web-vue'
-import '@arco-design/web-vue/es/layout/style'
 import { LoginForm, LoginFormModel } from '../LoginForm'
 
 export const LoginPage = defineComponent({

@@ -37,8 +37,8 @@ export const baseConfig = defineConfig({
   plugins: [vue(), vueJsx()],
   resolve: {
     alias: {
-      '@vrx-arco/pro-layout': resolve(__dirname, '../packages/pro-layout/src/index.ts'),
-      '@vrx-arco/pro-components': resolve(__dirname, '../packages/pro-components/src/index.ts'),
+      '@vrx-arco/pro-layout': resolve(__dirname, '../packages/pro-layout/src'),
+      '@vrx-arco/pro-components': resolve(__dirname, '../packages/pro-components/src'),
     },
   },
 })

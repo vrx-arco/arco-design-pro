@@ -1,4 +1,3 @@
-import './arco-style'
 export * from './ThemeDarkLight'
 export * from './ToggleFullScreen'
 export * from './AvatarDropDown'
