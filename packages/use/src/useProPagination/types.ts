@@ -1,7 +1,8 @@
 import { PaginationProps } from '@arco-design/web-vue'
+
 export interface ProPaginationOption {
   total: number
-  current: number
+  pageNum: number
   pageSize: number
 }
 

@@ -15,12 +15,12 @@ export const useProPagination = (
   const total = computed(() => (pagination.value as ProPaginationOption)?.total || 0)
 
   const current = computed<number>({
-    get: () => (pagination.value as ProPaginationOption)?.current || 1,
+    get: () => (pagination.value as ProPaginationOption)?.pageNum || 1,
     set: (value) => {
       if (typeof pagination.value !== 'object') {
         return
       }
-      ;(pagination.value as ProPaginationOption).current = value
+      ;(pagination.value as ProPaginationOption).pageNum = value
     },
   })
 
