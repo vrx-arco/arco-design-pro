@@ -18,8 +18,8 @@
   <PageWrapper>
     <SearchLayout title="搜索布局">
       <SearchLayoutHeader>
-        <SearchBar :model="model" auto-update reset-on-button-click>
-          <SearchBarItem label="label" field="v1">
+        <SearchBar :model="model" auto-update reset-on-button-click valid-on-button-click>
+          <SearchBarItem label="label" field="v1" required>
             <Input />
           </SearchBarItem>
           <SearchBarItem label="label" field="v2">

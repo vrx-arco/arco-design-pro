@@ -52,7 +52,12 @@ export const SearchBar = defineComponent({
       if (!props.validOnButtonClick) {
         return searchRun(Promise.resolve().then(() => props.onSearch?.(toRaw(model.value))))
       }
-      return searchRun(formRef.value.validate().then(() => props.onSearch?.(toRaw(model.value))))
+      return searchRun(
+        formRef.value
+          .validate()
+          .then((error) => (error ? Promise.reject(error) : Promise.resolve()))
+          .then(() => props.onSearch?.(toRaw(model.value)))
+      )
     }
 
     const { loading: resetLoading, run: resetRun } = useAsyncLoading()
