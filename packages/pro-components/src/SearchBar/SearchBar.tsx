@@ -50,9 +50,10 @@ export const SearchBar = defineComponent({
 
     const handleSearch = () => {
       if (!props.validOnButtonClick) {
-        return searchRun(Promise.resolve().then(() => props.onSearch?.(toRaw(model.value))))
+        searchRun(Promise.resolve().then(() => props.onSearch?.(toRaw(model.value))))
+        return
       }
-      return searchRun(
+      searchRun(
         formRef.value
           .validate()
           .then((error) => (error ? Promise.reject(error) : Promise.resolve()))
@@ -68,7 +69,7 @@ export const SearchBar = defineComponent({
           model.value[key] = klona(resetModel.value[key])
         })
       }
-      return resetRun(Promise.resolve().then(() => props.onReset?.(toRaw(model.value))))
+      resetRun(Promise.resolve().then(() => props.onReset?.(toRaw(model.value))))
     }
 
     onMounted(() => {
