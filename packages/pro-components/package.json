@@ -51,8 +51,7 @@
     "@vrx-arco/icon": "workspace:*",
     "@vill-v/path-prop": "^0.1.9",
     "@vrx/core": "^0.1.0-beta.3",
-    "klona": "^2.0.5",
-    "defu": "^6.0.0"
+    "klona": "^2.0.5"
   },
   "publishConfig": {
     "access": "public"

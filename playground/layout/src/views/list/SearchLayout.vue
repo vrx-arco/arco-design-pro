@@ -11,25 +11,27 @@
   import { PageWrapper } from '@vrx-arco/pro-layout'
   import { Avatar, Input, Button } from '@arco-design/web-vue'
   import { IconEdit, IconEye, IconMore, IconUser } from '@arco-design/web-vue/es/icon'
+  import { ref } from 'vue'
+  const model = ref({ v1: '', v2: '', v3: '', v4: '' })
 </script>
 <template>
   <PageWrapper>
     <SearchLayout title="搜索布局">
       <SearchLayoutHeader>
-        <SearchBar>
-          <SearchBarItem label="label">
+        <SearchBar :model="model" auto-update reset-on-button-click>
+          <SearchBarItem label="label" field="v1">
             <Input />
           </SearchBarItem>
-          <SearchBarItem label="label">
+          <SearchBarItem label="label" field="v2">
             <Input />
           </SearchBarItem>
-          <SearchBarItem label="label">
+          <SearchBarItem label="label" field="v3">
             <Input />
           </SearchBarItem>
-          <SearchBarItem label="label">
+          <SearchBarItem label="label" field="v4">
             <Input />
           </SearchBarItem>
-          <SearchBarItem label="label">
+          <SearchBarItem label="label" field="v5">
             <Input />
           </SearchBarItem>
         </SearchBar>

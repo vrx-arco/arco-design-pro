@@ -67,7 +67,6 @@ importers:
       '@vrx-arco/use': workspace:*
       '@vrx/core': ^0.1.0-beta.3
       '@vueuse/core': ^9.0.2
-      defu: ^6.0.0
       klona: ^2.0.5
       vue-types: ^4.2.0
     dependencies:
@@ -77,7 +76,6 @@ importers:
       '@vrx-arco/use': link:../use
       '@vrx/core': 0.1.0-beta.3
       '@vueuse/core': 9.0.2
-      defu: 6.0.0
       klona: 2.0.5
       vue-types: 4.2.0
 
@@ -1322,6 +1320,7 @@ packages:
 
   /defu/6.0.0:
     resolution: {integrity: sha512-t2MZGLf1V2rV4VBZbWIaXKdX/mUcYW0n2znQZoADBkGGxYL8EWqCuCZBmJPJ/Yy9fofJkyuuSuo5GSwo0XdEgw==}
+    dev: true
 
   /destr/1.1.1:
     resolution: {integrity: sha512-QqkneF8LrYmwATMdnuD2MLI3GHQIcBnG6qFC2q9bSH430VTCDAVjcspPmUaKhPGtAtPAftIUFqY1obQYQuwmbg==}
