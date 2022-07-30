@@ -6,12 +6,18 @@ export const FormGridItem = defineComponent({
   name: 'vrx-arco-form-grid-item',
   props: formGridItemProps(),
   setup: (props, { slots }) => {
+    const getFormItemProps = () => {
+      const o = { ...props }
+      delete o.gridProps
+      return o
+    }
     return () => {
-      const { label, gridProps } = props
+      const { gridProps } = props
+
       return (
         <Col {...gridProps}>
           <FormItem
-            label={label}
+            {...getFormItemProps()}
             v-slots={{ label: slots.label, help: slots.help, extra: slots.extra }}
           >
             {slots.default?.()}
