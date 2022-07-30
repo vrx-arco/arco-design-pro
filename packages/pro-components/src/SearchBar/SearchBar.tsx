@@ -8,6 +8,7 @@ import { useAsyncLoading } from '@vrx/core'
 import { useGrid } from '@vrx-arco/use'
 import { CardListColumnGrid } from '../ProCard'
 import { provideSearchBar } from './context'
+import { defu } from 'defu'
 
 export const SearchBar = defineComponent({
   name: 'vrx-arco-search-bar',
@@ -57,7 +58,7 @@ export const SearchBar = defineComponent({
 
     const handleReset = () => {
       if (props.resetOnButtonClick) {
-        model.value = klona(resetModel.value)
+        defu(resetModel.value, model.value)
       }
       return resetRun(Promise.resolve().then(() => props.onReset?.(toRaw(model.value))))
     }

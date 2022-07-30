@@ -65,8 +65,9 @@ importers:
       '@vrx-arco/css-render': workspace:*
       '@vrx-arco/icon': workspace:*
       '@vrx-arco/use': workspace:*
-      '@vrx/core': ^0.1.0-beta.1
-      '@vueuse/core': ^9.0.0
+      '@vrx/core': ^0.1.0-beta.3
+      '@vueuse/core': ^9.0.2
+      defu: ^6.0.0
       klona: ^2.0.5
       vue-types: ^4.2.0
     dependencies:
@@ -74,8 +75,9 @@ importers:
       '@vrx-arco/css-render': link:../css-render
       '@vrx-arco/icon': link:../icon
       '@vrx-arco/use': link:../use
-      '@vrx/core': 0.1.0-beta.1
-      '@vueuse/core': 9.0.0
+      '@vrx/core': 0.1.0-beta.3
+      '@vueuse/core': 9.0.2
+      defu: 6.0.0
       klona: 2.0.5
       vue-types: 4.2.0
 
@@ -84,20 +86,20 @@ importers:
       '@vrx-arco/css-render': workspace:*
       '@vrx-arco/icon': workspace:*
       '@vrx-arco/use': workspace:*
-      '@vueuse/core': ^9.0.0
+      '@vueuse/core': ^9.0.2
       vue-types: ^4.2.0
     dependencies:
       '@vrx-arco/css-render': link:../css-render
       '@vrx-arco/icon': link:../icon
       '@vrx-arco/use': link:../use
-      '@vueuse/core': 9.0.0
+      '@vueuse/core': 9.0.2
       vue-types: 4.2.0
 
   packages/use:
     specifiers:
-      '@vueuse/core': ^9.0.0
+      '@vueuse/core': ^9.0.2
     dependencies:
-      '@vueuse/core': 9.0.0
+      '@vueuse/core': 9.0.2
 
   playground/layout:
     specifiers:
@@ -813,8 +815,8 @@ packages:
       vue: 3.2.37
     dev: true
 
-  /@vrx/core/0.1.0-beta.1:
-    resolution: {integrity: sha512-T0OFLQjbANXuCxkM8r1xn6u9E/N15rX1LJBmKWPR3slz9VcnBz6JID2wD8C8Lineq3Y/ySQeLje5th4RYnIceQ==}
+  /@vrx/core/0.1.0-beta.3:
+    resolution: {integrity: sha512-NUJAdo0s6mjvZOkycrB64ObKCIfaG+aituGWnbf7cb9bNHd5eoUSihI40z82/DMmms4IzSKOjCaYFE/BwbYTHg==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
@@ -825,12 +827,12 @@ packages:
         optional: true
     dependencies:
       '@vill-v/type-as': 0.1.9
-      '@vrx/shared': 0.1.0-beta.1
+      '@vrx/shared': 0.1.0-beta.3
       vue-demi: 0.13.5
     dev: false
 
-  /@vrx/shared/0.1.0-beta.1:
-    resolution: {integrity: sha512-ik8XnfU7xTsZTnqRVaXDrtsdqI9hRI4gJZokklm41QtXfB7i8HIS4mJSCwmyV6liwwlO17gdUUN+nwINKKPTFw==}
+  /@vrx/shared/0.1.0-beta.3:
+    resolution: {integrity: sha512-nmTh2XHoyVBfT0i0r74WafhJpWMu4RPFZycGogaso2WPtZRo/p0/u6vx/3fnfIaKqSsKIrd2lQERed6UgK7+ew==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
@@ -952,24 +954,24 @@ packages:
     resolution: {integrity: sha512-4rSJemR2NQIo9Klm1vabqWjD8rs/ZaJSzMxkMNeJS6lHiUjjUeYFbooN19NgFjztubEKh3WlZUeOLVdbbUWHsw==}
     dev: true
 
-  /@vueuse/core/9.0.0:
-    resolution: {integrity: sha512-hMMc2ajuVknkL7Z39JdP9gFFND2OgnDTSS5mmuinWGAE1Vxy1AwDvTHm3+juyk+GzJjYRAktnBIPy7Fq53iOnw==}
+  /@vueuse/core/9.0.2:
+    resolution: {integrity: sha512-kOIqaQPSs7OSByWg1ulEKRUJbsq3FmbJiUr0RhEKpt3O1Uhl4DrDj85DUbQBABVYgPvSaY6AE/fP3/FOcRIOoQ==}
     dependencies:
       '@types/web-bluetooth': 0.0.15
-      '@vueuse/metadata': 9.0.0
-      '@vueuse/shared': 9.0.0
+      '@vueuse/metadata': 9.0.2
+      '@vueuse/shared': 9.0.2
       vue-demi: 0.13.5
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
     dev: false
 
-  /@vueuse/metadata/9.0.0:
-    resolution: {integrity: sha512-79YVIsAP1bbWm5GdQuG7jDVF/9uuExzhkO0Sd4/TLuSfzH2uZOrHvGwy+ZNJHjbyRn3uf56rKINWLJdBuTLSqQ==}
+  /@vueuse/metadata/9.0.2:
+    resolution: {integrity: sha512-TRh+TNUYXiodatSAxd0xZc7sh4RfktVVgNFIN7TCQXKyancbCAcWfHvKfgdlX8LcqSBxKoHVa90n0XdUbboTkw==}
     dev: false
 
-  /@vueuse/shared/9.0.0:
-    resolution: {integrity: sha512-WRCyr/wIz5e/2gR/+qFucbCUcGMyJKkQZAzlECl3e71ebQQ9X/w3aBWT9FbnogJX+DNZ/t3Pj+TqPbC7TH1Yog==}
+  /@vueuse/shared/9.0.2:
+    resolution: {integrity: sha512-KwBDefK2ljLESpt0ffe2w8EGUCb3IaMfTzeytB/uHHjHOGOEIHLHHyn8W2C48uGQEvoe5iwaW4Bfp8cRUM6IFA==}
     dependencies:
       vue-demi: 0.13.5
     transitivePeerDependencies:
@@ -1320,7 +1322,6 @@ packages:
 
   /defu/6.0.0:
     resolution: {integrity: sha512-t2MZGLf1V2rV4VBZbWIaXKdX/mUcYW0n2znQZoADBkGGxYL8EWqCuCZBmJPJ/Yy9fofJkyuuSuo5GSwo0XdEgw==}
-    dev: true
 
   /destr/1.1.1:
     resolution: {integrity: sha512-QqkneF8LrYmwATMdnuD2MLI3GHQIcBnG6qFC2q9bSH430VTCDAVjcspPmUaKhPGtAtPAftIUFqY1obQYQuwmbg==}

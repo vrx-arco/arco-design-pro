@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "vue-types": "^4.2.0",
-    "@vueuse/core": "^9.0.0",
+    "@vueuse/core": "^9.0.2",
     "@vrx-arco/use": "workspace:*",
     "@vrx-arco/css-render": "workspace:*",
     "@vrx-arco/icon": "workspace:*"
