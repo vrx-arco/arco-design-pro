@@ -40,7 +40,7 @@
     "build": "vite build && tsup-node"
   },
   "peerDependencies": {
-    "@arco-design/web-vue": "^2.33.1",
+    "@arco-design/web-vue": "^2.34.0",
     "vue": "^3.2.37"
   },
   "dependencies": {
