@@ -1,5 +1,8 @@
 lockfileVersion: 5.4
 
+overrides:
+  vue-types: 4.2.0
+
 importers:
 
   .:
@@ -66,7 +69,7 @@ importers:
       '@vrx/core': ^0.1.0-beta.4
       '@vueuse/core': ^9.1.0
       klona: ^2.0.5
-      vue-types: ^4.2.0
+      vue-types: 4.2.0
     dependencies:
       '@vill-v/path-prop': 0.1.9
       '@vrx-arco/css-render': link:../css-render
@@ -75,7 +78,7 @@ importers:
       '@vrx/core': 0.1.0-beta.4
       '@vueuse/core': 9.1.0
       klona: 2.0.5
-      vue-types: 4.2.1
+      vue-types: 4.2.0
 
   packages/pro-layout:
     specifiers:
@@ -83,13 +86,13 @@ importers:
       '@vrx-arco/icon': workspace:*
       '@vrx-arco/use': workspace:*
       '@vueuse/core': ^9.1.0
-      vue-types: ^4.2.0
+      vue-types: 4.2.0
     dependencies:
       '@vrx-arco/css-render': link:../css-render
       '@vrx-arco/icon': link:../icon
       '@vrx-arco/use': link:../use
       '@vueuse/core': 9.1.0
-      vue-types: 4.2.1
+      vue-types: 4.2.0
 
   packages/use:
     specifiers:
@@ -3446,8 +3449,8 @@ packages:
       vue: 3.2.37
     dev: true
 
-  /vue-types/4.2.1:
-    resolution: {integrity: sha512-DNQZmJuOvovLUIp0BENRkdnZHbI0V4e2mNvjAZOAXKD56YGvRchtUYOXA/XqTxdv7Ng5SJLZqRKRpAhm5NLaPQ==}
+  /vue-types/4.2.0:
+    resolution: {integrity: sha512-iMllg63ZQ61DP7C2ZR1Ez7D6hqcP5/pcNP9SgXg6Nmrt82r2Mx06+xEw7GRrrysR6Sfoh3w+TLLflMTk6I/D0A==}
     engines: {node: '>=12.16.0'}
     peerDependencies:
       vue: ^2.0.0 || ^3.0.0

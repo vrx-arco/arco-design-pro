@@ -29,5 +29,10 @@
     "vite": "^3.0.8",
     "vue": "^3.2.37",
     "vue-router": "^4.1.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "vue-types": "4.2.0"
+    }
   }
 }
