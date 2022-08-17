@@ -66,7 +66,7 @@ importers:
       '@vrx/core': ^0.1.0-beta.4
       '@vueuse/core': ^9.1.0
       klona: ^2.0.5
-      vue-types: ^4.2.1
+      vue-types: ^4.2.0
     dependencies:
       '@vill-v/path-prop': 0.1.9
       '@vrx-arco/css-render': link:../css-render
@@ -83,7 +83,7 @@ importers:
       '@vrx-arco/icon': workspace:*
       '@vrx-arco/use': workspace:*
       '@vueuse/core': ^9.1.0
-      vue-types: ^4.2.1
+      vue-types: ^4.2.0
     dependencies:
       '@vrx-arco/css-render': link:../css-render
       '@vrx-arco/icon': link:../icon
