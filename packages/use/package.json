@@ -30,7 +30,7 @@
     "build": "tsup-node"
   },
   "dependencies": {
-    "@vueuse/core": "^9.0.2"
+    "@vueuse/core": "^9.1.0"
   },
   "publishConfig": {
     "access": "public"
