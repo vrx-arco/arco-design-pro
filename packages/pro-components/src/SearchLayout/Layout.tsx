@@ -1,4 +1,4 @@
-import { defineComponent } from 'vue'
+import { defineComponent, toRef } from 'vue'
 import { Layout } from '@arco-design/web-vue'
 import { style } from './style'
 import { oneOf, string } from 'vue-types'
@@ -21,7 +21,10 @@ export const SearchLayout = defineComponent({
   setup: (props, { slots }) => {
     const { bemClass } = style()
 
-    provideSearchLayout({ ...props, bemClass })
+    const type = toRef(props, 'type')
+    const title = toRef(props, 'title')
+
+    provideSearchLayout({ type, title, bemClass })
 
     return () => {
       return (

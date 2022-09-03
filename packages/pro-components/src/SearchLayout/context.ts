@@ -1,8 +1,8 @@
-import { inject, provide } from 'vue'
+import { inject, provide, ref, Ref } from 'vue'
 
 export interface SearchLayoutContext {
-  type: 'card' | 'normal'
-  title?: string
+  type: Ref<'card' | 'normal'>
+  title: Ref<string | undefined>
   bemClass: (name: string) => string
 }
 
@@ -13,6 +13,7 @@ export const provideSearchLayout = (props: SearchLayoutContext) =>
 
 export const injectSearchLayout = () =>
   inject<SearchLayoutContext>(SearchLayoutSymbol, {
-    type: 'normal',
+    type: ref('normal'),
+    title: ref(),
     bemClass: (name) => name,
   })
