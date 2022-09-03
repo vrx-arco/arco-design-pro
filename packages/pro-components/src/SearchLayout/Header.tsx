@@ -4,8 +4,9 @@ import { injectSearchLayout } from './context'
 export const SearchLayoutHeader = defineComponent({
   name: 'vrx-arco-search-layout-header',
   setup: (_, { slots }) => {
-    const { bemClass, type, title } = injectSearchLayout()
+    const props = injectSearchLayout()
     return () => {
+      const { bemClass, type, title } = props
       return (
         <Layout.Header
           class={{ [bemClass('__header')]: true, [bemClass('__header--card')]: type === 'card' }}
