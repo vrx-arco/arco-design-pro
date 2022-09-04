@@ -1,4 +1,21 @@
 
+## v0.0.6 (v0.0.5..v0.0.6)
+
+
+### 🩹 修复
+
+  - ProLayout 小屏幕模式部分暗色模式适配错误 (d6bca7f)
+
+### 🏡 框架
+
+  - Generate CHANGELOG.md (3283bf8)
+  - 修改 release 命令 (142aa03)
+  - Release v0.0.6 (bbd20f3)
+
+### ❤️  Contributors
+
+- Whitekite
+
 ## v0.0.5 (v0.0.4..v0.0.5)
 
 
