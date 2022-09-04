@@ -7,4 +7,9 @@ export const style = createCssRender('pro-layout', [
   cE('content', { backgroundColor: 'var(--color-fill-2)', minHeight: 0 }),
   cE('wrap-container', { minHeight: 0 }),
   c('&__spin', { width: '100%', height: '100%' }),
+  c('&__smaller-menu-drawer', [
+    c('.arco-drawer', {
+      backgroundColor: 'var(--color-menu-light-bg)',
+    }),
+  ]),
 ])

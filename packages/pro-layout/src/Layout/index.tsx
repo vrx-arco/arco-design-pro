@@ -54,6 +54,7 @@ export const ProLayout = defineComponent({
                 )}
                 {isSmallerLg.value && (
                   <Drawer
+                    class={bemClass('__smaller-menu-drawer')}
                     placement="left"
                     v-model:visible={menuModelVisible.value}
                     footer={false}

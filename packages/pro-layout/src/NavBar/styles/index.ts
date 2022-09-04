@@ -16,6 +16,12 @@ const css: CNodeChildren = [
     justifyContent: 'center',
     alignItems: 'center',
   }),
+  cE('left-side--smaller', {
+    fontSize: '22px',
+    cursor: 'pointer',
+    marginLeft: '20px',
+    color: 'var(--color-text-2)',
+  }),
 ]
 
 export const style = createCssRender('pro-layout-navbar', css)

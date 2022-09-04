@@ -40,7 +40,7 @@ export const NavBar = defineComponent({
             )}
             {isSmallerLg.value && (
               <IconMenuFold
-                style="font-size: 22px; cursor: pointer;margin-left:20px"
+                class={bemClass('__left-side--smaller')}
                 {...{ onClick: () => emit('menuClick') }}
               />
             )}
