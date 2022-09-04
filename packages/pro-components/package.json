@@ -40,12 +40,12 @@
     "build": "vite build && tsup-node"
   },
   "peerDependencies": {
-    "@arco-design/web-vue": "^2.35.0",
-    "vue": "^3.2.37"
+    "@arco-design/web-vue": "^2.36.0",
+    "vue": "^3.2.38"
   },
   "dependencies": {
     "vue-types": "^4.2.0",
-    "@vueuse/core": "^9.1.0",
+    "@vueuse/core": "^9.1.1",
     "@vrx-arco/use": "workspace:*",
     "@vrx-arco/css-render": "workspace:*",
     "@vrx-arco/icon": "workspace:*",
