@@ -63,7 +63,7 @@ export const ProMenu = defineComponent({
       <Menu
         v-model:selectedKeys={selectedKeys.value}
         v-model:openKeys={openKeys.value}
-        {...{ autoOpenSelected: true, accordion: true, onMenuItemClick }}
+        {...{ autoOpenSelected: true, accordion: true, autoScrollIntoView: true, onMenuItemClick }}
       >
         {menu.value.map((item) => (
           <MenuItem menu={item} key={item.name} />
