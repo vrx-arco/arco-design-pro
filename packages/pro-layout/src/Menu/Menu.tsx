@@ -45,9 +45,12 @@ export const ProMenu = defineComponent({
 
     const selectedKeys = ref<string[]>([])
 
+    const openKeys = ref<string[]>([])
+
     watch(
       active,
       () => {
+        openKeys.value = route.matched.map((item) => item.name as string)
         selectedKeys.value = [active.value]
       },
       { immediate: true }
@@ -59,6 +62,7 @@ export const ProMenu = defineComponent({
     return () => (
       <Menu
         v-model:selectedKeys={selectedKeys.value}
+        v-model:openKeys={openKeys.value}
         {...{ autoOpenSelected: true, accordion: true, onMenuItemClick }}
       >
         {menu.value.map((item) => (

@@ -17,6 +17,15 @@ export const listModules: RouteRecordRaw[] = [
           title: '搜索布局',
         },
       },
+      {
+        name: 'search-layout-x',
+        path: 'search-layout-x',
+        component: () => import('../../views/list/SearchLayout.vue'),
+        meta: {
+          title: '搜索布局',
+          hidden: true,
+        },
+      },
     ],
   },
 ]
