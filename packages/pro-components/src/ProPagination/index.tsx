@@ -44,13 +44,13 @@ export const ProPagination = defineComponent({
           <Layout.Footer class={bemClass('__footer')}>
             <Pagination
               class={bemClass('__pagination')}
+              showTotal
+              showPageSize
+              showJumper
               {...paginationProps.value}
               total={total.value}
               current={current.value}
               pageSize={pageSize.value}
-              showTotal
-              showPageSize
-              showJumper
               onChange={(current) => {
                 pageChange(current)
                 emit('currentChange', current)
