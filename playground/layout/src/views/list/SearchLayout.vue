@@ -16,7 +16,7 @@
 </script>
 <template>
   <PageWrapper>
-    <SearchLayout title="搜索布局">
+    <SearchLayout title="搜索布局" type="card">
       <SearchLayoutHeader>
         <SearchBar :model="model" auto-update reset-on-button-click valid-on-button-click>
           <SearchBarItem label="label" field="v1" required>

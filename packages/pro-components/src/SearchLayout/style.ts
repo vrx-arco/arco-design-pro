@@ -14,7 +14,6 @@ export const style = createCss('search-layout', [
   ),
   c('&', { height: '100%' }),
   cM('card', {
-    borderBottom: '1px solid var(--color-neutral-3)',
     background: 'var(--color-bg-2)',
     borderRadius: 'var(--border-radius-none)',
   }),
