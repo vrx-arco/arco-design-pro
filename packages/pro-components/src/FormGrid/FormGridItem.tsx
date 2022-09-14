@@ -8,6 +8,7 @@ export const FormGridItem = defineComponent({
   setup: (props, { slots }) => {
     const getFormItemProps = () => {
       const o = { ...props }
+      // @ts-ignore
       delete o.gridProps
       return o
     }
