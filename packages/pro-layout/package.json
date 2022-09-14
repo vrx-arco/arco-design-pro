@@ -44,11 +44,11 @@
     "vue-router": "^4.1.5"
   },
   "dependencies": {
-    "vue-types": "^4.2.1",
-    "@vueuse/core": "^9.2.0",
-    "@vrx-arco/use": "workspace:*",
     "@vrx-arco/css-render": "workspace:*",
-    "@vrx-arco/icon": "workspace:*"
+    "@vrx-arco/icon": "workspace:*",
+    "@vrx-arco/use": "workspace:*",
+    "@vueuse/core": "^9.2.0",
+    "vue-types": "^4.2.1"
   },
   "publishConfig": {
     "access": "public"

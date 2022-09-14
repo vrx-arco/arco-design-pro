@@ -6,7 +6,7 @@ importers:
     specifiers:
       '@arco-design/web-vue': ^2.36.1
       '@rushstack/eslint-patch': ^1.1.4
-      '@types/node': ^18.0.6
+      '@types/node': ^18.7.18
       '@vill-v/eslint-config': ^0.0.8
       '@vill-v/prettier-config': ^0.0.8
       '@vill-v/tsconfig': ^0.0.8
@@ -28,7 +28,7 @@ importers:
     devDependencies:
       '@arco-design/web-vue': 2.36.1_vue@3.2.39
       '@rushstack/eslint-patch': 1.1.4
-      '@types/node': 18.0.6
+      '@types/node': 18.7.18
       '@vill-v/eslint-config': 0.0.8_prdxvwpqz7ols7qpi4wzmubrfu
       '@vill-v/prettier-config': 0.0.8
       '@vill-v/tsconfig': 0.0.8
@@ -65,7 +65,7 @@ importers:
       '@vrx-arco/css-render': workspace:*
       '@vrx-arco/icon': workspace:*
       '@vrx-arco/use': workspace:*
-      '@vrx/core': ^0.1.0
+      '@vrx/core': ^0.1.1
       '@vueuse/core': ^9.2.0
       klona: ^2.0.5
       vue-types: ^4.2.1
@@ -74,7 +74,7 @@ importers:
       '@vrx-arco/css-render': link:../css-render
       '@vrx-arco/icon': link:../icon
       '@vrx-arco/use': link:../use
-      '@vrx/core': 0.1.0
+      '@vrx/core': 0.1.1
       '@vueuse/core': 9.2.0
       klona: 2.0.5
       vue-types: 4.2.1
@@ -636,8 +636,8 @@ packages:
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
     dev: false
 
-  /@types/node/18.0.6:
-    resolution: {integrity: sha512-/xUq6H2aQm261exT6iZTMifUySEt4GR5KX8eYyY+C4MSNPqSh9oNIP7tz2GLKTlFaiBbgZNxffoR3CVRG+cljw==}
+  /@types/node/18.7.18:
+    resolution: {integrity: sha512-m+6nTEOadJZuTPkKR/SYK3A2d7FZrgElol9UP1Kae90VVU4a6mxnPuLiIW1m4Cq4gZ/nWb9GrdVXJCoCazDAbg==}
     dev: true
 
   /@types/web-bluetooth/0.0.15:
@@ -831,12 +831,6 @@ packages:
       - supports-color
     dev: true
 
-  /@vill-v/path-prop/0.1.9:
-    resolution: {integrity: sha512-ptiPvOO841zq4nPA7GxP5aTunskuefS1fxHs2C5I/2y97UGe8Qm//FShHAy251yiOgcvEvMdXwyAekJCrQxR3Q==}
-    dependencies:
-      '@vill-v/type-as': 0.1.9
-    dev: false
-
   /@vill-v/path-prop/1.0.0:
     resolution: {integrity: sha512-OwOnKY8/jwbR+3dcnc1SQkHcPkWbtgJzDixjtrJjcFfd2hKnNe/lgTTCNWnK+GxmfhvoH2wH/fAnQ/dnKCleKQ==}
     dependencies:
@@ -847,10 +841,6 @@ packages:
     resolution: {integrity: sha512-vwvHn7nIXHrrUnT3rcdxlaPsQAvlu+apzCAXwgnWRrDAeLlFQk+NJun6eAENpdgEFH8XKlDeSteoo6N16jebGw==}
     dev: true
 
-  /@vill-v/ts/0.1.9:
-    resolution: {integrity: sha512-+dA8puyZn9qXOR3VIxJlrK4oWwtOh8QanRS9gfHDKeXhEgSJSzy3BmuWd7QkNoTcwubEqBBxz0+LGryldAU+pw==}
-    dev: false
-
   /@vill-v/ts/1.0.0:
     resolution: {integrity: sha512-isVY4F6MuiU1tSYO27Hq2QrZySVx/k1AtOIc4bJc0B4Ms00uoYYOAd7Z/vXOVCffTPc4HkIYdSVh3qP/1YFzGw==}
     dev: false
@@ -858,12 +848,6 @@ packages:
   /@vill-v/tsconfig/0.0.8:
     resolution: {integrity: sha512-ZC4m8Z3AtCJuK6AHThGTkv/KeTwv8HhICFZUMAy7UtBnX8mLa4BU3gChB7oe7IAyPucMTHFv729vzzpPqBtgOg==}
     dev: true
-
-  /@vill-v/type-as/0.1.9:
-    resolution: {integrity: sha512-1mHQWL9h58is4ej0TjQ4yH9mpboGZ1xJb8BhTEjwNZ65VbecNZaS9cl61q+xJtKy7ML3Z7RqWphp5o1Ir1SLFQ==}
-    dependencies:
-      '@vill-v/ts': 0.1.9
-    dev: false
 
   /@vill-v/type-as/1.0.0:
     resolution: {integrity: sha512-ysJgAy8uK4RIegJ1qVN8JltVZVQVL9Hfsymw/42AYh8fdMFHn5VxtY5Ud4oV0sbmcvDS39vgKiC7kXVE1uyVug==}
@@ -899,8 +883,8 @@ packages:
       vue: 3.2.39
     dev: true
 
-  /@vrx/core/0.1.0:
-    resolution: {integrity: sha512-a21G8aKBwVN+kzeddxMG+RLACFuFOw5KNkcsm7vJkCbVZJekZDTrXqH4bOEY9QesoEksV7yPv4C81QPxoIbASQ==}
+  /@vrx/core/0.1.1:
+    resolution: {integrity: sha512-3+HFPzWUv9ki2w1HGHP8aN4kw+ECKwQaGRL5lH/jqXuUka8vMAETlhInilaEg06fmMhKb5A8S6CicXirytbamQ==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
@@ -910,13 +894,13 @@ packages:
       vue:
         optional: true
     dependencies:
-      '@vill-v/type-as': 0.1.9
-      '@vrx/shared': 0.1.0
+      '@vill-v/type-as': 1.0.0
+      '@vrx/shared': 0.1.1
       vue-demi: 0.13.5
     dev: false
 
-  /@vrx/shared/0.1.0:
-    resolution: {integrity: sha512-OvZQaI/VPhwSdkjQUbaAUBLKw0KTRYLowpzOZWx/UuVTo3Okdxo+m0VC/XiPneRrE4dtq4djszQKHm+/908WnA==}
+  /@vrx/shared/0.1.1:
+    resolution: {integrity: sha512-UtRKJVtGz3xhgrrCcF/2bjzeF624rf4CGK2HHGdBjz3EttfYjpOsZM0W+LAVUgl3jUj9wpG93qS4ULjIpVbNpQ==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
@@ -926,7 +910,7 @@ packages:
       vue:
         optional: true
     dependencies:
-      '@vill-v/path-prop': 0.1.9
+      '@vill-v/path-prop': 1.0.0
       vue-demi: 0.13.5
     dev: false
 
