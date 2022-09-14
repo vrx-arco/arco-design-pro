@@ -1,4 +1,23 @@
 
+## v0.0.8 (v0.0.7..v0.0.8)
+
+
+### 🚀 特性
+
+  - 删除 `<SearchLayout/>` `type=card` 错误的底部边框 (54f96c2)
+  - 优化 `<ProPagination/>` 分页组件靠右样式 `float: 'right'` -> `justifyContent: 'flex-end'` (054eb62)
+  - 优化 `<LoginPage/>` 在暗色模式时字体颜色 (c712afe)
+  - 优化 `<LoginPage/>` 在暗色模式时字体颜色 (4abb006)
+
+### 🏡 框架
+
+  - Generate CHANGELOG.md (744a89c)
+  - Release v0.0.8 (920e783)
+
+### ❤️  Contributors
+
+- Whitekite
+
 ## v0.0.7 (v0.0.6..v0.0.7)
 
 
