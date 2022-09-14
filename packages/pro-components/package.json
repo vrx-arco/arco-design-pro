@@ -49,7 +49,7 @@
     "@vrx-arco/use": "workspace:*",
     "@vrx-arco/css-render": "workspace:*",
     "@vrx-arco/icon": "workspace:*",
-    "@vill-v/path-prop": "^0.1.9",
+    "@vill-v/path-prop": "^1.0.0",
     "@vrx/core": "^0.1.0",
     "klona": "^2.0.5"
   },
