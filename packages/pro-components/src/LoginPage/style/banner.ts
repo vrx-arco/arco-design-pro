@@ -9,7 +9,7 @@ const css: CNodeChildren = [
     height: '100%',
   }),
   cE('title', {
-    color: 'var(--color-fill-1)',
+    color: 'var(--color-text-1)',
     fontWeight: 500,
     fontSize: '20px',
     lineHeight: '28px',
