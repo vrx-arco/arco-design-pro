@@ -19,7 +19,7 @@ const css: CNodeChildren = [
   cE('logo-text', {
     marginLeft: '4px',
     marginRight: '4px',
-    color: 'var(--color-text-1)',
+    color: 'rgba(255, 255, 255, 0.9)',
     fontSize: '20px',
   }),
   cE('content', {
