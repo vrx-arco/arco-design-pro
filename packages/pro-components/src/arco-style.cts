@@ -32,3 +32,4 @@ import "@arco-design/web-vue/lib/layout/style";
 
 // Tabs
 import "@arco-design/web-vue/lib/tabs/style";
+import '@arco-design/web-vue/lib/scrollbar/style'

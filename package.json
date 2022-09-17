@@ -9,8 +9,8 @@
     "changelogen": "changelogen --output CHANGELOG.md"
   },
   "devDependencies": {
-    "@arco-design/web-vue": "^2.36.1",
-    "@rushstack/eslint-patch": "^1.1.4",
+    "@arco-design/web-vue": "^2.37.1",
+    "@rushstack/eslint-patch": "^1.2.0",
     "@types/node": "^18.7.18",
     "@vill-v/eslint-config": "^0.0.8",
     "@vill-v/prettier-config": "^0.0.8",
@@ -24,9 +24,9 @@
     "prettier": "^2.7.1",
     "sass": "^1.54.9",
     "tsup": "^6.2.3",
-    "turbo": "^1.4.6",
+    "turbo": "^1.4.7",
     "typescript": "^4.8.3",
-    "vite": "^3.1.0",
+    "vite": "^3.1.2",
     "vue": "^3.2.39",
     "vue-router": "^4.1.5",
     "vue-types": "^4.2.1"

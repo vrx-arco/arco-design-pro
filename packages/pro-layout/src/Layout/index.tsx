@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import { Drawer, Layout, Spin } from '@arco-design/web-vue'
+import { Drawer, Layout, Scrollbar, Spin } from '@arco-design/web-vue'
 import { NavBar } from '../NavBar'
 import { ProMenu } from '../Menu'
 import { useShareBreakpoints } from '@vrx-arco/use'
@@ -49,7 +49,9 @@ export const ProLayout = defineComponent({
               <Layout class={bemClass('__wrap')}>
                 {isSmallerLg.value || (
                   <Layout.Sider breakpoint="xl" collapsible>
-                    <ProMenu menu={menus} />
+                    <Scrollbar outerClass={bemClass('__menu-scrollbar')}>
+                      <ProMenu menu={menus} />
+                    </Scrollbar>
                   </Layout.Sider>
                 )}
                 {isSmallerLg.value && (
@@ -62,7 +64,9 @@ export const ProLayout = defineComponent({
                     maskClosable
                     closable={false}
                   >
-                    <ProMenu menu={menus} />
+                    <Scrollbar outerClass={bemClass('__menu-scrollbar')}>
+                      <ProMenu menu={menus} />
+                    </Scrollbar>
                   </Drawer>
                 )}
                 <Layout.Content class={bemClass('__content')}>

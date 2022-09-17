@@ -30,3 +30,5 @@ import '@arco-design/web-vue/es/pagination/style/css'
 import '@arco-design/web-vue/es/layout/style/css'
 // Tabs
 import '@arco-design/web-vue/es/tabs/style/css'
+
+import '@arco-design/web-vue/es/scrollbar/style/css'

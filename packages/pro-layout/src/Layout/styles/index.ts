@@ -12,4 +12,16 @@ export const style = createCssRender('pro-layout', [
       backgroundColor: 'var(--color-menu-light-bg)',
     }),
   ]),
+  c(
+    '&__menu-scrollbar',
+    {
+      height: '100%',
+    },
+    [
+      c('.arco-scrollbar-container', {
+        height: '100%',
+        overflow: 'auto',
+      }),
+    ]
+  ),
 ])
