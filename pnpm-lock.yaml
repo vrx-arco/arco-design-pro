@@ -16,6 +16,7 @@ importers:
       changelogen: ^0.3.0
       eslint: ^8.23.1
       less: ^4.1.3
+      pinia: ^2.0.22
       prettier: ^2.7.1
       sass: ^1.54.9
       tsup: ^6.2.3
@@ -38,6 +39,7 @@ importers:
       changelogen: 0.3.0
       eslint: 8.23.1
       less: 4.1.3
+      pinia: 2.0.22_arz4dztosvwy2ghjrlh2wdhejm
       prettier: 2.7.1
       sass: 1.54.9
       tsup: 6.2.3_typescript@4.8.3
@@ -47,6 +49,9 @@ importers:
       vue: 3.2.39
       vue-router: 4.1.5_vue@3.2.39
       vue-types: 4.2.1_vue@3.2.39
+
+  packages/app:
+    specifiers: {}
 
   packages/css-render:
     specifiers:
@@ -101,9 +106,11 @@ importers:
 
   playground/layout:
     specifiers:
+      '@vrx-arco/app': workspace:*
       '@vrx-arco/pro-components': workspace:*
       '@vrx-arco/pro-layout': workspace:*
     dependencies:
+      '@vrx-arco/app': link:../../packages/app
       '@vrx-arco/pro-components': link:../../packages/pro-components
       '@vrx-arco/pro-layout': link:../../packages/pro-layout
 
@@ -2797,6 +2804,24 @@ packages:
     dev: true
     optional: true
 
+  /pinia/2.0.22_arz4dztosvwy2ghjrlh2wdhejm:
+    resolution: {integrity: sha512-u+b8/BC+tmvo3ACbYO2w5NfxHWFOjvvw9DQnyT0dW8aUMCPRQT5QnfZ5R5W2MzZBMTeZRMQI7V/QFbafmM9QHw==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.2.1
+      typescript: 4.8.3
+      vue: 3.2.39
+      vue-demi: 0.13.5_vue@3.2.39
+    dev: true
+
   /pirates/4.0.5:
     resolution: {integrity: sha512-8V9+HQPupnaXMA23c5hvl69zXvTwTzyAYasnkb0Tts4XvO4CliqONMOnvlq26rkhLC3nWDFBJf73LU1e1VZLaQ==}
     engines: {node: '>= 6'}
@@ -3465,6 +3490,21 @@ packages:
       '@vue/composition-api':
         optional: true
     dev: false
+
+  /vue-demi/0.13.5_vue@3.2.39:
+    resolution: {integrity: sha512-tO3K2bML3AwiHmVHeKCq6HLef2st4zBXIV5aEkoJl6HZ+gJWxWv2O8wLH8qrA3SX3lDoTDHNghLX1xZg83MXvw==}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      vue: 3.2.39
+    dev: true
 
   /vue-eslint-parser/9.0.3_eslint@8.23.1:
     resolution: {integrity: sha512-yL+ZDb+9T0ELG4VIFo/2anAOz8SvBdlqEnQnvJ3M7Scq56DvtjY0VY88bByRZB0D4J0u8olBcfrXTVONXsh4og==}

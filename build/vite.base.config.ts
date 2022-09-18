@@ -39,6 +39,7 @@ export const baseConfig = defineConfig({
     alias: {
       '@vrx-arco/pro-layout': resolve(__dirname, '../packages/pro-layout/src'),
       '@vrx-arco/pro-components': resolve(__dirname, '../packages/pro-components/src'),
+      '@vrx-arco/app': resolve(__dirname, '../packages/app/src'),
     },
   },
 })
