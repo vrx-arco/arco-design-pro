@@ -2,7 +2,6 @@ import { computed, defineComponent, FunctionalComponent, ref, toRaw } from 'vue'
 import { bool, func, object, oneOf, string } from 'vue-types'
 import { Drawer, Form, Modal } from '@arco-design/web-vue'
 import { controlVModel } from '@vrx-arco/use'
-import { useVModel } from '@vueuse/core'
 import { klona } from 'klona/json'
 
 export * from './useEditFormDialog'
@@ -61,10 +60,6 @@ export const EditFormDialog = defineComponent({
   name: 'vrx-arco-edit-form-dialog',
   props: {
     /**
-     * 弹框显示控制
-     */
-    visible: bool().def(false),
-    /**
      * 弹框类型
      */
     type: oneOf(['drawer', 'modal'] as const).def('drawer'),
@@ -114,7 +109,7 @@ export const EditFormDialog = defineComponent({
     /**
      * 控制弹框显示
      */
-    const visible = useVModel(props, 'visible', emit)
+    const visible = ref(false)
 
     /**
      * 表单数据
