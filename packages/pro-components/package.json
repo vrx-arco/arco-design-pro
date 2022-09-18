@@ -6,6 +6,12 @@
     "name": "whitekite",
     "email": "1075790909@qq.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitee.com/vrx/arco-design-pro.git",
+    "directory": "packages/pro-components"
+  },
+  "homepage": "https://vrx.gitee.io/arco-docs/",
   "keywords": [
     "arco-design",
     "vue",
