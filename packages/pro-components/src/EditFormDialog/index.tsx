@@ -5,6 +5,7 @@ import { controlVModel } from '@vrx-arco/use'
 import { useVModel } from '@vueuse/core'
 import { klona } from 'klona/json'
 
+export * from './useEditFormDialog'
 const Dialog: FunctionalComponent<{
   visible?: boolean
   type: 'drawer' | 'modal'
