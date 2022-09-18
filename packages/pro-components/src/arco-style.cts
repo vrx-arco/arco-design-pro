@@ -40,3 +40,5 @@ import "@arco-design/web-vue/lib/scrollbar/style";
 import "@arco-design/web-vue/lib/drawer/style";
 // Modal
 import "@arco-design/web-vue/lib/modal/style";
+
+import '@arco-design/web-vue/lib/notification/style'

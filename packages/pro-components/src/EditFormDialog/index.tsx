@@ -1,6 +1,6 @@
 import { computed, defineComponent, FunctionalComponent, ref, toRaw } from 'vue'
 import { bool, func, object, oneOf, string } from 'vue-types'
-import { Drawer, Form, Modal } from '@arco-design/web-vue'
+import { Drawer, Form, Modal, Notification } from '@arco-design/web-vue'
 import { controlVModel } from '@vrx-arco/use'
 import { klona } from 'klona/json'
 
@@ -104,7 +104,7 @@ export const EditFormDialog = defineComponent({
      */
     onConfirm: func<(model: Record<string, any>) => Promise<any>>(),
   },
-  emits: ['update:visible', 'update:model', 'confirm'],
+  emits: ['update:visible', 'update:model', 'confirm', 'success'],
   setup: (props, { emit, slots, expose }) => {
     /**
      * 控制弹框显示
@@ -163,6 +163,13 @@ export const EditFormDialog = defineComponent({
         .validate()
         .then((error) => (error ? Promise.reject(error) : Promise.resolve()))
         .then(submitFn)
+        .then(() => {
+          Notification.success({
+            title: '提示',
+            content: `${title.value}成功`,
+          })
+          emit('success')
+        })
     }
 
     const open = (value = {}) => {
