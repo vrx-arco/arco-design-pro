@@ -1,4 +1,20 @@
 
+## v0.1.2 (v0.1.1..v0.1.2)
+
+
+### 🩹 修复
+
+  - `<EditFormDialog/>` `visible` 属性配置错误的问题 (88e1463)
+
+### 🏡 框架
+
+  - Generate CHANGELOG.md (7978741)
+  - Release v0.1.2 (4a27eaf)
+
+### ❤️  Contributors
+
+- Whitekite
+
 ## v0.1.1 (v0.1.0..v0.1.1)
 
 
