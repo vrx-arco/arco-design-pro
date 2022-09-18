@@ -5,7 +5,8 @@
     "paths": {
       "@vrx-arco/*": [
         "./packages/*/src/index.ts"
-      ]
+      ],
+      "vue-types": ["./node_modules/vue-types"]
     }
   }
 }

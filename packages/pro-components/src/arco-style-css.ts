@@ -32,3 +32,8 @@ import '@arco-design/web-vue/es/layout/style/css'
 import '@arco-design/web-vue/es/tabs/style/css'
 
 import '@arco-design/web-vue/es/scrollbar/style/css'
+
+// Drawer
+import '@arco-design/web-vue/es/drawer/style/css'
+// Modal
+import '@arco-design/web-vue/es/modal/style/css'

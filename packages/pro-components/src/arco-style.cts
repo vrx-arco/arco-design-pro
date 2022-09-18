@@ -32,4 +32,11 @@ import "@arco-design/web-vue/lib/layout/style";
 
 // Tabs
 import "@arco-design/web-vue/lib/tabs/style";
-import '@arco-design/web-vue/lib/scrollbar/style'
+
+// Scrollbar
+import "@arco-design/web-vue/lib/scrollbar/style";
+
+// Drawer
+import "@arco-design/web-vue/lib/drawer/style";
+// Modal
+import "@arco-design/web-vue/lib/modal/style";

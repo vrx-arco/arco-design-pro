@@ -1,34 +1,39 @@
 // Button
-import '@arco-design/web-vue/lib/button/style/css'
+import "@arco-design/web-vue/lib/button/style/css";
 // Row Col
-import '@arco-design/web-vue/lib/grid/style/css'
+import "@arco-design/web-vue/lib/grid/style/css";
 // Form FormItem
-import '@arco-design/web-vue/lib/form/style/css'
+import "@arco-design/web-vue/lib/form/style/css";
 // Divider
-import '@arco-design/web-vue/lib/divider/style/css'
+import "@arco-design/web-vue/lib/divider/style/css";
 // Space
-import '@arco-design/web-vue/lib/space/style/css'
+import "@arco-design/web-vue/lib/space/style/css";
 // Avatar
-import '@arco-design/web-vue/lib/avatar/style/css'
+import "@arco-design/web-vue/lib/avatar/style/css";
 // Dropdown
-import '@arco-design/web-vue/lib/dropdown/style/css'
+import "@arco-design/web-vue/lib/dropdown/style/css";
 // Input
-import '@arco-design/web-vue/lib/input/style/css'
+import "@arco-design/web-vue/lib/input/style/css";
 // Checkbox
-import '@arco-design/web-vue/lib/checkbox/style/css'
+import "@arco-design/web-vue/lib/checkbox/style/css";
 // Link
-import '@arco-design/web-vue/lib/link/style/css'
+import "@arco-design/web-vue/lib/link/style/css";
 // Message
-import '@arco-design/web-vue/lib/message/style/css'
+import "@arco-design/web-vue/lib/message/style/css";
 // Card
-import '@arco-design/web-vue/lib/card/style/css'
+import "@arco-design/web-vue/lib/card/style/css";
 // List
-import '@arco-design/web-vue/lib/list/style/css'
+import "@arco-design/web-vue/lib/list/style/css";
 // Pagination
-import '@arco-design/web-vue/lib/pagination/style/css'
+import "@arco-design/web-vue/lib/pagination/style/css";
 // Layout LayoutHeader LayoutContent LayoutFooter
-import '@arco-design/web-vue/lib/layout/style/css'
+import "@arco-design/web-vue/lib/layout/style/css";
 // Tabs
-import '@arco-design/web-vue/lib/tabs/style/css'
+import "@arco-design/web-vue/lib/tabs/style/css";
 
-import '@arco-design/web-vue/lib/scrollbar/style/css'
+import "@arco-design/web-vue/lib/scrollbar/style/css";
+
+// Drawer
+import "@arco-design/web-vue/lib/drawer/style/css";
+// Modal
+import "@arco-design/web-vue/lib/modal/style/css";
