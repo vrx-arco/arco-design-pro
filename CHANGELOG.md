@@ -1,4 +1,20 @@
 
+## v0.1.4 (v0.1.3..v0.1.4)
+
+
+### 🚀 特性
+
+  - `<EditFormDialog/>` 删除 `props.visible` ,改为纯内部控制 (ef1e15b)
+
+### 🏡 框架
+
+  - Generate CHANGELOG.md (395bfdc)
+  - Release v0.1.4 (c31e2ff)
+
+### ❤️  Contributors
+
+- Whitekite
+
 ## v0.1.3 (v0.1.2..v0.1.3)
 
 
