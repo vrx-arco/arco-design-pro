@@ -1,4 +1,20 @@
 
+## v0.1.3 (v0.1.2..v0.1.3)
+
+
+### 🚀 特性
+
+  - `<EditFormDialog/>` 组件增加 `useEditFormDialog` 帮助方法，帮助快速使用该组件 (9ced667)
+
+### 🏡 框架
+
+  - Generate CHANGELOG.md (a0020a9)
+  - Release v0.1.3 (813699d)
+
+### ❤️  Contributors
+
+- Whitekite
+
 ## v0.1.2 (v0.1.1..v0.1.2)
 
 
