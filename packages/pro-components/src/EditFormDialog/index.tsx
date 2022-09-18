@@ -181,7 +181,7 @@ export const EditFormDialog = defineComponent({
 
       return (
         <Dialog
-          v-model:visible={visible}
+          v-model:visible={visible.value}
           type={type}
           width={width}
           title={title.value}
