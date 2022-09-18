@@ -71,7 +71,7 @@ export const LoginPage = defineComponent({
               onSubmit={onSubmit}
               onForget={() => emit('forget')}
               onRegister={() => emit('register')}
-              v-slots={{ title: slots.formTitle }}
+              v-slots={{ title: slots.formTitle, form: slots.form }}
             />
           </Layout.Content>
         </Layout>

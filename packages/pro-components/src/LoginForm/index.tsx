@@ -137,6 +137,7 @@ export const LoginForm = defineComponent({
                 v-slots={{ prefix: () => <IconLock /> }}
               />
             </Form.Item>
+            {slots.form?.({ model: model.value })}
             <Space direction="vertical" size={16}>
               {(remember || forget) && (
                 <div class={bemClass('__password-actions')}>
