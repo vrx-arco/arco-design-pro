@@ -1,9 +1,10 @@
 import { defineComponent } from 'vue'
 import { loginPageStyle } from './style'
-import { bool, func, string } from 'vue-types'
+import { bool, func, object, string } from 'vue-types'
 import { LoginBanner } from './Banner'
 import { Layout } from '@arco-design/web-vue'
 import { LoginForm, LoginFormModel } from '../LoginForm'
+import { controlVModel } from '@vrx-arco/use'
 
 export const LoginPage = defineComponent({
   name: 'vrx-arco-login-page',
@@ -19,10 +20,15 @@ export const LoginPage = defineComponent({
     formRegister: bool().def(false),
     formRemember: bool().def(false),
     onSubmit: func<(model: LoginFormModel, remember: boolean) => Promise<any>>(),
+    model: object<LoginFormModel>(),
   },
   emits: ['forget', 'remember', 'register', 'submit'],
   setup: (props, { slots, emit }) => {
     const { bemClass } = loginPageStyle()
+    const model = controlVModel(props, 'model', emit, () => ({
+      username: '',
+      password: '',
+    }))
 
     return () => {
       const {
@@ -62,6 +68,7 @@ export const LoginPage = defineComponent({
           </Layout.Sider>
           <Layout.Content class={bemClass('__content')}>
             <LoginForm
+              v-model:model={model.value}
               class={bemClass('__form')}
               title={formTitle}
               subtitle={formSubtitle}

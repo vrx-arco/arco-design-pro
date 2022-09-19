@@ -10,13 +10,15 @@ import {
   Space,
 } from '@arco-design/web-vue'
 import { IconLock, IconUser } from '@vrx-arco/icon'
-import { bool, func, string } from 'vue-types'
+import { bool, func, object, string } from 'vue-types'
 import { style } from './style'
 import { useToggle } from '@vueuse/core'
+import { controlVModel } from '@vrx-arco/use'
 
 export interface LoginFormModel {
   username: string
   password: string
+  [key: string]: any
 }
 
 export const LoginForm = defineComponent({
@@ -29,15 +31,16 @@ export const LoginForm = defineComponent({
     subtitle: string(),
     onSubmit: func<(model: LoginFormModel, remember: boolean) => Promise<any>>(),
     submitNotice: bool().def(false),
+    model: object<LoginFormModel>(),
   },
   emits: ['submit', 'forget', 'register'],
   setup: (props, { slots, expose, emit }) => {
     const { bemClass } = style()
 
-    const model = ref<LoginFormModel>({
+    const model = controlVModel(props, 'model', emit, () => ({
       username: '',
       password: '',
-    })
+    }))
 
     const rules = ref<Record<string, FieldRule | FieldRule[]>>({
       username: {
