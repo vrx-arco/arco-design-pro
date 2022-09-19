@@ -1,5 +1,5 @@
 import { computed, defineComponent, FunctionalComponent, ref, toRaw } from 'vue'
-import { bool, func, object, oneOf, string } from 'vue-types'
+import { bool, func, number, object, oneOf, oneOfType, string } from 'vue-types'
 import { Drawer, Form, Modal, Notification } from '@arco-design/web-vue'
 import { controlVModel } from '@vrx-arco/use'
 import { klona } from 'klona/json'
@@ -87,7 +87,7 @@ export const EditFormDialog = defineComponent({
     /**
      * 宽度
      */
-    width: string(),
+    width: oneOfType([string(), number()]),
     /**
      * 表单验证规则
      */
