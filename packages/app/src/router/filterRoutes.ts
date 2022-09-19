@@ -13,12 +13,14 @@ export const filterRoutes = (
         return false
       }
       nameList.add(item.name)
-      if (!Array.isArray(children) || !children.length) {
-        return true
-      }
       if (!filter(item, permission)) {
         return false
       }
+
+      if (!Array.isArray(children) || !children.length) {
+        return true
+      }
+
       item.children = listFilter(children)
       return true
     })
