@@ -12,14 +12,21 @@ const Dialog: FunctionalComponent<{
   width?: number | string
   unmountOnClose?: boolean
   onSubmit?: () => Promise<any>
+  onCancel?: () => any
 }> = (props, { slots, emit }) => {
   const { type, title, width, visible, unmountOnClose } = props
+
   const handleSubmit = (done) => {
     props
       .onSubmit?.()
       .then(() => done(true))
       .catch(() => done(false))
   }
+
+  const handleCancel = () => {
+    emit('cancel')
+  }
+
   if (type === 'modal') {
     return (
       <Modal
@@ -32,6 +39,7 @@ const Dialog: FunctionalComponent<{
         onUpdate:visible={(visible) => {
           emit('update:visible', visible)
         }}
+        onCancel={handleCancel}
       >
         {slots.default?.()}
       </Modal>
@@ -47,6 +55,7 @@ const Dialog: FunctionalComponent<{
       onUpdate:visible={(visible) => {
         emit('update:visible', visible)
       }}
+      onCancel={handleCancel}
     >
       {slots.default?.()}
     </Drawer>
@@ -92,6 +101,10 @@ export const EditFormDialog = defineComponent({
      */
     unmountOnClose: bool().def(true),
     /**
+     * 初始化表单数据
+     */
+    initModel: func<() => Record<string, any>>().def(() => ({})),
+    /**
      * 新增方法
      */
     add: func<(model: Record<string, any>) => Promise<any>>(),
@@ -104,7 +117,7 @@ export const EditFormDialog = defineComponent({
      */
     onConfirm: func<(model: Record<string, any>) => Promise<any>>(),
   },
-  emits: ['update:visible', 'update:model', 'confirm', 'success'],
+  emits: ['update:visible', 'update:model', 'confirm', 'success', 'close'],
   setup: (props, { emit, slots, expose }) => {
     /**
      * 控制弹框显示
@@ -168,12 +181,18 @@ export const EditFormDialog = defineComponent({
             title: '提示',
             content: `${title.value}成功`,
           })
-          emit('success')
+          emit('success', isEdit.value)
         })
     }
 
-    const open = (value = {}) => {
-      model.value = klona(toRaw(value))
+    const handleCancel = () => {
+      model.value = klona(props.initModel())
+      formRef.value.clearValidate()
+      emit('close')
+    }
+
+    const open = (value) => {
+      model.value = klona(toRaw(value) || props.initModel())
       visible.value = true
     }
 
@@ -190,6 +209,7 @@ export const EditFormDialog = defineComponent({
           title={title.value}
           unmountOnClose={unmountOnClose}
           onSubmit={handleSubmit}
+          onCancel={handleCancel}
         >
           <Form ref={formRef} model={model.value} autoLabelWidth rules={rules} disabled={disabled}>
             {slots.default?.({ model: model.value, isEdit: isEdit.value })}
