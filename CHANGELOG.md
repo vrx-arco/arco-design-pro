@@ -1,4 +1,21 @@
 
+## v0.1.6 (v0.1.5..v0.1.6)
+
+
+### 🚀 特性
+
+  - **EditFormDialog:** 增加 close 回调 (3f53138)
+  - **Login**:** 可使登陆预设组件，表单属性受控 (0dc32e2)
+
+### 🏡 框架
+
+  - Generate CHANGELOG.md (caa6da1)
+  - Release v0.1.6 (3fc056a)
+
+### ❤️  Contributors
+
+- Whitekite
+
 ## v0.1.5 (v0.1.4..v0.1.5)
 
 
