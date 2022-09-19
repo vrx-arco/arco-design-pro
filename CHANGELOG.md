@@ -1,4 +1,21 @@
 
+## v0.1.9 (v0.1.8..v0.1.9)
+
+
+### 🚀 特性
+
+  - `<EditFormDialog/>` props.width 修改为接受 string (number)
+
+### 🏡 框架
+
+  - Generate CHANGELOG.md (2ef0de0)
+  - Release v0.1.9 (2ff126e)
+
+### ❤️  Contributors
+
+- 2e7a162
+- Whitekite
+
 ## v0.1.8 (v0.1.7..v0.1.8)
 
 
