@@ -18,6 +18,14 @@ const MenuItem: FunctionalComponent<MenuItemProps> = ({ menu }) => {
       </Menu.Item>
     )
   }
+  if (menu.meta?.list) {
+    const firstChild = menu.children[0].name
+    return (
+      <Menu.Item v-slots={{ icon: () => menu.meta?.icon }} key={firstChild as string}>
+        {menu.meta!.title}
+      </Menu.Item>
+    )
+  }
   return (
     <Menu.SubMenu
       v-slots={{ icon: () => menu.meta?.icon }}
