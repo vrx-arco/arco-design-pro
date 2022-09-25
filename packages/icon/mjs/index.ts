@@ -1,1 +1,1 @@
-export * from '@arco-design/web-vue/es/icon'
+export * from '@arco-design/web-vue/es/icon/index.js'
