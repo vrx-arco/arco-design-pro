@@ -46,7 +46,7 @@ export const defineRouterPolice = (router: Router, options: IDefineRouter) => {
     }
 
     // 如果已经有缓存的 dynamicRoutes ,则直接放权
-    if (!checkPermission || permissionStore.dynamicRoutesName.length) {
+    if (!dynamicRoutes.length || permissionStore.dynamicRoutesName.length) {
       next()
       return
     }
