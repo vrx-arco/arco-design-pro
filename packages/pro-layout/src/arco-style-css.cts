@@ -1,8 +1,0 @@
-import '@arco-design/web-vue/lib/layout/style/css'
-import '@arco-design/web-vue/lib/space/style/css'
-import '@arco-design/web-vue/lib/typography/style/css'
-import '@arco-design/web-vue/lib/drawer/style/css'
-import '@arco-design/web-vue/lib/menu/style/css'
-import '@arco-design/web-vue/lib/breadcrumb/style/css'
-import '@arco-design/web-vue/lib/spin/style/css'
-import '@arco-design/web-vue/lib/scrollbar/style/css'

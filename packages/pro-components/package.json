@@ -38,9 +38,11 @@
     }
   },
   "files": [
-    "dist",
-    "arco-style-css.*",
-    "arco-style.*"
+    "dist/*",
+    "arco-style-css.js",
+    "arco-style-css.mjs",
+    "arco-style.js",
+    "arco-style.mjs"
   ],
   "scripts": {
     "build": "vite build && tsup-node"

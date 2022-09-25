@@ -1,9 +1,9 @@
 import { defineConfig, mergeConfig } from 'vite'
 import { resolve } from 'node:path'
-import { baseConfig } from '../../build/vite.base.config'
+import { prodConfig } from '../../build/vite.prod.config'
 
 export default mergeConfig(
-  baseConfig,
+  prodConfig,
   defineConfig({
     build: {
       lib: {
