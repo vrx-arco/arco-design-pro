@@ -5,25 +5,28 @@ export const filterRoutes = (
   permission: any,
   filter: (route: RouteRecordRaw, permission: any) => boolean
 ) => {
+  const filterRoutes: RouteRecordRaw[] = []
   const nameList = new Set<RouteRecordName>()
   const listFilter = (routes: RouteRecordRaw[]) => {
-    return routes.filter((item) => {
+    routes.some((item) => {
       const children = item.children
       if (!item.name) {
-        return false
+        return true
       }
       nameList.add(item.name)
       if (!filter(item, permission)) {
-        return false
-      }
-
-      if (!Array.isArray(children) || !children.length) {
         return true
       }
 
-      item.children = listFilter(children)
-      return true
+      if (!Array.isArray(children) || !children.length) {
+        filterRoutes.push(item)
+        return false
+      }
+
+      filterRoutes.push({ ...item, children: listFilter(children) })
+      return false
     })
+    return filterRoutes
   }
 
   return [listFilter(routes), nameList] as const

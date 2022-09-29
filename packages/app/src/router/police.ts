@@ -24,7 +24,6 @@ export const defineRouterPolice = (router: Router, options: IDefineRouter) => {
 
     // 未登陆逻辑
     if (!isLogin()) {
-      permissionStore.$reset()
       resetRoute(router)
       // 如果是白名单与登陆页，则放权
       if (to.name === loginExpiredRedirect || whiteList.includes(to.name as string)) {
@@ -39,7 +38,6 @@ export const defineRouterPolice = (router: Router, options: IDefineRouter) => {
     // 如果登陆后访问登陆页，则触发登陆过期回调
     if (to.name === loginExpiredRedirect) {
       resetRoute(router)
-      permissionStore.$reset()
       onLoginExpired?.()
       next()
       return
@@ -63,7 +61,6 @@ export const defineRouterPolice = (router: Router, options: IDefineRouter) => {
       })
     } catch (e) {
       resetRoute(router)
-      permissionStore.$reset()
       next({ name: loginExpiredRedirect })
       onLoginExpired?.()
     }
