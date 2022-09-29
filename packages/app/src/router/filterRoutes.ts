@@ -22,8 +22,11 @@ export const filterRoutes = (
         filterRoutes.push(item)
         return false
       }
+      const _filterRoute = { ...item, children: [] as RouteRecordRaw[] }
+      filterRoutes.push(_filterRoute)
 
-      filterRoutes.push({ ...item, children: listFilter(children, filterRoutes) })
+      _filterRoute.children = listFilter(children, _filterRoute.children)
+
       return false
     })
     return filterRoutes
