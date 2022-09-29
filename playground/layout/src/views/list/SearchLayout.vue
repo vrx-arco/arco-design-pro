@@ -11,7 +11,9 @@
   import { PageWrapper } from '@vrx-arco/pro-layout'
   import { Avatar, Input, Button } from '@arco-design/web-vue'
   import { IconEdit, IconEye, IconMore, IconUser } from '@arco-design/web-vue/es/icon'
+  import { Permission } from '@vrx-arco/app'
   import { ref } from 'vue'
+
   const model = ref({ v1: '', v2: '', v3: '', v4: '' })
 </script>
 <template>
@@ -31,9 +33,11 @@
           <SearchBarItem label="label" field="v4">
             <Input />
           </SearchBarItem>
-          <SearchBarItem label="label" field="v5">
-            <Input />
-          </SearchBarItem>
+          <Permission data="ssss">
+            <SearchBarItem label="label" field="v5">
+              <Input />
+            </SearchBarItem>
+          </Permission>
         </SearchBar>
       </SearchLayoutHeader>
       <SearchLayoutContent

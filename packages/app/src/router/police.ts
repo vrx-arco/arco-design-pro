@@ -2,20 +2,19 @@ import { Router } from 'vue-router'
 import { resetRoute } from './resetRoute'
 import { filterRoutes } from './filterRoutes'
 import { usePermissionStore } from '../pinia'
-import { IDefineRouter } from '../types'
+import { IVrxArcoApp } from '../types'
 
-export const defineRouterPolice = (router: Router, options: IDefineRouter) => {
+export const defineRouterPolice = (router: Router, options: IVrxArcoApp) => {
+  const { loading } = options
   const {
-    loading,
     dynamicRoutes = [],
-    checkPermission,
     filterDynamicRoutes = () => true,
-    onLoginExpired,
-    isLogin = () => true,
-    loginExpiredRedirect,
-    whiteList = [],
     pageNotFound,
-  } = options
+    whiteList = [],
+    loginExpiredRedirect,
+  } = options.router
+
+  const { getPermission, onLoginExpired, isLogin = () => true } = options.authentication || {}
 
   router.beforeEach(async (to, _from, next) => {
     const permissionStore = usePermissionStore()
@@ -51,7 +50,10 @@ export const defineRouterPolice = (router: Router, options: IDefineRouter) => {
 
     try {
       // 鉴权
-      const permission = await Promise.resolve().then(checkPermission)
+      const permission = await Promise.resolve().then(getPermission)
+
+      permissionStore.permission = permission
+
       // 根据权限筛选动态路由
       const [routes, routeNames] = filterRoutes(dynamicRoutes, permission, filterDynamicRoutes)
       permissionStore.setDynamicRoutesName(routeNames)

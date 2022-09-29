@@ -10,11 +10,24 @@ createVrxArcoApp({
   rootContainer: '#app',
   router: {
     routes,
-    checkPermission: () => [],
+    dynamicRoutes: [
+      {
+        path: '/a404',
+        name: 'Page404',
+        component: () => import('./views/404'),
+      },
+    ],
     pageNotFound: {
       name: 'Page404',
       component: () => import('./views/404'),
     },
     loginExpiredRedirect: 'login',
+  },
+  authentication: {
+    getPermission: () => [],
+    checkPermission: (permission, data) => {
+      console.log(permission, data)
+      return true
+    },
   },
 })

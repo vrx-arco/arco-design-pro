@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import { defineRouterPolice } from './police'
 import { App } from 'vue'
-import { IDefineRouter } from '../types'
+import { IVrxArcoApp } from '../types'
 
-export const defineRouter = (app: App, options: IDefineRouter) => {
-  const { routes } = options
+export const defineRouter = (app: App, options: IVrxArcoApp) => {
+  const { routes, pageNotFound } = options.router
   const router = createRouter({
     history: createWebHistory(),
-    routes: [...routes, { path: '/:path(.*)*', ...options.pageNotFound } as RouteRecordRaw],
+    routes: [...routes, { path: '/:path(.*)*', ...pageNotFound } as RouteRecordRaw],
   })
   defineRouterPolice(router, options)
   app.use(router)
