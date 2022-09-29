@@ -48,16 +48,16 @@
     "build": "vite build && tsup-node"
   },
   "peerDependencies": {
-    "@arco-design/web-vue": "^2.37.1",
-    "vue": "^3.2.39"
+    "@arco-design/web-vue": "^2.37.3",
+    "vue": "^3.2.40"
   },
   "dependencies": {
     "@vill-v/path-prop": "^1.0.0",
     "@vrx-arco/css-render": "workspace:*",
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/use": "workspace:*",
-    "@vrx/core": "^0.2.0-beta.0",
-    "@vueuse/core": "^9.2.0",
+    "@vrx/core": "^0.2.0-beta.1",
+    "@vueuse/core": "^9.3.0",
     "klona": "^2.0.5",
     "vue-types": "^4.2.1"
   },

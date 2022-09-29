@@ -31,8 +31,8 @@
     "index.d.ts"
   ],
   "peerDependencies": {
-    "@arco-design/web-vue": "^2.37.1",
-    "vue": "^3.2.39"
+    "@arco-design/web-vue": "^2.37.3",
+    "vue": "^3.2.40"
   },
   "publishConfig": {
     "access": "public"
