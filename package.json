@@ -1,6 +1,6 @@
 {
   "name": "vrx-arco-pro-compoentns",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "private": true,
   "packageManager": "pnpm@7.12.2",
   "scripts": {
