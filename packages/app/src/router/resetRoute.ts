@@ -9,4 +9,6 @@ export const resetRoute = (router: Router) => {
     }
     router.removeRoute(item)
   })
+  permissionStore.dynamicRoutesName = []
+  permissionStore.dynamicRoutes = []
 }

@@ -1,9 +1,10 @@
 import { defineStore } from 'pinia'
-import { RouteRecordName } from 'vue-router'
+import { RouteRecordName, RouteRecordRaw } from 'vue-router'
 
 export const usePermissionStore = defineStore('vrx-permission', {
   state: () => ({
     dynamicRoutesName: [] as RouteRecordName[],
+    dynamicRoutes: [] as RouteRecordRaw[],
   }),
   actions: {
     setDynamicRoutesName(routesName: Set<RouteRecordName>) {

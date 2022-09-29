@@ -14,4 +14,5 @@ export const createVrxArcoApp = (options: ICreateVrxArco) => {
   return { app, router }
 }
 
+export { usePermissionStore } from './pinia'
 export * from './types'

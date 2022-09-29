@@ -58,6 +58,7 @@ export const defineRouterPolice = (router: Router, options: IDefineRouter) => {
       const [routes, routeNames] = filterRoutes(dynamicRoutes, permission, filterDynamicRoutes)
       permissionStore.setDynamicRoutesName(routeNames)
       routes.forEach((item) => {
+        permissionStore.dynamicRoutes.push(item)
         router.addRoute(item)
       })
     } catch (e) {
