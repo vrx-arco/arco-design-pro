@@ -7,7 +7,7 @@ export const filterRoutes = (
 ) => {
   const filterRoutes: RouteRecordRaw[] = []
   const nameList = new Set<RouteRecordName>()
-  const listFilter = (routes: RouteRecordRaw[]) => {
+  const listFilter = (routes: RouteRecordRaw[], filterRoutes: RouteRecordRaw[]) => {
     routes.some((item) => {
       const children = item.children
       if (!item.name) {
@@ -23,11 +23,11 @@ export const filterRoutes = (
         return false
       }
 
-      filterRoutes.push({ ...item, children: listFilter(children) })
+      filterRoutes.push({ ...item, children: listFilter(children, filterRoutes) })
       return false
     })
     return filterRoutes
   }
 
-  return [listFilter(routes), nameList] as const
+  return [listFilter(routes, filterRoutes), nameList] as const
 }
