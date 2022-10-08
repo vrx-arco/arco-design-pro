@@ -2,14 +2,15 @@
   import {
     ProCardList,
     ProCardMeta,
+    SearchBar,
+    SearchBarItem,
     SearchLayout,
     SearchLayoutContent,
     SearchLayoutHeader,
-    SearchBar,
-    SearchBarItem,
+    SpaceDivider,
   } from '@vrx-arco/pro-components'
   import { PageWrapper } from '@vrx-arco/pro-layout'
-  import { Avatar, Input, Button } from '@arco-design/web-vue'
+  import { Avatar, Button, Card, Input, Space } from '@arco-design/web-vue'
   import { IconEdit, IconEye, IconMore, IconUser } from '@arco-design/web-vue/es/icon'
   import { Permission } from '@vrx-arco/app'
   import { ref } from 'vue'
@@ -20,6 +21,15 @@
   <PageWrapper>
     <SearchLayout title="搜索布局" type="card">
       <SearchLayoutHeader>
+        <SpaceDivider>
+          <Permission>
+            <Button>sssss</Button>
+          </Permission>
+          <Permission>
+            <Button>sssss</Button>
+          </Permission>
+          <Card> ssss </Card>
+        </SpaceDivider>
         <SearchBar :model="model" auto-update reset-on-button-click valid-on-button-click>
           <SearchBarItem label="label" field="v1" required>
             <Input />

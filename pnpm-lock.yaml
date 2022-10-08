@@ -51,7 +51,12 @@ importers:
       vue-types: 4.2.1_vue@3.2.40
 
   packages/app:
-    specifiers: {}
+    specifiers:
+      '@vrx-arco/use': workspace:*
+      vue-types: ^4.2.1
+    dependencies:
+      '@vrx-arco/use': link:../use
+      vue-types: 4.2.1
 
   packages/css-render:
     specifiers:
