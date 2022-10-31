@@ -88,7 +88,7 @@ export const LoginForm = defineComponent({
           if (!submitNotice) {
             return
           }
-          Message.success('登陆成功')
+          Message.success('登录成功')
         })
         .catch((err) => {
           if (typeof err === 'string') {
@@ -100,7 +100,7 @@ export const LoginForm = defineComponent({
           if (!submitNotice) {
             return
           }
-          Message.error(errorMessage.value || '登陆出错')
+          Message.error(errorMessage.value || '登录出错')
         })
         .finally(() => {
           setLoading(false)
@@ -149,7 +149,7 @@ export const LoginForm = defineComponent({
                 </div>
               )}
               <Button type="primary" htmlType="submit" long loading={loading.value}>
-                登陆
+                登录
               </Button>
               {register && (
                 <Button
