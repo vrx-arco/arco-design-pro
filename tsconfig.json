@@ -1,12 +1,3 @@
 {
-  "extends": "@vill-v/tsconfig/base.json",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@vrx-arco/*": [
-        "./packages/*/src/index.ts"
-      ],
-      "vue-types": ["./node_modules/vue-types"]
-    }
-  }
+  "extends": "@vill-v/tsconfig/base.json"
 }
