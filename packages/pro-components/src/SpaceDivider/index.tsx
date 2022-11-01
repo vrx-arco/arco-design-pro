@@ -21,7 +21,6 @@ const SpaceDividerItem = defineComponent({
       }
       return (
         <>
-          {slots.default?.()}
           {props.divider && (
             <Divider
               direction={props.direction === 'horizontal' ? 'vertical' : 'horizontal'}
@@ -30,6 +29,7 @@ const SpaceDividerItem = defineComponent({
               type={props.type}
             />
           )}
+          {slots.default?.()}
         </>
       )
     }
@@ -66,7 +66,7 @@ export const SpaceDivider = defineComponent({
               size={props.size}
               gap={props.gap}
               type={props.type}
-              divider={index + 2 <= children.length}
+              divider={index > 0}
               key={index}
             >
               {item}

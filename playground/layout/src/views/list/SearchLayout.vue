@@ -10,7 +10,7 @@
     SpaceDivider,
   } from '@vrx-arco/pro-components'
   import { PageWrapper } from '@vrx-arco/pro-layout'
-  import { Avatar, Button, Card, Input, Space } from '@arco-design/web-vue'
+  import { Avatar, Button, Card, Input } from '@arco-design/web-vue'
   import { IconEdit, IconEye, IconMore, IconUser } from '@arco-design/web-vue/es/icon'
   import { Permission } from '@vrx-arco/app'
   import { ref } from 'vue'
@@ -25,10 +25,10 @@
           <Permission>
             <Button>sssss</Button>
           </Permission>
-          <Permission>
+          <Permission data="data">
             <Button>sssss</Button>
           </Permission>
-          <Card> ssss </Card>
+          <Card> sssss </Card>
         </SpaceDivider>
         <SearchBar :model="model" auto-update reset-on-button-click valid-on-button-click>
           <SearchBarItem label="label" field="v1" required>
