@@ -10,9 +10,11 @@ packages/*/arco-style-css.mjs
 packages/*/arco-style.js
 packages/*/arco-style-css.js
 packages/*/components.d.ts
+playground/*/components.d.ts
 packages/*/web-types.json
 packages/*/resolver.d.ts
 packages/*/resolver.mjs
+packages/*/resolver.js
 packages/*/resolver.ts
 
 packages/icon/index.*
