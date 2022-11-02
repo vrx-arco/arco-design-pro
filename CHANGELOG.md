@@ -1,4 +1,20 @@
 
+## v0.1.29...v0.1.30
+
+
+### 🚀 特性
+
+  - 为 `pro-layout`& `pro-components` 提供 `unplugin-vue-components` 自动导入模版 (afb558f)
+
+### 🏡 框架
+
+  - Generate CHANGELOG.md (6dfb22a)
+  - Release v0.1.30 (eaad7f6)
+
+### ❤️  Contributors
+
+- Whitekite
+
 ## v0.1.28...v0.1.29
 
 
