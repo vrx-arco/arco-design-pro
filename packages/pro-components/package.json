@@ -42,10 +42,13 @@
     "arco-style-css.js",
     "arco-style-css.mjs",
     "arco-style.js",
-    "arco-style.mjs"
+    "arco-style.mjs",
+    "web-types.json",
+    "components.d.ts",
+    "!*.doc.d.ts"
   ],
   "scripts": {
-    "build": "vite build && tsup-node"
+    "build": "shared && vite build && tsup-node"
   },
   "peerDependencies": {
     "@arco-design/web-vue": "^2.38.0",
@@ -63,5 +66,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "web-types": "web-types.json"
 }

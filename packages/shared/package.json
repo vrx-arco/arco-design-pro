@@ -1,0 +1,29 @@
+{
+  "name": "@vrx-arco/shared",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.mjs",
+  "bin": "./bin.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup-node"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "fast-glob": "^3.2.12",
+    "jiti": "^1.16.0",
+    "fs-extra": "^10.1.0",
+    "scule": "^0.3.2"
+  }
+}

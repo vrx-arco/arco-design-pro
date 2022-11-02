@@ -1,8 +1,0 @@
-import '@arco-design/web-vue/lib/layout/style/index.js'
-import '@arco-design/web-vue/lib/space/style/index.js'
-import '@arco-design/web-vue/lib/typography/style/index.js'
-import '@arco-design/web-vue/lib/drawer/style/index.js'
-import '@arco-design/web-vue/lib/menu/style/index.js'
-import '@arco-design/web-vue/lib/breadcrumb/style/index.js'
-import '@arco-design/web-vue/lib/spin/style/index.js'
-import '@arco-design/web-vue/lib/scrollbar/style/index.js'

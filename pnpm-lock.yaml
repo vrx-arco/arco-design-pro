@@ -12,6 +12,7 @@ importers:
       '@vill-v/tsconfig': ^0.0.8
       '@vitejs/plugin-vue': ^3.2.0
       '@vitejs/plugin-vue-jsx': ^2.1.0
+      '@vrx-arco/shared': workspace:*
       bumpp: ^8.2.1
       changelogen: ^0.3.2
       eslint: ^8.26.0
@@ -35,6 +36,7 @@ importers:
       '@vill-v/tsconfig': 0.0.8
       '@vitejs/plugin-vue': 3.2.0_vite@3.2.1+vue@3.2.41
       '@vitejs/plugin-vue-jsx': 2.1.0_vite@3.2.1+vue@3.2.41
+      '@vrx-arco/shared': link:packages/shared
       bumpp: 8.2.1
       changelogen: 0.3.2
       eslint: 8.26.0
@@ -102,6 +104,20 @@ importers:
       '@vrx-arco/use': link:../use
       '@vueuse/core': 9.4.0
       vue-types: 4.2.1
+
+  packages/shared:
+    specifiers:
+      '@types/fs-extra': ^9.0.13
+      fast-glob: ^3.2.12
+      fs-extra: ^10.1.0
+      jiti: ^1.16.0
+      scule: ^0.3.2
+    devDependencies:
+      '@types/fs-extra': 9.0.13
+      fast-glob: 3.2.12
+      fs-extra: 10.1.0
+      jiti: 1.16.0
+      scule: 0.3.2
 
   packages/use:
     specifiers:

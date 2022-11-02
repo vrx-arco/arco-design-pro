@@ -1,7 +1,6 @@
 import { defineConfig, mergeConfig } from 'vite'
 import { resolve } from 'node:path'
 import { baseConfig } from './vite.base.config'
-
 const FormatExt = {
   es: '.mjs',
   cjs: '.js',
