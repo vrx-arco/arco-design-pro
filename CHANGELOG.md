@@ -1,4 +1,17 @@
 
+## v0.1.27...v0.1.28
+
+
+### 🏡 框架
+
+  - Generate CHANGELOG.md (20878b2)
+  - 新增shared 包提供 arco-style web-types components.d.ts 文件的生成 (07a1636)
+  - Release v0.1.28 (6089fda)
+
+### ❤️  Contributors
+
+- Whitekite
+
 ## v0.1.26...v0.1.27
 
 
