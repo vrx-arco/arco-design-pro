@@ -9,7 +9,7 @@ export default defineConfig([
   {
     entry: ['resolver.ts'],
     clean: false,
-    format: ['esm'],
+    format: ['esm', 'cjs'],
     dts: true,
     outDir: '.',
   },

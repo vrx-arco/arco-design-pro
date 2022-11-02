@@ -119,5 +119,5 @@ export default defineGenDoc({
     },
   ],
   events: [],
-  arco: ['Col', 'Form'],
+  arco: ['Grid', 'Form'],
 })

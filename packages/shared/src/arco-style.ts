@@ -17,44 +17,44 @@ export const genArcoStyle = (configs: GenDoc[]): GenArcoStyle => {
   const mjsStyleCssComp: Record<string, string[]> = {}
   configs.forEach((item) => {
     cjsStyleJsComp[item.name] = item.arco.map(
-      (item) => `require("@arco-design/web-vue/lib/${lowerFirst(item)}/style/index.js");`
+      (item) => `@arco-design/web-vue/lib/${lowerFirst(item)}/style/index.js`
     )
     mjsStyleJsComp[item.name] = item.arco.map(
-      (item) => `import '@arco-design/web-vue/es/${lowerFirst(item)}/style/index.js'`
+      (item) => `@arco-design/web-vue/es/${lowerFirst(item)}/style/index.js`
     )
     cjsStyleCssComp[item.name] = item.arco.map(
-      (item) => `require("@arco-design/web-vue/lib/${lowerFirst(item)}/style/css.js");`
+      (item) => `@arco-design/web-vue/lib/${lowerFirst(item)}/style/css.js`
     )
     mjsStyleCssComp[item.name] = item.arco.map(
-      (item) => `import '@arco-design/web-vue/es/${lowerFirst(item)}/style/css.js'`
+      (item) => `@arco-design/web-vue/es/${lowerFirst(item)}/style/css.js`
     )
   })
 
   const cjsStyleJs = new Set<string>()
   Object.values(cjsStyleJsComp).forEach((value) => {
     value.forEach((item) => {
-      cjsStyleJs.add(item)
+      cjsStyleJs.add(`require("${item}");`)
     })
   })
 
   const mjsStyleJs = new Set<string>()
   Object.values(mjsStyleJsComp).forEach((value) => {
     value.forEach((item) => {
-      mjsStyleJs.add(item)
+      mjsStyleJs.add(`import '${item}'`)
     })
   })
 
   const cjsStyleCss = new Set<string>()
   Object.values(cjsStyleCssComp).forEach((value) => {
     value.forEach((item) => {
-      cjsStyleCss.add(item)
+      cjsStyleCss.add(`require("${item}");`)
     })
   })
 
   const mjsStyleCss = new Set<string>()
   Object.values(mjsStyleCssComp).forEach((value) => {
     value.forEach((item) => {
-      mjsStyleCss.add(item)
+      mjsStyleCss.add(`import '${item}'`)
     })
   })
 

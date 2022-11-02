@@ -1,15 +1,15 @@
 <script setup lang="ts">
-  import {
-    ProCardList,
-    ProCardMeta,
-    SearchBar,
-    SearchBarItem,
-    SearchLayout,
-    SearchLayoutContent,
-    SearchLayoutHeader,
-    SpaceDivider,
-  } from '@vrx-arco/pro-components'
-  import { PageWrapper } from '@vrx-arco/pro-layout'
+  // import {
+  // ProCardList,
+  // ProCardMeta,
+  // SearchBar,
+  // SearchBarItem,
+  // SearchLayout,
+  // SearchLayoutContent,
+  // SearchLayoutHeader,
+  // SpaceDivider,
+  // } from '@vrx-arco/pro-components'
+  // import { PageWrapper } from '@vrx-arco/pro-layout'
   import { Avatar, Button, Card, Input } from '@arco-design/web-vue'
   import { IconEdit, IconEye, IconMore, IconUser } from '@arco-design/web-vue/es/icon'
   import { Permission } from '@vrx-arco/app'

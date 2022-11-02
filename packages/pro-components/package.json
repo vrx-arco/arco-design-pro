@@ -38,6 +38,7 @@
     },
     "./resolver": {
       "import": "./resolver.mjs",
+      "require": "./resolver.js",
       "types": "./resolver.d.ts"
     }
   },
@@ -49,6 +50,7 @@
     "arco-style.mjs",
     "web-types.json",
     "components.d.ts",
+    "resolver.js",
     "resolver.mjs",
     "resolver.d.ts"
   ],

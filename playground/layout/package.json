@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@arco-design/web-vue": "^2.38.0",
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx-arco/pro-layout": "workspace:*",
     "@vrx-arco/app": "workspace:*"

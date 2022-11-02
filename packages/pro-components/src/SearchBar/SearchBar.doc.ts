@@ -56,5 +56,5 @@ export default defineGenDoc({
       desc: '点击重置按钮的回调，返回promise时，会自动显示加载动画',
     },
   ],
-  arco: ['Button', 'Col', 'Divider', 'Form', 'Row', 'Space'],
+  arco: ['Button', 'Divider', 'Form', 'Grid', 'Space'],
 })
