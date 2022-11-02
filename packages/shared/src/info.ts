@@ -6,6 +6,7 @@ import { getPackageInfo } from './package-info'
 import { genWebTypes } from './web-types'
 import { genArcoStyle } from './arco-style'
 import { genComponentsDts } from './components-dts'
+import { genUnComponentsResolver } from './uncomponents'
 function getConfig(jiti: JITI, configPath: string): GenDoc {
   const _config = jiti(path.join(process.cwd(), configPath)).default
   if (!_config) {
@@ -23,13 +24,17 @@ export const genInfo = async () => {
   const configs = docConfig.map((item) => getConfig(jiti, item))
 
   const webTypes = genWebTypes(configs, packageInfo)
+
   const arcoStyle = genArcoStyle(configs)
+
+  const resolver = genUnComponentsResolver(packageInfo, arcoStyle)
 
   const componentsDts = genComponentsDts(configs, packageInfo)
 
   return {
     webTypes,
     ...arcoStyle,
+    resolver,
     componentsDts,
   }
 }

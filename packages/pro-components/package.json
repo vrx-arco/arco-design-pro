@@ -35,6 +35,10 @@
     "./arco-style-css": {
       "import": "./arco-style-css.mjs",
       "require": "./arco-style-css.js"
+    },
+    "./resolver": {
+      "import": "./resolver.mjs",
+      "types": "./resolver.d.ts"
     }
   },
   "files": [
@@ -44,14 +48,22 @@
     "arco-style.js",
     "arco-style.mjs",
     "web-types.json",
-    "components.d.ts"
+    "components.d.ts",
+    "resolver.mjs",
+    "resolver.d.ts"
   ],
   "scripts": {
     "build": "shared && vite build && tsup-node"
   },
   "peerDependencies": {
     "@arco-design/web-vue": "^2.38.0",
-    "vue": "^3.2.41"
+    "vue": "^3.2.41",
+    "unplugin-vue-components": "*"
+  },
+  "peerDependenciesMeta": {
+    "unplugin-vue-components": {
+      "optional": true
+    }
   },
   "dependencies": {
     "@vill-v/path-prop": "^1.0.0",

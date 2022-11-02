@@ -31,6 +31,7 @@
     "vue-router": "^4.1.6",
     "vue-types": "^4.2.1",
     "zx": "^7.1.1",
-    "@vrx-arco/shared": "workspace:*"
+    "@vrx-arco/shared": "workspace:*",
+    "unplugin-vue-components": "^0.22.9"
   }
 }
