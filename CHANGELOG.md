@@ -1,4 +1,50 @@
 
+## v0.1.26...v0.1.27
+
+
+### 🚀 特性
+
+  - **SearchBar:** 删除多余的console (5617653)
+
+### 🏡 框架
+
+  - Release v0.1.27 (832fa37)
+
+### ❤️  Contributors
+
+- Whitekite
+
+## v0.1.25...v0.1.26
+
+
+### 🚀 特性
+
+  - **SearchBar:** 添加自动 v-model 劫持子元素的 dynamicProps patchFlag (22a2c50)
+
+### 🏡 框架
+
+  - Release v0.1.26 (18eb82d)
+
+### ❤️  Contributors
+
+- Whitekite
+
+## v0.1.24...v0.1.25
+
+
+### 🚀 特性
+
+  - **SearchBar:** 修改自动 v-model 数据源为 computed 监听 (7ef41a6)
+
+### 🏡 框架
+
+  - Generate CHANGELOG.md (72cf54a)
+  - Release v0.1.25 (2f764a1)
+
+### ❤️  Contributors
+
+- Whitekite
+
 ## v0.1.23...v0.1.24
 
 
