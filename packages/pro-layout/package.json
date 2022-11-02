@@ -43,8 +43,7 @@
     "arco-style.js",
     "arco-style.mjs",
     "web-types.json",
-    "components.d.ts",
-    "!*.doc.d.ts"
+    "components.d.ts"
   ],
   "scripts": {
     "build": "shared && vite build && tsup-node"
