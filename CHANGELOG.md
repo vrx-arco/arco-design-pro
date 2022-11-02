@@ -1,4 +1,18 @@
 
+## v0.1.28...v0.1.29
+
+
+### 🏡 框架
+
+  - 删除  package.json - files -  "!*.doc.d.ts" 部分 (b51be18)
+  - Generate CHANGELOG.md (fae3018)
+  - Generate CHANGELOG.md (2b32e5c)
+  - Release v0.1.29 (992e4cb)
+
+### ❤️  Contributors
+
+- Whitekite
+
 ## v0.1.27...v0.1.28
 
 
