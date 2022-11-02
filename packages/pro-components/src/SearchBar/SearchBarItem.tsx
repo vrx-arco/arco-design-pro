@@ -1,5 +1,5 @@
 import { FormGridItem } from '../FormGrid'
-import { computed, defineComponent } from 'vue'
+import { defineComponent } from 'vue'
 import { formGridItemProps } from '../FormGrid/props'
 import { injectSearchBar } from './context'
 import { bool, object, oneOfType, string } from 'vue-types'
@@ -14,13 +14,6 @@ export const SearchBarItem = defineComponent({
   setup: (props, { slots }) => {
     const { gridProps, model, autoUpdate: pAutoUpdate } = injectSearchBar()
 
-    const modelValue = computed({
-      get: () => model.value[props.field],
-      set: (value) => {
-        model.value[props.field] = value
-      },
-    })
-
     return () => {
       const renderDefaultSlot = () => {
         const defaultSlot = slots.default?.()
@@ -31,14 +24,21 @@ export const SearchBarItem = defineComponent({
         if (!firstDefaultSlotProps) {
           return defaultSlot
         }
-        firstDefaultSlotProps.props ||= {}
         if (isAutoUpdate && field) {
+          firstDefaultSlotProps.props ||= {}
+          // @ts-ignore
+          firstDefaultSlotProps.dynamicProps ||= []
           const modelKey: string = autoUpdate === true || !autoUpdate ? 'modelValue' : autoUpdate
-          firstDefaultSlotProps.props[modelKey] = modelValue.value
+          // @ts-ignore
+          firstDefaultSlotProps.dynamicProps.push(modelKey)
+          // PatchFlags.PROPS
+          firstDefaultSlotProps.patchFlag = 1 << 3
+          firstDefaultSlotProps.props[modelKey] = model.value[field]
           firstDefaultSlotProps.props[`onUpdate:${modelKey}`] = (value) => {
-            modelValue.value = value
+            model.value[field] = value
           }
         }
+        console.log(firstDefaultSlotProps)
         return defaultSlot
       }
       return (

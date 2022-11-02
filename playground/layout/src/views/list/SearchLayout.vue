@@ -32,7 +32,7 @@
         </SpaceDivider>
         <SearchBar :model="model" auto-update reset-on-button-click valid-on-button-click>
           <SearchBarItem label="label" field="v1" required>
-            <Input />
+            <Input :placeholder="model.v1" />
           </SearchBarItem>
           <SearchBarItem label="label" field="v2">
             <Input />
