@@ -38,7 +38,6 @@ export const SearchBarItem = defineComponent({
             model.value[field] = value
           }
         }
-        console.log(firstDefaultSlotProps)
         return defaultSlot
       }
       return (
