@@ -4,7 +4,7 @@
   "private": true,
   "packageManager": "pnpm@7.14.1",
   "scripts": {
-    "build": "zx ./build/script.mjs",
+    "build": "pnpm --filter './packages/**' build",
     "release": "pnpm run build && bumpp package.json packages/*/package.json",
     "changelogen": "changelogen --output CHANGELOG.md"
   },
