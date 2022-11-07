@@ -68,7 +68,7 @@
     }
   },
   "dependencies": {
-    "@vill-v/path-prop": "^1.0.0",
+    "@vill-v/path-prop": "^1.1.0",
     "@vrx-arco/css-render": "workspace:*",
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/use": "workspace:*",
