@@ -16,8 +16,10 @@
   "files": [
     "dist"
   ],
-  "scripts": {
-    "build": "tsup-node"
+  "dependencies": {
+    "@vrx/cp": "0.0.1-beta.3",
+    "pkg-types": "^1.0.1",
+    "mlly": "^1.0.0"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",

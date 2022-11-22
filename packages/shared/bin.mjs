@@ -1,36 +1,34 @@
 #!/usr/bin/env node
 
-import { genInfo } from './dist/index.mjs'
-import prettier from 'prettier'
-import fs from 'fs-extra'
-import path from 'node:path'
-import prettierConfig from '@vill-v/prettier-config'
+import { arcoBuild, genUnComponentsResolver } from '@vrx/cp'
+import { readPackageJSON } from 'pkg-types'
 
-const { webTypes, cjsStyleJs, mjsStyleJs, mjsStyleCss, cjsStyleCss, componentsDts, resolver } =
-  await genInfo()
+await arcoBuild({
+  before: async (_, { mjsStyleCssComp, mjsStyleJsComp }) => {
+    const { name } = await readPackageJSON()
+    await genUnComponentsResolver(
+      name,
+      {
+        'importStyle?': "'css' | 'less'",
+        'sideEffect?': 'boolean',
+      },
+      `const mjsStyleCssComp = ${JSON.stringify(mjsStyleCssComp)};
+  const mjsStyleJsComp = ${JSON.stringify(mjsStyleJsComp)};`,
 
-await fs.outputJSON(path.join(process.cwd(), 'web-types.json'), webTypes, { spaces: '\t' })
+      `(name: string) => {
+      if (Reflect.has(mjsStyleCssComp,name)) {
+        const importStyle = options.importStyle ?? 'css'
 
-await fs.outputFile(path.join(process.cwd(), 'arco-style.js'), cjsStyleJs)
-
-await fs.outputFile(path.join(process.cwd(), 'arco-style.mjs'), mjsStyleJs)
-
-await fs.outputFile(path.join(process.cwd(), 'arco-style-css.mjs'), mjsStyleCss)
-
-await fs.outputFile(path.join(process.cwd(), 'arco-style-css.js'), cjsStyleCss)
-
-await fs.outputFile(
-  path.join(process.cwd(), 'resolver.ts'),
-  prettier.format(resolver, {
-    ...prettierConfig,
-    parser: 'typescript',
-  })
-)
-
-await fs.outputFile(
-  path.join(process.cwd(), 'components.d.ts'),
-  prettier.format(componentsDts, {
-    ...prettierConfig,
-    parser: 'typescript',
-  })
-)
+        const config: ComponentInfo = {
+          name,
+          from: '${name}',
+        }
+        if(options.sideEffect!==false){
+          config.sideEffects = importStyle=='css' ? mjsStyleCssComp[name]:mjsStyleJsComp[name]
+        }
+        return config
+      }
+    }`
+    )
+  },
+})

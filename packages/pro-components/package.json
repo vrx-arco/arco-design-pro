@@ -55,7 +55,7 @@
     "resolver.d.ts"
   ],
   "scripts": {
-    "build": "shared && vite build && tsup-node"
+    "build": "shared && tsup-node"
   },
   "peerDependencies": {
     "@arco-design/web-vue": "^2.38.0",
