@@ -109,10 +109,10 @@ importers:
 
   packages/shared:
     specifiers:
-      '@vrx/cp': 0.0.1-beta.6
+      '@vrx/cp': 0.0.1-beta.7
       pkg-types: ^1.0.1
     dependencies:
-      '@vrx/cp': 0.0.1-beta.6
+      '@vrx/cp': 0.0.1-beta.7
       pkg-types: 1.0.1
 
   packages/use:
@@ -917,8 +917,8 @@ packages:
       vue-demi: 0.13.5
     dev: false
 
-  /@vrx/cp/0.0.1-beta.6:
-    resolution: {integrity: sha512-vQVgZxTxGnzj/Jf7PiAuv3tMp4AtI7N73Kb/dOlKLYc13EukKRKIakWgBU9Rq1aKkbPB87YAlmRDw31QCIehLA==}
+  /@vrx/cp/0.0.1-beta.7:
+    resolution: {integrity: sha512-Z6pdUt3hvJ8O3aFasGgOXe47HOVm1i6F4p2rDWNKmm+ZQno1wamQX4GvelZM7LoL97AJwyqw3C3MX5kNBV9TAA==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:

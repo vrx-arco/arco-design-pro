@@ -19,7 +19,7 @@
     "dist"
   ],
   "dependencies": {
-    "@vrx/cp": "0.0.1-beta.6",
+    "@vrx/cp": "0.0.1-beta.7",
     "pkg-types": "^1.0.1"
   }
 }

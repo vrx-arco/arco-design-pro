@@ -1,21 +1,21 @@
 #!/usr/bin/env node
 
-import { arcoBuild, genUnComponentsResolver } from '@vrx/cp'
+import { arcoBuild } from '@vrx/cp'
 import { readPackageJSON } from 'pkg-types'
 
+const { name } = await readPackageJSON()
 await arcoBuild({
-  before: async (_, { mjsStyleCssComp, mjsStyleJsComp }) => {
-    const { name } = await readPackageJSON()
-    await genUnComponentsResolver(
-      name,
-      {
-        'importStyle?': "'css' | 'less'",
-        'sideEffect?': 'boolean',
-      },
-      `const mjsStyleCssComp = ${JSON.stringify(mjsStyleCssComp)};
-  const mjsStyleJsComp = ${JSON.stringify(mjsStyleJsComp)};`,
-
-      `(name: string) => {
+  resolve: {
+    option: {
+      'importStyle?': "'css' | 'less'",
+      'sideEffect?': 'boolean',
+    },
+    header: (_, { mjsStyleCssComp, mjsStyleJsComp }) => {
+      return `const mjsStyleCssComp = ${JSON.stringify(mjsStyleCssComp)};
+  const mjsStyleJsComp = ${JSON.stringify(mjsStyleJsComp)};`
+    },
+    resolve: () => {
+      return `(name: string) => {
       if (Reflect.has(mjsStyleCssComp,name)) {
         const importStyle = options.importStyle ?? 'css'
 
@@ -29,6 +29,6 @@ await arcoBuild({
         return config
       }
     }`
-    )
+    },
   },
 })
