@@ -55,7 +55,7 @@
     "resolver.d.ts"
   ],
   "scripts": {
-    "build": "shared && tsup-node"
+    "build": "vrx-arco-script"
   },
   "peerDependencies": {
     "@arco-design/web-vue": "^2.38.0",
