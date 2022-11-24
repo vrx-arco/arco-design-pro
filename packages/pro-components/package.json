@@ -24,9 +24,9 @@
   "module": "./dist/index.mjs",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/index.js",
+      "require": "./dist/index.d.ts",
+      "types": "./dist/index.mjs"
     },
     "./arco-style": {
       "import": "./arco-style.mjs",
@@ -43,11 +43,11 @@
     }
   },
   "files": [
-    "dist/*",
     "arco-style-css.js",
     "arco-style-css.mjs",
     "arco-style.js",
     "arco-style.mjs",
+    "dist/*",
     "web-types.json",
     "components.d.ts",
     "resolver.js",

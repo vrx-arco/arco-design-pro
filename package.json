@@ -32,6 +32,7 @@
     "vue-types": "^4.2.1",
     "@vrx-arco/shared": "workspace:*",
     "unplugin-vue-components": "^0.22.9",
-    "turbo": "^1.6.3"
+    "turbo": "^1.6.3",
+    "@vrx/cp": "0.0.1-beta.11"
   }
 }

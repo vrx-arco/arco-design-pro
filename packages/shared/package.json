@@ -18,8 +18,10 @@
   "files": [
     "dist"
   ],
+  "scripts": {
+    "build": "tsup-node"
+  },
   "dependencies": {
-    "@vrx/cp": "0.0.1-beta.11",
     "pkg-types": "^1.0.1"
   }
 }
