@@ -5,5 +5,7 @@ export default defineConfig({
   dts: { compilerOptions: { baseUrl: '.' } },
   target: 'es2015',
   clean: true,
+  splitting: true,
+  treeshake: true,
   format: ['cjs', 'esm'],
 })
