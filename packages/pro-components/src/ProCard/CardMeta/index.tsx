@@ -1,4 +1,4 @@
-import { defineComponent, isVNode, VNodeTypes } from 'vue'
+import { VNodeTypes, defineComponent, isVNode } from 'vue'
 import { any, array } from 'vue-types'
 import { propsSlot } from '@vrx-arco/use'
 import { style } from './style'

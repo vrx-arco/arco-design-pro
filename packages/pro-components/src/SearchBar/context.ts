@@ -1,4 +1,4 @@
-import { computed, ComputedRef, inject, provide, ref, Ref } from 'vue'
+import { ComputedRef, Ref, computed, inject, provide, ref } from 'vue'
 
 const SearchBarSymbol = Symbol('SearchBar')
 interface ProvideSearchBar {

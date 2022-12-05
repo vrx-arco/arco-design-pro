@@ -1,4 +1,4 @@
-import { cE, CNodeChildren, createCssRender } from '@vrx-arco/css-render'
+import { CNodeChildren, cE, createCssRender } from '@vrx-arco/css-render'
 
 const css: CNodeChildren = [
   cE('title', {

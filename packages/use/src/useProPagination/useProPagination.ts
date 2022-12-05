@@ -1,5 +1,5 @@
 import { PaginationProps } from '@arco-design/web-vue'
-import { computed, Ref } from 'vue'
+import { Ref, computed } from 'vue'
 import { useAutoProPagination } from './useAutoProPagination'
 import { ProPaginationOption } from './types'
 

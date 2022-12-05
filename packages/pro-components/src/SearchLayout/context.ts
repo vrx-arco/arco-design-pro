@@ -1,4 +1,4 @@
-import { inject, provide, ref, Ref } from 'vue'
+import { Ref, inject, provide, ref } from 'vue'
 
 export interface SearchLayoutContext {
   type: Ref<'card' | 'normal'>

@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router'
 import { defineRouterPolice } from './police'
 import { App } from 'vue'
 import { IVrxArcoApp } from '../types'

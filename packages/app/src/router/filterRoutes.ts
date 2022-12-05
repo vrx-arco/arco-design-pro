@@ -1,4 +1,4 @@
-import { RouteRecordRaw, RouteRecordName } from 'vue-router'
+import { RouteRecordName, RouteRecordRaw } from 'vue-router'
 
 export const filterRoutes = (
   routes: RouteRecordRaw[],

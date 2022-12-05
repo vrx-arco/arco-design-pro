@@ -1,4 +1,4 @@
-import { c, CNodeChildren, createCssRender } from '@vrx-arco/css-render'
+import { CNodeChildren, c, createCssRender } from '@vrx-arco/css-render'
 
 const css: CNodeChildren = [c('&', { cursor: 'pointer', userSelect: 'none' })]
 

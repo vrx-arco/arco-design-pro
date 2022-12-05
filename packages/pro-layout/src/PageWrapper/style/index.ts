@@ -1,4 +1,4 @@
-import { c, cE, CNodeChildren, createCssRender } from '@vrx-arco/css-render'
+import { CNodeChildren, c, cE, createCssRender } from '@vrx-arco/css-render'
 
 const css: CNodeChildren = [
   c('&', {

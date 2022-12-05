@@ -1,4 +1,4 @@
-import { CNodeChildren, CssRender, createCNode, CSelector, CLazySelector } from 'css-render'
+import { CLazySelector, CNodeChildren, CSelector, CssRender, createCNode } from 'css-render'
 import { plugin as bem } from '@css-render/plugin-bem'
 import { MountOption } from 'css-render/lib/types'
 import { onBeforeMount } from 'vue'

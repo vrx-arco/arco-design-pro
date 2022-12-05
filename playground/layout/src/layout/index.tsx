@@ -1,7 +1,7 @@
 import { defineComponent } from 'vue'
 import { ProLayout } from '@vrx-arco/pro-layout'
 import { moduleRoute } from '../router/modules'
-import { ThemeDarkLight, ToggleFullScreen, AvatarDropDown } from '@vrx-arco/pro-components'
+import { AvatarDropDown, ThemeDarkLight, ToggleFullScreen } from '@vrx-arco/pro-components'
 import { Space } from '@arco-design/web-vue'
 
 export const Layout = defineComponent({

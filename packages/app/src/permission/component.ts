@@ -3,7 +3,7 @@ import { useVrxArcoCheckPermission } from './app-context'
 import { usePermissionStore } from '../pinia'
 import { storeToRefs } from 'pinia'
 import { any, bool } from 'vue-types'
-import { useEmptyComponentInject, filterEmptyChildren } from '@vrx-arco/use'
+import { filterEmptyChildren, useEmptyComponentInject } from '@vrx-arco/use'
 
 export const Permission = defineComponent({
   name: 'vrx-arco-permission',

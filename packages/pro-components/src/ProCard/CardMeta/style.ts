@@ -1,4 +1,4 @@
-import { createCss, cE, c } from '@vrx-arco/css-render'
+import { c, cE, createCss } from '@vrx-arco/css-render'
 
 export const style = createCss('pro-card-meta', [
   c('&', { color: 'var(--color-text-1)' }),
