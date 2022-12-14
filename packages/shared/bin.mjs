@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-import { arcoBuild } from '@vrx/cp'
+import { arcoVrxCP } from '@vrx/cp'
 import { readPackageJSON } from 'pkg-types'
 
 const { name } = await readPackageJSON()
-await arcoBuild({
+await arcoVrxCP({
   resolve: {
     option: {
       'importStyle?': "'css' | 'less'",

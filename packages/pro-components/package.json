@@ -42,19 +42,6 @@
       "types": "./resolver.d.ts"
     }
   },
-  "files": [
-    "arco-style-css.js",
-    "arco-style-css.mjs",
-    "arco-style.js",
-    "arco-style.mjs",
-    "dist",
-    "web-types.json",
-    "components.d.ts",
-    "dist/*",
-    "resolver.js",
-    "resolver.mjs",
-    "resolver.d.ts"
-  ],
   "scripts": {
     "build": "vrx-arco-script"
   },
@@ -81,5 +68,17 @@
   "publishConfig": {
     "access": "public"
   },
-  "web-types": "web-types.json"
+  "web-types": "web-types.json",
+  "files": [
+    "resolver.mjs",
+    "resolver.js",
+    "resolver.d.ts",
+    "arco-style-css.js",
+    "arco-style-css.mjs",
+    "arco-style.js",
+    "arco-style.mjs",
+    "web-types.json",
+    "components.d.ts",
+    "dist"
+  ]
 }
