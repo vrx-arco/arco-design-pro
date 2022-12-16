@@ -59,8 +59,8 @@
     "@vrx-arco/css-render": "workspace:*",
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/use": "workspace:*",
-    "@vueuse/core": "^9.4.0",
-    "vue-types": "^4.2.1"
+    "@vueuse/core": "^9.6.0",
+    "vue-types": "^5.0.1"
   },
   "publishConfig": {
     "access": "public"
