@@ -36,8 +36,8 @@
     "build": "tsup-node"
   },
   "dependencies": {
-    "@css-render/plugin-bem": "^0.15.11",
-    "css-render": "^0.15.11"
+    "@css-render/plugin-bem": "^0.15.12",
+    "css-render": "^0.15.12"
   },
   "publishConfig": {
     "access": "public"
