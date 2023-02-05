@@ -8,7 +8,7 @@
     "playgound:preview": "vite preview"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.41.1",
+    "@arco-design/web-vue": "^2.42.1",
     "@vrx-arco/app": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx-arco/pro-layout": "workspace:*"
