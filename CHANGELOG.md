@@ -1,4 +1,17 @@
 
+## v0.1.33
+
+
+### 🏡 框架
+
+  - Generate CHANGELOG.md (d73470b)
+  - 修改 release 策略 (60b6c86)
+  - **dep:** 升级 `@vrx/core` `klona` `vueuse` 相关依赖 (520a3b8)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v0.1.31...v0.1.32
 
 
