@@ -9,6 +9,7 @@ await arcoVrxCP({
     option: {
       'importStyle?': "'css' | 'less'",
       'sideEffect?': 'boolean',
+      'theme?': 'string',
     },
     header: (_, { mjsStyleCssComp, mjsStyleJsComp }) => {
       return `const mjsStyleCssComp = ${JSON.stringify(mjsStyleCssComp)};
@@ -25,6 +26,9 @@ await arcoVrxCP({
         }
         if(options.sideEffect!==false){
           config.sideEffects = importStyle=='css' ? mjsStyleCssComp[name]:mjsStyleJsComp[name]
+          if(typeof config.sideEffects === 'string'  && options.theme){
+            config.sideEffects.replace(/^@arco-design\\/web-vue/, options.theme)
+          }
         }
         return config
       }
