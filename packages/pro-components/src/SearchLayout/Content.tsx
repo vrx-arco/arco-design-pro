@@ -1,7 +1,8 @@
 import { defineComponent } from 'vue'
 import { Layout, Tabs } from '@arco-design/web-vue'
 import { injectSearchLayout } from './context'
-import { array, bool } from 'vue-types'
+import { array, bool, string } from 'vue-types'
+import type { TabsType } from '@arco-design/web-vue/es/tabs/interface'
 
 export interface SearchLayoutContentTab {
   title: string
@@ -21,6 +22,11 @@ export const SearchLayoutContent = defineComponent({
      * tab配置
      */
     tabs: array<SearchLayoutContentTab>().def([]),
+    /**
+     * tab类型
+     * @default rounded
+     */
+    tabsType: string<TabsType>().def('rounded'),
   },
   emits: {
     /**
@@ -28,18 +34,19 @@ export const SearchLayoutContent = defineComponent({
      * @param key
      */
     // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     tabChange: (key: string | number) => true,
   },
   setup: (props, { slots, emit }) => {
     const { bemClass } = injectSearchLayout()
 
     return () => {
-      const { useTabs, tabs } = props
+      const { useTabs, tabs, tabsType } = props
       return (
         <Layout.Content class={bemClass('__content')}>
           {useTabs ? (
             <Tabs
-              type="rounded"
+              type={tabsType}
               lazyLoad
               destroyOnHide
               justify

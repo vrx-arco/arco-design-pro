@@ -11,6 +11,10 @@ export default defineGenDoc({
       type: 'SearchLayoutContentTab[]',
       desc: 'tab 配置',
     },
+    tabsType: {
+      type: 'TabsType',
+      desc: 'tab类型',
+    },
   },
   slots: [
     {
