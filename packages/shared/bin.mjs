@@ -27,7 +27,7 @@ await arcoVrxCP({
         if(options.sideEffect!==false){
           config.sideEffects = importStyle=='css' ? mjsStyleCssComp[name]:mjsStyleJsComp[name]
           if(typeof config.sideEffects === 'string'  && options.theme){
-            config.sideEffects.replace(/^@arco-design\\/web-vue/, options.theme)
+            config.sideEffects = config.sideEffects.replace(/^@arco-design\\/web-vue/, options.theme)
           }
         }
         return config
