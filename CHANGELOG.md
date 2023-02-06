@@ -1,4 +1,15 @@
 
+## v0.1.34
+
+
+### 🚀 特性
+
+  - Unplugin-vue-compnonets resolver 支持自定义样式主题包名 (4db4364)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v0.1.33
 
 
