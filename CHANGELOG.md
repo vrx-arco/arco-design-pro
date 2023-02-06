@@ -1,4 +1,16 @@
 
+## v0.1.37
+
+
+### 🩹 修复
+
+  - Unplugin-vue-compnonets resolver 支持自定义样式主题包名无效 (438d809)
+  - Unplugin-vue-compnonets resolver 支持自定义样式主题包名无效 (468deb6)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v0.1.36
 
 
