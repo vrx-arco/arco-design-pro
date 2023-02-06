@@ -1,4 +1,15 @@
 
+## v0.1.36
+
+
+### 🩹 修复
+
+  - Unplugin-vue-compnonets resolver 支持自定义样式主题包名无效 (c5e966c)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v0.1.35
 
 ## v0.1.34
