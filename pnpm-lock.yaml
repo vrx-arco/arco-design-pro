@@ -81,7 +81,7 @@ importers:
       '@vrx-arco/css-render': workspace:*
       '@vrx-arco/icon': workspace:*
       '@vrx-arco/use': workspace:*
-      '@vrx/core': ^0.3.0
+      '@vrx/core': ^0.3.1
       '@vueuse/core': ^9.12.0
       klona: ^2.0.6
       vue-types: ^5.0.2
@@ -90,7 +90,7 @@ importers:
       '@vrx-arco/css-render': link:../css-render
       '@vrx-arco/icon': link:../icon
       '@vrx-arco/use': link:../use
-      '@vrx/core': 0.3.0
+      '@vrx/core': 0.3.1
       '@vueuse/core': 9.12.0
       klona: 2.0.6
       vue-types: 5.0.2
@@ -1451,8 +1451,8 @@ packages:
       void-fs: 0.0.1-beta.6
     dev: true
 
-  /@vrx/core/0.3.0:
-    resolution: {integrity: sha512-aiiT+QoukNzl9bJWXcyLMhKJO6CQhubCYyCJlP55lx6xiIfdgny2JAGvEMt3dAnVXmgfwnonJQiqw9h/DuCreg==}
+  /@vrx/core/0.3.1:
+    resolution: {integrity: sha512-h6ssLlrCgnWMBRw9v1ofV6Yni7lVO6pHVJlrLnG8x+tHywcnDQYALx6RJH+t76fjYatYf60sfdWnO9zWh8k2+w==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
@@ -1461,7 +1461,7 @@ packages:
         optional: true
     dependencies:
       '@vill-v/type-as': 1.2.0
-      '@vrx/shared': 0.3.0
+      '@vrx/shared': 0.3.1
       vue-demi: 0.13.5
     dev: false
 
@@ -1505,8 +1505,8 @@ packages:
       vue: 3.2.47
     dev: true
 
-  /@vrx/shared/0.3.0:
-    resolution: {integrity: sha512-5jDpBSFIHdRTCc0rLS06PAZDU5X2LTP65KBE6A6wFnrxmixY4KR2iqKBUEam3DaEWNwebz+qYTu6B7lvKclpnA==}
+  /@vrx/shared/0.3.1:
+    resolution: {integrity: sha512-fPqwjugeUbAbP95hZvIfsjUoVHBrMvGYTObrB3YeTy9nYDVku6jIN68sqwfy96WY3lo/xDPT8s7llPFSSWz5mQ==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
