@@ -1,4 +1,15 @@
 
+## v0.1.38
+
+
+### 🚀 特性
+
+  - `<SearchLayoutContent/>` 添加 `tabsType` 属性 ,允许自定义 tabs类型 (503b929)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v0.1.37
 
 
