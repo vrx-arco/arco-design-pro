@@ -51,6 +51,7 @@ export const SearchLayoutContent = defineComponent({
               destroyOnHide
               justify
               animation
+              class={bemClass('__content--nav')}
               onChange={(key) => emit('tabChange', key)}
             >
               {tabs.map((item) => (

@@ -24,10 +24,20 @@ export const style = createCss('search-layout', [
   ]),
   cE('header-divider', { padding: '0 16px' }, [c('.arco-divider-horizontal', { margin: 0 })]),
 
-  cE('content', {
-    background: 'var(--color-bg-2)',
-    borderRadius: 'var(--border-radius-none)',
-    padding: '16px',
-    minHeight: 0,
-  }),
+  cE(
+    'content',
+    {
+      background: 'var(--color-bg-2)',
+      borderRadius: 'var(--border-radius-none)',
+      padding: '16px',
+      minHeight: 0,
+    },
+    [
+      c('&--nav', [
+        c('.arco-tabs-nav.arco-tabs-nav-type-line::before', {
+          height: 0,
+        }),
+      ]),
+    ]
+  ),
 ])

@@ -55,6 +55,8 @@
           { key: 'all', title: '全部' },
           { key: 'list', title: '列表' },
         ]"
+        use-tabs
+        tabs-type="line"
       >
         <ProCardList
           pagination
