@@ -1,4 +1,15 @@
 
+## v0.1.39
+
+
+### 🚀 特性
+
+  - `<SearchLayoutContent/>` 设置 `tabs-type` 为 line 时，删除默认下划线 (9a41828)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v0.1.38
 
 
