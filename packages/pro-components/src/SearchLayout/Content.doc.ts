@@ -21,6 +21,10 @@ export default defineGenDoc({
       name: 'default',
       desc: '默认插槽',
     },
+    {
+      name: 'tabExtra',
+      desc: 'tab额外插槽',
+    },
   ],
   events: [
     {

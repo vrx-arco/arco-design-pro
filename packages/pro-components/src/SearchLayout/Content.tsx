@@ -53,6 +53,7 @@ export const SearchLayoutContent = defineComponent({
               animation
               class={bemClass('__content--nav')}
               onChange={(key) => emit('tabChange', key)}
+              v-slots={{ extra: slots.tabExtra }}
             >
               {tabs.map((item) => (
                 <Tabs.TabPane key={item.key} title={item.title} disabled={item.disabled}>
