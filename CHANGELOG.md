@@ -1,4 +1,19 @@
 
+## v0.1.40
+
+
+### 🚀 特性
+
+  - `<SearchLayoutContent/>` 增加 tab extra 额外插槽 (0573abb)
+
+### 🏡 框架
+
+  - 修改 `release` 脚本 (5d13a30)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v0.1.39
 
 
