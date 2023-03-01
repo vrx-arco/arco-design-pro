@@ -28,9 +28,22 @@ export const createBemCssRender = (blockPrefix = 'vrx-arco') => {
   ) => {
     const css = cB(id, cssChildren)
     return () => {
-      onBeforeMount(() => {
-        css.mount({ id, anchorMetaName: `${blockPrefix}-style`, ...options, ssr: useSsrAdapter() })
-      })
+      const ssrAdapter = useSsrAdapter()
+      const mountStyle = () => {
+        css.mount({
+          id,
+          head: true,
+          anchorMetaName: `${blockPrefix}-style`,
+          ...options,
+          ssr: ssrAdapter,
+        })
+      }
+
+      if (ssrAdapter) {
+        mountStyle()
+      } else {
+        onBeforeMount(mountStyle)
+      }
 
       const bemClass = (name?: string) => {
         return `${blockPrefix}-${id}${name || ''}`
