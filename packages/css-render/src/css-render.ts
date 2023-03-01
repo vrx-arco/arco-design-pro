@@ -2,6 +2,7 @@ import { CLazySelector, CNodeChildren, CSelector, CssRender, createCNode } from 
 import { plugin as bem } from '@css-render/plugin-bem'
 import { MountOption } from 'css-render/lib/types'
 import { onBeforeMount } from 'vue'
+import { useSsrAdapter } from '@css-render/vue3-ssr'
 
 export type { createCNode, CLazySelector, CNodeChildren, MountOption, CSelector }
 
@@ -28,7 +29,7 @@ export const createBemCssRender = (blockPrefix = 'vrx-arco') => {
     const css = cB(id, cssChildren)
     return () => {
       onBeforeMount(() => {
-        css.mount({ id, anchorMetaName: `${blockPrefix}-style`, ...options })
+        css.mount({ id, anchorMetaName: `${blockPrefix}-style`, ...options, ssr: useSsrAdapter() })
       })
 
       const bemClass = (name?: string) => {

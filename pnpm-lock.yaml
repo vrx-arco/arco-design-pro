@@ -67,9 +67,11 @@ importers:
   packages/css-render:
     specifiers:
       '@css-render/plugin-bem': ^0.15.12
+      '@css-render/vue3-ssr': ^0.15.12
       css-render: ^0.15.12
     dependencies:
       '@css-render/plugin-bem': 0.15.12_css-render@0.15.12
+      '@css-render/vue3-ssr': 0.15.12
       css-render: 0.15.12
 
   packages/icon:
@@ -609,6 +611,12 @@ packages:
       css-render: ~0.15.12
     dependencies:
       css-render: 0.15.12
+    dev: false
+
+  /@css-render/vue3-ssr/0.15.12:
+    resolution: {integrity: sha512-AQLGhhaE0F+rwybRCkKUdzBdTEM/5PZBYy+fSYe1T9z9+yxMuV/k7ZRqa4M69X+EI1W8pa4kc9Iq2VjQkZx4rg==}
+    peerDependencies:
+      vue: ^3.0.11
     dev: false
 
   /@emotion/hash/0.8.0:
