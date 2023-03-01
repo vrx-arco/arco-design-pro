@@ -1,4 +1,15 @@
 
+## v0.1.42
+
+
+### 🚀 特性
+
+  - **css-render:** 修改 ssr适配 (6c6b6da)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v0.1.41
 
 
