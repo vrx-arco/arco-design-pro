@@ -1,4 +1,15 @@
 
+## v0.1.43
+
+
+### 🚀 特性
+
+  - 添加 `sideEffects` 申明，优化treeshaking (87d075a)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v0.1.42
 
 
