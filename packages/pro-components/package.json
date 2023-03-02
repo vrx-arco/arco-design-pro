@@ -80,5 +80,11 @@
     "web-types.json",
     "components.d.ts",
     "dist"
+  ],
+  "sideEffects": [
+    "arco-style-css.js",
+    "arco-style-css.mjs",
+    "arco-style.js",
+    "arco-style.mjs"
   ]
 }

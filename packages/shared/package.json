@@ -23,5 +23,6 @@
   },
   "dependencies": {
     "pkg-types": "^1.0.2"
-  }
+  },
+  "sideEffects": false
 }

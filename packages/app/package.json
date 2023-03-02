@@ -46,5 +46,6 @@
   "dependencies": {
     "@vrx-arco/use": "workspace:*",
     "vue-types": "^5.0.2"
-  }
+  },
+  "sideEffects": false
 }
