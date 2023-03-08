@@ -27,10 +27,22 @@ export const LoginForm = defineComponent({
     forget: bool().def(false),
     register: bool().def(false),
     remember: bool().def(false),
+    /**
+     * 标题
+     */
     title: string(),
+    /**
+     * 副标题
+     */
     subtitle: string(),
     onSubmit: func<(model: LoginFormModel, remember: boolean) => Promise<any>>(),
+    /**
+     * 是否使用内置消息提示组件
+     */
     submitNotice: bool().def(false),
+    /**
+     * 传入任何数据外部受控表单数据
+     */
     model: object<LoginFormModel>(),
   },
   emits: ['submit', 'forget', 'register'],

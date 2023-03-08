@@ -9,6 +9,9 @@ export const SearchBarItem = defineComponent({
   props: {
     ...formGridItemProps(),
     gridProps: object(),
+    /**
+     * 对 `search-bar` autoUpdate 属性进行覆盖,或指定 v-model:arg arg的值
+     */
     autoUpdate: oneOfType([bool(), string()]),
   },
   setup: (props, { slots }) => {

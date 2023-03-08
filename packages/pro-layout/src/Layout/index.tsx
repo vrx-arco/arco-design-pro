@@ -11,9 +11,21 @@ import { useToggle } from '@vueuse/core'
 export const ProLayout = defineComponent({
   name: 'vrx-arco-pro-layout',
   props: {
+    /**
+     * 基于路由信息生成的菜单
+     */
     menus: array<RouteRecordRaw>().def([]),
+    /**
+     * 标题
+     */
     title: string(),
+    /**
+     * logo
+     */
     logo: string(),
+    /**
+     * 布局的全局加载状态
+     */
     loading: bool().def(false),
   },
   setup: (props, { slots }) => {

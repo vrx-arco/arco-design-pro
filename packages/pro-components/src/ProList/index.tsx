@@ -12,14 +12,41 @@ export const ProList = defineComponent({
   props: {
     ...proPaginationProps(),
     size: oneOf(['small', 'medium', 'large'] as const).def('medium'),
+    /**
+     * 是否显示边框
+     */
     bordered: bool().def(true),
+    /**
+     * 是否显示分割线
+     */
     split: bool().def(true),
+    /**
+     * 加载状态
+     */
     loading: bool().def(false),
+    /**
+     * 列表项是否有反馈
+     */
     hoverable: bool().def(false),
+    /**
+     * 距离底部多少时触发触底事件
+     */
     bottomOffset: number().def(0),
+    /**
+     * 是否开启虚拟列表，需保证gridProps选项未使用
+     */
     virtualList: bool().def(false),
+    /**
+     * 栅格布局配置
+     */
     gridProps: object(),
+    /**
+     * 等同于 v-for的 key，用于性能优化
+     */
     rowKey: string(),
+    /**
+     * 根据数据key值筛选每个卡片获取的数据，可传递类似 "res.data.data" 的路径字符串
+     */
     dataKey: string(),
   },
   emits: {

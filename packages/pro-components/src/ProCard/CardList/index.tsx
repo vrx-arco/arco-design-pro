@@ -19,9 +19,21 @@ export const ProCardList = defineComponent({
   props: {
     ...proPaginationProps(),
     bottomOffset: number().def(0),
+    /**
+     * 等同于 v-for的 key，用于性能优化
+     */
     rowKey: string(),
+    /**
+     * 根据数据key值筛选每个卡片获取的数据，可传递类似 "res.data.data" 的路径字符串
+     */
     dataKey: string(),
+    /**
+     * 加载状态
+     */
     loading: bool().def(false),
+    /**
+     * 一行显示的列数
+     */
     column: oneOfType([number(), object<CardListColumnGrid>()]).def({
       xs: 1,
       sm: 2,
@@ -30,6 +42,9 @@ export const ProCardList = defineComponent({
       xl: 3,
       xxl: 4,
     }),
+    /**
+     * item的间距
+     */
     gutter: oneOfType<number | [number, number]>([number(), array<number>()]).def(0),
   },
   emits: {

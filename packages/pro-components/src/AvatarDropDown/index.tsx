@@ -13,7 +13,13 @@ export interface UserAvatarDropDownItem {
 export const AvatarDropDown = defineComponent({
   name: 'vrx-arco-avatar-drop-down',
   props: {
+    /**
+     * 用户名
+     */
     username: string(),
+    /**
+     * 下拉框选项
+     */
     dropdown: array<UserAvatarDropDownItem>().def([]),
   },
   emits: ['select'],

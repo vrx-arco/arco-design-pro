@@ -38,11 +38,26 @@ const SpaceDividerItem = defineComponent({
 export const SpaceDivider = defineComponent({
   name: 'vrx-arco-space-divider',
   props: {
+    /**
+     * 布局方向
+     */
     direction: oneOf(['vertical', 'horizontal'] as const).def('horizontal'),
+    /**
+     * 对齐方向
+     */
     align: oneOf(['start', 'end', 'center', 'baseline'] as const).def('center'),
+    /**
+     * 是否占满
+     */
     fill: bool().def(false),
     wrap: bool().def(false),
+    /**
+     * 分割线宽度
+     */
     size: number(),
+    /**
+     * 分割线间距
+     */
     gap: oneOfType([number(), string()]),
     type: oneOf(['dashed', 'dotted', 'double', 'solid'] as const),
   },

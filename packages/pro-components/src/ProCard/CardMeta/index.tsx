@@ -6,9 +6,21 @@ import { style } from './style'
 export const ProCardMeta = defineComponent({
   name: 'vrx-arco-pro-card-meta',
   props: {
+    /**
+     * 标题
+     */
     title: any(),
+    /**
+     * 头像
+     */
     avatar: any(),
+    /**
+     * 描述
+     */
     description: any(),
+    /**
+     * 操作按钮
+     */
     actions: array<any>(),
   },
   setup: (props, { slots }) => {

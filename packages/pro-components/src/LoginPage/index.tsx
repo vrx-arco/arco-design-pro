@@ -9,17 +9,50 @@ import { controlVModel } from '@vrx-arco/use'
 export const LoginPage = defineComponent({
   name: 'vrx-arco-login-page',
   props: {
+    /**
+     * logo
+     */
     logo: string(),
+    /**
+     * 标题
+     */
     title: string(),
+    /**
+     * 左侧介绍页标题
+     */
     bannerTitle: string(),
+    /**
+     * 左侧介绍页副标题
+     */
     bannerSubtitle: string(),
+    /**
+     * 左侧介绍页图片
+     */
     bannerImage: string(),
+    /**
+     * 登录表单标题
+     */
     formTitle: string(),
+    /**
+     * 登录表单副标题
+     */
     formSubtitle: string(),
+    /**
+     * 登录表单忘记密码功能
+     */
     formForget: bool().def(false),
+    /**
+     * 登录表单注册功能
+     */
     formRegister: bool().def(false),
+    /**
+     * 登录表单记住密码功能
+     */
     formRemember: bool().def(false),
     onSubmit: func<(model: LoginFormModel, remember: boolean) => Promise<any>>(),
+    /**
+     * 传入任何数据外部受控表单数据
+     */
     model: object<LoginFormModel>(),
   },
   emits: ['forget', 'remember', 'register', 'submit'],

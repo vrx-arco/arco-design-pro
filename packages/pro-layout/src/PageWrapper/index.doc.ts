@@ -2,8 +2,6 @@ import { defineGenDoc } from '@vrx-arco/shared'
 
 export default defineGenDoc({
   name: 'PageWrapper',
-  props: {},
-  slots: [{ name: 'default', desc: '默认插槽' }],
-  events: [],
+  slots: { default: { desc: '默认插槽' } },
   arco: ['Breadcrumb', 'Layout'],
 })

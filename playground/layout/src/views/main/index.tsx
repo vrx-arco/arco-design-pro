@@ -8,5 +8,4 @@ const MainPage = defineComponent({
     }
   },
 })
-
 export default MainPage
