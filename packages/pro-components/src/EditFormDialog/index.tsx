@@ -1,5 +1,15 @@
 import { FunctionalComponent, computed, defineComponent, ref, toRaw } from 'vue'
-import { bool, func, number, object, oneOf, oneOfType, string } from 'vue-types'
+import {
+  VueTypeValidableDef,
+  array,
+  bool,
+  func,
+  number,
+  object,
+  oneOf,
+  oneOfType,
+  string,
+} from 'vue-types'
 import { Drawer, Form, Modal, Notification } from '@arco-design/web-vue'
 import { controlVModel } from '@vrx-arco/use'
 import { klona } from 'klona/json'
@@ -113,6 +123,10 @@ export const EditFormDialog = defineComponent({
      */
     edit: func<(model: Record<string, any>) => Promise<any>>(),
     /**
+     * 自定义新增编辑时标题的前缀 ['新增', '编辑']
+     */
+    prefix: (array() as VueTypeValidableDef<[string, string]>).def(['新增', '编辑']),
+    /**
      * 提交方法
      */
     onConfirm: func<(model: Record<string, any>) => Promise<any>>(),
@@ -138,7 +152,8 @@ export const EditFormDialog = defineComponent({
      * 弹框标题
      */
     const title = computed(() => {
-      let prefix = isEdit.value ? '修改' : '新增'
+      const prefixIndex = isEdit.value ? 1 : 0
+      let prefix = props.prefix[prefixIndex]
       if (props.disabled) {
         prefix = ''
       }
