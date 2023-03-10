@@ -106,45 +106,47 @@ export const SearchBar = defineComponent({
     return () => {
       const { labelColProps, wrapperColProps, disabled } = props
       return (
-        <Row align="center" class={bemClass()}>
-          <Col flex={1}>
-            <Form
-              ref={formRef}
-              layout="inline"
-              labelAlign="left"
-              model={model.value}
-              wrapperColProps={wrapperColProps}
-              labelColProps={labelColProps}
-              disabled={disabled || resetLoading.value || searchLoading.value}
-            >
+        <Form
+          ref={formRef}
+          layout="inline"
+          labelAlign="left"
+          autoLabelWidth
+          model={model.value}
+          wrapperColProps={wrapperColProps}
+          labelColProps={labelColProps}
+          disabled={disabled || resetLoading.value || searchLoading.value}
+        >
+          <Row align="center" class={bemClass()}>
+            <Col flex={1}>
               <Row align="center" class={bemClass('__form-row')}>
                 {slots.default?.()}
               </Row>
-            </Form>
-          </Col>
-          <Divider direction="vertical" class={bemClass('__split')} />
-          <Col class={bemClass('__button-box')} flex="86px">
-            <Space direction="vertical">
-              <Button
-                type="primary"
-                v-slots={{ icon: () => <IconSearch /> }}
-                onClick={handleSearch}
-                loading={searchLoading.value}
-                disabled={disabled || resetLoading.value}
-              >
-                搜索
-              </Button>
-              <Button
-                v-slots={{ icon: () => <IconRefresh /> }}
-                onClick={handleReset}
-                loading={resetLoading.value}
-                disabled={disabled || searchLoading.value}
-              >
-                重置
-              </Button>
-            </Space>
-          </Col>
-        </Row>
+            </Col>
+            <Divider direction="vertical" class={bemClass('__split')} />
+            <Col class={bemClass('__button-box')} flex="86px">
+              <Space direction="vertical">
+                <Button
+                  type="primary"
+                  v-slots={{ icon: () => <IconSearch /> }}
+                  onClick={handleSearch}
+                  loading={searchLoading.value}
+                  disabled={disabled || resetLoading.value}
+                  htmlType="submit"
+                >
+                  搜索
+                </Button>
+                <Button
+                  v-slots={{ icon: () => <IconRefresh /> }}
+                  onClick={handleReset}
+                  loading={resetLoading.value}
+                  disabled={disabled || searchLoading.value}
+                >
+                  重置
+                </Button>
+              </Space>
+            </Col>
+          </Row>
+        </Form>
       )
     }
   },
