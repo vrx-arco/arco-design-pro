@@ -18,9 +18,10 @@ export const SearchBarItem = defineComponent({
     const { gridProps, model, autoUpdate: pAutoUpdate } = injectSearchBar()
 
     return () => {
+      const { autoUpdate, ...otherProps } = props
       const renderDefaultSlot = () => {
         const defaultSlot = slots.default?.()
-        const { autoUpdate, field } = props
+        const { field } = props
         // 自动劫持默认插槽 模拟 `v-model:modelKey`
         const isAutoUpdate = autoUpdate || pAutoUpdate.value
         const firstDefaultSlotProps = defaultSlot?.[0]
@@ -45,8 +46,8 @@ export const SearchBarItem = defineComponent({
       }
       return (
         <FormGridItem
-          {...props}
-          gridProps={props.gridProps || gridProps.value}
+          {...otherProps}
+          gridProps={otherProps.gridProps || gridProps.value}
           v-slots={{ label: slots.label, help: slots.help, extra: slots.extra }}
         >
           {renderDefaultSlot()}
