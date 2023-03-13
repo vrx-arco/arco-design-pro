@@ -5,6 +5,9 @@ import { readPackageJSON } from 'pkg-types'
 
 const { name } = await readPackageJSON()
 await arcoVrxCP({
+  docs: {
+    exclude: [/^use/],
+  },
   resolve: {
     option: {
       'importStyle?': "'css' | 'less'",

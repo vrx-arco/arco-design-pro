@@ -60,7 +60,7 @@
     "@vrx-arco/css-render": "workspace:*",
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/use": "workspace:*",
-    "@vrx/core": "^0.3.3",
+    "@vrx/core": "^0.3.4",
     "@vueuse/core": "^9.13.0",
     "klona": "^2.0.6",
     "vue-types": "^5.0.2"
