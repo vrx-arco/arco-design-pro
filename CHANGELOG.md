@@ -1,4 +1,16 @@
 
+## v0.1.47
+
+
+### 🚀 特性
+
+  - **ProLayout:** 增加 `navContent` 插槽，提供布局顶部中央空余空间自定义的功能 (0323e0d)
+  - **ProLayout:** Update doc config (044b482)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v0.1.46
 
 
