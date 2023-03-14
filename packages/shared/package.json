@@ -1,6 +1,6 @@
 {
   "name": "@vrx-arco/shared",
-  "version": "0.1.46",
+  "version": "0.1.47",
   "private": true,
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
