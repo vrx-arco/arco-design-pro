@@ -25,6 +25,16 @@ export const NavBar = defineComponent({
 
       const title = propsSlot(slots, props, 'title')
 
+      /**
+       * 渲染中央插槽
+       */
+      const renderCenterContent = () => {
+        const content = slots.content?.()
+        if (content) {
+          return <div class={bemClass('__center-content')}>{content}</div>
+        }
+      }
+
       return (
         <div class={bemClass()}>
           <div class={bemClass('__left-side')}>
@@ -45,6 +55,7 @@ export const NavBar = defineComponent({
               />
             )}
           </div>
+          {renderCenterContent()}
           <div class={bemClass('__right-side')}>{slots.default?.()}</div>
         </div>
       )

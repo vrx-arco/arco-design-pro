@@ -16,6 +16,10 @@ const css: CNodeChildren = [
     justifyContent: 'center',
     alignItems: 'center',
   }),
+  cE('center-content', {
+    flex: '1',
+    minWidth: 0,
+  }),
   cE('left-side--smaller', {
     fontSize: '22px',
     cursor: 'pointer',
