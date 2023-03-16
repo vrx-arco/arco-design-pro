@@ -1,10 +1,10 @@
-import { CLazySelector, CNodeChildren, CSelector, CssRender, createCNode } from 'css-render'
+import { CLazySelector, CNode, CNodeChildren, CSelector, CssRender, createCNode } from 'css-render'
 import { plugin as bem } from '@css-render/plugin-bem'
 import { MountOption } from 'css-render/lib/types'
 import { onBeforeMount } from 'vue'
 import { useSsrAdapter } from '@css-render/vue3-ssr'
 
-export type { createCNode, CLazySelector, CNodeChildren, MountOption, CSelector }
+export type { createCNode, CLazySelector, CNodeChildren, MountOption, CSelector, CNode }
 
 /**
  * 创建一个装载 bem插件的css-render
