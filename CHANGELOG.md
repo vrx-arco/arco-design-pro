@@ -1,4 +1,15 @@
 
+## v0.1.48
+
+
+### 🩹 修复
+
+  - **css-render:** 导出 `CNode` 类型 (226d86c)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v0.1.47
 
 
