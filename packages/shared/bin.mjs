@@ -9,6 +9,7 @@ await arcoVrxCP({
     exclude: [/^use/],
   },
   resolve: {
+    target: 'node14',
     option: {
       'importStyle?': "'css' | 'less'",
       'sideEffect?': 'boolean',
