@@ -18,7 +18,7 @@
   const model = ref({ v1: '', v2: '', v3: '', v4: '' })
 </script>
 <template>
-  <PageWrapper>
+  <PageWrapper scrollbar>
     <SearchLayout title="搜索布局" type="card">
       <SearchLayoutHeader>
         <SpaceDivider>

@@ -1,6 +1,6 @@
 import { defineComponent } from 'vue'
 import { style } from './style'
-import { Breadcrumb, Layout } from '@arco-design/web-vue'
+import { Breadcrumb, Scrollbar } from '@arco-design/web-vue'
 import { IconApps } from '@vrx-arco/icon'
 import { useRoute, useRouter } from 'vue-router'
 
@@ -9,7 +9,13 @@ import { useRoute, useRouter } from 'vue-router'
  */
 export const PageWrapper = defineComponent({
   name: 'vrx-arco-page-wrapper',
-  setup: (_, { slots }) => {
+  props: {
+    scrollbar: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  setup: (props, { slots }) => {
     const { bemClass } = style()
     const route = useRoute()
     const router = useRouter()
@@ -18,9 +24,22 @@ export const PageWrapper = defineComponent({
       router.replace({ name })
     }
 
+    const renderContent = () => {
+      if (props.scrollbar) {
+        return (
+          <main class={bemClass('__content--scrollbar')}>
+            <Scrollbar outerClass={bemClass('__scrollbar--out')} class={bemClass('__scrollbar')}>
+              {slots.default?.()}
+            </Scrollbar>
+          </main>
+        )
+      }
+      return <main class={bemClass('__content')}>{slots.default?.()}</main>
+    }
+
     return () => (
-      <Layout class={bemClass()}>
-        <Layout.Header class={bemClass('__header')}>
+      <section class={bemClass()}>
+        <header class={bemClass('__header')}>
           <Breadcrumb>
             <Breadcrumb.Item>
               <IconApps />
@@ -40,9 +59,9 @@ export const PageWrapper = defineComponent({
               )
             })}
           </Breadcrumb>
-        </Layout.Header>
-        <Layout.Content class={bemClass('__content')}>{slots.default?.()}</Layout.Content>
-      </Layout>
+        </header>
+        {renderContent()}
+      </section>
     )
   },
 })
