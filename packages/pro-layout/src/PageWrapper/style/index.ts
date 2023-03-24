@@ -7,8 +7,8 @@ const css: CNodeChildren = [
     flexDirection: 'column',
   }),
   cE('header', { padding: '16px 20px' }),
-  cE('content', { padding: '0 20px 16px 20px', minHeight: 0 }),
-  cE('content--scrollbar', { minHeight: 0 }),
+  cE('content', { padding: '0 20px 16px 20px', minHeight: 0, flex: 1 }),
+  cE('content--scrollbar', { minHeight: 0, flex: 1 }),
   cE('scrollbar--out', { height: '100%' }),
   cE('scrollbar', {
     height: '100%',
