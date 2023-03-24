@@ -1,4 +1,15 @@
 
+## v0.2.1
+
+
+### 🩹 修复
+
+  - **PageWrapper:** 修复样式异常 (d9ca38d)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v0.2.0
 
 
