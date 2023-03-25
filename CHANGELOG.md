@@ -1,4 +1,15 @@
 
+## v0.2.2
+
+
+### 🚀 特性
+
+  - `ProList` , `ProCardList` 新增 `maxHeight` 属性，允许最大高度受控设置 (c1d782e)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v0.2.1
 
 
