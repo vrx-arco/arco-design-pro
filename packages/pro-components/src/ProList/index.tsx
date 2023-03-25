@@ -1,4 +1,4 @@
-import { defineComponent, ref } from 'vue'
+import { computed, defineComponent, ref } from 'vue'
 import { bool, number, object, oneOf, string } from 'vue-types'
 import { List } from '@arco-design/web-vue'
 import { style } from './style'
@@ -48,6 +48,10 @@ export const ProList = defineComponent({
      * 根据数据key值筛选每个卡片获取的数据，可传递类似 "res.data.data" 的路径字符串
      */
     dataKey: string(),
+    /**
+     * 列表的最大高度受控
+     */
+    maxHeight: number(),
   },
   emits: {
     /**
@@ -79,6 +83,8 @@ export const ProList = defineComponent({
     const wrapperRef = ref()
     const { height } = useElementSize(wrapperRef)
     const { bemClass } = style()
+
+    const maxHeight = computed(() => props.maxHeight ?? height.value)
 
     return () => {
       const {
@@ -122,9 +128,9 @@ export const ProList = defineComponent({
                 hoverable={hoverable}
                 loading={loading}
                 bottomOffset={bottomOffset}
-                virtualListProps={isVirtualList ? { height: height.value } : undefined}
+                virtualListProps={isVirtualList ? { height: maxHeight.value } : undefined}
                 size={size}
-                maxHeight={isVirtualList ? 0 : height.value}
+                maxHeight={isVirtualList ? 0 : maxHeight.value}
                 gridProps={gridProps}
                 onScroll={() => emit('scroll')}
                 onReachBottom={() => emit('reachBottom')}

@@ -32,6 +32,10 @@ export const ProCardList = defineComponent({
      */
     loading: bool().def(false),
     /**
+     * 列表的最大高度受控
+     */
+    maxHeight: number(),
+    /**
      * 一行显示的列数
      */
     column: oneOfType([number(), object<CardListColumnGrid>()]).def({
@@ -71,7 +75,16 @@ export const ProCardList = defineComponent({
     const { gridProps } = useGrid(true, column, gutter)
 
     return () => {
-      const { pagination, paginationProps, data, rowKey, bottomOffset, loading, dataKey } = props
+      const {
+        pagination,
+        paginationProps,
+        data,
+        rowKey,
+        bottomOffset,
+        loading,
+        dataKey,
+        maxHeight,
+      } = props
 
       return (
         <ProList
@@ -90,6 +103,7 @@ export const ProCardList = defineComponent({
           dataKey={dataKey}
           loading={loading}
           bottomOffset={bottomOffset}
+          maxHeight={maxHeight}
           gridProps={gridProps.value}
           v-slots={{
             header: slots.header,
