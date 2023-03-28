@@ -1,4 +1,15 @@
 
+## v0.2.3
+
+
+### 🩹 修复
+
+  - 修复 `unplugin-vue-components` 生成的预设有误的问题 (7e2e3e6)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v0.2.2
 
 
