@@ -1,4 +1,15 @@
 
+## v0.2.5
+
+
+### 🩹 修复
+
+  - 修复 `<SearchBar/>` props `column` 类型错误 (089ae76)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v0.2.4
 
 
