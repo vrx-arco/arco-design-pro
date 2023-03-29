@@ -1,6 +1,5 @@
-import { FunctionalComponent, computed, defineComponent, ref, toRef, watch } from 'vue'
+import { FunctionalComponent, PropType, computed, defineComponent, ref, toRef, watch } from 'vue'
 import { Menu } from '@arco-design/web-vue'
-import { array } from 'vue-types'
 import { RouteRecordRaw, useRoute, useRouter } from 'vue-router'
 
 interface MenuItemProps {
@@ -42,7 +41,10 @@ const MenuItem: FunctionalComponent<MenuItemProps> = ({ menu }) => {
 export const ProMenu = defineComponent({
   name: 'vrx-arco-pro-menu',
   props: {
-    menu: array<RouteRecordRaw>().def([]),
+    menu: {
+      type: Array as PropType<RouteRecordRaw[]>,
+      default: () => [],
+    },
   },
   setup: (props) => {
     const menu = toRef(props, 'menu')

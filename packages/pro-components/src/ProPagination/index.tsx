@@ -11,8 +11,10 @@ export const ProPagination = defineComponent({
   props: proPaginationProps(),
   emits: {
     // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     currentChange: (current: number) => true,
     // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     pageSizeChange: (pageSize: number) => true,
   },
   setup: (props, { emit, slots }) => {

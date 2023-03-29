@@ -2,17 +2,16 @@ import { FormGridItem } from '../FormGrid'
 import { defineComponent } from 'vue'
 import { formGridItemProps } from '../FormGrid/props'
 import { injectSearchBar } from './context'
-import { bool, object, oneOfType, string } from 'vue-types'
 
 export const SearchBarItem = defineComponent({
   name: 'vrx-arco-search-bar-item',
   props: {
     ...formGridItemProps(),
-    gridProps: object(),
+    gridProps: Object,
     /**
      * 对 `search-bar` autoUpdate 属性进行覆盖,或指定 v-model:arg arg的值
      */
-    autoUpdate: oneOfType([bool(), string()]),
+    autoUpdate: [Boolean, String],
   },
   setup: (props, { slots }) => {
     const { gridProps, model, autoUpdate: pAutoUpdate } = injectSearchBar()

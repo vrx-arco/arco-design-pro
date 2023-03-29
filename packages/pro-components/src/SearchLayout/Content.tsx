@@ -1,7 +1,6 @@
-import { defineComponent } from 'vue'
+import { PropType, defineComponent } from 'vue'
 import { Layout, Tabs } from '@arco-design/web-vue'
 import { injectSearchLayout } from './context'
-import { array, bool, string } from 'vue-types'
 import type { TabsType } from '@arco-design/web-vue/es/tabs/interface'
 
 export interface SearchLayoutContentTab {
@@ -16,17 +15,23 @@ export const SearchLayoutContent = defineComponent({
     /**
      * 是否启用tab
      */
-    useTabs: bool(),
+    useTabs: Boolean,
 
     /**
      * tab配置
      */
-    tabs: array<SearchLayoutContentTab>().def([]),
+    tabs: {
+      type: Array as PropType<SearchLayoutContentTab[]>,
+      default: () => [],
+    },
     /**
      * tab类型
      * @default rounded
      */
-    tabsType: string<TabsType>().def('rounded'),
+    tabsType: {
+      type: String as PropType<TabsType>,
+      default: 'rounded',
+    },
   },
   emits: {
     /**

@@ -1,15 +1,4 @@
-import { FunctionalComponent, computed, defineComponent, ref, toRaw } from 'vue'
-import {
-  VueTypeValidableDef,
-  array,
-  bool,
-  func,
-  number,
-  object,
-  oneOf,
-  oneOfType,
-  string,
-} from 'vue-types'
+import { FunctionalComponent, PropType, computed, defineComponent, ref, toRaw } from 'vue'
 import { Drawer, Form, Modal, Notification } from '@arco-design/web-vue'
 import { controlVModel } from '@vrx-arco/use'
 import { klona } from 'klona/json'
@@ -81,55 +70,73 @@ export const EditFormDialog = defineComponent({
     /**
      * 弹框类型
      */
-    type: oneOf(['drawer', 'modal'] as const).def('drawer'),
+    type: {
+      type: String as PropType<'drawer' | 'modal'>,
+      default: 'drawer',
+    },
     /**
      * 根据是否有id，判断是否为编辑状态
      */
-    id: string().isRequired,
+    id: {
+      type: String,
+      required: true,
+    },
     /**
      * 表单数据
      */
-    model: object(),
+    model: Object,
     /**
      * 标题
      */
-    title: string(),
+    title: String,
     /**
      * 宽度
      */
-    width: oneOfType([string(), number()]),
+    width: [String, Number],
     /**
      * 表单验证规则
      */
-    rules: object(),
+    rules: Object,
     /**
      * 是否禁用表单
      */
-    disabled: bool().def(false),
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
     /**
      * 是否在弹框关闭时销毁整个表单
      */
-    unmountOnClose: bool().def(true),
+    unmountOnClose: {
+      type: Boolean,
+      default: true,
+    },
     /**
      * 初始化表单数据
      */
-    initModel: func<() => Record<string, any>>().def(() => ({})),
+    initModel: {
+      type: Function as PropType<() => Record<string, any>>,
+      default: () => ({}),
+    },
     /**
      * 新增方法
      */
-    add: func<(model: Record<string, any>) => Promise<any>>(),
+    add: Function as PropType<(model: Record<string, any>) => Promise<any>>,
     /**
      * 编辑方法
      */
-    edit: func<(model: Record<string, any>) => Promise<any>>(),
+    edit: Function as PropType<(model: Record<string, any>) => Promise<any>>,
     /**
      * 自定义新增编辑时标题的前缀 ['新增', '编辑']
      */
-    prefix: (array() as VueTypeValidableDef<[string, string]>).def(['新增', '编辑']),
+    prefix: {
+      type: Array as any as PropType<[string, string]>,
+      default: () => ['新增', '编辑'],
+    },
     /**
      * 提交方法
      */
-    onConfirm: func<(model: Record<string, any>) => Promise<any>>(),
+    onConfirm: Function as PropType<(model: Record<string, any>) => Promise<any>>,
   },
   emits: ['update:visible', 'update:model', 'confirm', 'success', 'close'],
   setup: (props, { emit, slots, expose }) => {

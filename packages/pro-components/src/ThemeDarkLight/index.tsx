@@ -10,6 +10,7 @@ export const ThemeDarkLight = defineComponent({
   name: 'vrx-arco-theme-dark-light',
   emits: {
     // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     change: (dark: boolean) => true,
   },
   setup: (_, { emit }) => {

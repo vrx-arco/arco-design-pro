@@ -1,4 +1,4 @@
-import { Ref, defineComponent, ref, toRaw, unref } from 'vue'
+import { PropType, Ref, defineComponent, ref, toRaw, unref } from 'vue'
 import {
   Button,
   Checkbox,
@@ -10,7 +10,6 @@ import {
   Space,
 } from '@arco-design/web-vue'
 import { IconLock, IconUser } from '@vrx-arco/icon'
-import { bool, func, object, string } from 'vue-types'
 import { style } from './style'
 import { useToggle } from '@vueuse/core'
 import { controlVModel } from '@vrx-arco/use'
@@ -24,26 +23,38 @@ export interface LoginFormModel {
 export const LoginForm = defineComponent({
   name: 'vrx-arco-login-form',
   props: {
-    forget: bool().def(false),
-    register: bool().def(false),
-    remember: bool().def(false),
+    forget: {
+      type: Boolean,
+      default: false,
+    },
+    register: {
+      type: Boolean,
+      default: false,
+    },
+    remember: {
+      type: Boolean,
+      default: false,
+    },
     /**
      * 标题
      */
-    title: string(),
+    title: String,
     /**
      * 副标题
      */
-    subtitle: string(),
-    onSubmit: func<(model: LoginFormModel, remember: boolean) => Promise<any>>(),
+    subtitle: String,
+    onSubmit: Function as PropType<(model: LoginFormModel, remember: boolean) => Promise<any>>,
     /**
      * 是否使用内置消息提示组件
      */
-    submitNotice: bool().def(false),
+    submitNotice: {
+      type: Boolean,
+      default: false,
+    },
     /**
      * 传入任何数据外部受控表单数据
      */
-    model: object<LoginFormModel>(),
+    model: Object as PropType<LoginFormModel>,
   },
   emits: ['submit', 'forget', 'register'],
   setup: (props, { slots, expose, emit }) => {

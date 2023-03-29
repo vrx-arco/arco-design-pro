@@ -1,17 +1,19 @@
-import { computed, defineComponent } from 'vue'
+import { PropType, computed, defineComponent } from 'vue'
 import { filterEmptyChildren, useEmptyComponentProvide } from '@vrx-arco/use'
-import { bool, number, oneOf, oneOfType, string } from 'vue-types'
 import { Divider } from '@arco-design/web-vue'
 import { style } from './style'
 
 const SpaceDividerItem = defineComponent({
   name: 'vrx-arco-space-divider-item',
   props: {
-    direction: oneOf(['vertical', 'horizontal'] as const).def('horizontal'),
-    size: number(),
-    gap: oneOfType([number(), string()]),
-    type: oneOf(['dashed', 'dotted', 'double', 'solid'] as const),
-    divider: bool().def(true),
+    direction: { type: String as PropType<'vertical' | 'horizontal'>, default: 'horizontal' },
+    size: Number,
+    gap: [Number, String],
+    type: String as PropType<'dashed' | 'dotted' | 'double' | 'solid'>,
+    divider: {
+      type: Boolean,
+      default: true,
+    },
   },
   setup: (props, { slots }) => {
     const { empty } = useEmptyComponentProvide()
@@ -41,25 +43,31 @@ export const SpaceDivider = defineComponent({
     /**
      * 布局方向
      */
-    direction: oneOf(['vertical', 'horizontal'] as const).def('horizontal'),
+    direction: { type: String as PropType<'vertical' | 'horizontal'>, default: 'horizontal' },
     /**
      * 对齐方向
      */
-    align: oneOf(['start', 'end', 'center', 'baseline'] as const).def('center'),
+    align: { type: String as PropType<'start' | 'end' | 'center' | 'baseline'>, default: 'center' },
     /**
      * 是否占满
      */
-    fill: bool().def(false),
-    wrap: bool().def(false),
+    fill: {
+      type: Boolean,
+      default: false,
+    },
+    wrap: {
+      type: Boolean,
+      default: false,
+    },
     /**
      * 分割线宽度
      */
-    size: number(),
+    size: Number,
     /**
      * 分割线间距
      */
-    gap: oneOfType([number(), string()]),
-    type: oneOf(['dashed', 'dotted', 'double', 'solid'] as const),
+    gap: [Number, String],
+    type: String as PropType<'dashed' | 'dotted' | 'double' | 'solid'>,
   },
   setup: (props, { slots }) => {
     const { bemClass } = style()

@@ -1,6 +1,5 @@
-import { defineComponent } from 'vue'
+import { PropType, defineComponent } from 'vue'
 import { loginPageStyle } from './style'
-import { bool, func, object, string } from 'vue-types'
 import { LoginBanner } from './Banner'
 import { Layout } from '@arco-design/web-vue'
 import { LoginForm, LoginFormModel } from '../LoginForm'
@@ -12,48 +11,57 @@ export const LoginPage = defineComponent({
     /**
      * logo
      */
-    logo: string(),
+    logo: String,
     /**
      * 标题
      */
-    title: string(),
+    title: String,
     /**
      * 左侧介绍页标题
      */
-    bannerTitle: string(),
+    bannerTitle: String,
     /**
      * 左侧介绍页副标题
      */
-    bannerSubtitle: string(),
+    bannerSubtitle: String,
     /**
      * 左侧介绍页图片
      */
-    bannerImage: string(),
+    bannerImage: String,
     /**
      * 登录表单标题
      */
-    formTitle: string(),
+    formTitle: String,
     /**
      * 登录表单副标题
      */
-    formSubtitle: string(),
+    formSubtitle: String,
     /**
      * 登录表单忘记密码功能
      */
-    formForget: bool().def(false),
+    formForget: {
+      type: Boolean,
+      default: false,
+    },
     /**
      * 登录表单注册功能
      */
-    formRegister: bool().def(false),
+    formRegister: {
+      type: Boolean,
+      default: false,
+    },
     /**
      * 登录表单记住密码功能
      */
-    formRemember: bool().def(false),
-    onSubmit: func<(model: LoginFormModel, remember: boolean) => Promise<any>>(),
+    formRemember: {
+      type: Boolean,
+      default: false,
+    },
+    onSubmit: Function as PropType<(model: LoginFormModel, remember: boolean) => Promise<any>>,
     /**
      * 传入任何数据外部受控表单数据
      */
-    model: object<LoginFormModel>(),
+    model: Object as PropType<LoginFormModel>,
   },
   emits: ['forget', 'remember', 'register', 'submit'],
   setup: (props, { slots, emit }) => {

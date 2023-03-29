@@ -1,18 +1,24 @@
-import { array, bool, object, oneOfType } from 'vue-types'
 import { ProPaginationOption, PropPaginationProps } from '@vrx-arco/use'
+import { PropType } from 'vue'
 
 export const proPaginationProps = () =>
   ({
     /**
      * 数据源
      */
-    data: array().def([]),
+    data: {
+      type: Array as PropType<any[]>,
+      default: () => [],
+    },
     /**
      * 分页参数
      */
-    pagination: oneOfType<true | ProPaginationOption>([bool(), object<ProPaginationOption>()]),
+    pagination: [Boolean, Object] as PropType<ProPaginationOption | true>,
     /**
      * 分页组件入参
      */
-    paginationProps: object<PropPaginationProps>().def({}),
+    paginationProps: {
+      type: Object as PropType<PropPaginationProps>,
+      default: () => ({}),
+    },
   } as const)

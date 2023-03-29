@@ -44,8 +44,7 @@
     "pinia": ">=2.0.27"
   },
   "dependencies": {
-    "@vrx-arco/use": "workspace:*",
-    "vue-types": "^5.0.2"
+    "@vrx-arco/use": "workspace:*"
   },
   "sideEffects": false
 }

@@ -1,7 +1,6 @@
-import { defineComponent, toRef } from 'vue'
+import { PropType, defineComponent, toRef } from 'vue'
 import { Layout } from '@arco-design/web-vue'
 import { style } from './style'
-import { oneOf, string } from 'vue-types'
 import { provideSearchLayout } from './context'
 
 export const SearchLayout = defineComponent({
@@ -12,11 +11,14 @@ export const SearchLayout = defineComponent({
      * card: 整体布局作为一个卡片类型
      * normal: 分体式卡片布局
      */
-    type: oneOf(['card', 'normal'] as const).def('normal'),
+    type: {
+      type: String as PropType<'card' | 'normal'>,
+      default: 'normal',
+    },
     /**
      * 设置标题
      */
-    title: string(),
+    title: String,
   },
   setup: (props, { slots }) => {
     const { bemClass } = style()

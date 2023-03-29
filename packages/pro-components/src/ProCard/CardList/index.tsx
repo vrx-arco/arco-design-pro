@@ -1,6 +1,5 @@
-import { defineComponent, toRef } from 'vue'
+import { PropType, defineComponent, toRef } from 'vue'
 import { Card } from '@arco-design/web-vue'
-import { array, bool, number, object, oneOfType, string } from 'vue-types'
 import { ProList } from '../../ProList'
 import { useGrid } from '@vrx-arco/use'
 import { proPaginationProps } from '../../ProPagination/props'
@@ -18,38 +17,50 @@ export const ProCardList = defineComponent({
   name: 'vrx-arco-pro-card-list',
   props: {
     ...proPaginationProps(),
-    bottomOffset: number().def(0),
+    bottomOffset: {
+      type: Number,
+      default: 0,
+    },
     /**
      * 等同于 v-for的 key，用于性能优化
      */
-    rowKey: string(),
+    rowKey: String,
     /**
      * 根据数据key值筛选每个卡片获取的数据，可传递类似 "res.data.data" 的路径字符串
      */
-    dataKey: string(),
+    dataKey: String,
     /**
      * 加载状态
      */
-    loading: bool().def(false),
+    loading: {
+      type: Boolean,
+      default: false,
+    },
     /**
      * 列表的最大高度受控
      */
-    maxHeight: number(),
+    maxHeight: Number,
     /**
      * 一行显示的列数
      */
-    column: oneOfType([number(), object<CardListColumnGrid>()]).def({
-      xs: 1,
-      sm: 2,
-      md: 2,
-      lg: 3,
-      xl: 3,
-      xxl: 4,
-    }),
+    column: {
+      type: [Number, Object] as PropType<number | CardListColumnGrid>,
+      default: () => ({
+        xs: 1,
+        sm: 2,
+        md: 2,
+        lg: 3,
+        xl: 3,
+        xxl: 4,
+      }),
+    },
     /**
      * item的间距
      */
-    gutter: oneOfType<number | [number, number]>([number(), array<number>()]).def(0),
+    gutter: {
+      type: [Number, Array] as PropType<number | [number, number]>,
+      default: 0,
+    },
   },
   emits: {
     /**
@@ -58,6 +69,7 @@ export const ProCardList = defineComponent({
      * @param {number} page
      */
     // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     pageChange: (page: number) => true,
     /**
      * @zh 表格每页数据数量发生改变时触发
@@ -65,8 +77,10 @@ export const ProCardList = defineComponent({
      * @param {number} pageSize
      */
     // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     pageSizeChange: (pageSize: number) => true,
     // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     itemClick: (item: any, index: number) => true,
   },
   setup: (props, { emit, slots }) => {

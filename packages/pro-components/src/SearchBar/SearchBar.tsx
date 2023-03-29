@@ -1,7 +1,6 @@
-import { defineComponent, onMounted, ref, toRaw, toRef } from 'vue'
+import { PropType, defineComponent, onMounted, ref, toRaw, toRef } from 'vue'
 import { Button, Col, Divider, FieldRule, Form, Row, Space } from '@arco-design/web-vue'
 import { style } from './style'
-import { array, bool, func, number, object, oneOfType } from 'vue-types'
 import { IconRefresh, IconSearch } from '@vrx-arco/icon'
 import { klona } from 'klona/lite'
 import { useAsyncLoading } from '@vrx/core'
@@ -15,48 +14,54 @@ export const SearchBar = defineComponent({
     /**
      * 数据源 * 如需要使用自动重置，自动验证功能 该选项必填*
      */
-    model: object().def({}),
+    model: {
+      type: Object,
+      default: () => ({}),
+    },
     /**
      * label 的栅格布局
      */
-    labelColProps: object(),
+    labelColProps: Object,
     /**
      * content 的栅格布局
      */
-    wrapperColProps: object(),
+    wrapperColProps: Object,
     /**
      * 禁用表单
      */
-    disabled: bool(),
+    disabled: Boolean,
     /**
      * 表单验证规则
      */
-    rules: oneOfType([object<FieldRule>(), array<FieldRule>()]),
+    rules: [Object, Array] as PropType<FieldRule | FieldRule[]>,
     /**
      * 点击重置按钮的时候根据`model` 初始值自动重置表单
      */
-    resetOnButtonClick: bool().def(false),
+    resetOnButtonClick: { type: Boolean, default: false },
     /**
      * 点击搜索按钮的时候触发验证
      */
-    validOnButtonClick: bool().def(false),
-    onSearch: func<(model: any) => Promise<any>>(),
-    onReset: func<(model: any) => Promise<any>>(),
+    validOnButtonClick: { type: Boolean, default: false },
+    onSearch: Function as PropType<(model: any) => Promise<any>>,
+    onReset: Function as PropType<(model: any) => Promise<any>>,
     /**
      * 表单栅格布局
      */
-    column: oneOfType([number(), object<CardListColumnGrid>()]).def({
-      xs: 1,
-      sm: 2,
-      md: 2,
-      lg: 3,
-      xl: 3,
-      xxl: 4,
-    }),
+    column: {
+      type: [Number, Object] as PropType<CardListColumnGrid>,
+      default: () => ({
+        xs: 1,
+        sm: 2,
+        md: 2,
+        lg: 3,
+        xl: 3,
+        xxl: 4,
+      }),
+    },
     /**
      * 劫持`search-bar-item` 第一个元素 自动绑定 `v-model`
      */
-    autoUpdate: bool().def(false),
+    autoUpdate: { type: Boolean, default: false },
   },
   emits: ['search', 'reset'],
   setup: (props, { slots }) => {

@@ -1,10 +1,9 @@
-import { defineComponent } from 'vue'
+import { PropType, defineComponent } from 'vue'
 import { Drawer, Layout, Scrollbar, Spin } from '@arco-design/web-vue'
 import { NavBar } from './components/NavBar'
 import { ProMenu } from './components/Menu'
 import { useShareBreakpoints } from '@vrx-arco/use'
 import { style } from './styles'
-import { array, bool, string } from 'vue-types'
 import { RouteRecordRaw, RouterView } from 'vue-router'
 import { useToggle } from '@vueuse/core'
 
@@ -14,19 +13,25 @@ export const ProLayout = defineComponent({
     /**
      * 基于路由信息生成的菜单
      */
-    menus: array<RouteRecordRaw>().def([]),
+    menus: {
+      type: Array as PropType<RouteRecordRaw[]>,
+      default: () => [],
+    },
     /**
      * 标题
      */
-    title: string(),
+    title: String,
     /**
      * logo
      */
-    logo: string(),
+    logo: String,
     /**
      * 布局的全局加载状态
      */
-    loading: bool().def(false),
+    loading: {
+      type: Boolean,
+      default: false,
+    },
   },
   setup: (props, { slots }) => {
     const { bemClass } = style()

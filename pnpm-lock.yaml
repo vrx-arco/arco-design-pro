@@ -76,9 +76,6 @@ importers:
       vue-router:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
-      vue-types:
-        specifier: ^5.0.2
-        version: 5.0.2(vue@3.2.47)
 
   packages/app:
     dependencies:
@@ -94,9 +91,6 @@ importers:
       vue-router:
         specifier: '>=4.1.6'
         version: 4.1.6(vue@3.2.47)
-      vue-types:
-        specifier: ^5.0.2
-        version: 5.0.2(vue@3.2.47)
 
   packages/css-render:
     dependencies:
@@ -151,9 +145,6 @@ importers:
       vue:
         specifier: ^3.2.45
         version: 3.2.47
-      vue-types:
-        specifier: ^5.0.2
-        version: 5.0.2(vue@3.2.47)
 
   packages/pro-layout:
     dependencies:
@@ -181,9 +172,6 @@ importers:
       vue-router:
         specifier: '>=4.1.6'
         version: 4.1.6(vue@3.2.47)
-      vue-types:
-        specifier: ^5.0.2
-        version: 5.0.2(vue@3.2.47)
 
   packages/shared:
     dependencies:
@@ -3112,10 +3100,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /is-plain-object@5.0.0:
-    resolution: {integrity: sha512-VRSzKkbMm5jMDoKLbltAkFQ5Qr7VDiTFGXxYFXXowVj387GeGNOCsOH6Msy00SGZ3Fp84b1Naa1psqgcCIEP5Q==}
-    engines: {node: '>=0.10.0'}
-
   /is-stream@2.0.1:
     resolution: {integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==}
     engines: {node: '>=8'}
@@ -4964,18 +4948,6 @@ packages:
       de-indent: 1.0.2
       he: 1.2.0
     dev: true
-
-  /vue-types@5.0.2(vue@3.2.47):
-    resolution: {integrity: sha512-+/5hnQ65XOYqPs+tEUF8GGTJX95UFVH0wPQo71IJJYh5TKMfik2tGKTLkZ42JqAczANA9hGu5FrZmPgxn20nnA==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      vue: ^2.0.0 || ^3.0.0
-    peerDependenciesMeta:
-      vue:
-        optional: true
-    dependencies:
-      is-plain-object: 5.0.0
-      vue: 3.2.47
 
   /vue@3.2.47:
     resolution: {integrity: sha512-60188y/9Dc9WVrAZeUVSDxRQOZ+z+y5nO2ts9jWXSTkMvayiWxCWOWtBQoYjLeccfXkiiPZWAHcV+WTPhkqJHQ==}

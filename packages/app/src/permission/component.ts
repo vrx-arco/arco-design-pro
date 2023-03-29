@@ -1,15 +1,17 @@
-import { computed, defineComponent, toRaw } from 'vue'
+import { PropType, computed, defineComponent, toRaw } from 'vue'
 import { useVrxArcoCheckPermission } from './app-context'
 import { usePermissionStore } from '../pinia'
 import { storeToRefs } from 'pinia'
-import { any, bool } from 'vue-types'
 import { filterEmptyChildren, useEmptyComponentInject } from '@vrx-arco/use'
 
 export const Permission = defineComponent({
   name: 'vrx-arco-permission',
   props: {
-    data: any(),
-    destroyOnNoPermission: bool().def(true),
+    data: {} as PropType<any>,
+    destroyOnNoPermission: {
+      type: Boolean,
+      default: true,
+    },
   },
   setup: (props, { slots }) => {
     const checkPermission = useVrxArcoCheckPermission()
@@ -25,7 +27,6 @@ export const Permission = defineComponent({
         empty.value = !noPermission.length
         return noPermission
       }
-
       return slots.default?.({ hasPermission: hasPermission.value })
     }
   },

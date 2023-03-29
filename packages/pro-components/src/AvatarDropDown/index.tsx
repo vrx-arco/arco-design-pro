@@ -1,6 +1,5 @@
-import { defineComponent } from 'vue'
+import { PropType, defineComponent } from 'vue'
 import { Avatar, Dropdown } from '@arco-design/web-vue'
-import { array, string } from 'vue-types'
 import { style } from './style'
 import { propsSlot } from '@vrx-arco/use'
 
@@ -16,11 +15,14 @@ export const AvatarDropDown = defineComponent({
     /**
      * 用户名
      */
-    username: string(),
+    username: String,
     /**
      * 下拉框选项
      */
-    dropdown: array<UserAvatarDropDownItem>().def([]),
+    dropdown: {
+      type: Array as PropType<UserAvatarDropDownItem[]>,
+      default: () => [],
+    },
   },
   emits: ['select'],
   setup: (props, { slots, emit }) => {

@@ -1,13 +1,12 @@
 import { defineComponent } from 'vue'
 import { bannerStyle } from './style'
-import { string } from 'vue-types'
 
 export const LoginBanner = defineComponent({
   name: 'vrx-arco-login-banner',
   props: {
-    title: string(),
-    subtitle: string(),
-    image: string(),
+    title: String,
+    subtitle: String,
+    image: String,
   },
   setup: (props, { slots }) => {
     const { bemClass } = bannerStyle()

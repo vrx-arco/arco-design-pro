@@ -1,5 +1,4 @@
-import { VNodeTypes, defineComponent, isVNode } from 'vue'
-import { any, array } from 'vue-types'
+import { PropType, VNodeTypes, defineComponent, isVNode } from 'vue'
 import { propsSlot } from '@vrx-arco/use'
 import { style } from './style'
 
@@ -9,19 +8,19 @@ export const ProCardMeta = defineComponent({
     /**
      * 标题
      */
-    title: any(),
+    title: {} as PropType<any>,
     /**
      * 头像
      */
-    avatar: any(),
+    avatar: {} as PropType<any>,
     /**
      * 描述
      */
-    description: any(),
+    description: {} as PropType<any>,
     /**
      * 操作按钮
      */
-    actions: array<any>(),
+    actions: Array as PropType<any[]>,
   },
   setup: (props, { slots }) => {
     const { bemClass } = style()

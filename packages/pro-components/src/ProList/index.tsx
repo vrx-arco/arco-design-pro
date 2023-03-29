@@ -1,5 +1,4 @@
-import { computed, defineComponent, ref } from 'vue'
-import { bool, number, object, oneOf, string } from 'vue-types'
+import { PropType, computed, defineComponent, ref } from 'vue'
 import { List } from '@arco-design/web-vue'
 import { style } from './style'
 import { useElementSize } from '@vueuse/core'
@@ -11,47 +10,50 @@ export const ProList = defineComponent({
   name: 'vrx-arco-pro-list',
   props: {
     ...proPaginationProps(),
-    size: oneOf(['small', 'medium', 'large'] as const).def('medium'),
+    size: {
+      type: String as PropType<'small' | 'medium' | 'large'>,
+      default: 'medium',
+    },
     /**
      * 是否显示边框
      */
-    bordered: bool().def(true),
+    bordered: { type: Boolean, default: true },
     /**
      * 是否显示分割线
      */
-    split: bool().def(true),
+    split: { type: Boolean, default: true },
     /**
      * 加载状态
      */
-    loading: bool().def(false),
+    loading: { type: Boolean, default: false },
     /**
      * 列表项是否有反馈
      */
-    hoverable: bool().def(false),
+    hoverable: { type: Boolean, default: false },
     /**
      * 距离底部多少时触发触底事件
      */
-    bottomOffset: number().def(0),
+    bottomOffset: { type: Number, default: 0 },
     /**
      * 是否开启虚拟列表，需保证gridProps选项未使用
      */
-    virtualList: bool().def(false),
+    virtualList: { type: Boolean, default: false },
     /**
      * 栅格布局配置
      */
-    gridProps: object(),
+    gridProps: Object,
     /**
      * 等同于 v-for的 key，用于性能优化
      */
-    rowKey: string(),
+    rowKey: String,
     /**
      * 根据数据key值筛选每个卡片获取的数据，可传递类似 "res.data.data" 的路径字符串
      */
-    dataKey: string(),
+    dataKey: String,
     /**
      * 列表的最大高度受控
      */
-    maxHeight: number(),
+    maxHeight: Number,
   },
   emits: {
     /**
@@ -70,6 +72,7 @@ export const ProList = defineComponent({
      * @param {number} page
      */
     // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     pageChange: (page: number) => true,
     /**
      * @zh 表格每页数据数量发生改变时触发
@@ -77,6 +80,7 @@ export const ProList = defineComponent({
      * @param {number} pageSize
      */
     // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     pageSizeChange: (pageSize: number) => true,
   },
   setup: (props, { emit, slots }) => {
