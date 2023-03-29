@@ -48,7 +48,7 @@ export const SearchBar = defineComponent({
      * 表单栅格布局
      */
     column: {
-      type: [Number, Object] as PropType<CardListColumnGrid>,
+      type: [Number, Object] as PropType<number | CardListColumnGrid>,
       default: () => ({
         xs: 1,
         sm: 2,
