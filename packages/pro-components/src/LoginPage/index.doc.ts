@@ -36,5 +36,5 @@ export default defineGenDoc({
       desc: '注册按钮点击事件',
     },
   },
-  arco: ['Button', 'Checkbox', 'Form', 'Input', 'Link', 'Message', 'Space'],
+  arco: ['Button', 'Checkbox', 'Form', 'Input', 'Link', 'Message', 'Space', 'Layout'],
 })
