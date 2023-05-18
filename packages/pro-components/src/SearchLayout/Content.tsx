@@ -5,7 +5,7 @@ import type { TabsType } from '@arco-design/web-vue/es/tabs/interface'
 
 export interface SearchLayoutContentTab {
   title: string
-  disabled: boolean
+  disabled?: boolean
   key: string | number
 }
 
