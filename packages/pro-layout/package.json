@@ -59,7 +59,7 @@
     "@vrx-arco/css-render": "workspace:*",
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/use": "workspace:*",
-    "@vueuse/core": "^10.0.2"
+    "@vueuse/core": "^10.1.2"
   },
   "publishConfig": {
     "access": "public"
