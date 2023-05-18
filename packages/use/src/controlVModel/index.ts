@@ -12,7 +12,7 @@ export const controlVModel = <
   init: () => Data
 ) => {
   if (props[name]) {
-    return useVModel(props, name, emit) as Ref<Data>
+    return useVModel(props, name, emit) as any as Ref<Data>
   }
-  return ref<Data>(init())
+  return ref(init()) as Ref<Data>
 }
