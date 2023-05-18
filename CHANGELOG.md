@@ -1,4 +1,16 @@
 
+## v0.2.7
+
+
+### 🚀 特性
+
+  - **deps:** 升级vueuse@10 (decd076)
+  - **SearchLayout:** Update type SearchLayoutContentTab (6a78112)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v0.2.6
 
 
