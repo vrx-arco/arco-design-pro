@@ -16,8 +16,8 @@ await arcoVrxCP({
       'theme?': 'string',
     },
     header: (_, { mjsStyleCssComp, mjsStyleJsComp }) => {
-      return `const mjsStyleCssComp = ${JSON.stringify(mjsStyleCssComp)};
-  const mjsStyleJsComp = ${JSON.stringify(mjsStyleJsComp)};`
+      return `export const mjsStyleCssComp = ${JSON.stringify(mjsStyleCssComp)};
+      export const mjsStyleJsComp = ${JSON.stringify(mjsStyleJsComp)};`
     },
     resolve: () => {
       return `(name: string) => {

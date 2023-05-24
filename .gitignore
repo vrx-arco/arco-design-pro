@@ -18,3 +18,5 @@ packages/*/resolver.js
 packages/*/resolver.ts
 
 packages/icon/index.*
+.nuxt
+.output
