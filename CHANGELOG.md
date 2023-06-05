@@ -1,4 +1,28 @@
 
+## v1.0.0-beta.0
+
+
+### 🚀 特性
+
+  - **experimental:** 试验性的nuxt-module (3ccdd0a)
+  - **pro-layout:** ⚠️  放弃 css in js 方案，转向静态css (73a10cf)
+  - **pro-components:** ⚠️  放弃 css in js 方案，转向静态css (f52c334)
+  - **deprecated:** 弃用 css-render 包 提供的 css in js (ae01fae)
+
+### 🏡 框架
+
+  - 升级 @vrx/cp@0.0.1-beta.55，并更新打包配置 (f38f2bd)
+  - 修改打包策略 (9fe7878)
+
+#### ⚠️  Breaking Changes
+
+  - **pro-layout:** ⚠️  放弃 css in js 方案，转向静态css (73a10cf)
+  - **pro-components:** ⚠️  放弃 css in js 方案，转向静态css (f52c334)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v0.2.7
 
 
