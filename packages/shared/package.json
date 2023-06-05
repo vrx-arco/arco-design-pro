@@ -5,9 +5,6 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "module": "./dist/index.mjs",
-  "bin": {
-    "vrx-arco-script": "./bin.mjs"
-  },
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
@@ -22,7 +19,8 @@
     "build": "tsup-node"
   },
   "dependencies": {
-    "pkg-types": "^1.0.3"
+    "scule": "^1.0.0",
+    "knitwork": "^1.0.0"
   },
   "sideEffects": false
 }

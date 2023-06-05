@@ -1,4 +1,5 @@
-import { defineGenDoc } from '@vrx-arco/shared'
+import { defineGenDoc } from '@vrx/cp'
+
 export default defineGenDoc({
   name: 'ProLayout',
   slots: {

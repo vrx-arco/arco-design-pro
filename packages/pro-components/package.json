@@ -43,7 +43,7 @@
     }
   },
   "scripts": {
-    "build": "vrx-arco-script"
+    "build": "vrx-cp build"
   },
   "peerDependencies": {
     "@arco-design/web-vue": ">=2.39.2",

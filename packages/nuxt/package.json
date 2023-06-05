@@ -19,13 +19,13 @@
     "build": "tsup-node"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.5.1",
-    "@nuxt/schema": "3.5.1",
-    "@vrx-arco/pro-components": "workspace:*",
     "@css-render/vue3-ssr": "^0.15.12",
-    "unplugin": "^1.3.1",
+    "@nuxt/kit": "^3.5.2",
+    "@nuxt/schema": "3.5.2",
+    "@vrx-arco/pro-components": "workspace:*",
     "magic-string": "^0.30.0",
-    "scule": "1.0.0"
+    "scule": "1.0.0",
+    "unplugin": "^1.3.1"
   },
   "sideEffects": false
 }
