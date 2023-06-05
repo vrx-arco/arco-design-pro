@@ -2,7 +2,7 @@ import { defineComponent } from 'vue'
 import { Space, TypographyTitle } from '@arco-design/web-vue'
 import { IconMenuFold } from '@vrx-arco/icon'
 import { propsSlot, useShareBreakpoints } from '@vrx-arco/use'
-import { style } from './styles'
+import { style } from '../../../style/var'
 
 export const NavBar = defineComponent({
   name: 'vrx-arco-navBar',
@@ -19,7 +19,7 @@ export const NavBar = defineComponent({
   },
   emits: ['menuClick'],
   setup: (props, { slots, emit }) => {
-    const { bemClass } = style()
+    const { bemClass } = style('pro-layout-navbar')
     const breakpoints = useShareBreakpoints()
     const isSmallerLg = breakpoints.smaller('lg')
     return () => {

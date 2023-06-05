@@ -39,7 +39,8 @@
       "import": "./resolver.mjs",
       "require": "./resolver.js",
       "types": "./resolver.d.ts"
-    }
+    },
+    "./style/*": "./style/*"
   },
   "scripts": {
     "build": "vrx-cp build"
@@ -75,9 +76,11 @@
     "arco-style.mjs",
     "web-types.json",
     "components.d.ts",
-    "dist"
+    "dist",
+    "style"
   ],
   "sideEffects": [
+    ".css",
     "arco-style-css.js",
     "arco-style-css.mjs",
     "arco-style.js",

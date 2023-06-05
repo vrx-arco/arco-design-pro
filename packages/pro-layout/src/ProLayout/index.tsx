@@ -3,7 +3,7 @@ import { Drawer, Layout, Scrollbar, Spin } from '@arco-design/web-vue'
 import { NavBar } from './components/NavBar'
 import { ProMenu } from './components/Menu'
 import { useShareBreakpoints } from '@vrx-arco/use'
-import { style } from './styles'
+import { style } from '../style/var'
 import { RouteRecordRaw, RouterView } from 'vue-router'
 import { useToggle } from '@vueuse/core'
 
@@ -34,7 +34,7 @@ export const ProLayout = defineComponent({
     },
   },
   setup: (props, { slots }) => {
-    const { bemClass } = style()
+    const { bemClass } = style('pro-layout')
     const breakpoints = useShareBreakpoints()
 
     const isSmallerLg = breakpoints.smaller('lg')

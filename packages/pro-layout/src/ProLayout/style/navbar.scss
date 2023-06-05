@@ -1,0 +1,27 @@
+@import '../../style/var.scss';
+.#{$prefix}-pro-layout-navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  background-color: var(--color-bg-2);
+  padding-left: 20px;
+  padding-right: 20px;
+  &__left-side,
+  &__right-side {
+    display: flex;
+  }
+  &__left-side {
+    justify-content: center;
+    align-items: center;
+  }
+  &__center-content {
+    flex: 1;
+    min-width: 0;
+  }
+  &__left-side--smaller {
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 20px;
+    color: var(--color-text-2);
+  }
+}

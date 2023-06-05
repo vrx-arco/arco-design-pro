@@ -4,7 +4,8 @@ import { ArcoStyleRes } from '../arco-style/findArcoStyle'
 
 export const unComponents = async (
   config: ResolveConfig,
-  { mjsStyleCssComp, mjsStyleJsComp }: ArcoStyleRes
+  { mjsStyleCssComp, mjsStyleJsComp }: ArcoStyleRes,
+  vrxStyle: Record<string, string[]>
 ) => {
   const { packageJson, formatExt } = config
   const success = logger.run('generate unplugin-components resolver')
@@ -16,8 +17,10 @@ export const unComponents = async (
       'sideEffect?': 'boolean',
       'theme?': 'string',
     },
-    header: `export const mjsStyleCssComp = ${JSON.stringify(mjsStyleCssComp)};
-    export const mjsStyleJsComp = ${JSON.stringify(mjsStyleJsComp)};`,
+    header:
+      `export const mjsStyleCssComp = ${JSON.stringify(mjsStyleCssComp)};\n` +
+      `export const mjsStyleJsComp = ${JSON.stringify(mjsStyleJsComp)};\n` +
+      `export const vrxStyle = ${JSON.stringify(vrxStyle)};`,
     resolve: `(name:string) => {
       if (Reflect.has(mjsStyleCssComp,name)) {
       const importStyle = options.importStyle ?? 'css'
@@ -28,6 +31,7 @@ export const unComponents = async (
       }
       if(options.sideEffect!==false){
         config.sideEffects = importStyle=='css' ? mjsStyleCssComp[name]:mjsStyleJsComp[name]
+        config.sideEffects.push(...vrxStyle[name])
         if(Array.isArray(config.sideEffects) && options.theme){
           config.sideEffects = config.sideEffects.map(v=>{
             if(typeof v==='string'&&options.theme){

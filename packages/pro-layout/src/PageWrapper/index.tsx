@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import { style } from './style'
+import { style } from '../style/var'
 import { Breadcrumb, Scrollbar } from '@arco-design/web-vue'
 import { IconApps } from '@vrx-arco/icon'
 import { useRoute, useRouter } from 'vue-router'
@@ -16,7 +16,7 @@ export const PageWrapper = defineComponent({
     },
   },
   setup: (props, { slots }) => {
-    const { bemClass } = style()
+    const { bemClass } = style('page-wrapper')
     const route = useRoute()
     const router = useRouter()
 
