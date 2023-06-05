@@ -19,7 +19,6 @@
     "build": "tsup-node"
   },
   "dependencies": {
-    "@css-render/vue3-ssr": "^0.15.12",
     "@nuxt/kit": "^3.5.2",
     "@nuxt/schema": "3.5.2",
     "@vrx-arco/pro-components": "workspace:*",

@@ -99,18 +99,6 @@ importers:
         specifier: '>=4.1.6'
         version: 4.2.1(vue@3.3.4)
 
-  packages/css-render:
-    dependencies:
-      '@css-render/plugin-bem':
-        specifier: ^0.15.12
-        version: 0.15.12(css-render@0.15.12)
-      '@css-render/vue3-ssr':
-        specifier: ^0.15.12
-        version: 0.15.12(vue@3.3.4)
-      css-render:
-        specifier: ^0.15.12
-        version: 0.15.12
-
   packages/icon:
     dependencies:
       '@arco-design/web-vue':
@@ -122,9 +110,6 @@ importers:
 
   packages/nuxt:
     dependencies:
-      '@css-render/vue3-ssr':
-        specifier: ^0.15.12
-        version: 0.15.12(vue@3.3.4)
       '@nuxt/kit':
         specifier: ^3.5.2
         version: 3.5.2(rollup@3.23.1)
@@ -152,9 +137,6 @@ importers:
       '@vill-v/path-prop':
         specifier: ^1.2.2
         version: 1.2.2
-      '@vrx-arco/css-render':
-        specifier: workspace:*
-        version: link:../css-render
       '@vrx-arco/icon':
         specifier: workspace:*
         version: link:../icon
@@ -182,9 +164,6 @@ importers:
       '@arco-design/web-vue':
         specifier: '>=2.39.2'
         version: 2.46.0(vue@3.3.4)
-      '@vrx-arco/css-render':
-        specifier: workspace:*
-        version: link:../css-render
       '@vrx-arco/icon':
         specifier: workspace:*
         version: link:../icon
@@ -633,24 +612,12 @@ packages:
       mime: 3.0.0
     dev: true
 
-  /@css-render/plugin-bem@0.15.12(css-render@0.15.12):
-    resolution: {integrity: sha512-Lq2jSOZn+wYQtsyaFj6QRz2EzAnd3iW5fZeHO1WSXQdVYwvwGX0ZiH3X2JQgtgYLT1yeGtrwrqJdNdMEUD2xTw==}
-    peerDependencies:
-      css-render: ~0.15.12
-    dependencies:
-      css-render: 0.15.12
-    dev: false
-
   /@css-render/vue3-ssr@0.15.12(vue@3.3.4):
     resolution: {integrity: sha512-AQLGhhaE0F+rwybRCkKUdzBdTEM/5PZBYy+fSYe1T9z9+yxMuV/k7ZRqa4M69X+EI1W8pa4kc9Iq2VjQkZx4rg==}
     peerDependencies:
       vue: ^3.0.11
     dependencies:
       vue: 3.3.4
-    dev: false
-
-  /@emotion/hash@0.8.0:
-    resolution: {integrity: sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==}
     dev: false
 
   /@esbuild-kit/cjs-loader@2.4.2:
@@ -3122,13 +3089,6 @@ packages:
       postcss: 8.4.24
     dev: true
 
-  /css-render@0.15.12:
-    resolution: {integrity: sha512-eWzS66patiGkTTik+ipO9qNGZ+uNuGyTmnz6/+EJIiFg8+3yZRpnMwgFo8YdXhQRsiePzehnusrxVvugNjXzbw==}
-    dependencies:
-      '@emotion/hash': 0.8.0
-      csstype: 3.0.11
-    dev: false
-
   /css-select@5.1.0:
     resolution: {integrity: sha512-nwoRF1rvRRnnCqqY7updORDsuqKzqYJ28+oSMaJMMgOauh3fvwHqMS7EZpIPqK8GL+g9mKxF1vP/ZjSeNjEVHg==}
     dependencies:
@@ -3230,10 +3190,6 @@ packages:
     dependencies:
       css-tree: 2.2.1
     dev: true
-
-  /csstype@3.0.11:
-    resolution: {integrity: sha512-sa6P2wJ+CAbgyy4KFssIb/JNMLxFvKF1pCYCSXS8ZMuqZnMsrxqI2E5sPyoTpxoPU/gVZMzr2zjOfg8GIZOMsw==}
-    dev: false
 
   /csstype@3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}

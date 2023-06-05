@@ -1,18 +1,11 @@
-import { addComponent, addPluginTemplate, addVitePlugin, defineNuxtModule } from '@nuxt/kit'
-import { pluginTemplate } from './plugin'
-import { vrxArcoUnplugin } from './vrxArcoUnplugin'
+import { addComponent, addVitePlugin, defineNuxtModule } from '@nuxt/kit'
 import * as obj from '@vrx-arco/pro-components'
+import { vrxArcoUnplugin } from './vrxArcoUnplugin'
 export default defineNuxtModule({
   meta: {
     name: 'vrx-arco',
   },
   setup(_, nuxt) {
-    addPluginTemplate({
-      filename: 'vrx-arco.mjs',
-      getContents: () => pluginTemplate,
-      mode: 'server',
-      write: true,
-    })
     addVitePlugin(vrxArcoUnplugin.vite({ option: nuxt.options }))
 
     Object.keys(obj).forEach((key) => {
