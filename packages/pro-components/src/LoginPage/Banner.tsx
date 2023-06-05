@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import { bannerStyle } from './style'
+import { style } from '../style/var'
 
 export const LoginBanner = defineComponent({
   name: 'vrx-arco-login-banner',
@@ -9,7 +9,7 @@ export const LoginBanner = defineComponent({
     image: String,
   },
   setup: (props, { slots }) => {
-    const { bemClass } = bannerStyle()
+    const { bemClass } = style('login-page-banner')
     return () => {
       const { title, subtitle, image } = props
       return (

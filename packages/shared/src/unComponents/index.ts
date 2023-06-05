@@ -30,8 +30,9 @@ export const unComponents = async (
         from: '${packageJson.name}',
       }
       if(options.sideEffect!==false){
-        config.sideEffects = importStyle=='css' ? mjsStyleCssComp[name]:mjsStyleJsComp[name]
-        config.sideEffects.push(...vrxStyle[name])
+        const styles = importStyle=='css' ? mjsStyleCssComp[name]:mjsStyleJsComp[name]
+        styles.push(...vrxStyle[name])
+        config.sideEffects = styles
         if(Array.isArray(config.sideEffects) && options.theme){
           config.sideEffects = config.sideEffects.map(v=>{
             if(typeof v==='string'&&options.theme){

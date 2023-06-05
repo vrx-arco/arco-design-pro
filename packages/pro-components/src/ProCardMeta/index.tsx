@@ -1,6 +1,6 @@
 import { PropType, VNodeTypes, defineComponent, isVNode } from 'vue'
 import { propsSlot } from '@vrx-arco/use'
-import { style } from './style'
+import { style } from '../style/var'
 
 export const ProCardMeta = defineComponent({
   name: 'vrx-arco-pro-card-meta',
@@ -23,7 +23,7 @@ export const ProCardMeta = defineComponent({
     actions: Array as PropType<any[]>,
   },
   setup: (props, { slots }) => {
-    const { bemClass } = style()
+    const { bemClass } = style('pro-card-meta')
     const getAction = (actions: VNodeTypes[]) => {
       return actions.map(
         (action, index) =>

@@ -1,11 +1,11 @@
 import { PropType, defineComponent, onMounted, ref, toRaw, toRef } from 'vue'
 import { Button, Col, Divider, FieldRule, Form, Row, Space } from '@arco-design/web-vue'
-import { style } from './style'
+import { style } from '../style/var'
 import { IconRefresh, IconSearch } from '@vrx-arco/icon'
 import { klona } from 'klona/lite'
 import { useAsyncLoading } from '@vrx/core'
 import { useGrid } from '@vrx-arco/use'
-import { CardListColumnGrid } from '../ProCard'
+import { CardListColumnGrid } from '../ProCardList'
 import { provideSearchBar } from './context'
 
 export const SearchBar = defineComponent({
@@ -65,7 +65,7 @@ export const SearchBar = defineComponent({
   },
   emits: ['search', 'reset'],
   setup: (props, { slots }) => {
-    const { bemClass } = style()
+    const { bemClass } = style('search-bar')
     const model = toRef(props, 'model')
     const column = toRef(props, 'column')
     const autoUpdate = toRef(props, 'autoUpdate')

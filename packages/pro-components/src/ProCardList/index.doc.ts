@@ -22,4 +22,5 @@ export default defineGenDoc({
     },
   },
   arco: ['Card', 'List', 'Layout', 'Pagination'],
+  style: ['ProPagination', 'ProList'],
 })

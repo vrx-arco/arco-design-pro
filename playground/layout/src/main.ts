@@ -4,6 +4,7 @@ import './index.scss'
 import '@vrx-arco/pro-components/arco-style'
 import '@vrx-arco/pro-layout/arco-style'
 import '@vrx-arco/pro-layout/style/index.css'
+import '@vrx-arco/pro-components/style/index.css'
 import { routes } from './router/modules'
 
 createVrxArcoApp({

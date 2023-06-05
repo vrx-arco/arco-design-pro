@@ -28,9 +28,11 @@ export const vrxArcoPlugin = createPlugin(() => {
 
 declare module '@vrx/cp' {
   interface ResolveGenDoc {
-    arco: string[]
+    arco?: string[]
+    style?: string[]
   }
   interface GenDoc {
-    arco: string[]
+    arco?: string[]
+    style?: string[]
   }
 }

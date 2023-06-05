@@ -10,7 +10,7 @@ import {
   Space,
 } from '@arco-design/web-vue'
 import { IconLock, IconUser } from '@vrx-arco/icon'
-import { style } from './style'
+import { style } from '../style/var'
 import { useToggle } from '@vueuse/core'
 import { controlVModel } from '@vrx-arco/use'
 
@@ -58,7 +58,7 @@ export const LoginForm = defineComponent({
   },
   emits: ['submit', 'forget', 'register'],
   setup: (props, { slots, expose, emit }) => {
-    const { bemClass } = style()
+    const { bemClass } = style('login-form')
 
     const model = controlVModel(props, 'model', emit, () => ({
       username: '',

@@ -1,6 +1,6 @@
 import { PropType, defineComponent } from 'vue'
 import { Avatar, Dropdown } from '@arco-design/web-vue'
-import { style } from './style'
+import { style } from '../style/var'
 import { propsSlot } from '@vrx-arco/use'
 
 export interface UserAvatarDropDownItem {
@@ -26,7 +26,7 @@ export const AvatarDropDown = defineComponent({
   },
   emits: ['select'],
   setup: (props, { slots, emit }) => {
-    const { bemClass } = style()
+    const { bemClass } = style('avatar-dropdown')
     const handleSelect = (select: string) => {
       emit('select', select)
     }

@@ -37,4 +37,5 @@ export default defineGenDoc({
     },
   },
   arco: ['Button', 'Checkbox', 'Form', 'Input', 'Link', 'Message', 'Space', 'Layout'],
+  style: ['LoginForm'],
 })

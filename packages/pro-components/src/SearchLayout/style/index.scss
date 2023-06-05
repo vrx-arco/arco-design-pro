@@ -1,0 +1,37 @@
+@import '../../style/var.scss';
+.#{$prefix}-search-layout {
+  height: 100%;
+  &-card {
+    height: 100%;
+    & > .arco-card-header {
+      border: none;
+    }
+  }
+  &--card {
+    background: var(--color-bg-2);
+    border-radius: var(--border-radius-none);
+  }
+  &__header {
+    padding-bottom: 16px;
+    &--card {
+      padding-bottom: 0;
+    }
+    &-divider {
+      padding: 0 16px;
+      .arco-divider-horizontal {
+        margin: 0;
+      }
+    }
+  }
+  &__content {
+    background: var(--color-bg-2);
+    border-radius: var(--border-radius-none);
+    padding: 16px;
+    min-height: 0;
+    &--nav {
+      .arco-tabs-nav.arco-tabs-nav-type-line::before {
+        height: 0;
+      }
+    }
+  }
+}

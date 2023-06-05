@@ -1,5 +1,5 @@
 import { PropType, defineComponent } from 'vue'
-import { loginPageStyle } from './style'
+import { style } from '../style/var'
 import { LoginBanner } from './Banner'
 import { Layout } from '@arco-design/web-vue'
 import { LoginForm, LoginFormModel } from '../LoginForm'
@@ -65,7 +65,7 @@ export const LoginPage = defineComponent({
   },
   emits: ['forget', 'remember', 'register', 'submit'],
   setup: (props, { slots, emit }) => {
-    const { bemClass } = loginPageStyle()
+    const { bemClass } = style('login-page')
     const model = controlVModel(props, 'model', emit, () => ({
       username: '',
       password: '',

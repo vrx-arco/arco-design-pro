@@ -1,0 +1,27 @@
+@import '../../style/var.scss';
+
+.#{$prefix}-login-form {
+  &__title {
+    color: var(--color-text-1);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &__subtitle {
+    color: var(--color-text-3);
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__error-msg {
+    height: 32px;
+    color: rgb(var(--red-6));
+    line-height: 32px;
+  }
+  &__password-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__register-btn {
+    color: var(--color-text-3);
+  }
+}

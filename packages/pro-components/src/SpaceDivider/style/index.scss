@@ -1,0 +1,28 @@
+@import '../../style/var.scss';
+
+.#{$prefix}-space-divider {
+  display: inline-flex;
+  &-fill {
+    display: flex;
+  }
+  &-vertical {
+    flex-direction: column;
+  }
+  &-align {
+    &-start {
+      align-items: flex-start;
+    }
+    &-base-line {
+      align-items: baseline;
+    }
+    &-center {
+      align-items: center;
+    }
+    &-end {
+      align-items: flex-end;
+    }
+    &-wrap {
+      flex-wrap: wrap;
+    }
+  }
+}

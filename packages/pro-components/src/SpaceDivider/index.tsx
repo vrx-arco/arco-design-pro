@@ -1,7 +1,7 @@
 import { PropType, computed, defineComponent } from 'vue'
 import { filterEmptyChildren, useEmptyComponentProvide } from '@vrx-arco/use'
 import { Divider } from '@arco-design/web-vue'
-import { style } from './style'
+import { style } from '../style/var'
 
 const SpaceDividerItem = defineComponent({
   name: 'vrx-arco-space-divider-item',
@@ -70,7 +70,7 @@ export const SpaceDivider = defineComponent({
     type: String as PropType<'dashed' | 'dotted' | 'double' | 'solid'>,
   },
   setup: (props, { slots }) => {
-    const { bemClass } = style()
+    const { bemClass } = style('space-divider')
     const classname = computed(() => ({
       [bemClass(props.fill ? '-fill' : undefined)]: true,
       [bemClass(`-align-${props.align}`)]: true,

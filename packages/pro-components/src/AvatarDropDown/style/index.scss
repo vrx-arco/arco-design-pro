@@ -1,0 +1,6 @@
+@import '../../style/var.scss';
+
+.#{$prefix}-avatar-dropdown {
+  cursor: pointer;
+  user-select: none;
+}

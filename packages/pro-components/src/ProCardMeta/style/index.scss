@@ -1,0 +1,42 @@
+@import '../../style/var.scss';
+
+.#{$prefix}-pro-card-meta {
+  color: var(--color-text-1);
+
+  &__avatar {
+    float: left;
+    padding-right: 16px;
+  }
+  &__title {
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 8px;
+  }
+  &__detail {
+    overflow: hidden;
+  }
+  &__actions {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    list-style: none;
+    display: flex;
+    & > li {
+      text-align: center;
+      span {
+        position: relative;
+        display: block;
+        font-size: 14px;
+        line-height: 14px;
+        cursor: pointer;
+        &:hover {
+          color: rgb(var(--primary-6));
+          transition: color 0.3s;
+        }
+      }
+    }
+  }
+}

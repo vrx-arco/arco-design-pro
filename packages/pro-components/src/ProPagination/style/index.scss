@@ -1,0 +1,23 @@
+@import '../../style/var.scss';
+
+.#{$prefix}-pro-pagination {
+  height: 100%;
+
+  &__header {
+    padding-bottom: 16px;
+  }
+  &__content {
+    overflow: auto;
+    border-radius: var(--border-radius-small);
+  }
+  &__footer {
+    padding-top: 16px;
+  }
+  &__pagination {
+    justify-content: flex-end;
+
+    .arco-input-wrapper {
+      width: 40px;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import { defineComponent, toRef } from 'vue'
 import { Layout, Pagination } from '@arco-design/web-vue'
 import { useProPagination } from '@vrx-arco/use'
-import { style } from './style'
+import { style } from '../style/var'
 import { proPaginationProps } from './props'
 
 export type { ProPaginationOption, PropPaginationProps } from '@vrx-arco/use'
@@ -18,7 +18,7 @@ export const ProPagination = defineComponent({
     pageSizeChange: (pageSize: number) => true,
   },
   setup: (props, { emit, slots }) => {
-    const { bemClass } = style()
+    const { bemClass } = style('pro-pagination')
 
     const data = toRef(props, 'data')
 

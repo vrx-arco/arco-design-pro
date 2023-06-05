@@ -1,6 +1,6 @@
 import { PropType, computed, defineComponent, ref } from 'vue'
 import { List } from '@arco-design/web-vue'
-import { style } from './style'
+import { style } from '../style/var'
 import { useElementSize } from '@vueuse/core'
 import { getByPath } from '@vill-v/path-prop'
 import { ProPagination } from '../ProPagination'
@@ -86,7 +86,7 @@ export const ProList = defineComponent({
   setup: (props, { emit, slots }) => {
     const wrapperRef = ref()
     const { height } = useElementSize(wrapperRef)
-    const { bemClass } = style()
+    const { bemClass } = style('pro-list')
 
     const maxHeight = computed(() => props.maxHeight ?? height.value)
 
