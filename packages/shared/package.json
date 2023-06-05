@@ -19,8 +19,8 @@
     "build": "tsup-node"
   },
   "dependencies": {
-    "scule": "^1.0.0",
-    "knitwork": "^1.0.0"
+    "knitwork": "^1.0.0",
+    "scule": "^1.0.0"
   },
   "sideEffects": false
 }
