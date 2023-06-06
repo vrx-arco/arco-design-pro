@@ -1,4 +1,15 @@
 
+## v1.0.0-beta.1
+
+
+### 🚀 特性
+
+  - **nuxt:** 新增nuxt 模块 ,为 pro-components 提供自动导入功能 (584d772)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.0.0-beta.0
 
 
