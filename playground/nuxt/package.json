@@ -9,9 +9,9 @@
     "postinstall": "nuxi prepare"
   },
   "dependencies": {
+    "dayjs": "^1.11.8",
     "@arco-design/web-vue": "^2.47.0",
-    "@css-render/vue3-ssr": "^0.15.12",
-    "@vrx-arco/pro-components": "^0.2.7",
+    "@vrx-arco/pro-components": "^1.0.0-beat.0",
     "magic-string": "0.30.0",
     "mlly": "^1.3.0",
     "unplugin": "1.3.1"
