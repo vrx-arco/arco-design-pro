@@ -39,8 +39,8 @@ importers:
         specifier: workspace:*
         version: link:packages/shared
       '@vrx/cp':
-        specifier: 0.0.1-beta.56
-        version: 0.0.1-beta.56(@types/node@20.2.5)(less@4.1.3)(sass@1.62.1)(typescript@5.1.3)(vue@3.3.4)
+        specifier: 0.0.1-beta.57
+        version: 0.0.1-beta.57(@types/node@20.2.5)(less@4.1.3)(sass@1.62.1)(typescript@5.1.3)(vue@3.3.4)
       eslint:
         specifier: ^8.42.0
         version: 8.42.0
@@ -1964,8 +1964,8 @@ packages:
       vue-template-compiler: 2.7.14
     dev: true
 
-  /@vrx-cp/css@0.0.1-beta.56(less@4.1.3)(sass@1.62.1):
-    resolution: {integrity: sha512-/UhfGJkGzILEk8kTUHcEoWwd5O4cxG1DcmWWed7AoGO+TMxPZfyJquKeLT3zBWvHLvYzeISloFMZelvJ8RayVg==}
+  /@vrx-cp/css@0.0.1-beta.57(less@4.1.3)(sass@1.62.1):
+    resolution: {integrity: sha512-+BnY7qRLpWgA11WHUTKiVL20PELtjyRmZYJ+ZvifFTMPDKd3JM77iWNtl3me/WrxEF0hsy1THWcxlmBCSDYb8Q==}
     peerDependencies:
       less: '*'
       sass: '*'
@@ -1975,7 +1975,7 @@ packages:
       sass:
         optional: true
     dependencies:
-      '@vrx-cp/utils': 0.0.1-beta.56
+      '@vrx-cp/utils': 0.0.1-beta.57
       globby: 13.1.4
       less: 4.1.3
       postcss: 8.4.24
@@ -1983,14 +1983,14 @@ packages:
       void-fs: 0.0.1-beta.8
     dev: true
 
-  /@vrx-cp/docgen@0.0.1-beta.56(typescript@5.1.3):
-    resolution: {integrity: sha512-xNBevzmfj5TMBAOMk9Ble6+0ilswATT/l8dciK6WxSQTq6lVCKjMPsDPedkWJgmcgCtfVc1Qpn4GxLhVlqZKng==}
+  /@vrx-cp/docgen@0.0.1-beta.57(typescript@5.1.3):
+    resolution: {integrity: sha512-41K6cdyeecXj4JT6iWSpU0D3fwtgBP6V6L4wQCHnO3vGpZxtApmWR52dNN05NY9PFuYbRym28n1BymCo1V4O5g==}
     engines: {node: '>=16'}
     peerDependencies:
       typescript: '*'
     dependencies:
       '@vill-v/type-as': 1.2.2
-      '@vrx-cp/utils': 0.0.1-beta.56
+      '@vrx-cp/utils': 0.0.1-beta.57
       cac: 6.7.14
       defu: 6.1.2
       knitwork: 1.0.0
@@ -2001,16 +2001,16 @@ packages:
       vue-component-meta: 1.6.5(typescript@5.1.3)
     dev: true
 
-  /@vrx-cp/runtime@0.0.1-beta.56(@types/node@20.2.5)(less@4.1.3)(sass@1.62.1)(typescript@5.1.3)(vue@3.3.4):
-    resolution: {integrity: sha512-h4WMbNRWjRU6Mw9SQycIIYetBNZBzzfmMjpF5Fm2+d6b91GG9DaC/XhEm5ZCXMGgdwagcWIf30/3uB4WQq16Ng==}
+  /@vrx-cp/runtime@0.0.1-beta.57(@types/node@20.2.5)(less@4.1.3)(sass@1.62.1)(typescript@5.1.3)(vue@3.3.4):
+    resolution: {integrity: sha512-UoYXj4Qpifp/fq+xK3BkgeTiyAbZF8TWV/Go2KsXQ2aNa9GdZEL7MntNlMg3tNpstVktU2R7H94fR8YyZPQxsg==}
     engines: {node: '>=16'}
     dependencies:
       '@vitejs/plugin-vue': 4.2.3(vite@4.3.9)(vue@3.3.4)
       '@vitejs/plugin-vue-jsx': 3.0.1(vite@4.3.9)(vue@3.3.4)
-      '@vrx-cp/css': 0.0.1-beta.56(less@4.1.3)(sass@1.62.1)
-      '@vrx-cp/docgen': 0.0.1-beta.56(typescript@5.1.3)
-      '@vrx-cp/utils': 0.0.1-beta.56
-      '@vrx/dts': 0.0.1-beta.56(typescript@5.1.3)(vue@3.3.4)
+      '@vrx-cp/css': 0.0.1-beta.57(less@4.1.3)(sass@1.62.1)
+      '@vrx-cp/docgen': 0.0.1-beta.57(typescript@5.1.3)
+      '@vrx-cp/utils': 0.0.1-beta.57
+      '@vrx/dts': 0.0.1-beta.57(typescript@5.1.3)(vue@3.3.4)
       defu: 6.1.2
       hookable: 5.5.3
       vite: 4.3.9(@types/node@20.2.5)(less@4.1.3)(sass@1.62.1)
@@ -2027,8 +2027,8 @@ packages:
       - vue
     dev: true
 
-  /@vrx-cp/utils@0.0.1-beta.56:
-    resolution: {integrity: sha512-3FLwaRU9QxWkGJviF7zwslKOZxnc0nTbRIvhWpsY5tzoKpuXV7SK5+3Lo0hFprTkjgyHVXzUIfEgx6WkgciPxw==}
+  /@vrx-cp/utils@0.0.1-beta.57:
+    resolution: {integrity: sha512-La+tn7vjL9xdom23rvGSmIN7ler2RSAit3ADldM/XHHpwYMrTipsYe5kdktK+dihEwxePXp0boQOEesjCvCrNQ==}
     dependencies:
       '@vill-v/type-as': 1.2.2
       chalk: 5.2.0
@@ -2056,12 +2056,12 @@ packages:
       vue-demi: 0.14.5(vue@3.3.4)
     dev: false
 
-  /@vrx/cp@0.0.1-beta.56(@types/node@20.2.5)(less@4.1.3)(sass@1.62.1)(typescript@5.1.3)(vue@3.3.4):
-    resolution: {integrity: sha512-tNeAp6kUdWz1azWVcQesjj+x2CRN1JW2aAQ7UOtIk6iWzsJHh3Z34aLgyUCcKB36RLIE6GzLy4N9qB2hBB5o0A==}
+  /@vrx/cp@0.0.1-beta.57(@types/node@20.2.5)(less@4.1.3)(sass@1.62.1)(typescript@5.1.3)(vue@3.3.4):
+    resolution: {integrity: sha512-o83WAgsTF8n6ApWjZlm26OoJLLrAwWCw5cS+/acJ4lFc+XgDw9HBDMWh6yOMsudG+kvnYuIkxejCqbsTxE8KrQ==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
-      '@vrx-cp/runtime': 0.0.1-beta.56(@types/node@20.2.5)(less@4.1.3)(sass@1.62.1)(typescript@5.1.3)(vue@3.3.4)
+      '@vrx-cp/runtime': 0.0.1-beta.57(@types/node@20.2.5)(less@4.1.3)(sass@1.62.1)(typescript@5.1.3)(vue@3.3.4)
       c12: 1.4.1
       cac: 6.7.14
     transitivePeerDependencies:
@@ -2076,8 +2076,8 @@ packages:
       - vue
     dev: true
 
-  /@vrx/dts@0.0.1-beta.56(typescript@5.1.3)(vue@3.3.4):
-    resolution: {integrity: sha512-sJbcpGn7jE32SueWawVaqDZr+H53uKqjKpIqhOr0PXTp3fMWfFFFZnUEgddhktPx8/GvrZYv/Am2nFMqyVd7LQ==}
+  /@vrx/dts@0.0.1-beta.57(typescript@5.1.3)(vue@3.3.4):
+    resolution: {integrity: sha512-FdtRkDl2xXlDB+VAqBDHvwao2gs2Fnp55EamPsShsJGehdj5yiLDMutvGhKpAh/InupMHh03Oi/x5mJBbypm5A==}
     engines: {node: '>=16'}
     hasBin: true
     peerDependencies:
