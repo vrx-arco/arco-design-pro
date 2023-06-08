@@ -74,7 +74,6 @@
     "arco-style.js",
     "arco-style.mjs",
     "web-types.json",
-    "components.d.ts",
     "dist",
     "style"
   ],
