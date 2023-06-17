@@ -1,4 +1,15 @@
 
+## v1.0.0-beta.4
+
+
+### 🩹 修复
+
+  - 修复 resolver dts 文件生成错误 (aba1354)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.0.0-beta.3
 
 
