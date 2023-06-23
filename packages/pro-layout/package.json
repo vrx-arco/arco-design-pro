@@ -59,7 +59,7 @@
   "dependencies": {
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/use": "workspace:*",
-    "@vueuse/core": "^10.1.2"
+    "@vueuse/core": "^10.2.0"
   },
   "publishConfig": {
     "access": "public"
