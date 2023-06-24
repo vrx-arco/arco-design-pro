@@ -1,4 +1,19 @@
 
+## v1.0.0
+
+
+### 🚀 特性
+
+  - **nuxt:** 提供 为 `@arco-design/web-vue` 本地提供组件导入的功能 (cc91fa1)
+
+### 🏡 框架
+
+  - **nuxt:** Add README.md (a1d0d0a)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.0.0-beta.5
 
 
