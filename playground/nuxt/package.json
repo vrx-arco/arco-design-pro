@@ -10,16 +10,16 @@
   },
   "dependencies": {
     "@arco-design/web-vue": "^2.47.1",
-    "@vrx-arco/pro-components": "^1.0.0-beta.4",
+    "@vrx-arco/pro-components": "^1.0.0-beta.5",
     "dayjs": "^1.11.8",
     "magic-string": "0.30.0",
     "mlly": "^1.4.0",
     "unplugin": "1.3.1"
   },
   "devDependencies": {
-    "@nuxt/devtools": "0.6.2",
-    "nuxi": "^3.5.3",
-    "nuxt": "^3.5.3",
+    "@nuxt/devtools": "0.6.3",
+    "nuxi": "^3.6.0",
+    "nuxt": "^3.6.0",
     "typescript": "^5.1.3"
   }
 }
