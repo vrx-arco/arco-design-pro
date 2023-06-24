@@ -13,4 +13,5 @@
     </SearchLayoutHeader>
     <SearchLayoutContent></SearchLayoutContent>
   </SearchLayout>
+  <AButton type="primary">sss</AButton>
 </template>

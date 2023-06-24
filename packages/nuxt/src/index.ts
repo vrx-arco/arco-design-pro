@@ -1,8 +1,9 @@
-import { addComponent, addVitePlugin, addWebpackPlugin, defineNuxtModule } from '@nuxt/kit'
-import * as obj from '@vrx-arco/pro-components'
+import { defineNuxtModule } from '@nuxt/kit'
 import { transpileNoSSRFriendly } from './transpile'
-import { vrxArcoUnplugin } from './vrxArcoUnplugin'
 import type { VrxArcoOption } from './type'
+import { vrxArcoComponents, vrxArcoUnplugin } from './vrx-arco'
+import { arcoComponents, arcoUnplugin } from './arco'
+
 export default defineNuxtModule<VrxArcoOption>({
   meta: {
     name: 'vrx-arco',
@@ -18,21 +19,12 @@ export default defineNuxtModule<VrxArcoOption>({
       transpileNoSSRFriendly(nuxt)
     }
 
-    Object.keys(obj).forEach((key) => {
-      if (/^[a-z]/.test(key)) {
-        return
-      }
-      addComponent({
-        name: key,
-        filePath: '@vrx-arco/pro-components',
-        export: key,
-        global: false,
-      })
-    })
+    vrxArcoComponents()
+    option.arco && arcoComponents()
 
     if (option.sideEffect) {
-      addVitePlugin(vrxArcoUnplugin.vite({ option: nuxt.options, vrxArco: option }))
-      addWebpackPlugin(vrxArcoUnplugin.webpack({ option: nuxt.options, vrxArco: option }))
+      vrxArcoUnplugin(nuxt.options, option)
+      option.arco && arcoUnplugin(nuxt.options, option)
     }
   },
 })

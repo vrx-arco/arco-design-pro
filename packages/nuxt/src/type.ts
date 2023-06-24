@@ -15,4 +15,8 @@ export interface VrxArcoOption {
    * 是否对内置的对 ssr 不友好的包进行自动转换配置
    */
   transpile?: boolean
+  /**
+   * 是否对 @arco-deign/web-vue 提供自动导入支持
+   */
+  arco?: boolean
 }
