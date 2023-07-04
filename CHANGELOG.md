@@ -1,4 +1,20 @@
 
+## v1.1.0
+
+
+### 🚀 特性
+
+  - 将 `pro-components` `pro-layout` css的样式兼容性保持与 `@arco-design/web-vue`一致 (a9193f8)
+  - ⚠️  对 `unplugin-vue-components` 的 支持不再内置在组件库内部，新增 `@vrx-arco/helper` 包分离该业务 (a05c653)
+
+#### ⚠️  Breaking Changes
+
+  - ⚠️  对 `unplugin-vue-components` 的 支持不再内置在组件库内部，新增 `@vrx-arco/helper` 包分离该业务 (a05c653)
+
+### ❤️  Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.0.0
 
 
