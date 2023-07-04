@@ -16,8 +16,7 @@
     "arco-design",
     "vue",
     "arco-pro",
-    "arco-pro-vue",
-    "css-render"
+    "arco-pro-vue"
   ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -61,7 +60,7 @@
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/use": "workspace:*",
     "@vrx/core": "^0.3.5",
-    "@vueuse/core": "^10.2.0",
+    "@vueuse/core": "^10.2.1",
     "klona": "^2.0.6"
   },
   "publishConfig": {
