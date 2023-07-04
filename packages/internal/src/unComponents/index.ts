@@ -1,13 +1,13 @@
-import { ResolveConfig, logger, mergePackageJson } from '@vrx/cp'
-import { genUnComponentsResolver } from './helper'
+import { ResolveConfig, logger } from '@vrx/cp'
 import { ArcoStyleRes } from '../arco-style/findArcoStyle'
+import { genUnComponentsResolver } from './helper'
 
 export const unComponents = async (
   config: ResolveConfig,
   { mjsStyleCssComp, mjsStyleJsComp }: ArcoStyleRes,
   vrxStyle: Record<string, string[]>
 ) => {
-  const { packageJson, formatExt } = config
+  const { packageJson } = config
   const success = logger.run('generate unplugin-components resolver')
 
   await genUnComponentsResolver({
@@ -45,18 +45,6 @@ export const unComponents = async (
       return config
     }
     }`,
-    target: 'node16',
-  })
-
-  config.packageJson = await mergePackageJson({
-    exports: {
-      './resolver': {
-        import: `./resolver${formatExt.mjs}`,
-        require: `./resolver${formatExt.cjs}`,
-        types: './resolver.d.ts',
-      },
-    },
-    files: [`resolver${formatExt.mjs}`, `resolver${formatExt.cjs}`, 'resolver.d.ts'],
   })
 
   success()

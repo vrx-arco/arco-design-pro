@@ -12,11 +12,6 @@ packages/*/arco-style-css.js
 packages/*/components.d.ts
 playground/*/components.d.ts
 packages/*/web-types.json
-packages/*/resolver.d.ts
-packages/*/resolver.d.mts
-packages/*/resolver.mjs
-packages/*/resolver.js
-packages/*/resolver.ts
 packages/*/style
 
 packages/icon/index.*

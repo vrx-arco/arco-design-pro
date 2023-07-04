@@ -1,9 +1,10 @@
 import { NuxtOptions } from '@nuxt/schema'
-import { mjsStyleCssComp, mjsStyleJsComp, vrxStyle } from '@vrx-arco/pro-components/resolver'
+import { ProComponentsConstant } from '@vrx-arco/helper'
 import { VrxArcoOption } from '../type'
 import { componentStyle } from '@vrx-cp/nuxt-utils'
 
 export const vrxArcoUnplugin = (nuxtoption: NuxtOptions, vrxArco: VrxArcoOption) => {
+  const { mjsStyleCssComp, mjsStyleJsComp, vrxStyle } = ProComponentsConstant
   componentStyle(nuxtoption, {
     name: 'vrx-arco:nuxt',
     component(component) {

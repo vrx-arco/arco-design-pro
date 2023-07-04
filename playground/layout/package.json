@@ -12,5 +12,8 @@
     "@vrx-arco/app": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx-arco/pro-layout": "workspace:*"
+  },
+  "devDependencies": {
+    "@vrx-arco/helper": "workspace:*"
   }
 }

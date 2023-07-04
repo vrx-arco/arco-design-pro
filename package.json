@@ -18,7 +18,7 @@
     "@vill-v/tsconfig": "^0.0.17",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
-    "@vrx-arco/shared": "workspace:*",
+    "@vrx-arco/internal": "workspace:*",
     "@vrx/cp": "0.0.1-beta.66",
     "eslint": "^8.44.0",
     "less": "^4.1.3",
