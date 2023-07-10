@@ -1,8 +1,8 @@
 import { Router } from 'vue-router'
-import { resetRoute } from './resetRoute'
-import { filterRoutes } from './filterRoutes'
 import { usePermissionStore } from '../pinia'
 import { IVrxArcoApp } from '../types'
+import { resetRoute } from './resetRoute'
+import { filterRoutes } from './filterRoutes'
 
 export const defineRouterPolice = (router: Router, options: IVrxArcoApp) => {
   const { loading } = options

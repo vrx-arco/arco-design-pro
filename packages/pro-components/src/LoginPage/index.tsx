@@ -1,9 +1,9 @@
 import { PropType, defineComponent } from 'vue'
-import { style } from '../style/var'
-import { LoginBanner } from './Banner'
 import { Layout } from '@arco-design/web-vue'
-import { LoginForm, LoginFormModel } from '../LoginForm'
 import { controlVModel } from '@vrx-arco/use'
+import { style } from '../style/var'
+import { LoginForm, LoginFormModel } from '../LoginForm'
+import { LoginBanner } from './Banner'
 
 export const LoginPage = defineComponent({
   name: 'vrx-arco-login-page',

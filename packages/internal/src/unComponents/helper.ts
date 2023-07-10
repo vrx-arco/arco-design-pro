@@ -1,8 +1,9 @@
+import { join, resolve } from 'node:path'
 import { pascalCase } from 'scule'
 import { TypeObject, genInterface } from 'knitwork'
 import { writeTS } from 'void-fs'
 import { logger } from '@vrx/cp'
-import { join, resolve } from 'node:path'
+
 const unpluginComponentsDir = resolve(process.cwd(), '..', 'helper')
 export const genUnComponentsResolver = async ({
   packageName,

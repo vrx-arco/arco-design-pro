@@ -1,6 +1,6 @@
 import { ResolveConfig, mergePackageJson } from '@vrx/cp'
-import { ArcoStyleRes } from './findArcoStyle'
 import { writeTS } from 'void-fs'
+import { ArcoStyleRes } from './findArcoStyle'
 
 export const writeArcoStyle = async (config: ResolveConfig, arcoStyle: ArcoStyleRes) => {
   const { formatExt } = config

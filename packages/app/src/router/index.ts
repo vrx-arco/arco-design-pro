@@ -1,7 +1,7 @@
 import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router'
-import { defineRouterPolice } from './police'
 import { App } from 'vue'
 import { IVrxArcoApp } from '../types'
+import { defineRouterPolice } from './police'
 
 export const defineRouter = (app: App, options: IVrxArcoApp) => {
   const { routes, pageNotFound } = options.router

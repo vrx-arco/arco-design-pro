@@ -1,8 +1,8 @@
 import { defineComponent } from 'vue'
-import { style } from '../style/var'
 import { Breadcrumb, Scrollbar } from '@arco-design/web-vue'
 import { IconApps } from '@vrx-arco/icon'
 import { useRoute, useRouter } from 'vue-router'
+import { style } from '../style/var'
 
 /**
  * 页面包裹

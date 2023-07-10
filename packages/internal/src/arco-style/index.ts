@@ -1,7 +1,7 @@
 import { ResolveConfig, logger } from '@vrx/cp'
+import { del } from 'void-fs'
 import { ArcoStyleRes, findArcoStyle } from './findArcoStyle'
 import { writeArcoStyle } from './writeArcoStyle'
-import { del } from 'void-fs'
 
 export class ArcoStyle {
   arcoStyle: ArcoStyleRes

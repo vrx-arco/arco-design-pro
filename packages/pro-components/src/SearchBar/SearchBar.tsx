@@ -1,10 +1,10 @@
 import { PropType, defineComponent, onMounted, ref, toRaw, toRef } from 'vue'
 import { Button, Col, Divider, FieldRule, Form, Row, Space } from '@arco-design/web-vue'
-import { style } from '../style/var'
 import { IconRefresh, IconSearch } from '@vrx-arco/icon'
 import { klona } from 'klona/lite'
 import { useAsyncLoading } from '@vrx/core'
 import { useGrid } from '@vrx-arco/use'
+import { style } from '../style/var'
 import { CardListColumnGrid } from '../ProCardList'
 import { provideSearchBar } from './context'
 

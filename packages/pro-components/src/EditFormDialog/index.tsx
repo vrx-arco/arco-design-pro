@@ -148,7 +148,7 @@ export const EditFormDialog = defineComponent({
     /**
      * 表单数据
      */
-    const model = controlVModel(props, 'model', emit, () => ({} as Record<string, any>))
+    const model = controlVModel(props, 'model', emit, () => ({}) as Record<string, any>)
 
     /**
      * 是否是修改状态

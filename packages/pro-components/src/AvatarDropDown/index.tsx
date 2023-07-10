@@ -1,7 +1,7 @@
 import { PropType, defineComponent } from 'vue'
 import { Avatar, Dropdown } from '@arco-design/web-vue'
-import { style } from '../style/var'
 import { propsSlot } from '@vrx-arco/use'
+import { style } from '../style/var'
 
 export interface UserAvatarDropDownItem {
   value: string

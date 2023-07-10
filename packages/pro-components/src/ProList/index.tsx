@@ -1,8 +1,8 @@
 import { PropType, computed, defineComponent, ref } from 'vue'
 import { List } from '@arco-design/web-vue'
-import { style } from '../style/var'
 import { useElementSize } from '@vueuse/core'
 import { getByPath } from '@vill-v/path-prop'
+import { style } from '../style/var'
 import { ProPagination } from '../ProPagination'
 import { proPaginationProps } from '../ProPagination/props'
 

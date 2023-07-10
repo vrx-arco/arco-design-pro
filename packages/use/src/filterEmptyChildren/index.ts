@@ -1,4 +1,5 @@
 import { Comment, Fragment, Text } from 'vue'
+
 const isEmptyElement = (c) =>
   c &&
   (c.type === Comment ||

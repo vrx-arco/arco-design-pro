@@ -31,9 +31,7 @@ const MenuItem: FunctionalComponent<MenuItemProps> = ({ menu }) => {
       key={menu.name as string}
       title={menu.meta!.title as string}
     >
-      {menu.children?.map((item) => (
-        <MenuItem menu={item} key={item.name} />
-      ))}
+      {menu.children?.map((item) => <MenuItem menu={item} key={item.name} />)}
     </Menu.SubMenu>
   )
 }

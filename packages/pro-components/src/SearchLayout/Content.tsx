@@ -1,7 +1,7 @@
 import { PropType, defineComponent } from 'vue'
 import { Layout, Tabs } from '@arco-design/web-vue'
-import { injectSearchLayout } from './context'
 import type { TabsType } from '@arco-design/web-vue/es/tabs/interface'
+import { injectSearchLayout } from './context'
 
 export interface SearchLayoutContentTab {
   title: string

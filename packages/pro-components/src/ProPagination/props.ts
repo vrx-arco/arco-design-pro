@@ -21,4 +21,4 @@ export const proPaginationProps = () =>
       type: Object as PropType<PropPaginationProps>,
       default: () => ({}),
     },
-  } as const)
+  }) as const

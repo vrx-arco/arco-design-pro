@@ -10,9 +10,9 @@ import {
   Space,
 } from '@arco-design/web-vue'
 import { IconLock, IconUser } from '@vrx-arco/icon'
-import { style } from '../style/var'
 import { useToggle } from '@vueuse/core'
 import { controlVModel } from '@vrx-arco/use'
+import { style } from '../style/var'
 
 export interface LoginFormModel {
   username: string

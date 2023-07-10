@@ -1,5 +1,5 @@
-import { useShareBreakpoints } from '../useShareBreakpoints'
 import { Ref, computed, unref } from 'vue'
+import { useShareBreakpoints } from '../useShareBreakpoints'
 
 export const useGrid = (
   useColumn: boolean,

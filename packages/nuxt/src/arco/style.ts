@@ -2,6 +2,7 @@ import { NuxtOptions } from '@nuxt/schema'
 import { componentStyle } from '@vrx-cp/nuxt-utils'
 import { kebabCase } from 'scule'
 import { VrxArcoOption } from '../type'
+
 const matchComponents = [
   {
     pattern: /^AnchorLink$/,
@@ -128,7 +129,7 @@ function getComponentStyleDir(
   importName: string,
   importStyle: boolean | 'css' | 'less'
 ) {
-  if (['ConfigProvider', 'Icon'].includes(importName)) return undefined
+  if (['ConfigProvider', 'Icon'].includes(importName)) return
 
   let componentDir = kebabCase(importName)
   for (const item of matchComponents) {

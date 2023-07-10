@@ -1,11 +1,11 @@
 import { PropType, defineComponent } from 'vue'
 import { Drawer, Layout, Scrollbar, Spin } from '@arco-design/web-vue'
-import { NavBar } from './components/NavBar'
-import { ProMenu } from './components/Menu'
 import { useShareBreakpoints } from '@vrx-arco/use'
-import { style } from '../style/var'
 import { RouteRecordRaw, RouterView } from 'vue-router'
 import { useToggle } from '@vueuse/core'
+import { style } from '../style/var'
+import { ProMenu } from './components/Menu'
+import { NavBar } from './components/NavBar'
 
 export const ProLayout = defineComponent({
   name: 'vrx-arco-pro-layout',

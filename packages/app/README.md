@@ -7,12 +7,12 @@
 ## 创建
 
 ```ts
+import { Notification } from '@arco-design/web-vue'
+import { createVrxArcoApp } from '@vrx-arco/app' 
 import App from './App.vue'
 import { basicRoutes, dynamicRoutes } from '@/router'
 import { usePageStore } from '@/pinia'
 import { getPermission } from '@/api'
-import { Notification } from '@arco-design/web-vue'
-import { createVrxArcoApp } from '@vrx-arco/app'
 
 createVrxArcoApp({
   // 根组件

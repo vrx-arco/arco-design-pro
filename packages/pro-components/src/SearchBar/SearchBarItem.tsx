@@ -1,5 +1,5 @@
-import { FormGridItem } from '../FormGrid'
 import { defineComponent } from 'vue'
+import { FormGridItem } from '../FormGrid'
 import { formGridItemProps } from '../FormGrid/props'
 import { injectSearchBar } from './context'
 

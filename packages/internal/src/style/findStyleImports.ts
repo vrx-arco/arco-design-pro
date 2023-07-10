@@ -1,5 +1,5 @@
-import { ResolveConfig } from '@vrx/cp'
 import { join } from 'node:path'
+import { ResolveConfig } from '@vrx/cp'
 import { exists } from 'void-fs'
 
 const resolveStyleImport = async (config: ResolveConfig, component: string) => {

@@ -1,5 +1,6 @@
 import type { ComponentInfo, ComponentResolver } from 'unplugin-vue-components'
 import { mjsStyleCssComp, mjsStyleJsComp, vrxStyle } from './constant'
+
 export interface VrxArcoProLayoutResolverOption {
   importStyle?: 'css' | 'less'
   sideEffect?: boolean

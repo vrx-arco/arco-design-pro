@@ -3,6 +3,7 @@ import { defineRouter } from './router'
 import { definePinia } from './pinia'
 import { IVrxArcoApp } from './types'
 import { provideVrxArcoCheckPermission } from './permission'
+
 export const createVrxArcoApp = (options: IVrxArcoApp) => {
   const { rootComponent, rootProps, rootContainer } = options
 

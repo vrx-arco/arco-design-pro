@@ -1,7 +1,7 @@
 import { PropType, defineComponent, toRef } from 'vue'
 import { Card } from '@arco-design/web-vue'
-import { ProList } from '../ProList'
 import { useGrid } from '@vrx-arco/use'
+import { ProList } from '../ProList'
 import { proPaginationProps } from '../ProPagination/props'
 
 export interface CardListColumnGrid {
