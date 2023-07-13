@@ -1,4 +1,21 @@
 
+## v1.1.2
+
+
+### 🩹 修复
+
+- **nuxt:** 修复 arco 导入失败 (fdae74e)
+
+### 🏡 框架
+
+- **eslint:** Fix code with new rules (20e6de1)
+- **dep:** 升级 `vrx/cp` 系列至 `0.0.1-beta.70` (1c81b45)
+- Fix eslint error (d9cfe12)
+
+### ❤️  贡献者
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.1.1
 
 
