@@ -1,4 +1,4 @@
-import * as arco from '@arco-design/web-vue'
+import * as arco from '@arco-design/web-vue/es'
 import { addComponent } from '@nuxt/kit'
 
 export const arcoComponents = () => {

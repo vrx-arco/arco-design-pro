@@ -8,7 +8,9 @@
   <SearchLayout type="card">
     <SearchLayoutHeader>
       <SearchBar>
-        <SearchBarItem label="sss"></SearchBarItem>
+        <SearchBarItem label="sss">
+          <AInput />
+        </SearchBarItem>
       </SearchBar>
     </SearchLayoutHeader>
     <SearchLayoutContent></SearchLayoutContent>
