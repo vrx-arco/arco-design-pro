@@ -5,5 +5,5 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020,
   },
-  extends: ['@vill-v'],
+  extends: ['vill-v'],
 }

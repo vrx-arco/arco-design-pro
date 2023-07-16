@@ -13,7 +13,7 @@
     "@rushstack/eslint-patch": "^1.3.2",
     "@types/node": "^20.4.2",
     "@vill-v/bumpp-gitee": "^0.4.4",
-    "@vill-v/eslint-config": "^0.2.1",
+    "eslint-config-vill-v": "^0.2.1",
     "@vill-v/prettier-config": "^0.2.1",
     "@vill-v/tsconfig": "^0.2.1",
     "@vitejs/plugin-vue": "^4.2.3",
