@@ -38,7 +38,8 @@
     "./style/*": "./style/*"
   },
   "scripts": {
-    "build": "vrx-cp build"
+    "build": "vrx-cp build",
+    "watch": "vrx-cp watch"
   },
   "peerDependencies": {
     "@arco-design/web-vue": ">=2.39.2",
