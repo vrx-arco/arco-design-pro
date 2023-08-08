@@ -1,5 +1,4 @@
-import { useVModel } from '@vueuse/core'
-import { Ref, ref } from 'vue'
+import { Ref, computed, ref } from 'vue'
 
 export const controlVModel = <
   Props extends Record<string, any>,
@@ -11,8 +10,16 @@ export const controlVModel = <
   emit,
   init: () => Data
 ) => {
-  if (props[name]) {
-    return useVModel(props, name, emit) as any as Ref<Data>
-  }
-  return ref(init()) as Ref<Data>
+  const value = ref(init()) as Ref<Data>
+
+  return computed({
+    get() {
+      return props[name] ?? value.value
+    },
+
+    set(v) {
+      emit(`update:${name as string}`, v)
+      value.value = v
+    },
+  }) as Ref<Data>
 }
