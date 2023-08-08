@@ -3,9 +3,9 @@
   "version": "1.2.0",
   "private": true,
   "scripts": {
-    "playgound:dev": "vite",
-    "playgound:build": "vite build",
-    "playgound:preview": "vite preview"
+    "playground:dev": "vite",
+    "playground:build": "vite build",
+    "playground:preview": "vite preview"
   },
   "dependencies": {
     "@arco-design/web-vue": "^2.49.3",

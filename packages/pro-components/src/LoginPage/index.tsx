@@ -3,6 +3,7 @@ import { Layout } from '@arco-design/web-vue'
 import { controlVModel } from '@vrx-arco/use'
 import { style } from '../style/var'
 import { LoginForm, LoginFormModel } from '../LoginForm'
+import { loginFormEmits } from '../LoginForm/config'
 import { LoginBanner } from './Banner'
 
 export const LoginPage = defineComponent({
@@ -63,7 +64,7 @@ export const LoginPage = defineComponent({
      */
     model: Object as PropType<LoginFormModel>,
   },
-  emits: ['forget', 'remember', 'register', 'submit'],
+  emits: loginFormEmits(),
   setup: (props, { slots, emit }) => {
     const { bemClass } = style('login-page')
     const model = controlVModel(props, 'model', emit, () => ({

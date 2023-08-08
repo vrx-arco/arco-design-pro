@@ -2449,7 +2449,7 @@ packages:
         optional: true
     dependencies:
       '@vill-v/path-prop': 1.2.5
-      '@vill-v/type-as': 1.2.2
+      '@vill-v/type-as': 1.2.5
       vue: 3.3.4
       vue-demi: 0.14.5(vue@3.3.4)
     dev: false

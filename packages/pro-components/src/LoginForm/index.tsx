@@ -13,6 +13,7 @@ import { IconLock, IconUser } from '@vrx-arco/icon'
 import { useToggle } from '@vueuse/core'
 import { controlVModel } from '@vrx-arco/use'
 import { style } from '../style/var'
+import { loginFormEmits } from './config'
 
 export interface LoginFormModel {
   username: string
@@ -56,7 +57,7 @@ export const LoginForm = defineComponent({
      */
     model: Object as PropType<LoginFormModel>,
   },
-  emits: ['submit', 'forget', 'register'],
+  emits: loginFormEmits(),
   setup: (props, { slots, expose, emit }) => {
     const { bemClass } = style('login-form')
 
