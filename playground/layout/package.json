@@ -1,6 +1,6 @@
 {
   "name": "@vrx-arco/playgound-pro-layout",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "private": true,
   "scripts": {
     "playground:dev": "vite",
