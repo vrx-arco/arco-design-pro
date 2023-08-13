@@ -21,7 +21,14 @@ export const ColorPalette = defineComponent({
       default: 'rgb',
     },
   },
-  emits: ['update:color'],
+  emits: {
+    // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    'update:color': (v: string | number) => true,
+    // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    change: (v: string | number) => true,
+  },
   setup: (props, { emit }) => {
     const { bemClass } = style('color-palette')
     const color = controlVModel(props, 'color', emit, () => '#000000')
@@ -46,6 +53,7 @@ export const ColorPalette = defineComponent({
     const handleSliderChange = (v: HSVA) => {
       hsv.value = v
       color.value = tinycolor(v).toString(props.valueFormat)
+      emit('change', color.value)
     }
     return () => (
       <div class={bemClass()}>

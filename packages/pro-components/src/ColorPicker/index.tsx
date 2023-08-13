@@ -24,13 +24,28 @@ export const ColorPicker = defineComponent({
       default: 'rgb',
     },
   },
-  emits: ['update:color'],
+  emits: {
+    // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    'update:color': (v: string | number) => true,
+    // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    change: (v: string | number) => true,
+  },
   setup: (props, { emit }) => {
     const color = controlVModel(props, 'color', emit, () => '#000000')
+
+    const handleChange = (v) => {
+      emit('change', v)
+    }
     return () => {
       return (
         <ColorPickerTrigger color={color.value}>
-          <ColorPalette v-model:color={color.value} valueFormat={props.valueFormat} />
+          <ColorPalette
+            v-model:color={color.value}
+            valueFormat={props.valueFormat}
+            onChange={handleChange}
+          />
         </ColorPickerTrigger>
       )
     }
