@@ -21,6 +21,7 @@
   <PageWrapper scrollbar>
     <SearchLayout title="搜索布局" type="card">
       <SearchLayoutHeader>
+        <ColorPicker />
         <SpaceDivider>
           <Permission>
             <Button>sssss</Button>

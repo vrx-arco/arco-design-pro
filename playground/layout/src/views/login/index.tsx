@@ -1,5 +1,5 @@
-import { defineComponent } from 'vue'
 import { LoginForm } from '@vrx-arco/pro-components'
+import { defineComponent } from 'vue'
 
 const MainPage = defineComponent({
   setup: () => {

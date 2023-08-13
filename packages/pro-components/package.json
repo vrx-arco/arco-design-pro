@@ -46,12 +46,14 @@
     "vue": "^3.2.45"
   },
   "dependencies": {
+    "@ctrl/tinycolor": "^3.6.0",
     "@vill-v/path-prop": "^1.2.5",
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/use": "workspace:*",
     "@vrx/core": "^0.3.5",
     "@vueuse/core": "^10.3.0",
-    "klona": "^2.0.6"
+    "klona": "^2.0.6",
+    "tinycolor2": "^1.6.0"
   },
   "publishConfig": {
     "access": "public"
