@@ -1,4 +1,16 @@
 
+## v1.2.3
+
+
+### 🚀 特性
+
+- **pro-components:** 修改 `ColorPicker` `ColorPalette` prop `valueFormart` to `valueFormat` (72f5ce5)
+- **pro-components:** `ColorPalette` `ColorPicker` 新增 `change` 修改事件 (d6392c1)
+
+### ❤️  贡献者
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.2.2
 
 
