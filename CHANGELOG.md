@@ -1,4 +1,17 @@
 
+## v1.2.1
+
+
+### 🚀 特性
+
+- **internal:** 修改内部方法 `controlVModel` 实现逻辑 (c1f32fd)
+- **internal:** `LoginForm` `LoginPage` 公用内部 事件定义 (7abec14)
+- **pro-components:** 新增 简易`<ColorPicker/>` 颜色选择器 与 `<ColorPalette/>` 颜色选择器面板 (3e78efb)
+
+### ❤️  贡献者
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.2.0
 
 
