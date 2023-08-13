@@ -16,7 +16,7 @@ export const ColorPalette = defineComponent({
      * 颜色格式化形式
      * @default rgb
      */
-    valueFormart: {
+    valueFormat: {
       type: String as PropType<ColorFormats>,
       default: 'rgb',
     },
@@ -45,7 +45,7 @@ export const ColorPalette = defineComponent({
 
     const handleSliderChange = (v: HSVA) => {
       hsv.value = v
-      color.value = tinycolor(v).toString(props.valueFormart)
+      color.value = tinycolor(v).toString(props.valueFormat)
     }
     return () => (
       <div class={bemClass()}>

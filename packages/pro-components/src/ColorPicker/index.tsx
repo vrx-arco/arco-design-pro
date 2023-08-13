@@ -19,7 +19,7 @@ export const ColorPicker = defineComponent({
      * 颜色格式化形式
      * @default rgb
      */
-    valueFormart: {
+    valueFormat: {
       type: String as PropType<ColorFormats>,
       default: 'rgb',
     },
@@ -30,7 +30,7 @@ export const ColorPicker = defineComponent({
     return () => {
       return (
         <ColorPickerTrigger color={color.value}>
-          <ColorPalette v-model:color={color.value} />
+          <ColorPalette v-model:color={color.value} valueFormat={props.valueFormat} />
         </ColorPickerTrigger>
       )
     }
