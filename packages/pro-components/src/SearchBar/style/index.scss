@@ -2,11 +2,17 @@
 
 .#{$prefix}-search-bar {
   width: 100%;
-  &__split {
-    height: 84px;
+  display: flex;
+  align-items: center;
+  &__button-box {
+    margin-left: 12px;
+    padding-left: 12px;
+    border-left: 1px solid var(--color-neutral-3);
   }
   &__form-row {
     width: 100%;
+    flex: 1 1 0%;
+    min-width: 0;
     .arco-form-item {
       margin-bottom: 0;
     }

@@ -1,5 +1,5 @@
 import { PropType, defineComponent, onMounted, ref, toRaw, toRef } from 'vue'
-import { Button, Col, Divider, FieldRule, Form, Row, Space } from '@arco-design/web-vue'
+import { Button, FieldRule, Form, Row, Space } from '@arco-design/web-vue'
 import { IconRefresh, IconSearch } from '@vrx-arco/icon'
 import { klona } from 'klona/lite'
 import { useAsyncLoading } from '@vrx/core'
@@ -62,6 +62,14 @@ export const SearchBar = defineComponent({
      * 劫持`search-bar-item` 第一个元素 自动绑定 `v-model`
      */
     autoUpdate: { type: Boolean, default: false },
+    /**
+     * 隐藏重置按钮
+     */
+    hideReset: { type: Boolean, default: false },
+    /**
+     * 隐藏操作栏
+     */
+    hideAction: { type: Boolean, default: false },
   },
   emits: ['search', 'reset'],
   setup: (props, { slots }) => {
@@ -109,7 +117,39 @@ export const SearchBar = defineComponent({
     })
 
     return () => {
-      const { labelColProps, wrapperColProps, disabled } = props
+      const { labelColProps, wrapperColProps, disabled, hideAction, hideReset } = props
+
+      const renderAction = () => {
+        if (hideAction) {
+          return
+        }
+        return (
+          <div class={bemClass('__button-box')}>
+            <Space direction="vertical">
+              <Button
+                type="primary"
+                v-slots={{ icon: () => <IconSearch /> }}
+                onClick={handleSearch}
+                loading={searchLoading.value}
+                disabled={disabled || resetLoading.value}
+                htmlType="submit"
+              >
+                搜索
+              </Button>
+              {!hideReset && (
+                <Button
+                  v-slots={{ icon: () => <IconRefresh /> }}
+                  onClick={handleReset}
+                  loading={resetLoading.value}
+                  disabled={disabled || searchLoading.value}
+                >
+                  重置
+                </Button>
+              )}
+            </Space>
+          </div>
+        )
+      }
       return (
         <Form
           ref={formRef}
@@ -121,36 +161,12 @@ export const SearchBar = defineComponent({
           labelColProps={labelColProps}
           disabled={disabled || resetLoading.value || searchLoading.value}
         >
-          <Row align="center" class={bemClass()}>
-            <Col flex={1}>
-              <Row align="center" class={bemClass('__form-row')} gutter={[24, 8]}>
-                {slots.default?.()}
-              </Row>
-            </Col>
-            <Divider direction="vertical" class={bemClass('__split')} />
-            <Col class={bemClass('__button-box')} flex="86px">
-              <Space direction="vertical">
-                <Button
-                  type="primary"
-                  v-slots={{ icon: () => <IconSearch /> }}
-                  onClick={handleSearch}
-                  loading={searchLoading.value}
-                  disabled={disabled || resetLoading.value}
-                  htmlType="submit"
-                >
-                  搜索
-                </Button>
-                <Button
-                  v-slots={{ icon: () => <IconRefresh /> }}
-                  onClick={handleReset}
-                  loading={resetLoading.value}
-                  disabled={disabled || searchLoading.value}
-                >
-                  重置
-                </Button>
-              </Space>
-            </Col>
-          </Row>
+          <div class={bemClass()}>
+            <Row align="center" class={bemClass('__form-row')} gutter={[24, 8]}>
+              {slots.default?.()}
+            </Row>
+            {renderAction()}
+          </div>
         </Form>
       )
     }
