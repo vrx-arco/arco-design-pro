@@ -1,5 +1,5 @@
 import { PropType, computed, defineComponent } from 'vue'
-import { ColorInput, tinycolor } from '@ctrl/tinycolor'
+import { ColorInput, TinyColor } from '@ctrl/tinycolor'
 import { style } from '../style/var'
 
 export const ColorPaletteBlock = defineComponent({
@@ -12,7 +12,7 @@ export const ColorPaletteBlock = defineComponent({
   },
   setup: (props) => {
     const { bemClass } = style('color-palette')
-    const color = computed(() => tinycolor(props.color).toRgbString())
+    const color = computed(() => new TinyColor(props.color).toRgbString())
     return () => (
       <div class={bemClass('-color-block')}>
         <div class={bemClass('-color-inner')} style={{ backgroundColor: color.value }} />

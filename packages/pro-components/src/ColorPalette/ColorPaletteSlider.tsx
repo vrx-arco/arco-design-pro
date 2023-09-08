@@ -1,4 +1,4 @@
-import { HSVA, tinycolor } from '@ctrl/tinycolor'
+import { HSVA, TinyColor } from '@ctrl/tinycolor'
 import { useVModel } from '@vueuse/core'
 import { PropType, computed, defineComponent, onBeforeUnmount, ref, toRef } from 'vue'
 import { style } from '../style/var'
@@ -191,7 +191,7 @@ export const ColorPaletteSlider = defineComponent({
   setup: (props, { emit }) => {
     const { bemClass } = style('color-palette')
     const rgbString = computed(() => {
-      const color = tinycolor(props.color).toRgb()
+      const color = new TinyColor(props.color).toRgb()
       return `${color.r},${color.g},${color.b}`
     })
 
@@ -199,7 +199,7 @@ export const ColorPaletteSlider = defineComponent({
 
     const paletteBg = computed(() => {
       const color = hsv.value
-      return tinycolor({ h: color.h, s: 100, v: 100 }).toRgbString()
+      return new TinyColor({ h: color.h, s: 100, v: 100 }).toRgbString()
     })
 
     const h = computed({

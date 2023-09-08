@@ -52,7 +52,6 @@ export const mjsStyleCssComp = {
   ],
   SearchBar: [
     '@arco-design/web-vue/es/button/style/css.js',
-    '@arco-design/web-vue/es/divider/style/css.js',
     '@arco-design/web-vue/es/form/style/css.js',
     '@arco-design/web-vue/es/grid/style/css.js',
     '@arco-design/web-vue/es/space/style/css.js',
@@ -127,7 +126,6 @@ export const mjsStyleJsComp = {
   ],
   SearchBar: [
     '@arco-design/web-vue/es/button/style/index.js',
-    '@arco-design/web-vue/es/divider/style/index.js',
     '@arco-design/web-vue/es/form/style/index.js',
     '@arco-design/web-vue/es/grid/style/index.js',
     '@arco-design/web-vue/es/space/style/index.js',

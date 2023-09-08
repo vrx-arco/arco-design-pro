@@ -9,14 +9,14 @@
     "postinstall": "nuxi prepare"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.50.0",
+    "@arco-design/web-vue": "^2.51.0",
     "@vrx-arco/nuxt": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*"
   },
   "devDependencies": {
-    "@nuxt/devtools": "0.8.0",
-    "nuxi": "^3.6.5",
-    "nuxt": "^3.6.5",
-    "typescript": "^5.1.6"
+    "@nuxt/devtools": "0.8.3",
+    "nuxi": "^3.8.0",
+    "nuxt": "^3.7.1",
+    "typescript": "^5.2.2"
   }
 }
