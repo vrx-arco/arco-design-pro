@@ -1,4 +1,4 @@
-import { ColorFormats, HSVA, tinycolor } from '@ctrl/tinycolor'
+import { ColorFormats, HSVA, TinyColor } from '@ctrl/tinycolor'
 import { controlVModel } from '@vrx-arco/use'
 import { PropType, defineComponent, ref, watch } from 'vue'
 import { style } from '../style/var'
@@ -37,7 +37,7 @@ export const ColorPalette = defineComponent({
     watch(
       color,
       (color) => {
-        const _hsv = tinycolor(color).toHsv()
+        const _hsv = new TinyColor(color).toHsv()
         if (_hsv.h === 0 && hsv.value.h === 360) {
           _hsv.h = 360
         }
