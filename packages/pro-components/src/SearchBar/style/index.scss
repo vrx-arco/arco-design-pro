@@ -7,5 +7,8 @@
   }
   &__form-row {
     width: 100%;
+    .arco-form-item {
+      margin-bottom: 0;
+    }
   }
 }

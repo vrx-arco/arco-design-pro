@@ -113,7 +113,7 @@ export const SearchBar = defineComponent({
       return (
         <Form
           ref={formRef}
-          layout="inline"
+          layout="horizontal"
           labelAlign="left"
           autoLabelWidth
           model={model.value}
@@ -123,7 +123,7 @@ export const SearchBar = defineComponent({
         >
           <Row align="center" class={bemClass()}>
             <Col flex={1}>
-              <Row align="center" class={bemClass('__form-row')}>
+              <Row align="center" class={bemClass('__form-row')} gutter={[24, 8]}>
                 {slots.default?.()}
               </Row>
             </Col>
