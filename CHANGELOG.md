@@ -1,4 +1,15 @@
 
+## v1.3.1
+
+
+### 🩹 修复
+
+- 修复 `ColorPalette` 因为 `@ctrl/tinycolor` 升级导致的无法使用 (bd61a24)
+
+### ❤️ Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.3.0
 
 
