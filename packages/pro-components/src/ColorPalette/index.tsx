@@ -52,7 +52,7 @@ export const ColorPalette = defineComponent({
 
     const handleSliderChange = (v: HSVA) => {
       hsv.value = v
-      color.value = tinycolor(v).toString(props.valueFormat)
+      color.value = new TinyColor(v).toString(props.valueFormat)
       emit('change', color.value)
     }
     return () => (
