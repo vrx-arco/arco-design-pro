@@ -2,9 +2,9 @@ node_modules
 .DS_Store
 *.local
 .idea
-packages/*/dist
-packages/*/.turbo
-packages/*/.pnpm-debug.log
+dist
+.turbo
+.pnpm-debug.log
 packages/*/arco-style.mjs
 packages/*/arco-style-css.mjs
 packages/*/arco-style.js

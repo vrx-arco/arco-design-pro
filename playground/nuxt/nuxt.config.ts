@@ -5,4 +5,5 @@ export default defineNuxtConfig({
   vrxArco: {
     arco: true,
   },
+  devtools: {},
 })
