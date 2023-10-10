@@ -1,4 +1,15 @@
 
+## v1.3.3
+
+
+### 🏡 框架
+
+- **nuxt:** Update dep @vrx-cp/nuxt-utils@0.0.1-beta.74 (eb65392)
+
+### ❤️ Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.3.2
 
 
