@@ -52,8 +52,9 @@ export const ColorPalette = defineComponent({
 
     const handleSliderChange = (v: HSVA) => {
       hsv.value = v
-      color.value = new TinyColor(v).toString(props.valueFormat)
-      emit('change', color.value)
+      const colorValue = new TinyColor(v).toString(props.valueFormat)
+      color.value = colorValue
+      emit('change', colorValue)
     }
     return () => (
       <div class={bemClass()}>
