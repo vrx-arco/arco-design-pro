@@ -53,7 +53,7 @@ export const ProList = defineComponent({
     /**
      * 列表的最大高度受控
      */
-    maxHeight: Number,
+    maxHeight: [Number, String],
   },
   emits: {
     /**
