@@ -1,4 +1,15 @@
 
+## v1.3.6
+
+
+### 🩹 修复
+
+- 修复 `<ProCardList/>` 中 `maxHeight` 属性定义与 `<AList/>` 不同 (daa82b0)
+
+### ❤️ Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.3.5
 
 
