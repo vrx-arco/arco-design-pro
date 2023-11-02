@@ -33,9 +33,9 @@
     "build": "tsup-node"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.52.0",
-    "@nuxt/kit": "^3.7.4",
-    "@nuxt/schema": "3.7.4",
+    "@arco-design/web-vue": "^2.52.1",
+    "@nuxt/kit": "^3.8.0",
+    "@nuxt/schema": "3.8.0",
     "@vrx-arco/helper": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx-cp/nuxt-utils": "^0.0.1-beta.74",
