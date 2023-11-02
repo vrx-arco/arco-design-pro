@@ -1,4 +1,15 @@
 
+## v1.3.5
+
+
+### 🩹 修复
+
+- 修复 `<ProList/>` 中 `maxHeight` 属性定义与 `<AList/>` 不同 (a1014ad)
+
+### ❤️ Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.3.4
 
 
