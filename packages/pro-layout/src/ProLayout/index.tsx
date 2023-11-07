@@ -60,7 +60,7 @@ export const ProLayout = defineComponent({
      */
     headerToolbox(...args: []): any
     /**
-     * content
+     * 布局默认插槽-不使用该插槽时默认使用 RouterView
      */
     default(...args: []): any
   }>,
