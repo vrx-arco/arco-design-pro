@@ -1,4 +1,6 @@
 import { RouteRecordRaw } from 'vue-router'
+import { IconApps } from '@arco-design/web-vue/es/icon'
+import { h } from 'vue'
 
 export const listModules: RouteRecordRaw[] = [
   {
@@ -15,6 +17,7 @@ export const listModules: RouteRecordRaw[] = [
         component: () => import('../../views/list/SearchLayoutX.vue'),
         meta: {
           title: '搜索布局',
+          icon: h(IconApps),
         },
       },
       {

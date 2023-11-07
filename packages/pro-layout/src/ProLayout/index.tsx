@@ -1,4 +1,4 @@
-import { PropType, defineComponent } from 'vue'
+import { PropType, SlotsType, defineComponent } from 'vue'
 import { Drawer, Layout, Scrollbar, Spin } from '@arco-design/web-vue'
 import { useShareBreakpoints } from '@vrx-arco/use'
 import { RouteRecordRaw, RouterView } from 'vue-router'
@@ -33,6 +33,37 @@ export const ProLayout = defineComponent({
       default: false,
     },
   },
+  slots: Object as SlotsType<{
+    /**
+     * 自定义menu icon
+     * 优先级高于 menus 中的路由元信息配置
+     */
+    menuIcon: RouteRecordRaw
+    /**
+     * 自定义logo
+     */
+    logo(...args: []): any
+    /**
+     * 自定义标题
+     */
+    title(...args: []): any
+    /**
+     * 自定义logo+标题区域
+     */
+    logoContainer(...args: []): any
+    /**
+     * 自定义布局头部中间区域
+     */
+    navContent(...args: []): any
+    /**
+     * 自定义布局头部右部区域
+     */
+    headerToolbox(...args: []): any
+    /**
+     * content
+     */
+    default(...args: []): any
+  }>,
   setup: (props, { slots }) => {
     const { bemClass } = style('pro-layout')
     const breakpoints = useShareBreakpoints()
@@ -65,14 +96,7 @@ export const ProLayout = defineComponent({
             </Layout.Header>
             <Layout.Content class={bemClass('__wrap-container')}>
               <Layout class={bemClass('__wrap')}>
-                {isSmallerLg.value || (
-                  <Layout.Sider breakpoint="xl" collapsible>
-                    <Scrollbar outerClass={bemClass('__menu-scrollbar')}>
-                      <ProMenu menu={menus} />
-                    </Scrollbar>
-                  </Layout.Sider>
-                )}
-                {isSmallerLg.value && (
+                {isSmallerLg.value ? (
                   <Drawer
                     class={bemClass('__smaller-menu-drawer')}
                     placement="left"
@@ -83,9 +107,15 @@ export const ProLayout = defineComponent({
                     closable={false}
                   >
                     <Scrollbar outerClass={bemClass('__menu-scrollbar')}>
-                      <ProMenu menu={menus} />
+                      <ProMenu menu={menus} v-slots={{ icon: slots.menuIcon }} />
                     </Scrollbar>
                   </Drawer>
+                ) : (
+                  <Layout.Sider breakpoint="xl" collapsible>
+                    <Scrollbar outerClass={bemClass('__menu-scrollbar')}>
+                      <ProMenu menu={menus} v-slots={{ icon: slots.menuIcon }} />
+                    </Scrollbar>
+                  </Layout.Sider>
                 )}
                 <Layout.Content class={bemClass('__content')}>
                   {slots.default?.() || <RouterView />}

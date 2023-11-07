@@ -1,4 +1,13 @@
-import { FunctionalComponent, PropType, computed, defineComponent, ref, toRef, watch } from 'vue'
+import {
+  FunctionalComponent,
+  PropType,
+  SlotsType,
+  computed,
+  defineComponent,
+  ref,
+  toRef,
+  watch,
+} from 'vue'
 import { Menu } from '@arco-design/web-vue'
 import { RouteRecordRaw, useRoute, useRouter } from 'vue-router'
 
@@ -6,13 +15,14 @@ interface MenuItemProps {
   menu: RouteRecordRaw
 }
 
-const MenuItem: FunctionalComponent<MenuItemProps> = ({ menu }) => {
+const MenuItem: FunctionalComponent<MenuItemProps> = ({ menu }, { slots }) => {
+  const renderMenuIcon = () => slots.icon?.(menu) || menu.meta?.icon
   if (menu.meta?.hidden) {
     return
   }
   if (!menu.children) {
     return (
-      <Menu.Item v-slots={{ icon: () => menu.meta?.icon }} key={menu.name as string}>
+      <Menu.Item v-slots={{ icon: renderMenuIcon }} key={menu.name as string}>
         {menu.meta!.title}
       </Menu.Item>
     )
@@ -20,18 +30,20 @@ const MenuItem: FunctionalComponent<MenuItemProps> = ({ menu }) => {
   if (menu.meta?.list) {
     const firstChild = menu.children[0].name
     return (
-      <Menu.Item v-slots={{ icon: () => menu.meta?.icon }} key={firstChild as string}>
+      <Menu.Item v-slots={{ icon: renderMenuIcon }} key={firstChild as string}>
         {menu.meta!.title}
       </Menu.Item>
     )
   }
   return (
     <Menu.SubMenu
-      v-slots={{ icon: () => menu.meta?.icon }}
+      v-slots={{ icon: renderMenuIcon }}
       key={menu.name as string}
       title={menu.meta!.title as string}
     >
-      {menu.children?.map((item) => <MenuItem menu={item} key={item.name} />)}
+      {menu.children?.map((item) => (
+        <MenuItem menu={item} key={item.name} v-slots={{ icon: slots.icon }} />
+      ))}
     </Menu.SubMenu>
   )
 }
@@ -44,7 +56,8 @@ export const ProMenu = defineComponent({
       default: () => [],
     },
   },
-  setup: (props) => {
+  slots: Object as SlotsType<{ icon: RouteRecordRaw }>,
+  setup: (props, { slots }) => {
     const menu = toRef(props, 'menu')
     const route = useRoute()
     const router = useRouter()
@@ -67,6 +80,7 @@ export const ProMenu = defineComponent({
     const onMenuItemClick = (key: string) => {
       router.push({ name: key })
     }
+
     return () => (
       <Menu
         v-model:selectedKeys={selectedKeys.value}
@@ -74,7 +88,13 @@ export const ProMenu = defineComponent({
         {...{ autoOpenSelected: true, accordion: true, autoScrollIntoView: true, onMenuItemClick }}
       >
         {menu.value.map((item) => (
-          <MenuItem menu={item} key={item.name} />
+          <MenuItem
+            menu={item}
+            key={item.name}
+            v-slots={{
+              icon: slots.icon,
+            }}
+          />
         ))}
       </Menu>
     )
