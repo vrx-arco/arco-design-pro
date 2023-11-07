@@ -30,7 +30,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup-node"
+    "build": "node ./gen-components.js && tsup-node"
   },
   "dependencies": {
     "@arco-design/web-vue": "^2.53.0",
@@ -41,5 +41,9 @@
     "@vrx-cp/nuxt-utils": "^0.0.1-beta.76",
     "dayjs": "^1.11.10",
     "scule": "^1.0.0"
+  },
+  "devDependencies": {
+    "magicast": "^0.3.0",
+    "mlly": "^1.4.2"
   }
 }

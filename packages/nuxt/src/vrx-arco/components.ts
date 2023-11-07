@@ -1,8 +1,7 @@
 import { addComponent } from '@nuxt/kit'
-import * as obj from '@vrx-arco/pro-components'
-
+import { vrxArco } from '../config'
 export const vrxArcoComponents = () => {
-  Object.keys(obj).forEach((key) => {
+  vrxArco.forEach((key) => {
     if (/^[a-z]/.test(key)) {
       return
     }

@@ -2,7 +2,7 @@ import { defineNuxtModule } from '@nuxt/kit'
 import { transpileNoSSRFriendly } from './transpile'
 import type { VrxArcoOption } from './type'
 import { vrxArcoComponents, vrxArcoUnplugin } from './vrx-arco'
-import { arcoComponents, arcoUnplugin } from './arco'
+import { arcoComponents, arcoIconComponents, arcoUnplugin } from './arco'
 
 export default defineNuxtModule<VrxArcoOption>({
   meta: {
@@ -13,6 +13,7 @@ export default defineNuxtModule<VrxArcoOption>({
     sideEffect: true,
     importStyle: 'css',
     transpile: true,
+    resolveIcons: false,
   },
   setup(option, nuxt) {
     if (option.transpile) {
@@ -21,6 +22,7 @@ export default defineNuxtModule<VrxArcoOption>({
 
     vrxArcoComponents()
     option.arco && arcoComponents()
+    option.resolveIcons && arcoIconComponents()
 
     if (option.sideEffect) {
       vrxArcoUnplugin(nuxt.options, option)

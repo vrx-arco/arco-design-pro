@@ -19,4 +19,8 @@ export interface VrxArcoOption {
    * 是否对 @arco-deign/web-vue 提供自动导入支持
    */
   arco?: boolean
+  /**
+   * 是否对 @arco-deign/web-vue/es/icon 提供自动导入支持
+   */
+  resolveIcons?: boolean
 }

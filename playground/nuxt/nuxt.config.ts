@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: ['@vrx-arco/nuxt'],
   vrxArco: {
     arco: true,
+    resolveIcons: true,
   },
   devtools: {},
 })
