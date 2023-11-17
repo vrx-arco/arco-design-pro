@@ -70,6 +70,7 @@ export const arco = [
   "Typography",
   "Upload",
   "OverflowList",
+  "Watermark",
   "AnchorLink",
   "AvatarGroup",
   "BreadcrumbItem",
