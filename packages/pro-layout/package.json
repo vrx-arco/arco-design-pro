@@ -38,7 +38,8 @@
     "./style/*": "./style/*"
   },
   "scripts": {
-    "build": "vrx-cp build"
+    "build": "vrx-cp build",
+    "watch": "vrx-cp watch"
   },
   "peerDependencies": {
     "@arco-design/web-vue": ">=2.39.2",
@@ -48,7 +49,7 @@
   "dependencies": {
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/use": "workspace:*",
-    "@vueuse/core": "^10.5.0"
+    "@vueuse/core": "^10.6.1"
   },
   "publishConfig": {
     "access": "public"

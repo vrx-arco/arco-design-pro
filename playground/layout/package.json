@@ -2,13 +2,14 @@
   "name": "@vrx-arco/playgound-pro-layout",
   "version": "1.3.7",
   "private": true,
+  "type": "module",
   "scripts": {
     "playground:dev": "vite",
     "playground:build": "vite build",
     "playground:preview": "vite preview"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.53.0",
+    "@arco-design/web-vue": "^2.53.2",
     "@vrx-arco/app": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx-arco/pro-layout": "workspace:*"
