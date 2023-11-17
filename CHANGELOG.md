@@ -1,4 +1,15 @@
 
+## v1.3.8
+
+
+### 🚀 特性
+
+- **nuxt:** 支持 arco-design `Watermark` 组件自动导入 (87cad22)
+
+### ❤️ Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.3.7
 
 
