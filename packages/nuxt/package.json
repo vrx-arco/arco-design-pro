@@ -38,7 +38,7 @@
     "@nuxt/schema": "3.8.2",
     "@vrx-arco/helper": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
-    "@vrx-cp/nuxt-utils": "^0.0.1-beta.80",
+    "@vrx-cp/nuxt-utils": "^0.0.1-beta.81",
     "dayjs": "^1.11.10",
     "scule": "^1.1.0"
   },
