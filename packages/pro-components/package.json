@@ -51,7 +51,7 @@
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/use": "workspace:*",
     "@vrx/core": "^0.4.2",
-    "@vueuse/core": "^10.6.1",
+    "@vueuse/core": "^10.7.1",
     "klona": "^2.0.6",
     "tinycolor2": "^1.6.0"
   },

@@ -50,7 +50,7 @@
   "devDependencies": {
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx-arco/pro-layout": "workspace:*",
-    "unplugin-vue-components": "^0.25.2"
+    "unplugin-vue-components": "^0.26.0"
   },
   "sideEffects": false
 }
