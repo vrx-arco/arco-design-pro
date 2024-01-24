@@ -1,4 +1,26 @@
 
+## v1.4.0
+
+
+### 🚀 特性
+
+- **nuxt:** Arco 自动导入组件增加验证码组件 (ffae316)
+- **helper:** Update peer dep `unplugin-vue-components>=0.26.0` (704513c)
+- **pro-components:** 增加 `<EditFormDialog/>` 插槽 ts 类型帮助方法 `EditFormDialogSlot` (3e851b6)
+- **pro-components:** 导出 `<EditFormDialog/>` ts 类型 `EditFormDialogInstance` (868f5c3)
+- **pro-components:** 为 `useEditFormDialog` `fromRef` 增加 ts 类型提示 (6454aa3)
+- **pro-components:** 删除多余依赖 `tinycolor2` (88b7e12)
+- **use:** 增加 `<ATableColumn/>` cell 插槽的类型帮助类型 `TableColumnCell` `ATableColumnCell` (6b76b40)
+- **use:** 增加一个 ***实验性*** 帮助方法解决 `createTreeSelectFilterNode` 解决arco tree-select反人类的默认筛选 key 的帮助方法 简洁的封装 tree-select 筛选 title 的逻辑 (3061fa5)
+
+### 🏡 框架
+
+- Use flat eslint config (b2e4221)
+
+### ❤️ Contributors
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.3.8
 
 
