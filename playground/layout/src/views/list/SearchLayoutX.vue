@@ -64,7 +64,7 @@
           :data="
             Array(100)
               .fill(1)
-              .map((item, index) => index + 1)
+              .map((_item, index) => index + 1)
           "
         >
           <template #header>
