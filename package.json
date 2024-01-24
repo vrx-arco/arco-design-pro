@@ -30,7 +30,7 @@
     "unplugin-vue-components": "^0.26.0",
     "vite": "^5.0.12",
     "void-fs": "^0.0.1-beta.11",
-    "vue": "3.4.3",
+    "vue": "3.4.15",
     "vue-router": "^4.2.5"
   }
 }
