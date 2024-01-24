@@ -38,6 +38,10 @@
   "dependencies": {
     "@vueuse/core": "^10.7.2"
   },
+  "peerDependencies": {
+    "@arco-design/web-vue": ">=2.39.2",
+    "vue": ">=3.2.45"
+  },
   "publishConfig": {
     "access": "public"
   },
