@@ -40,7 +40,7 @@
   "peerDependencies": {
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx-arco/pro-layout": "workspace:*",
-    "unplugin-vue-components": "^0.25.1"
+    "unplugin-vue-components": ">=0.26.0"
   },
   "peerDependenciesMeta": {
     "unplugin-vue-components": {
