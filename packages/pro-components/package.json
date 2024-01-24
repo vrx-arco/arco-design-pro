@@ -43,7 +43,7 @@
   },
   "peerDependencies": {
     "@arco-design/web-vue": ">=2.39.2",
-    "vue": "^3.2.45"
+    "vue": ">=3.2.45"
   },
   "dependencies": {
     "@ctrl/tinycolor": "^4.0.3",
@@ -52,8 +52,7 @@
     "@vrx-arco/use": "workspace:*",
     "@vrx/core": "^0.4.2",
     "@vueuse/core": "^10.7.2",
-    "klona": "^2.0.6",
-    "tinycolor2": "^1.6.0"
+    "klona": "^2.0.6"
   },
   "publishConfig": {
     "access": "public"
