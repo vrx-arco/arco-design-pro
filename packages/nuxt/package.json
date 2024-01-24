@@ -33,17 +33,17 @@
     "build": "node ./gen-components.js && tsup-node"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.54.1",
-    "@nuxt/kit": "^3.9.0",
+    "@arco-design/web-vue": "^2.54.3",
+    "@nuxt/kit": "^3.9.3",
     "@nuxt/schema": "3.9.0",
     "@vrx-arco/helper": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
-    "@vrx-cp/nuxt-utils": "^0.0.1-beta.84",
+    "@vrx-cp/nuxt-utils": "^0.0.1-beta.85",
     "dayjs": "^1.11.10",
-    "scule": "^1.1.1"
+    "scule": "^1.2.0"
   },
   "devDependencies": {
-    "magicast": "^0.3.2",
-    "mlly": "^1.4.2"
+    "magicast": "^0.3.3",
+    "mlly": "^1.5.0"
   }
 }
