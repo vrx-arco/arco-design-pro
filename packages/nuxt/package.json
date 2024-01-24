@@ -35,7 +35,7 @@
   "dependencies": {
     "@arco-design/web-vue": "^2.54.3",
     "@nuxt/kit": "^3.9.3",
-    "@nuxt/schema": "3.9.0",
+    "@nuxt/schema": "3.9.3",
     "@vrx-arco/helper": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx-cp/nuxt-utils": "^0.0.1-beta.85",
