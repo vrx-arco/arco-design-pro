@@ -2,7 +2,7 @@
   "name": "vrx-arco-pro-components",
   "version": "1.4.0",
   "private": true,
-  "packageManager": "pnpm@8.14.3",
+  "packageManager": "pnpm@8.15.0",
   "scripts": {
     "build": "turbo run build",
     "release": "pnpm run build && vbumpp -r",
@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@arco-design/web-vue": "^2.54.3",
-    "@types/node": "^20.11.6",
+    "@types/node": "^20.11.9",
     "@vill-v/bumpp-gitee": "^0.4.4",
     "@vill-v/eslint-config": "^1.0.0-beta.6",
     "@vill-v/prettier-config": "^1.0.0-beta.6",
