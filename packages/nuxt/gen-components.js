@@ -1,8 +1,6 @@
-import { dirname, join } from 'node:path'
 import { loadFile, writeFile } from 'magicast'
 import { resolveModuleExportNames } from 'mlly'
-import { fileURLToPath } from 'node:url'
-import { exists, writeFile as $_writeFile } from 'void-fs'
+import { writeFile as $_writeFile, exists } from 'void-fs'
 
 const filename = 'src/config.ts'
 

@@ -33,14 +33,14 @@
     "build": "node ./gen-components.js && tsup-node"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.54.3",
-    "@nuxt/kit": "^3.9.3",
+    "@arco-design/web-vue": "^2.54.4",
+    "@nuxt/kit": "^3.10.1",
     "@nuxt/schema": "3.9.3",
     "@vrx-arco/helper": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx-cp/nuxt-utils": "^0.0.1-beta.85",
     "dayjs": "^1.11.10",
-    "scule": "^1.2.0"
+    "scule": "^1.3.0"
   },
   "devDependencies": {
     "magicast": "^0.3.3",

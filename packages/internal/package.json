@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "knitwork": "^1.0.0",
-    "scule": "^1.2.0"
+    "scule": "^1.3.0"
   },
   "sideEffects": false
 }
