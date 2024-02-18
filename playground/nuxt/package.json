@@ -14,7 +14,6 @@
     "@vrx-arco/pro-components": "workspace:*"
   },
   "devDependencies": {
-    "@nuxt/devtools": "1.0.0",
     "nuxi": "^3.10.0",
     "nuxt": "^3.10.1",
     "typescript": "^5.3.3"

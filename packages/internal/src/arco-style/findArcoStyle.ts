@@ -1,7 +1,7 @@
 import { GenDoc } from '@vrx/cp'
 import { kebabCase } from 'scule'
 
-export interface GenArcoStyle {
+interface GenArcoStyle {
   cjsStyleJsComp: Record<string, string[]>
   mjsStyleJsComp: Record<string, string[]>
   cjsStyleCssComp: Record<string, string[]>
