@@ -122,6 +122,18 @@ const matchComponents = [
     pattern: /^(TypographyParagraph|TypographyTitle|TypographyText)$/,
     componentDir: 'typography',
   },
+  {
+    pattern: /^Watermark$/,
+    componentDir: 'watermark',
+  },
+  {
+    pattern: /^VerificationCode$/,
+    componentDir: 'verification-code',
+  },
+  {
+    pattern: /^ColorPicker$/,
+    componentDir: 'color-picker',
+  },
 ]
 
 function getComponentStyleDir(

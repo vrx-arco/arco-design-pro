@@ -15,6 +15,7 @@ export const arco = [
   "Checkbox",
   "Collapse",
   "Comment",
+  "ColorPicker",
   "ConfigProvider",
   "DatePicker",
   "Descriptions",
