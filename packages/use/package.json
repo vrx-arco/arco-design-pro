@@ -36,7 +36,7 @@
     "build": "tsup-node"
   },
   "dependencies": {
-    "@vueuse/core": "^10.7.2"
+    "@vueuse/core": "^10.9.0"
   },
   "peerDependencies": {
     "@arco-design/web-vue": ">=2.39.2",
