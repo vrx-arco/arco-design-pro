@@ -1,4 +1,22 @@
 
+## v1.4.1
+
+[compare changes](https://gitee.com/vrx/arco-design-pro/compare/v1.4.0...v1.4.1)
+
+### 🚀 特性
+
+- **nuxt:** 补全对 `arco` 官方组件 `Watermark` `VerificationCode` `ColorPicker` 的自动组件/样式导入支持 (6d0871d)
+
+### 🏡 框架
+
+- Add `.node-version` file (9997a9f)
+- 使用 knip 删除多余依赖/文件/导出 (cf39f8f)
+- **dep:** Update `vueuse@10.9.0` (a76c9b6)
+
+### ❤️ 贡献者
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.4.0
 
 
