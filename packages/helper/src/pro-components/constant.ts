@@ -69,8 +69,6 @@ export const mjsStyleCssComp = {
     '@arco-design/web-vue/es/notification/style/css.js',
   ],
   SpaceDivider: ['@arco-design/web-vue/es/divider/style/css.js'],
-  ColorPalette: [],
-  ColorPicker: ['@arco-design/web-vue/es/trigger/style/css.js'],
 }
 export const mjsStyleJsComp = {
   ThemeDarkLight: ['@arco-design/web-vue/es/button/style/index.js'],
@@ -143,8 +141,6 @@ export const mjsStyleJsComp = {
     '@arco-design/web-vue/es/notification/style/index.js',
   ],
   SpaceDivider: ['@arco-design/web-vue/es/divider/style/index.js'],
-  ColorPalette: [],
-  ColorPicker: ['@arco-design/web-vue/es/trigger/style/index.js'],
 }
 export const vrxStyle = {
   ThemeDarkLight: [],
@@ -174,9 +170,4 @@ export const vrxStyle = {
   FormGrid: [],
   EditFormDialog: [],
   SpaceDivider: ['@vrx-arco/pro-components/style/SpaceDivider/style/index.css'],
-  ColorPalette: ['@vrx-arco/pro-components/style/ColorPalette/style/index.css'],
-  ColorPicker: [
-    '@vrx-arco/pro-components/style/ColorPalette/style/index.css',
-    '@vrx-arco/pro-components/style/ColorPicker/style/index.css',
-  ],
 }

@@ -133,8 +133,6 @@ export const arco = [
 ];
 export const vrxArco = [
   "AvatarDropDown",
-  "ColorPalette",
-  "ColorPicker",
   "EditFormDialog",
   "FormGrid",
   "FormGridItem",

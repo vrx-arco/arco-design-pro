@@ -46,7 +46,6 @@
     "vue": ">=3.2.45"
   },
   "dependencies": {
-    "@ctrl/tinycolor": "^4.0.3",
     "@vill-v/path-prop": "^1.3.0",
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/use": "workspace:*",
