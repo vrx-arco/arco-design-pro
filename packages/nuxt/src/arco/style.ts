@@ -147,19 +147,23 @@ function getComponentStyleDir(
  * 改写自 https://github.com/antfu/unplugin-vue-components/blob/main/src/core/resolvers/arco.ts
  */
 export const arcoUnplugin = (nuxtoption: NuxtOptions, vrxArco: VrxArcoOption) => {
-  componentStyle(nuxtoption, {
-    name: 'vrx-arco:nuxt',
-    component(name) {
-      const styles: string[] = []
-      if (name.match(/^A[A-Z]/)) {
-        const importStyle = vrxArco.importStyle || 'css'
+  componentStyle(
+    nuxtoption,
+    {
+      name: 'vrx-arco:nuxt',
+      component(name) {
+        const styles: string[] = []
+        if (name.match(/^A[A-Z]/)) {
+          const importStyle = vrxArco.importStyle || 'css'
 
-        const importName = name.slice(1)
+          const importName = name.slice(1)
 
-        const style = getComponentStyleDir(vrxArco.theme, importName, importStyle)
-        style && styles.push(style)
-      }
-      return styles
+          const style = getComponentStyleDir(vrxArco.theme, importName, importStyle)
+          style && styles.push(style)
+        }
+        return styles
+      },
     },
-  })
+    vrxArco.importStylePlugin
+  )
 }

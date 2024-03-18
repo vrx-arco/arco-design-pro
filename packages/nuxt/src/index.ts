@@ -13,6 +13,7 @@ export default defineNuxtModule<VrxArcoOption>({
     sideEffect: true,
     importStyle: 'css',
     transpile: true,
+    arco: false,
     resolveIcons: false,
   },
   setup(option, nuxt) {

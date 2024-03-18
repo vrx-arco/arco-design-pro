@@ -5,30 +5,34 @@ import { VrxArcoOption } from '../type'
 
 export const vrxArcoUnplugin = (nuxtoption: NuxtOptions, vrxArco: VrxArcoOption) => {
   const { mjsStyleCssComp, mjsStyleJsComp, vrxStyle } = ProComponentsConstant
-  componentStyle(nuxtoption, {
-    name: 'vrx-arco:nuxt',
-    component(component) {
-      const styles: string[] = []
-      if (mjsStyleCssComp[component]) {
-        const arcoCss = {
-          less: mjsStyleJsComp[component],
-          css: mjsStyleCssComp[component],
-        }
-        arcoCss[vrxArco.importStyle!].forEach((item) => {
-          if (vrxArco.theme) {
-            styles.push(item.replace(/^@arco-design\/web-vue/, vrxArco.theme))
-            return
+  componentStyle(
+    nuxtoption,
+    {
+      name: 'vrx-arco:nuxt',
+      component(component) {
+        const styles: string[] = []
+        if (mjsStyleCssComp[component]) {
+          const arcoCss = {
+            less: mjsStyleJsComp[component],
+            css: mjsStyleCssComp[component],
           }
-          styles.push(item)
-        })
-      }
-      // 查找组件是否有匹配的对应样式
-      if (mjsStyleCssComp[component]) {
-        vrxStyle[component].forEach((item) => {
-          styles.push(item)
-        })
-      }
-      return styles
+          arcoCss[vrxArco.importStyle!].forEach((item) => {
+            if (vrxArco.theme) {
+              styles.push(item.replace(/^@arco-design\/web-vue/, vrxArco.theme))
+              return
+            }
+            styles.push(item)
+          })
+        }
+        // 查找组件是否有匹配的对应样式
+        if (mjsStyleCssComp[component]) {
+          vrxStyle[component].forEach((item) => {
+            styles.push(item)
+          })
+        }
+        return styles
+      },
     },
-  })
+    vrxArco.importStylePlugin
+  )
 }
