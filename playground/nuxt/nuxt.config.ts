@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   vrxArco: {
     arco: true,
     resolveIcons: true,
+    transpile: true,
   },
   devtools: {},
 })

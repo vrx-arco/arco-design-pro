@@ -9,5 +9,7 @@ export const transpileNoSSRFriendly = (nuxt: Nuxt) => {
   nuxt.options.build.transpile.push('@vrx-arco/icon')
   nuxt.options.build.transpile.push('@vrx-arco/pro-components')
   nuxt.options.alias ||= {}
-  nuxt.options.alias.dayjs = dirname(require.resolve('dayjs/esm'))
+  const dayjsAlias = dirname(require.resolve('dayjs/esm'))
+  nuxt.options.alias['dayjs/esm'] = dayjsAlias
+  nuxt.options.alias.dayjs = dayjsAlias
 }
