@@ -1,4 +1,32 @@
 
+## v1.5.0
+
+[compare changes](https://gitee.com/vrx/arco-design-pro/compare/v1.4.1...v1.5.0)
+
+### 🚀 特性
+
+- ⚠️  由于 `ColorPicker` 颜色选择器功能已由官方于 `2.55.0` 实现，该组件于此次版本更新时删除 (e1044b3)
+- **nuxt:** 对 nuxt module 的入参选项类型，增加 默认值 jsdoc (d226143)
+- **nuxt:** 增加 nuxt module `importStylePlugin` 选项，允许自定义自动导入样式 `vite/webpack` 插件的部分行为 (d1f1fed)
+- **use:** 增加一个 ***实验性*** 帮助方法解决 `useRangePickerObjectValue` 解决在使用 arco  RangePicker 向后端传递数据时常常要将数据处理 array -> object 的问题 (3e6f9c6)
+- **use:** 增加一个 ***实验性*** 帮助方法解决 `useRangePickerObjectValue` 解决在使用 arco  RangePicker 向后端传递数据时常常要将数据处理 array -> object 的问题 (0d73292)
+
+### 🩹 修复
+
+- **nuxt:** 修复 开启 `transpile` 选项后引包 `dayjs/esm/*` 找不到模块的问题 (157a3f7)
+
+### 🏡 框架
+
+- 增加 ColorPicker 组件删除说明：`<ColorPicker/>` 组件，已由 `@arco-design/web-vue >= 2.55.0` 时，出现官方实现版，该组件在改版本已删除，请使用 官方提供的 <AColorPicker/> , 功能更加齐全 (ec9fdac)
+
+#### 🚨 破坏性改动
+
+- ⚠️  由于 `ColorPicker` 颜色选择器功能已由官方于 `2.55.0` 实现，该组件于此次版本更新时删除 (e1044b3)
+
+### ❤️ 贡献者
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.4.1
 
 [compare changes](https://gitee.com/vrx/arco-design-pro/compare/v1.4.0...v1.4.1)
