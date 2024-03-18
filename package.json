@@ -2,7 +2,7 @@
   "name": "vrx-arco-pro-components",
   "version": "1.4.1",
   "private": true,
-  "packageManager": "pnpm@8.15.4",
+  "packageManager": "pnpm@8.15.5",
   "scripts": {
     "build": "turbo run build",
     "release": "pnpm run build && vbumpp -r",
@@ -21,7 +21,7 @@
     "@vrx-arco/internal": "workspace:*",
     "@vrx/cp": "0.0.1-beta.92",
     "eslint": "^8.57.0",
-    "knip": "^5.1.1",
+    "knip": "^5.1.2",
     "less": "^4.2.0",
     "prettier": "^3.2.5",
     "sass": "^1.72.0",
