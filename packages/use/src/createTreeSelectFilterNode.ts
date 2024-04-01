@@ -34,8 +34,7 @@ export const createTreeSelectFilterNode = (
       return true
     }
     const _fieldNames = toValue(fieldNames)
-    const valueKey = nodeData[_fieldNames.title || 'title']
-    const value = nodeData[valueKey]
+    const value = nodeData[_fieldNames.title || 'title']
     return String(value).includes(searchKey)
   }
   return {
