@@ -1,4 +1,16 @@
 
+## v1.5.1
+
+[compare changes](https://gitee.com/vrx/arco-design-pro/compare/v1.5.0...v1.5.1)
+
+### 🩹 修复
+
+- **use:** 修复 `createTreeSelectFilterNode` 工具未能达到预期效果 (7e47764)
+
+### ❤️ 贡献者
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.5.0
 
 [compare changes](https://gitee.com/vrx/arco-design-pro/compare/v1.4.1...v1.5.0)
