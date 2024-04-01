@@ -9,12 +9,12 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.55.0",
+    "@arco-design/web-vue": "^2.55.1",
     "@vrx-arco/nuxt": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*"
   },
   "devDependencies": {
-    "nuxt": "^3.11.0",
-    "typescript": "^5.4.2"
+    "nuxt": "^3.11.1",
+    "typescript": "^5.4.3"
   }
 }
