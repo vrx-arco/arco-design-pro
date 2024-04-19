@@ -1,4 +1,4 @@
-import { RouteRecordRaw } from 'vue-router'
+import { RouteRecordRaw, type RouterOptions } from 'vue-router'
 import { Component } from 'vue'
 
 export type IVrxArcoCheckPermission = (permission: any, data: any) => boolean
@@ -9,6 +9,13 @@ export interface IVrxArcoRouter {
    */
   routes: Readonly<RouteRecordRaw[]>
 
+  /**
+   * 自定义路由创建参数
+   * ```ts
+   * createRouter({...options})
+   * ```
+   */
+  options?: Omit<Partial<RouterOptions>, 'routes'>
   /**
    * 动态路由部分
    */
