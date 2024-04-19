@@ -1,4 +1,16 @@
 
+## v1.5.2
+
+[compare changes](https://gitee.com/vrx/arco-design-pro/compare/v1.5.1...v1.5.2)
+
+### 🚀 特性
+
+- **app:** 允许自定义路由初始化入参 (43cea54)
+
+### ❤️ 贡献者
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.5.1
 
 [compare changes](https://gitee.com/vrx/arco-design-pro/compare/v1.5.0...v1.5.1)
