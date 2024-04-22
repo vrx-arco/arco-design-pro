@@ -4,6 +4,7 @@
     <div>ssss</div>
     <div>ssss</div>
     <div>ssss</div>
+    <ColorPicker />
   </SpaceDivider>
   <SearchLayout type="card">
     <SearchLayoutHeader>

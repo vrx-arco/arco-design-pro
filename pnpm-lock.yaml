@@ -99,11 +99,11 @@ importers:
   packages/helper:
     dependencies:
       '@vrx-arco/color-picker':
-        specifier: ~0.0.1-beta.2
-        version: 0.0.1-beta.2(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5))
+        specifier: ~0.0.1-beta.3
+        version: 0.0.1-beta.3(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5))
       '@vrx-arco/color-picker-import-resolver':
-        specifier: ~0.0.1-beta.2
-        version: 0.0.1-beta.2(@vrx-arco/color-picker@0.0.1-beta.2(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5)))(unplugin-vue-components@0.26.0(@babel/parser@7.24.4)(@nuxt/kit@3.11.2(rollup@4.16.1))(rollup@4.16.1)(vue@3.4.21(typescript@5.4.5)))
+        specifier: ~0.0.1-beta.3
+        version: 0.0.1-beta.3(@vrx-arco/color-picker@0.0.1-beta.3(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5)))(unplugin-vue-components@0.26.0(@babel/parser@7.24.4)(@nuxt/kit@3.11.2(rollup@4.16.1))(rollup@4.16.1)(vue@3.4.21(typescript@5.4.5)))
       '@vrx-arco/pro-components':
         specifier: workspace:*
         version: link:../pro-components
@@ -145,11 +145,11 @@ importers:
         specifier: ^3.11.2
         version: 3.11.2(rollup@4.16.1)
       '@vrx-arco/color-picker':
-        specifier: ~0.0.1-beta.2
-        version: 0.0.1-beta.2(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5))
+        specifier: ~0.0.1-beta.3
+        version: 0.0.1-beta.3(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5))
       '@vrx-arco/color-picker-import-resolver':
-        specifier: ~0.0.1-beta.2
-        version: 0.0.1-beta.2(@vrx-arco/color-picker@0.0.1-beta.2(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5)))(unplugin-vue-components@0.26.0(@babel/parser@7.24.4)(@nuxt/kit@3.11.2(rollup@4.16.1))(rollup@4.16.1)(vue@3.4.21(typescript@5.4.5)))
+        specifier: ~0.0.1-beta.3
+        version: 0.0.1-beta.3(@vrx-arco/color-picker@0.0.1-beta.3(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5)))(unplugin-vue-components@0.26.0(@babel/parser@7.24.4)(@nuxt/kit@3.11.2(rollup@4.16.1))(rollup@4.16.1)(vue@3.4.21(typescript@5.4.5)))
       '@vrx-arco/helper':
         specifier: workspace:*
         version: link:../helper
@@ -242,8 +242,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/app
       '@vrx-arco/color-picker':
-        specifier: ~0.0.1-beta.2
-        version: 0.0.1-beta.2(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5))
+        specifier: ~0.0.1-beta.3
+        version: 0.0.1-beta.3(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5))
       '@vrx-arco/pro-components':
         specifier: workspace:*
         version: link:../../packages/pro-components
@@ -261,8 +261,8 @@ importers:
         specifier: ^2.55.1
         version: 2.55.1(vue@3.4.21(typescript@5.4.5))
       '@vrx-arco/color-picker':
-        specifier: ~0.0.1-beta.2
-        version: 0.0.1-beta.2(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5))
+        specifier: ~0.0.1-beta.3
+        version: 0.0.1-beta.3(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5))
       '@vrx-arco/nuxt':
         specifier: workspace:*
         version: link:../../packages/nuxt
@@ -1725,17 +1725,17 @@ packages:
   '@volar/typescript@2.2.0-alpha.10':
     resolution: {integrity: sha512-GCa0vTVVdA9ULUsu2Rx7jwsIuyZQPvPVT9o3NrANTbYv+523Ao1gv3glC5vzNSDPM6bUl37r94HbCj7KINQr+g==}
 
-  '@vrx-arco/color-picker-import-resolver@0.0.1-beta.2':
-    resolution: {integrity: sha512-ZyBEhPGW98mhDPEUhqIrVywLzxgFGASfvd9l/nutxbW7AxHd5T5MeBo6uXsYJa58Jf94GGf2n9tbyBOHEccmXQ==}
+  '@vrx-arco/color-picker-import-resolver@0.0.1-beta.3':
+    resolution: {integrity: sha512-GKAzZKEFO3yWY829SZc+7LKNd/AkYm2+qCscHvOuUNNdnjODm6ZaHpcQr3sfRqjnb4u7H9ApkFwkvSf/WKEB0A==}
     peerDependencies:
-      '@vrx-arco/color-picker': 0.0.1-beta.2
+      '@vrx-arco/color-picker': 0.0.1-beta.3
       unplugin-vue-components: '>=0.26.0'
     peerDependenciesMeta:
       unplugin-vue-components:
         optional: true
 
-  '@vrx-arco/color-picker@0.0.1-beta.2':
-    resolution: {integrity: sha512-ZbOzOVBk2Ix06JUuS+fPJ7/rHjpciVUqkY6UlZvSMKGkY/r9eguoJI5boasSn5OfhQrjRatOrMc2wL6KrJfKRw==}
+  '@vrx-arco/color-picker@0.0.1-beta.3':
+    resolution: {integrity: sha512-2iPmKTLhonhIkzl3wNu3ErfNlxsRHbXgtxNyL1XI5+KPVF0Ja7pDFCoSVaHe5OMedD2+Y4NuEqGqjzGZFi07iw==}
     peerDependencies:
       '@arco-design/web-vue': '>=2.39.2'
       vue: '>=3.2.45'
@@ -7389,13 +7389,13 @@ snapshots:
       '@volar/language-core': 2.2.0-alpha.10
       path-browserify: 1.0.1
 
-  '@vrx-arco/color-picker-import-resolver@0.0.1-beta.2(@vrx-arco/color-picker@0.0.1-beta.2(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5)))(unplugin-vue-components@0.26.0(@babel/parser@7.24.4)(@nuxt/kit@3.11.2(rollup@4.16.1))(rollup@4.16.1)(vue@3.4.21(typescript@5.4.5)))':
+  '@vrx-arco/color-picker-import-resolver@0.0.1-beta.3(@vrx-arco/color-picker@0.0.1-beta.3(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5)))(unplugin-vue-components@0.26.0(@babel/parser@7.24.4)(@nuxt/kit@3.11.2(rollup@4.16.1))(rollup@4.16.1)(vue@3.4.21(typescript@5.4.5)))':
     dependencies:
-      '@vrx-arco/color-picker': 0.0.1-beta.2(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5))
+      '@vrx-arco/color-picker': 0.0.1-beta.3(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5))
     optionalDependencies:
       unplugin-vue-components: 0.26.0(@babel/parser@7.24.4)(@nuxt/kit@3.11.2(rollup@4.16.1))(rollup@4.16.1)(vue@3.4.21(typescript@5.4.5))
 
-  '@vrx-arco/color-picker@0.0.1-beta.2(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5))':
+  '@vrx-arco/color-picker@0.0.1-beta.3(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5))':
     dependencies:
       '@arco-design/web-vue': 2.55.1(vue@3.4.21(typescript@5.4.5))
       '@ctrl/tinycolor': 4.1.0

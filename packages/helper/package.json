@@ -40,7 +40,7 @@
   "peerDependencies": {
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx-arco/pro-layout": "workspace:*",
-    "@vrx-arco/color-picker": "~0.0.1-beta.2",
+    "@vrx-arco/color-picker": "~0.0.1-beta.3",
     "unplugin-vue-components": ">=0.26.0"
   },
   "peerDependenciesMeta": {
@@ -56,6 +56,6 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "@vrx-arco/color-picker-import-resolver": "~0.0.1-beta.2"
+    "@vrx-arco/color-picker-import-resolver": "~0.0.1-beta.3"
   }
 }
