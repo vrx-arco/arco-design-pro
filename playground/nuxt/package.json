@@ -1,6 +1,6 @@
 {
   "name": "@vrx-arco/playground-nuxt",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "private": true,
   "scripts": {
     "dev": "nuxt dev",
