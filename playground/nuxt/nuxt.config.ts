@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     arco: true,
     resolveIcons: true,
     transpile: true,
+    colorPicker: true,
   },
   devtools: {},
 })

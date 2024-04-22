@@ -35,4 +35,11 @@ export interface VrxArcoOption {
    * @default false
    */
   resolveIcons?: boolean
+
+  /**
+   * 启用实验性组件 `<ColorPicker/>`的自动引入
+   * @experimental
+   * @default false
+   */
+  colorPicker?: boolean
 }

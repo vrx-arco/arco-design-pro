@@ -1,7 +1,12 @@
 import { defineNuxtModule } from '@nuxt/kit'
 import { transpileNoSSRFriendly } from './transpile'
 import type { VrxArcoOption } from './type'
-import { vrxArcoComponents, vrxArcoUnplugin } from './vrx-arco'
+import {
+  vrxArcoColorPickerComponents,
+  vrxArcoColorPickerUnplugin,
+  vrxArcoComponents,
+  vrxArcoUnplugin,
+} from './vrx-arco'
 import { arcoComponents, arcoIconComponents, arcoUnplugin } from './arco'
 
 export default defineNuxtModule<VrxArcoOption>({
@@ -15,6 +20,7 @@ export default defineNuxtModule<VrxArcoOption>({
     transpile: true,
     arco: false,
     resolveIcons: false,
+    colorPicker: false,
   },
   setup(option, nuxt) {
     if (option.transpile) {
@@ -24,10 +30,12 @@ export default defineNuxtModule<VrxArcoOption>({
     vrxArcoComponents()
     option.arco && arcoComponents()
     option.resolveIcons && arcoIconComponents()
+    option.colorPicker && vrxArcoColorPickerComponents()
 
     if (option.sideEffect) {
       vrxArcoUnplugin(nuxt.options, option)
       option.arco && arcoUnplugin(nuxt.options, option)
+      option.colorPicker && vrxArcoColorPickerUnplugin(nuxt.options, option)
     }
   },
 })

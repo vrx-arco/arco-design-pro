@@ -440,3 +440,5 @@ export const arcoIcon = [
   "IconWifi",
   "IconWoman"
 ];
+
+export const vrxArcoColorPicker = ["ColorPalette", "ColorPicker"];
