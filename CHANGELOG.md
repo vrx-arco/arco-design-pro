@@ -1,4 +1,20 @@
 
+## v1.5.5
+
+[compare changes](https://gitee.com/vrx/arco-design-pro/compare/v1.5.4...v1.5.5)
+
+### 🩹 修复
+
+- Update `@vrx-arco/color-picker@0.0.1-beta.3`, 修复颜色面板 slider 样式丢失的问题 (d9db000)
+
+### 🏡 框架
+
+- Update playgrounds (38ff4c2)
+
+### ❤️ 贡献者
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.5.4
 
 [compare changes](https://gitee.com/vrx/arco-design-pro/compare/v1.5.3...v1.5.4)
