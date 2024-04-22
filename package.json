@@ -5,7 +5,7 @@
   "packageManager": "pnpm@9.0.5",
   "scripts": {
     "build": "turbo run build",
-    "release": "pnpm run build && vbumpp -r",
+    "release": "vbumpp -r && pnpm build",
     "update:deps": "taze major -w -i -a -r -f",
     "lint:knip": "knip"
   },
