@@ -69,7 +69,7 @@ export function VrxArcoProComponentsResolver(
       for (const resolver of resolvers) {
         const config = resolver(options, name)
         if (config) {
-          return
+          return config
         }
       }
     },
