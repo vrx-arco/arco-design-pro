@@ -241,6 +241,9 @@ importers:
       '@vrx-arco/app':
         specifier: workspace:*
         version: link:../../packages/app
+      '@vrx-arco/color-picker':
+        specifier: ~0.0.1-beta.2
+        version: 0.0.1-beta.2(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5))
       '@vrx-arco/pro-components':
         specifier: workspace:*
         version: link:../../packages/pro-components
@@ -257,6 +260,9 @@ importers:
       '@arco-design/web-vue':
         specifier: ^2.55.1
         version: 2.55.1(vue@3.4.21(typescript@5.4.5))
+      '@vrx-arco/color-picker':
+        specifier: ~0.0.1-beta.2
+        version: 0.0.1-beta.2(@arco-design/web-vue@2.55.1(vue@3.4.21(typescript@5.4.5)))(vue@3.4.21(typescript@5.4.5))
       '@vrx-arco/nuxt':
         specifier: workspace:*
         version: link:../../packages/nuxt

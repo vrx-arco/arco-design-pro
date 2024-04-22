@@ -13,7 +13,11 @@ export default defineConfig({
     vue(),
     vueJsx(),
     Components({
-      resolvers: [ArcoResolver({}), VrxArcoProLayoutResolver({}), VrxArcoProComponentsResolver({})],
+      resolvers: [
+        ArcoResolver({}),
+        VrxArcoProLayoutResolver({}),
+        VrxArcoProComponentsResolver({ colorPicker: true }),
+      ],
     }),
   ],
 })
