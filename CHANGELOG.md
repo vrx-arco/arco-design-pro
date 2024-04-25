@@ -1,4 +1,16 @@
 
+## v1.5.6
+
+[compare changes](https://gitee.com/vrx/arco-design-pro/compare/v1.5.5...v1.5.6)
+
+### 🏡 框架
+
+- `@vrx-arco/nuxt` `@vrx-arco/helper` 更新 `@vrx-arco/color-picker-import-resolver@0.0.1-beta.4` 使 `@vrx-arco/color-picker` 依赖可选 (0c345ed)
+
+### ❤️ 贡献者
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.5.5
 
 [compare changes](https://gitee.com/vrx/arco-design-pro/compare/v1.5.4...v1.5.5)
