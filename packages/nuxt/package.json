@@ -37,7 +37,7 @@
     "@nuxt/kit": "^3.11.2",
     "@nuxt/schema": "^3.11.2",
     "@vrx-arco/helper": "workspace:*",
-    "@vrx-arco/color-picker-import-resolver": "~0.0.1-beta.3",
+    "@vrx-arco/color-picker-import-resolver": "~0.0.1-beta.4",
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx-cp/nuxt-utils": "^0.0.1-beta.96",
     "dayjs": "^1.11.10",
@@ -48,7 +48,7 @@
     "mlly": "^1.6.1"
   },
   "peerDependencies": {
-    "@vrx-arco/color-picker": "~0.0.1-beta.3"
+    "@vrx-arco/color-picker": "~0.0.1-beta.4"
   },
   "peerDependenciesMeta": {
     "@vrx-arco/color-picker": {
