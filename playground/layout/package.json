@@ -1,6 +1,6 @@
 {
   "name": "@vrx-arco/playgound-pro-layout",
-  "version": "1.5.5",
+  "version": "1.5.6",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,7 +13,7 @@
     "@vrx-arco/app": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx-arco/pro-layout": "workspace:*",
-    "@vrx-arco/color-picker": "~0.0.1-beta.3"
+    "@vrx-arco/color-picker": "~0.0.1-beta.4"
   },
   "devDependencies": {
     "@vrx-arco/helper": "workspace:*"
