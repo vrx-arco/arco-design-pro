@@ -8,10 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitee.com/vrx/arco-design-pro.git",
+    "url": "git+https://github.com/vrx-arco/arco-design-pro.git",
     "directory": "packages/use"
   },
-  "homepage": "https://vrx.gitee.io/arco-docs/",
+  "homepage": "https://vrx-arco.github.io/arco-design-pro/",
   "keywords": [
     "arco-design",
     "vue",
