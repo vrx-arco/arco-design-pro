@@ -1,4 +1,17 @@
 
+## v1.5.8
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.7...v1.5.8)
+
+### 🏡 框架
+
+- Playground-nuxt prepare 指令修改为手动执行，避免 github actions 执行错误 ([b3bd072](https://github.com/vrx-arco/arco-design-pro/commit/b3bd072))
+- 升级实验性组件 `@vrx-arco/color-picker@0.0.1-beta.7` ([cafe439](https://github.com/vrx-arco/arco-design-pro/commit/cafe439))
+
+### ❤️ 贡献者
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.5.7
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.6...v1.5.7)
