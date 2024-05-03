@@ -441,4 +441,4 @@ export const arcoIcon = [
   "IconWoman"
 ];
 
-export const vrxArcoColorPicker = ["ColorPalette", "ColorPicker"];
+export const vrxArcoColorPicker = ["ColorPicker", "ColorPickerPanel"];
