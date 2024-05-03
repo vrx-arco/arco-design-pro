@@ -13,7 +13,7 @@ packages/*/components.d.ts
 playground/*/components.d.ts
 packages/*/web-types.json
 packages/*/style
-
+docs/.vitepress/cache
 packages/icon/index.*
 .nuxt
 .output

@@ -3,13 +3,17 @@ name: 颜色选择器
 type: ProComponents
 ---
 
-# 颜色选择器 ColorPicker <Badge type="warning" text="试验性功能，API不稳定" /> <Badge type="tip" text="0.0.1-beta.3" />
+# 颜色选择器 ColorPicker <Badge type="warning" text="试验性功能，API不稳定" />
+
+[![NPM Version](https://img.shields.io/npm/v/%40vrx-arco%2Fcolor-picker?style=flat-square)](https://www.npmjs.com/package/@vrx-arco/color-picker)
+
+[更新日志](https://gitee.com/vrx-arco/color-picker/blob/main/CHANGELOG.md)
 
 <script lang="ts" setup>
-import {ColorPicker,ColorPalette} from '@vrx-arco/color-picker'
+import {ColorPicker,ColorPickerPanel} from '@vrx-arco/color-picker'
 import {Card} from '@arco-design/web-vue'
 import {ref} from 'vue'
-const color = ref('#ff0000')
+const color = ref('#165DFF')
 </script>
 
 ## 安装
@@ -62,30 +66,78 @@ $ bun add @vrx-arco/color-picker
 </template>
 ```
 
-## 修改返回值格式
+## 显示颜色文字
 
 <Card>
- <ColorPicker  valueFormat="hsl" />
+ <ColorPicker v-model:color="color" showText />
 </Card>
 
 ```vue
 <template>
   <Card>
-    <ColorPicker value-format="hsl" />
+    <ColorPicker v-model:color="color" showText />
+  </Card>
+</template>
+```
+
+## 隐藏透明度调节
+
+<Card>
+ <ColorPicker v-model:color="color" showText disabledAlpha />
+</Card>
+
+```vue
+<template>
+  <Card>
+    <ColorPicker v-model:color="color" showText disabledAlpha />
+  </Card>
+</template>
+```
+
+## 禁用
+
+<Card>
+ <ColorPicker v-model:color="color" showText disabled />
+ <div>
+  <ColorPicker v-model:color="color" disabled />
+ </div>
+</Card>
+
+```vue
+<template>
+  <Card>
+    <ColorPicker v-model:color="color" showText disabled />
+    <ColorPicker v-model:color="color" disabled />
+  </Card>
+</template>
+```
+
+## 修改颜色格式
+
+<Card>
+ <ColorPicker  format="rgb" defaultValue="rgb(22, 93, 255)" showText />
+</Card>
+
+```vue
+<template>
+  <Card>
+    <ColorPicker format="rgb" defaultValue="rgb(22, 93, 255)" showText />
   </Card>
 </template>
 ```
 
 ## 直接使用颜色面板
 
-<Card>
- <ColorPalette  />
+<Card bodyStyle="display:flex;">
+ <ColorPickerPanel  />
+ <ColorPickerPanel disabled style="margin-left:10px;"  />
 </Card>
 
 ```vue
 <template>
   <Card>
-    <ColorPalette />
+    <ColorPickerPanel />
+    <ColorPickerPanel disabled   />
   </Card>
 </template>
 ```
@@ -139,6 +191,7 @@ $ bun add @vrx-arco/color-picker-import-resolver  -D
 
 ```ts
 import { VrxArcoProComponentsResolver } from '@vrx-arco/helper'
+
 // or
 import { VrxArcoColorPickerResolver } from '@vrx-arco/color-picker-import-resolver'
 import Components from 'unplugin-vue-components/vite'
@@ -159,18 +212,34 @@ export default defineConfig({
 
 ## API
 
-`<color-Picker>` `<color-palette>` Props
+`<color-picker>` `<color-picker-panel>` 共用Props
 
 <ApiTable>
-    <ApiTableLine prop="color" desc="颜色" type="string | number"  default="'#000000'" />
-    <ApiTableLine prop="value-format" desc="颜色值格式" type="'rgb' | 'prgb' | 'hex' | 'hex3' | 'hex4' | 'hex6' | 'hex8' | 'name' | 'hsl' | 'hsv'" default="'rgb'"  />
+    <ApiTableLine prop="modelValue[v-model]" desc="颜色" type="string" />
+    <ApiTableLine prop="defaultValue" desc="默认值" type="string"  default="'#165DFF'" />
+    <ApiTableLine prop="format" desc="结果值格式化" type="'rgb' | 'prgb' | 'hex' | 'hex3' | 'hex4' | 'hex6' | 'hex8' | 'name' | 'hsl' | 'hsv'" default="'hex'"  />
+     <ApiTableLine prop="disabled" desc="禁用" type="boolean"  default="false" />
+     <ApiTableLine prop="disabledAlpha" desc="禁用透明通道" type="boolean"  default="false" />
 </ApiTable>
 
-`<color-Picker>` `<color-palette>` Events
+`<color-Picker>` Props
+
+<ApiTable>
+    <ApiTableLine prop="triggerProps" desc="弹出框入参" type="TriggerProps" />
+    <ApiTableLine prop="showText" desc="显示颜色值" type="boolean" default="false" />
+</ApiTable>
+
+`<color-picker>` `<color-picker-panel>` Events
 
 <EventTable>
-    <EventTableLine event="change" desc="修改颜色事件" attr="v: string | number"  />
+    <EventTableLine event="change" desc="修改颜色事件" attr="v: string"  />
 </EventTable>
+
+`<color-picker>` Slots
+
+<SlotTable>
+    <SlotTableLine slot="default" desc="可替换 trigger 触发器" attr="{color:string}"  />
+</SlotTable>
 
 ## nuxt
 
