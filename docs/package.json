@@ -1,0 +1,37 @@
+{
+  "name": "arco-design-pro-docs",
+  "type": "module",
+  "version": "1.5.6",
+  "private": "true",
+  "author": {
+    "name": "whitekite",
+    "email": "1075790909@qq.com"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/vrx-arco/arco-design-pro.git",
+  "scripts": {
+    "docs:dev": "vitepress dev .",
+    "docs:build": "vitepress build .",
+    "docs:serve": "vitepress serve .",
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal public/favicon.svg"
+  },
+  "dependencies": {
+    "@arco-design/web-vue": "^2.55.1",
+    "@vrx-arco/color-picker": "^0.0.1-beta.5",
+    "@vrx-arco/icon": "workspace:*",
+    "@vrx-arco/pro-components": "workspace:*",
+    "@vrx/core": "^0.4.2",
+    "@vueuse/core": "^10.9.0",
+    "workbox-window": "^7.1.0"
+  },
+  "devDependencies": {
+    "@vite-pwa/assets-generator": "^0.2.4",
+    "@vite-pwa/vitepress": "^0.5.0",
+    "@vrx-arco/helper": "workspace:*",
+    "gray-matter": "^4.0.3",
+    "less": "^4.2.0",
+    "unocss": "^0.59.4",
+    "unplugin-vue-components": "^0.27.0",
+    "vitepress": "^1.1.4"
+  }
+}

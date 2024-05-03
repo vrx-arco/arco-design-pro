@@ -1,0 +1,23 @@
+:root {
+    --vp-custom-block-warning-border: transparent;
+    --vp-custom-block-info-border: transparent;
+    --vp-custom-block-tip-border: transparent;
+    --vp-custom-block-danger-border: transparent;
+    --vp-custom-block-details-border: transparent;
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: linear-gradient(92.06deg, #33c2ff -17.9%, #257cff 43.39%, #165dff 99.4%);
+    --vp-c-brand-1: #4080ff;
+    --vp-c-brand-2: #3c7eff;
+    --vp-c-brand-3: #306fff;
+}
+
+
+
+.VPButton.medium {
+    border-radius: 0.5rem !important;
+}
+.vrx-arco-pro-card-meta__actions{
+    list-style: none !important;
+    margin: 0 !important;
+    padding-left: 0 !important;
+}
