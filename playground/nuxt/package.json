@@ -6,7 +6,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "prepare-nuxt": "nuxt prepare"
   },
   "dependencies": {
     "@arco-design/web-vue": "^2.55.1",
