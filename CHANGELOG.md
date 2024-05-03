@@ -1,4 +1,22 @@
 
+## v1.5.7
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.6...v1.5.7)
+
+### 📖 文档
+
+- 文档项目迁移至本项目内维护 ([33b1b05](https://github.com/vrx-arco/arco-design-pro/commit/33b1b05))
+
+### 🏡 框架
+
+- Update dep `@vrx-arco/color-picker@0.0.1-beat.5` 修复模块类型声明错误 ([4137aea](https://github.com/vrx-arco/arco-design-pro/commit/4137aea))
+- 项目储存位置从 gitee 迁移至 github ([9b3b331](https://github.com/vrx-arco/arco-design-pro/commit/9b3b331))
+- Add github pages build actions ([6ec3434](https://github.com/vrx-arco/arco-design-pro/commit/6ec3434))
+
+### ❤️ 贡献者
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.5.6
 
 [compare changes](https://gitee.com/vrx/arco-design-pro/compare/v1.5.5...v1.5.6)
