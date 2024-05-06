@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@arco-design/web-vue": "^2.55.1",
-    "@vrx-arco/color-picker": "^0.0.1-beta.7",
+    "@vrx-arco/color-picker": "^0.0.1-beta.9",
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx/core": "^0.4.2",

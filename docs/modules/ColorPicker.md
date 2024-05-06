@@ -232,7 +232,8 @@ export default defineConfig({
 `<color-picker>` `<color-picker-panel>` Events
 
 <EventTable>
-    <EventTableLine event="change" desc="修改颜色事件" attr="v: string"  />
+    <EventTableLine event="change" desc="修改颜色事件" attr="value: string"  />
+    <EventTableLine event="popup-visible-change" desc="颜色面板展开和收起时触发" attr="[visible: boolean,value: string]"  />
 </EventTable>
 
 `<color-picker>` Slots
