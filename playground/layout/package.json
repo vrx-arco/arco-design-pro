@@ -13,7 +13,7 @@
     "@vrx-arco/app": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx-arco/pro-layout": "workspace:*",
-    "@vrx-arco/color-picker": "~0.0.1-beta.9"
+    "@vrx-arco/color-picker": "~0.0.1-beta.11"
   },
   "devDependencies": {
     "@vrx-arco/helper": "workspace:*"

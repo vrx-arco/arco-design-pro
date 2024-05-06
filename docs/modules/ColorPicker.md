@@ -11,9 +11,18 @@ type: ProComponents
 
 <script lang="ts" setup>
 import {ColorPicker,ColorPickerPanel} from '@vrx-arco/color-picker'
-import {Card} from '@arco-design/web-vue'
+import {Card,Tag as ATag} from '@arco-design/web-vue'
 import {ref} from 'vue'
 const color = ref('#165DFF')
+
+const historyColors = ref<string[]>([])
+
+const handleChange = (visible,v) => {
+    if(visible){
+      return
+    }
+    historyColors.value.push(v)
+  }
 </script>
 
 ## 安装
@@ -55,13 +64,18 @@ $ bun add @vrx-arco/color-picker
 ## 受控模式
 
 <Card>
- <ColorPicker v-model:color="color" />
+ <ColorPicker v-model="color" />
 </Card>
 
 ```vue
+<script setup lang="ts">
+  import { ref } from 'vue'
+
+  const color = ref('#165DFF')
+</script>
 <template>
   <Card>
-    <ColorPicker v-model:color="color" />
+    <ColorPicker v-model="color" />
   </Card>
 </template>
 ```
@@ -69,13 +83,18 @@ $ bun add @vrx-arco/color-picker
 ## 显示颜色文字
 
 <Card>
- <ColorPicker v-model:color="color" showText />
+ <ColorPicker v-model="color" showText />
 </Card>
 
 ```vue
+<script setup lang="ts">
+  import { ref } from 'vue'
+
+  const color = ref('#165DFF')
+</script>
 <template>
   <Card>
-    <ColorPicker v-model:color="color" showText />
+    <ColorPicker v-model="color" showText />
   </Card>
 </template>
 ```
@@ -83,13 +102,18 @@ $ bun add @vrx-arco/color-picker
 ## 隐藏透明度调节
 
 <Card>
- <ColorPicker v-model:color="color" showText disabledAlpha />
+ <ColorPicker v-model="color" showText disabledAlpha />
 </Card>
 
 ```vue
+<script setup lang="ts">
+  import { ref } from 'vue'
+
+  const color = ref('#165DFF')
+</script>
 <template>
   <Card>
-    <ColorPicker v-model:color="color" showText disabledAlpha />
+    <ColorPicker v-model="color" showText disabledAlpha />
   </Card>
 </template>
 ```
@@ -97,17 +121,22 @@ $ bun add @vrx-arco/color-picker
 ## 禁用
 
 <Card>
- <ColorPicker v-model:color="color" showText disabled />
+ <ColorPicker v-model="color" showText disabled />
  <div>
-  <ColorPicker v-model:color="color" disabled />
+  <ColorPicker v-model="color" disabled />
  </div>
 </Card>
 
 ```vue
+<script setup lang="ts">
+  import { ref } from 'vue'
+
+  const color = ref('#165DFF')
+</script>
 <template>
   <Card>
-    <ColorPicker v-model:color="color" showText disabled />
-    <ColorPicker v-model:color="color" disabled />
+    <ColorPicker v-model="color" showText disabled />
+    <ColorPicker v-model="color" disabled />
   </Card>
 </template>
 ```
@@ -126,9 +155,105 @@ $ bun add @vrx-arco/color-picker
 </template>
 ```
 
+## 颜色预设
+
+  <Card>
+    <ColorPicker
+      v-model="color"
+      showText
+      :presets="[
+        { title: '最近使用颜色', colors: historyColors },
+        {
+          title: '系统预设颜色',
+          colors: [
+            '#00B42A',
+            '#3C7EFF',
+            '#FF7D00',
+            '#F76965',
+            '#F7BA1E',
+            '#F5319D',
+            '#D91AD9',
+            '#9FDB1D',
+            '#FADC19',
+            '#722ED1',
+            '#3491FA',
+            '#7BE188',
+            '#93BEFF',
+            '#FFCF8B',
+            '#FBB0A7',
+            '#FCE996',
+            '#FB9DC7',
+            '#F08EE6',
+            '#DCF190',
+            '#FDFA94',
+            '#C396ED',
+            '#9FD4FD',
+          ],
+        },
+      ]"
+      @popup-visible-change="handleChange"
+    />
+  </Card>
+
+```vue
+<script setup lang="ts">
+  import { ref } from 'vue'
+
+  const color = ref('#165DFF')
+
+  const historyColors = ref<string[]>([])
+
+  const handleChange = (visible, v) => {
+    if (visible) {
+      return
+    }
+    historyColors.value.push(v)
+  }
+</script>
+<template>
+  <Card>
+    <ColorPicker
+      v-model="color"
+      showText
+      :presets="[
+        { title: '最近使用颜色', colors: historyColors },
+        {
+          title: '系统预设颜色',
+          colors: [
+            '#00B42A',
+            '#3C7EFF',
+            '#FF7D00',
+            '#F76965',
+            '#F7BA1E',
+            '#F5319D',
+            '#D91AD9',
+            '#9FDB1D',
+            '#FADC19',
+            '#722ED1',
+            '#3491FA',
+            '#7BE188',
+            '#93BEFF',
+            '#FFCF8B',
+            '#FBB0A7',
+            '#FCE996',
+            '#FB9DC7',
+            '#F08EE6',
+            '#DCF190',
+            '#FDFA94',
+            '#C396ED',
+            '#9FD4FD',
+          ],
+        },
+      ]"
+      @popup-visible-change="handleChange"
+    />
+  </Card>
+</template>
+```
+
 ## 直接使用颜色面板
 
-<Card bodyStyle="display:flex;">
+<Card :bodyStyle="{display:'flex'}">
  <ColorPickerPanel  />
  <ColorPickerPanel disabled style="margin-left:10px;"  />
 </Card>
@@ -137,12 +262,51 @@ $ bun add @vrx-arco/color-picker
 <template>
   <Card>
     <ColorPickerPanel />
-    <ColorPickerPanel disabled   />
+    <ColorPickerPanel disabled />
+  </Card>
+</template>
+```
+
+## 颜色选择器面板额外功能
+
+<Card :bodyStyle="{display:'flex'}">
+ <ColorPicker v-model="color"
+      showText>
+  <template #extra="{color}">
+    <ATag :color size="small" style="margin-left:10px;margin-bottom:10px">{{color}}</ATag>
+  </template>
+ </ColorPicker>
+ <ColorPickerPanel v-model="color" showText style="margin-left:10px;">
+    <template #default="{ color }">
+      <ATag :color size="small" style="margin-left:10px;margin-bottom:10px">{{ color }}</ATag>
+    </template>
+  </ColorPickerPanel>
+</Card>
+
+```vue
+<script setup lang="ts">
+  import { ref } from 'vue'
+
+  const color = ref('#165DFF')
+</script>
+<template>
+  <Card>
+    <ColorPicker v-model="color" showText>
+      <template #extra="{ color }">
+        <ATag :color size="small" style="margin-left:10px;margin-bottom:10px">{{ color }}</ATag>
+      </template>
+    </ColorPicker>
+    <ColorPickerPanel v-model="color" showText style="margin-left:10px;">
+      <template #default="{ color }">
+        <ATag :color size="small" style="margin-left:10px;margin-bottom:10px">{{ color }}</ATag>
+      </template>
+    </ColorPickerPanel>
   </Card>
 </template>
 ```
 
 ## 样式完整导入
+
 ```ts
 // 导入依赖的所有 less样式
 import '@vrx-arco/color-picker/arco-style'
@@ -153,6 +317,7 @@ import '@vrx-arco/color-picker/arco-style-css'
 // 导入自身样式
 import '@vrx-arco/color-picker/style/index.css'
 ```
+
 ## 自动导入
 
 使用 [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) 对组件与样式进行自动按需导入
@@ -203,7 +368,7 @@ export default defineConfig({
       resolvers: [
         VrxArcoColorPickerResolver({}),
         // or
-        VrxArcoProComponentsResolver({ colorPicker: true })
+        VrxArcoProComponentsResolver({ colorPicker: true }),
       ],
     }),
   ],
