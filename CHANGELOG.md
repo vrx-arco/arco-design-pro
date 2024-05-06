@@ -1,4 +1,20 @@
 
+## v1.5.9
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.8...v1.5.9)
+
+### 🏡 框架
+
+- **nuxt:** Update auto update config ([afe4078](https://github.com/vrx-arco/arco-design-pro/commit/afe4078))
+- Update CHANGELOG.md ([f123db9](https://github.com/vrx-arco/arco-design-pro/commit/f123db9))
+- 升级实验性组件 @vrx-arco/color-picker@0.0.1-beta.9 ([4b5af20](https://github.com/vrx-arco/arco-design-pro/commit/4b5af20))
+- 升级实验性组件 @vrx-arco/color-picker@0.0.1-beta.11 ([53fb120](https://github.com/vrx-arco/arco-design-pro/commit/53fb120))
+
+### ❤️ 贡献者
+
+- Whitekite <1075790909@qq.com>
+- Colourlessglow ([@Colourlessglow](http://github.com/Colourlessglow))
+
 ## v1.5.8
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.7...v1.5.8)
