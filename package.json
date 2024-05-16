@@ -23,7 +23,7 @@
     "@vitejs/plugin-vue": "^5.0.4",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
     "@vrx-arco/internal": "workspace:*",
-    "@vrx/cp": "0.0.1-beta.97",
+    "@vrx/cp": "0.0.1-beta.99",
     "eslint": "^9.1.0",
     "knip": "^5.9.4",
     "less": "^4.2.0",
