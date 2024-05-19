@@ -1,4 +1,22 @@
 
+## v1.5.10
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.9...v1.5.10)
+
+### 🔥 性能优化
+
+- **pro-layout:** 内部引用组件 `<Comp.Sub/>` 不再使用该形式 ([509a52d](https://github.com/vrx-arco/arco-design-pro/commit/509a52d))
+- **pro-layout:** `<ProLayout/>` 内部组件 `<NavBar/>` 不再设置默认值，这能有效减少打包时不必要的长字符串 ([c23a3af](https://github.com/vrx-arco/arco-design-pro/commit/c23a3af))
+- **pro-layout:** 为了优化部分开发体验，根据路由生成的菜单名称增加空值回退 ([c4b687a](https://github.com/vrx-arco/arco-design-pro/commit/c4b687a))
+
+### 🏡 框架
+
+- Use [`automd`](https://automd.unjs.io/) to update `README.md` ([771213e](https://github.com/vrx-arco/arco-design-pro/commit/771213e))
+
+### ❤️ 贡献者
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.5.9
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.8...v1.5.9)
