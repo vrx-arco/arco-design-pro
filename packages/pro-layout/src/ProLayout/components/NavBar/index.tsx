@@ -7,15 +7,8 @@ import { style } from '../../../style/var'
 export const NavBar = defineComponent({
   name: 'vrx-arco-navBar',
   props: {
-    logo: {
-      type: String,
-      default:
-        '//p3-armor.byteimg.com/tos-cn-i-49unhts6dw/dfdba5317c0c20ce20e64fac803d52bc.svg~tplv-49unhts6dw-image.image',
-    },
-    title: {
-      type: String,
-      default: 'Acro Pro',
-    },
+    logo: String,
+    title: String,
   },
   emits: ['menuClick'],
   setup: (props, { slots, emit }) => {
