@@ -16,11 +16,11 @@
     "generate-pwa-assets": "pwa-assets-generator --preset minimal public/favicon.svg"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.55.1",
+    "@arco-design/web-vue": "^2.55.2",
     "@vrx-arco/color-picker": "^0.0.1-beta.11",
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
-    "@vrx/core": "^0.4.2",
+    "@vrx/core": "^0.4.3",
     "@vueuse/core": "^10.9.0",
     "workbox-window": "^7.1.0"
   },
@@ -30,8 +30,8 @@
     "@vrx-arco/helper": "workspace:*",
     "gray-matter": "^4.0.3",
     "less": "^4.2.0",
-    "unocss": "^0.59.4",
+    "unocss": "^0.60.2",
     "unplugin-vue-components": "^0.27.0",
-    "vitepress": "^1.1.4"
+    "vitepress": "^1.2.0"
   }
 }

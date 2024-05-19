@@ -7,7 +7,7 @@
     "email": "1075790909@qq.com"
   },
   "scripts": {
-    "build": "tsup-node"
+    "build": "automd && tsup-node"
   },
   "repository": {
     "type": "git",

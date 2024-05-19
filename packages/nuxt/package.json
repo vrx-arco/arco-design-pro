@@ -17,27 +17,33 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vrx-arco/arco-design-pro.git",
+    "directory": "packages/use"
+  },
+  "homepage": "https://vrx-arco.github.io/arco-design-pro/",
   "keywords": [
-    "nuxt",
-    "@arco-design/web-vue",
-    "arco",
+    "vue-composition-api",
     "arco-design",
-    "nuxt module",
-    "@vrx-arco/pro-components",
-    "vrx-arco"
+    "vue",
+    "arco-pro",
+    "arco-pro-vue",
+    "nuxt",
+    "nuxt-module"
   ],
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "node ./gen-components.js && tsup-node"
+    "build": "automd && node ./gen-components.js && tsup-node"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.55.1",
+    "@arco-design/web-vue": "^2.55.2",
     "@nuxt/kit": "^3.11.2",
     "@nuxt/schema": "^3.11.2",
-    "@vrx-arco/helper": "workspace:*",
     "@vrx-arco/color-picker-import-resolver": "~0.0.1-beta.11",
+    "@vrx-arco/helper": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx-cp/nuxt-utils": "^0.0.1-beta.99",
     "dayjs": "^1.11.11",
@@ -45,7 +51,7 @@
   },
   "devDependencies": {
     "magicast": "^0.3.4",
-    "mlly": "^1.6.1"
+    "mlly": "^1.7.0"
   },
   "peerDependencies": {
     "@vrx-arco/color-picker": "~0.0.1-beta.11"

@@ -38,7 +38,7 @@
     "./style/*": "./style/*"
   },
   "scripts": {
-    "build": "vrx-cp build",
+    "build": "automd && vrx-cp build",
     "watch": "vrx-cp watch"
   },
   "peerDependencies": {
@@ -46,10 +46,10 @@
     "vue": ">=3.2.45"
   },
   "dependencies": {
-    "@vill-v/path-prop": "^1.3.0",
+    "@vill-v/path-prop": "^1.3.1",
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/use": "workspace:*",
-    "@vrx/core": "^0.4.2",
+    "@vrx/core": "^0.4.3",
     "@vueuse/core": "^10.9.0",
     "klona": "^2.0.6"
   },

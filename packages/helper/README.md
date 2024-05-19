@@ -2,13 +2,13 @@
 <img src="https://vrx-arco.github.io/arco-design-pro/favicon.svg" width="200" height="250">
 </p>
 
-# @vrx-arco/pro-layout
+# @vrx-arco/helper
 
 <!-- automd:badges color="orange" license licenseBranch  bundlephobia packagephobia -->
 
-[![npm version](https://img.shields.io/npm/v/@vrx-arco/pro-layout?color=orange)](https://npmjs.com/package/@vrx-arco/pro-layout)
-[![npm downloads](https://img.shields.io/npm/dm/@vrx-arco/pro-layout?color=orange)](https://npmjs.com/package/@vrx-arco/pro-layout)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/@vrx-arco/pro-layout?color=orange)](https://bundlephobia.com/package/@vrx-arco/pro-layout)
+[![npm version](https://img.shields.io/npm/v/@vrx-arco/helper?color=orange)](https://npmjs.com/package/@vrx-arco/helper)
+[![npm downloads](https://img.shields.io/npm/dm/@vrx-arco/helper?color=orange)](https://npmjs.com/package/@vrx-arco/helper)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@vrx-arco/helper?color=orange)](https://bundlephobia.com/package/@vrx-arco/helper)
 [![license](https://img.shields.io/github/license/vrx-arco/arco-design-pro?color=orange)](https://github.com/vrx-arco/arco-design-pro/blob/true/LICENSE)
 
 <!-- /automd -->
@@ -23,19 +23,19 @@
 
 ```sh
 # ✨ Auto-detect
-npx nypm install @vrx-arco/pro-layout
+npx nypm install @vrx-arco/helper
 
 # npm
-npm install @vrx-arco/pro-layout
+npm install @vrx-arco/helper
 
 # yarn
-yarn add @vrx-arco/pro-layout
+yarn add @vrx-arco/helper
 
 # pnpm
-pnpm install @vrx-arco/pro-layout
+pnpm install @vrx-arco/helper
 
 # bun
-bun install @vrx-arco/pro-layout
+bun install @vrx-arco/helper
 ```
 
 <!-- /automd -->

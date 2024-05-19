@@ -1,8 +1,44 @@
+<p align="center">
+<img src="https://vrx-arco.github.io/arco-design-pro/favicon.svg" width="200" height="250">
+</p>
+
 # @vrx-arco/app
+
+<!-- automd:badges color="orange" license licenseBranch  bundlephobia packagephobia -->
+
+[![npm version](https://img.shields.io/npm/v/@vrx-arco/app?color=orange)](https://npmjs.com/package/@vrx-arco/app)
+[![npm downloads](https://img.shields.io/npm/dm/@vrx-arco/app?color=orange)](https://npmjs.com/package/@vrx-arco/app)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@vrx-arco/app?color=orange)](https://bundlephobia.com/package/@vrx-arco/app)
+[![license](https://img.shields.io/github/license/vrx-arco/arco-design-pro?color=orange)](https://github.com/vrx-arco/arco-design-pro/blob/true/LICENSE)
+
+<!-- /automd -->
 
 集成 `vue-router`, `pinia`
 
 快速完成对动态路由的支持
+
+## 安装
+
+<!-- automd:pm-install -->
+
+```sh
+# ✨ Auto-detect
+npx nypm install @vrx-arco/app
+
+# npm
+npm install @vrx-arco/app
+
+# yarn
+yarn add @vrx-arco/app
+
+# pnpm
+pnpm install @vrx-arco/app
+
+# bun
+bun install @vrx-arco/app
+```
+
+<!-- /automd -->
 
 ## 创建
 
@@ -96,7 +132,7 @@ import { Button, Switch } from '@arco-design/web-vue'
   <!--  data 传递给 authentication.checkPermission 用作鉴权-->
   <!--  当鉴权失败时，hasPermission为 false，可自行处理组件无权限表现 -->
   <Permission data="user:add:del" :destroyOnNoPermission="false">
-    <template v-slot="{hasPermission}">
+    <template #default="{hasPermission}">
       <Button :disabled="!hasPermission">删除</Button>
     </template>
   </Permission>
@@ -104,7 +140,7 @@ import { Button, Switch } from '@arco-design/web-vue'
   <!--  data 传递给 authentication.checkPermission 用作鉴权-->
   <!--  当鉴权失败时，使用 noPermission插槽，自行处理无权限组件渲染 -->
   <Permission data="user:add:del">
-    <template v-slot>
+    <template #default>
       <Switch />
     </template>
     <template #noPermission>
@@ -113,3 +149,23 @@ import { Button, Switch } from '@arco-design/web-vue'
   </Permission>
 </template>
 ```
+
+## 贡献者
+<!-- automd:contributors author="Colourlessglow" license="MIT" -->
+
+Published under the [MIT](https://github.com/vrx-arco/arco-design-pro/blob/main/LICENSE) license.
+Made by [@Colourlessglow](https://github.com/Colourlessglow) and [community](https://github.com/vrx-arco/arco-design-pro/graphs/contributors) 💛
+<br><br>
+<a href="https://github.com/vrx-arco/arco-design-pro/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=vrx-arco/arco-design-pro" />
+</a>
+
+<!-- /automd -->
+
+<!-- automd:with-automd -->
+
+---
+
+_🤖 auto updated with [automd](https://automd.unjs.io)_
+
+<!-- /automd -->
