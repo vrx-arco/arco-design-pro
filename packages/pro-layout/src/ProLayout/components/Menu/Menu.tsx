@@ -23,7 +23,7 @@ const MenuItem: FunctionalComponent<MenuItemProps> = ({ menu }, { slots }) => {
   if (!menu.children) {
     return (
       <AMenuItem v-slots={{ icon: renderMenuIcon }} key={menu.name as string}>
-        {menu.meta!.title}
+        {menu.meta?.title || ''}
       </AMenuItem>
     )
   }
@@ -31,7 +31,7 @@ const MenuItem: FunctionalComponent<MenuItemProps> = ({ menu }, { slots }) => {
     const firstChild = menu.children[0].name
     return (
       <AMenuItem v-slots={{ icon: renderMenuIcon }} key={firstChild as string}>
-        {menu.meta!.title}
+        {menu.meta?.title || ''}
       </AMenuItem>
     )
   }
@@ -39,7 +39,7 @@ const MenuItem: FunctionalComponent<MenuItemProps> = ({ menu }, { slots }) => {
     <SubMenu
       v-slots={{ icon: renderMenuIcon }}
       key={menu.name as string}
-      title={menu.meta!.title as string}
+      title={(menu.meta?.title || '') as string}
     >
       {menu.children?.map((item) => (
         <MenuItem menu={item} key={item.name} v-slots={{ icon: slots.icon }} />
