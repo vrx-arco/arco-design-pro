@@ -8,7 +8,7 @@ import {
   toRef,
   watch,
 } from 'vue'
-import { Menu } from '@arco-design/web-vue'
+import { MenuItem as AMenuItem, Menu, SubMenu } from '@arco-design/web-vue'
 import { RouteRecordRaw, useRoute, useRouter } from 'vue-router'
 
 interface MenuItemProps {
@@ -22,21 +22,21 @@ const MenuItem: FunctionalComponent<MenuItemProps> = ({ menu }, { slots }) => {
   }
   if (!menu.children) {
     return (
-      <Menu.Item v-slots={{ icon: renderMenuIcon }} key={menu.name as string}>
+      <AMenuItem v-slots={{ icon: renderMenuIcon }} key={menu.name as string}>
         {menu.meta!.title}
-      </Menu.Item>
+      </AMenuItem>
     )
   }
   if (menu.meta?.list) {
     const firstChild = menu.children[0].name
     return (
-      <Menu.Item v-slots={{ icon: renderMenuIcon }} key={firstChild as string}>
+      <AMenuItem v-slots={{ icon: renderMenuIcon }} key={firstChild as string}>
         {menu.meta!.title}
-      </Menu.Item>
+      </AMenuItem>
     )
   }
   return (
-    <Menu.SubMenu
+    <SubMenu
       v-slots={{ icon: renderMenuIcon }}
       key={menu.name as string}
       title={menu.meta!.title as string}
@@ -44,7 +44,7 @@ const MenuItem: FunctionalComponent<MenuItemProps> = ({ menu }, { slots }) => {
       {menu.children?.map((item) => (
         <MenuItem menu={item} key={item.name} v-slots={{ icon: slots.icon }} />
       ))}
-    </Menu.SubMenu>
+    </SubMenu>
   )
 }
 

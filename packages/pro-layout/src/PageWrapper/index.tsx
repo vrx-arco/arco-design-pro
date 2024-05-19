@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import { Breadcrumb, Scrollbar } from '@arco-design/web-vue'
+import { Breadcrumb, BreadcrumbItem, Scrollbar } from '@arco-design/web-vue'
 import { IconApps } from '@vrx-arco/icon'
 import { useRoute, useRouter } from 'vue-router'
 import { style } from '../style/var'
@@ -41,21 +41,21 @@ export const PageWrapper = defineComponent({
       <section class={bemClass()}>
         <header class={bemClass('__header')}>
           <Breadcrumb>
-            <Breadcrumb.Item>
+            <BreadcrumbItem>
               <IconApps />
-            </Breadcrumb.Item>
+            </BreadcrumbItem>
             {route.matched.map((item) => {
               if (!item.meta?.title) {
                 return <></>
               }
               return (
-                <Breadcrumb.Item
+                <BreadcrumbItem
                   class={bemClass('__breadcrumb-item')}
                   key={item.name as string}
                   {...{ onClick: () => handleRoute(item.name as string) }}
                 >
                   {item.meta.title}
-                </Breadcrumb.Item>
+                </BreadcrumbItem>
               )
             })}
           </Breadcrumb>

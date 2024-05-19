@@ -1,5 +1,13 @@
 import { PropType, SlotsType, defineComponent } from 'vue'
-import { Drawer, Layout, Scrollbar, Spin } from '@arco-design/web-vue'
+import {
+  Drawer,
+  Layout,
+  LayoutContent,
+  LayoutHeader,
+  LayoutSider,
+  Scrollbar,
+  Spin,
+} from '@arco-design/web-vue'
 import { useShareBreakpoints } from '@vrx-arco/use'
 import { RouteRecordRaw, RouterView } from 'vue-router'
 import { useToggle } from '@vueuse/core'
@@ -77,7 +85,7 @@ export const ProLayout = defineComponent({
       return (
         <Spin loading={loading} class={bemClass('__spin')} size={30}>
           <Layout class={bemClass()}>
-            <Layout.Header class={bemClass('__header')}>
+            <LayoutHeader class={bemClass('__header')}>
               <NavBar
                 title={title}
                 logo={logo}
@@ -93,8 +101,8 @@ export const ProLayout = defineComponent({
               >
                 {slots.headerToolbox?.()}
               </NavBar>
-            </Layout.Header>
-            <Layout.Content class={bemClass('__wrap-container')}>
+            </LayoutHeader>
+            <LayoutContent class={bemClass('__wrap-container')}>
               <Layout class={bemClass('__wrap')}>
                 {isSmallerLg.value ? (
                   <Drawer
@@ -111,17 +119,17 @@ export const ProLayout = defineComponent({
                     </Scrollbar>
                   </Drawer>
                 ) : (
-                  <Layout.Sider breakpoint="xl" collapsible>
+                  <LayoutSider breakpoint="xl" collapsible>
                     <Scrollbar outerClass={bemClass('__menu-scrollbar')}>
                       <ProMenu menu={menus} v-slots={{ icon: slots.menuIcon }} />
                     </Scrollbar>
-                  </Layout.Sider>
+                  </LayoutSider>
                 )}
-                <Layout.Content class={bemClass('__content')}>
+                <LayoutContent class={bemClass('__content')}>
                   {slots.default?.() || <RouterView />}
-                </Layout.Content>
+                </LayoutContent>
               </Layout>
-            </Layout.Content>
+            </LayoutContent>
           </Layout>
         </Spin>
       )
