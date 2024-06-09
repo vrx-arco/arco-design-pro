@@ -1,4 +1,16 @@
 
+## v1.5.11
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.10...v1.5.11)
+
+### 🏡 框架
+
+- 升级部分依赖，并额外生成更符合 `typescript@5` 风格的类型声明文件 `.d.mts` ([19c0144](https://github.com/vrx-arco/arco-design-pro/commit/19c0144))
+
+### ❤️ 贡献者
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.5.10
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.9...v1.5.10)
