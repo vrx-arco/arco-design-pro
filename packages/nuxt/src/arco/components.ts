@@ -1,5 +1,5 @@
-import { arco, arcoIcon } from '../config'
 import { addComponent } from '@nuxt/kit'
+import { arco, arcoIcon } from '../config'
 
 export const arcoComponents = () => {
   arco.forEach((key) => {

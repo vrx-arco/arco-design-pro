@@ -39,19 +39,19 @@
     "build": "automd && node ./gen-components.js && tsup-node"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.55.2",
+    "@arco-design/web-vue": "^2.55.3",
     "@nuxt/kit": "^3.11.2",
     "@nuxt/schema": "^3.11.2",
     "@vrx-arco/color-picker-import-resolver": "~0.0.1-beta.11",
     "@vrx-arco/helper": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
-    "@vrx-cp/nuxt-utils": "^0.0.1",
+    "@vrx-cp/nuxt-utils": "^0.0.3",
     "dayjs": "^1.11.11",
     "scule": "^1.3.0"
   },
   "devDependencies": {
     "magicast": "^0.3.4",
-    "mlly": "^1.7.0"
+    "mlly": "^1.7.1"
   },
   "peerDependencies": {
     "@vrx-arco/color-picker": "~0.0.1-beta.11"

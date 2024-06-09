@@ -36,7 +36,7 @@
     "build": "automd && tsup-node"
   },
   "dependencies": {
-    "@vueuse/core": "^10.9.0"
+    "@vueuse/core": "^10.10.0"
   },
   "peerDependencies": {
     "@arco-design/web-vue": ">=2.39.2",

@@ -50,7 +50,7 @@
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/use": "workspace:*",
     "@vrx/core": "^0.4.3",
-    "@vueuse/core": "^10.9.0",
+    "@vueuse/core": "^10.10.0",
     "klona": "^2.0.6"
   },
   "publishConfig": {
