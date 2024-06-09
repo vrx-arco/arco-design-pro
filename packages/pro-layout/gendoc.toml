@@ -1,0 +1,10 @@
+[[docs]]
+name = "PageWrapper"
+arco = ["Breadcrumb", "Scrollbar"]
+
+[docs.slots.default]
+desc = "默认插槽"
+
+[[docs]]
+name = "ProLayout"
+arco = ["Drawer", "Layout", "Scrollbar", "Spin", "Menu", "Space", "Typography"]
