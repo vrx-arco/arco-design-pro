@@ -1,4 +1,4 @@
-import { defineNuxtModule } from '@nuxt/kit'
+import { defineNuxtModule, extendViteConfig } from '@nuxt/kit'
 import { transpileNoSSRFriendly } from './transpile'
 import type { VrxArcoOption } from './type'
 import {
@@ -23,6 +23,11 @@ export default defineNuxtModule<VrxArcoOption>({
     colorPicker: false,
   },
   setup(option, nuxt) {
+    extendViteConfig((config) => {
+      config.optimizeDeps ||= {}
+      config.optimizeDeps.exclude ||= []
+      config.optimizeDeps.exclude.push('@vrx/core', '@vill-v/type-as', 'klona', '@vueuse/core')
+    })
     if (option.transpile) {
       transpileNoSSRFriendly(nuxt)
     }
