@@ -20,8 +20,8 @@
     "@vrx-arco/color-picker": "^0.0.1-beta.11",
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
-    "@vrx/core": "^0.4.3",
-    "@vueuse/core": "^10.10.0",
+    "@vrx/core": "^0.4.4",
+    "@vueuse/core": "^10.10.1",
     "workbox-window": "^7.1.0"
   },
   "devDependencies": {

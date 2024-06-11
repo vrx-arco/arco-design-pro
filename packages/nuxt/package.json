@@ -40,8 +40,8 @@
   },
   "dependencies": {
     "@arco-design/web-vue": "^2.55.3",
-    "@nuxt/kit": "^3.11.2",
-    "@nuxt/schema": "^3.11.2",
+    "@nuxt/kit": "^3.12.1",
+    "@nuxt/schema": "^3.12.1",
     "@vrx-arco/color-picker-import-resolver": "~0.0.1-beta.11",
     "@vrx-arco/helper": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
@@ -54,7 +54,8 @@
     "mlly": "^1.7.1"
   },
   "peerDependencies": {
-    "@vrx-arco/color-picker": "~0.0.1-beta.11"
+    "@vrx-arco/color-picker": "~0.0.1-beta.11",
+    "nuxt": "^3.0.0"
   },
   "peerDependenciesMeta": {
     "@vrx-arco/color-picker": {
