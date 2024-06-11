@@ -1,4 +1,22 @@
 
+## v1.5.12
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.11...v1.5.12)
+
+### 🔥 性能优化
+
+- **nuxt:** 按照 [`nuxt@3.12.0`](https://github.com/nuxt/nuxt/pull/27372) 优化建议，排除部分依赖预构建 ([d228cf6](https://github.com/vrx-arco/arco-design-pro/commit/d228cf6))
+
+### 🏡 框架
+
+- Update `@vrx/cp@0.1.2` ([5d0c6c7](https://github.com/vrx-arco/arco-design-pro/commit/5d0c6c7))
+- **pro-components:** Update `gendoc.toml` ([8440efe](https://github.com/vrx-arco/arco-design-pro/commit/8440efe))
+- Bump `@vueuse/core@10.10.1` `@vrx/core@0.4.4` ([15e7532](https://github.com/vrx-arco/arco-design-pro/commit/15e7532))
+
+### ❤️ 贡献者
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.5.11
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.10...v1.5.11)
