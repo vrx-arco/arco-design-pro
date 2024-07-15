@@ -140,6 +140,10 @@ export default withPwa(
           activeMatch: '^/modules/',
         },
         {
+          text: '图标',
+          link: 'https://vrx-arco.github.io/icons/',
+        },
+        {
           text: pkg.version,
           items: [
             {
