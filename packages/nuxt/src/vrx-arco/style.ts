@@ -33,6 +33,7 @@ export const vrxArcoUnplugin = (nuxtoption: NuxtOptions, vrxArco: VrxArcoOption)
         }
         return styles
       },
+      ...vrxArco.importStyleDir,
     },
     vrxArco.importStylePlugin
   )
@@ -67,6 +68,7 @@ export const vrxArcoColorPickerUnplugin = (nuxtoption: NuxtOptions, vrxArco: Vrx
         }
         return styles
       },
+      ...vrxArco.importStyleDir,
     },
     vrxArco.importStylePlugin
   )

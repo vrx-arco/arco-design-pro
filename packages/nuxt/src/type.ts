@@ -1,5 +1,4 @@
 import type { ExtendConfigOptions } from '@nuxt/kit'
-
 export interface VrxArcoOption {
   /**
    * 引入的aro-design样式类型
@@ -11,6 +10,20 @@ export interface VrxArcoOption {
    * 详见 [extendviteconfig](https://nuxt.com/docs/api/kit/builder#extendviteconfig) 的 `ExtendViteConfigOptions` 类型说明
    */
   importStylePlugin?: ExtendConfigOptions
+  /**
+   * 实验性，自定义自动导入样式扫描文件范围
+   * @experimental
+   */
+  importStyleDir: {
+    /**
+     * 额外包含的目录
+     */
+    includeDir?: string[]
+    /**
+     * 排除部分目录
+     */
+    excludeDir?: string[]
+  }
   /**
    * 是否使用自动导入样式
    * @default true

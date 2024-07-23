@@ -45,7 +45,7 @@
     "@vrx-arco/color-picker-import-resolver": "~0.0.1-beta.11",
     "@vrx-arco/helper": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
-    "@vrx-cp/nuxt-utils": "^0.1.2",
+    "@vrx-cp/nuxt-utils": "^0.1.7",
     "dayjs": "^1.11.11",
     "scule": "^1.3.0"
   },

@@ -163,6 +163,7 @@ export const arcoUnplugin = (nuxtoption: NuxtOptions, vrxArco: VrxArcoOption) =>
         }
         return styles
       },
+      ...vrxArco.importStyleDir,
     },
     vrxArco.importStylePlugin
   )
