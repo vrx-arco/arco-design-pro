@@ -1,4 +1,16 @@
 
+## v1.5.14
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.13...v1.5.14)
+
+### 🩹 修复
+
+- **nuxt:** 修复 `importStyleDir` 类型声明错误 ([7d663df](https://github.com/vrx-arco/arco-design-pro/commit/7d663df))
+
+### ❤️ 贡献者
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.5.13
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.12...v1.5.13)
