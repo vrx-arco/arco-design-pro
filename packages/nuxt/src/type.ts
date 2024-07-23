@@ -14,7 +14,7 @@ export interface VrxArcoOption {
    * 实验性，自定义自动导入样式扫描文件范围
    * @experimental
    */
-  importStyleDir: {
+  importStyleDir?: {
     /**
      * 额外包含的目录
      */
