@@ -1,4 +1,20 @@
 
+## v1.5.13
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.12...v1.5.13)
+
+### 🚀 特性
+
+- **nuxt:** 实验性支持 自定义自动导入样式扫描文件范围 ([faad893](https://github.com/vrx-arco/arco-design-pro/commit/faad893))
+
+### 📖 文档
+
+- 增加 [`vrx-arco/icons`](https://vrx-arco.github.io/icons/) 外链 ([9abab89](https://github.com/vrx-arco/arco-design-pro/commit/9abab89))
+
+### ❤️ 贡献者
+
+- Whitekite <1075790909@qq.com>
+
 ## v1.5.12
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.11...v1.5.12)
