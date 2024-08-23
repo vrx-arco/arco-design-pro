@@ -1,4 +1,21 @@
 
+## v1.6.0
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.14...v1.6.0)
+
+### 🚀 特性
+
+- 🚨 遵循 [nuxt@3.13](https://nuxt.com/blog/v3-13#vue-typescript-changes) 建议，修改全局 volar 组件 dts 文件逻辑 注册模块 `@vue/runtime-core` -> `vue` ([92543bc](https://github.com/vrx-arco/arco-design-pro/commit/92543bc))
+
+### 🏡 框架
+
+- **nuxt:** Update dep `@arco-design/web-vue@2.56.1` `@nuxt/*@3.13.0` `@vrx-arco/color-picker*@0.0.1-beta.12` `dayjs@1.11.13` ([0cab82a](https://github.com/vrx-arco/arco-design-pro/commit/0cab82a))
+- Update dep `@vueuse/core@11.0.1` ([289efc4](https://github.com/vrx-arco/arco-design-pro/commit/289efc4))
+
+### ❤️ 贡献者
+
+- Whitekite ([@Colourlessglow](http://github.com/Colourlessglow))
+
 ## v1.5.14
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.13...v1.5.14)
