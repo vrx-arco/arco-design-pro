@@ -1,6 +1,6 @@
 {
   "name": "vrx-arco-pro-components",
-  "version": "1.5.14",
+  "version": "1.6.0",
   "private": true,
   "packageManager": "pnpm@9.8.0",
   "author": {
