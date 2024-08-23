@@ -23,9 +23,9 @@
   "module": "./dist/index.mjs",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     },
     "./arco-style": {
       "import": "./arco-style.mjs",
@@ -50,7 +50,7 @@
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/use": "workspace:*",
     "@vrx/core": "^0.4.4",
-    "@vueuse/core": "^10.10.1",
+    "@vueuse/core": "^11.0.1",
     "klona": "^2.0.6"
   },
   "publishConfig": {
