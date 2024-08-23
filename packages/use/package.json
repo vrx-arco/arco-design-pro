@@ -24,9 +24,9 @@
   "module": "./dist/index.mjs",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     }
   },
   "files": [
@@ -36,7 +36,7 @@
     "build": "automd && tsup-node"
   },
   "dependencies": {
-    "@vueuse/core": "^10.10.1"
+    "@vueuse/core": "^11.0.1"
   },
   "peerDependencies": {
     "@arco-design/web-vue": ">=2.39.2",

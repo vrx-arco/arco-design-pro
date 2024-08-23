@@ -23,9 +23,9 @@
   "module": "./dist/index.mjs",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     }
   },
   "files": [
@@ -52,10 +52,10 @@
     }
   },
   "devDependencies": {
-    "unplugin-vue-components": "^0.27.0"
+    "unplugin-vue-components": "^0.27.4"
   },
   "sideEffects": false,
   "dependencies": {
-    "@vrx-arco/color-picker-import-resolver": "~0.0.1-beta.11"
+    "@vrx-arco/color-picker-import-resolver": "~0.0.1-beta.12"
   }
 }

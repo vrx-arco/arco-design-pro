@@ -9,9 +9,9 @@
     "playground:preview": "vite preview"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.55.3",
+    "@arco-design/web-vue": "^2.56.1",
     "@vrx-arco/app": "workspace:*",
-    "@vrx-arco/color-picker": "~0.0.1-beta.11",
+    "@vrx-arco/color-picker": "~0.0.1-beta.12",
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx-arco/pro-layout": "workspace:*"
   },

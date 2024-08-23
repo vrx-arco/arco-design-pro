@@ -9,13 +9,13 @@
     "prepare-nuxt": "nuxt prepare"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.55.3",
-    "@vrx-arco/color-picker": "~0.0.1-beta.11",
+    "@arco-design/web-vue": "^2.56.1",
+    "@vrx-arco/color-picker": "~0.0.1-beta.12",
     "@vrx-arco/nuxt": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*"
   },
   "devDependencies": {
-    "nuxt": "^3.12.1",
-    "typescript": "^5.4.5"
+    "nuxt": "^3.13.0",
+    "typescript": "^5.5.4"
   }
 }
