@@ -52,8 +52,8 @@
     }
   },
   "devDependencies": {
-    "unplugin-vue-components": "catalog:",
-    "@arco-design/web-vue": "catalog:"
+    "@arco-design/web-vue": "catalog:",
+    "unplugin-vue-components": "catalog:"
   },
   "sideEffects": false,
   "dependencies": {
