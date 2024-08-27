@@ -50,8 +50,11 @@
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/use": "workspace:*",
     "@vrx/core": "^0.4.4",
-    "@vueuse/core": "^11.0.1",
+    "@vueuse/core": "catalog:",
     "klona": "^2.0.6"
+  },
+  "devDependencies": {
+    "@arco-design/web-vue": "catalog:"
   },
   "publishConfig": {
     "access": "public"

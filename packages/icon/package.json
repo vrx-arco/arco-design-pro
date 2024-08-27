@@ -34,6 +34,9 @@
     "@arco-design/web-vue": ">=2.39.2",
     "vue": ">=3.2.45"
   },
+  "devDependencies": {
+    "@arco-design/web-vue": "catalog:"
+  },
   "publishConfig": {
     "access": "public"
   },

@@ -9,8 +9,8 @@
     "prepare-nuxt": "nuxt prepare"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.56.1",
-    "@vrx-arco/color-picker": "~0.0.1-beta.12",
+    "@arco-design/web-vue": "catalog:",
+    "@vrx-arco/color-picker": "catalog:",
     "@vrx-arco/nuxt": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*"
   },

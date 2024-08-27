@@ -49,7 +49,10 @@
   "dependencies": {
     "@vrx-arco/icon": "workspace:*",
     "@vrx-arco/use": "workspace:*",
-    "@vueuse/core": "^11.0.1"
+    "@vueuse/core": "catalog:"
+  },
+  "devDependencies": {
+    "@arco-design/web-vue": "catalog:"
   },
   "publishConfig": {
     "access": "public"

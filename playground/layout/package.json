@@ -9,13 +9,17 @@
     "playground:preview": "vite preview"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.56.1",
+    "@arco-design/web-vue": "catalog:",
     "@vrx-arco/app": "workspace:*",
-    "@vrx-arco/color-picker": "~0.0.1-beta.12",
+    "@vrx-arco/color-picker": "catalog:",
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx-arco/pro-layout": "workspace:*"
   },
   "devDependencies": {
-    "@vrx-arco/helper": "workspace:*"
+    "@vrx-arco/helper": "workspace:*",
+    "unplugin-vue-components": "catalog:",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "@vitejs/plugin-vue-jsx": "^4.0.1",
+    "vite": "^5.4.2"
   }
 }
