@@ -1,4 +1,20 @@
 
+## v1.7.0
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.6.0...v1.7.0)
+
+### 💅 重构
+
+- 不再维护 `@vrx-arco/icon`， 内部使用替换为 `@vrx-arco/icons-vue`，以牺牲小部分打包体积为代价，使用更符合现代包标准的图标库 ([1e4691c](https://github.com/vrx-arco/arco-design-pro/commit/1e4691c))
+
+### 🏡 框架
+
+- Use pnpm catalog ([9b1de2b](https://github.com/vrx-arco/arco-design-pro/commit/9b1de2b))
+
+### ❤️ 贡献者
+
+- Whitekite ([@Colourlessglow](http://github.com/Colourlessglow))
+
 ## v1.6.0
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.5.14...v1.6.0)
