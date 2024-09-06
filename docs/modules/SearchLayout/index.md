@@ -96,7 +96,7 @@ import {
   SearchLayoutHeader,
 } from '@vrx-arco/pro-components'
 import { Avatar, Button, Card, Input } from '@arco-design/web-vue'
-import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icon'
+import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icons-vue'
 </script>
 
 <template>

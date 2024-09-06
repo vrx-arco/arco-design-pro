@@ -67,17 +67,6 @@ export default withPwa(
           ],
         }),
       ] as any,
-      build: {
-        rollupOptions: {
-          output: {
-            manualChunks: {
-              arco: ['@arco-design/web-vue'],
-              arcoIcon: ['@arco-design/web-vue/es/icon', '@vrx-arco/icon'],
-              vrxArco: ['@vrx-arco/pro-components'],
-            },
-          },
-        },
-      },
     },
     description: '对arco-design-vue 的pro预设的封装',
     markdown: {

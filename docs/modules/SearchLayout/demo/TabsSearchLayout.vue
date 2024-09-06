@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icon'
-import { ref } from 'vue'
+  import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icons-vue'
+  import { ref } from 'vue'
 
-const type = ref('line')
+  const type = ref('line')
 </script>
 
 <template>
@@ -10,24 +10,12 @@ const type = ref('line')
     <div class="demo">
       <div class="demo-head">
         <ARadioGroup v-model="type" type="button">
-          <ARadio value="line">
-            Line
-          </ARadio>
-          <ARadio value="card">
-            Card
-          </ARadio>
-          <ARadio value="card-gutter">
-            Card Gutter
-          </ARadio>
-          <ARadio value="text">
-            Text
-          </ARadio>
-          <ARadio value="rounded">
-            Rounded
-          </ARadio>
-          <ARadio value="capsule">
-            Capsule
-          </ARadio>
+          <ARadio value="line"> Line </ARadio>
+          <ARadio value="card"> Card </ARadio>
+          <ARadio value="card-gutter"> Card Gutter </ARadio>
+          <ARadio value="text"> Text </ARadio>
+          <ARadio value="rounded"> Rounded </ARadio>
+          <ARadio value="capsule"> Capsule </ARadio>
         </ARadioGroup>
       </div>
       <SearchLayout class="demo-content" title="搜索布局" type="card">
@@ -59,9 +47,7 @@ const type = ref('line')
             :column="1"
           >
             <template #header>
-              <AButton type="primary">
-                新增
-              </AButton>
+              <AButton type="primary"> 新增 </AButton>
             </template>
             <template #item="{ item }">
               <ProCardMeta title="title" description="description">
@@ -84,21 +70,21 @@ const type = ref('line')
 </template>
 
 <style scoped>
-.demo {
-  height: 800px;
-  background-color: var(--color-fill-2);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
+  .demo {
+    height: 800px;
+    background-color: var(--color-fill-2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
 
-.demo-head {
-  background-color: var(--color-bg-2);
-  padding: 20px;
-  margin-bottom: 10px;
-}
-.demo-content{
-  min-height: 0;
-  flex: 1;
-}
+  .demo-head {
+    background-color: var(--color-bg-2);
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  .demo-content {
+    min-height: 0;
+    flex: 1;
+  }
 </style>

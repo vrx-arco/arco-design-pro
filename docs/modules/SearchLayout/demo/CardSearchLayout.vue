@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icon'
+  import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icons-vue'
 </script>
 
 <template>
   <ACard>
-    <div style="height: 700px;background-color: var(--color-fill-2);padding: 20px">
+    <div style="height: 700px; background-color: var(--color-fill-2); padding: 20px">
       <SearchLayout title="搜索布局" type="card">
         <SearchLayoutHeader>
           <SearchBar :column="1">
@@ -27,9 +27,7 @@ import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icon'
             :column="1"
           >
             <template #header>
-              <AButton type="primary">
-                新增
-              </AButton>
+              <AButton type="primary"> 新增 </AButton>
             </template>
             <template #item="{ item }">
               <ProCardMeta title="title" description="description">
@@ -51,6 +49,4 @@ import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icon'
   </ACard>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

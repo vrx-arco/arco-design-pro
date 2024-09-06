@@ -1,7 +1,7 @@
 import { defineComponent } from 'vue'
 import { Space, TypographyTitle } from '@arco-design/web-vue'
-import { IconMenuFold } from '@vrx-arco/icon'
 import { propsSlot, useShareBreakpoints } from '@vrx-arco/use'
+import IconMenuFold from '@vrx-arco/icons-vue/IconMenuFold'
 import { style } from '../../../style/var'
 
 export const NavBar = defineComponent({
@@ -47,7 +47,7 @@ export const NavBar = defineComponent({
             )}
             {isSmallerLg.value && (
               <IconMenuFold
-                class={bemClass('__left-side--smaller')}
+                class={['arco-icon', bemClass('__left-side--smaller')]}
                 {...{ onClick: () => emit('menuClick') }}
               />
             )}

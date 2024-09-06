@@ -47,7 +47,7 @@
     "vue-router": ">=4.1.6"
   },
   "dependencies": {
-    "@vrx-arco/icon": "workspace:*",
+    "@vrx-arco/icons-vue": "catalog:",
     "@vrx-arco/use": "workspace:*",
     "@vueuse/core": "catalog:"
   },

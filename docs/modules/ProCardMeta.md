@@ -6,7 +6,7 @@ name: 信息卡片
 <script lang="ts" setup>
 import {ProCardMeta} from '@vrx-arco/pro-components';
 import  {Card,Avatar} from  '@arco-design/web-vue';
-import {IconEdit, IconEye, IconMore, IconUser} from '@vrx-arco/icon';
+import {IconEdit, IconEye, IconMore, IconUser} from '@vrx-arco/icons-vue';
 </script>
 
 # 信息卡片 ProCardMeta
@@ -31,7 +31,7 @@ ant design 风格的 `card-meta`
 <script lang="ts" setup>
 import { ProCardMeta } from '@vrx-arco/pro-components'
 import { Avatar, Card } from '@arco-design/web-vue'
-import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icon'
+import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icons-vue'
 </script>
 
 <template>

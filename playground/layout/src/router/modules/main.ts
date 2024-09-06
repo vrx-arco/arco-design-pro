@@ -1,6 +1,9 @@
 import { RouteRecordRaw } from 'vue-router'
 import { createVNode } from 'vue'
-import { IconApps, IconArchive, IconTag, IconUser } from '@arco-design/web-vue/es/icon'
+import IconApps from '@arco-design/web-vue/es/icon/icon-apps'
+import IconArchive from '@arco-design/web-vue/es/icon/icon-archive'
+import IconTag from '@arco-design/web-vue/es/icon/icon-tag'
+import IconUser from '@arco-design/web-vue/es/icon/icon-user'
 
 export const mainRoutes: RouteRecordRaw[] = [
   {

@@ -1,3 +1,5 @@
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
@@ -20,4 +22,12 @@ export default defineConfig({
       ],
     }),
   ],
+  resolve: {
+    alias: {
+      dayjs: join(dirname(fileURLToPath(import.meta.resolve('dayjs'))), 'esm'),
+    },
+  },
+  optimizeDeps: {
+    exclude: ['pinia', 'vue', 'vue-router', 'klona', '@arco-design/web-vue'],
+  },
 })

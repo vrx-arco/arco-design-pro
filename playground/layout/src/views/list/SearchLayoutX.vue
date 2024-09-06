@@ -11,7 +11,10 @@
   // } from '@vrx-arco/pro-components'
   // import { PageWrapper } from '@vrx-arco/pro-layout'
   import { Avatar, Button, Card, Input } from '@arco-design/web-vue'
-  import { IconEdit, IconEye, IconMore, IconUser } from '@arco-design/web-vue/es/icon'
+  import IconEdit from '@arco-design/web-vue/es/icon/icon-edit'
+  import IconEye from '@arco-design/web-vue/es/icon/icon-eye'
+  import IconMore from '@arco-design/web-vue/es/icon/icon-more'
+  import IconUser from '@arco-design/web-vue/es/icon/icon-user'
   import { Permission } from '@vrx-arco/app'
   import { ref } from 'vue'
 

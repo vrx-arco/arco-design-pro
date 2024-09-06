@@ -1,5 +1,5 @@
 import { RouteRecordRaw } from 'vue-router'
-import { IconApps } from '@arco-design/web-vue/es/icon'
+import IconApps from '@arco-design/web-vue/es/icon/icon-apps'
 import { h } from 'vue'
 
 export const listModules: RouteRecordRaw[] = [

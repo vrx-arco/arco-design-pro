@@ -9,9 +9,10 @@ import {
   Message,
   Space,
 } from '@arco-design/web-vue'
-import { IconLock, IconUser } from '@vrx-arco/icon'
 import { useToggle } from '@vueuse/core'
 import { controlVModel } from '@vrx-arco/use'
+import IconLock from '@vrx-arco/icons-vue/IconLock'
+import IconUser from '@vrx-arco/icons-vue/IconUser'
 import { style } from '../style/var'
 import { loginFormEmits } from './config'
 
@@ -154,14 +155,14 @@ export const LoginForm = defineComponent({
               <Input
                 v-model={model.value.username}
                 placeholder="请输入用户名"
-                v-slots={{ prefix: () => <IconUser /> }}
+                v-slots={{ prefix: () => <IconUser class="arco-icon" /> }}
               />
             </Form.Item>
             <Form.Item field="password" hideLabel hideAsterisk validateTrigger="input">
               <Input.Password
                 v-model={model.value.password}
                 {...{ placeholder: '请输入密码', allowClear: true }}
-                v-slots={{ prefix: () => <IconLock /> }}
+                v-slots={{ prefix: () => <IconLock class="arco-icon" /> }}
               />
             </Form.Item>
             {slots.form?.({ model: model.value })}

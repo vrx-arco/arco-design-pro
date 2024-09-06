@@ -6,7 +6,6 @@ const require = createRequire(import.meta.url)
 export const transpileNoSSRFriendly = (nuxt: Nuxt) => {
   nuxt.options.build.transpile ||= []
   nuxt.options.build.transpile.push(/@arco-design\/web-vue/)
-  nuxt.options.build.transpile.push('@vrx-arco/icon')
   nuxt.options.build.transpile.push('@vrx-arco/pro-components')
   nuxt.options.alias ||= {}
   const dayjsAlias = dirname(require.resolve('dayjs/esm'))

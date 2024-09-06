@@ -13,10 +13,11 @@
     "@vrx-arco/app": "workspace:*",
     "@vrx-arco/color-picker": "catalog:",
     "@vrx-arco/pro-components": "workspace:*",
-    "@vrx-arco/pro-layout": "workspace:*"
+    "@vrx-arco/pro-layout": "workspace:*",
+    "dayjs": "^1.11.13"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.1.2",
+    "@vitejs/plugin-vue": "^5.1.3",
     "@vitejs/plugin-vue-jsx": "^4.0.1",
     "@vrx-arco/helper": "workspace:*",
     "unplugin-vue-components": "catalog:",

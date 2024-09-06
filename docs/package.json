@@ -18,7 +18,7 @@
   "dependencies": {
     "@arco-design/web-vue": "catalog:",
     "@vrx-arco/color-picker": "catalog:",
-    "@vrx-arco/icon": "workspace:*",
+    "@vrx-arco/icons-vue": "catalog:",
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx/core": "^0.4.4",
     "@vueuse/core": "catalog:",

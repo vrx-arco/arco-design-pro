@@ -11,7 +11,7 @@ import {
     SearchLayoutContent,
   } from '@vrx-arco/pro-components';
   import { Card, Button, Avatar } from '@arco-design/web-vue';
-  import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icon';
+  import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icons-vue';
 </script>
 
 # 卡片列表 ProCardList
@@ -54,7 +54,7 @@ import {
   SearchLayoutContent,
 } from '@vrx-arco/pro-components'
 import { Avatar, Button, Card } from '@arco-design/web-vue'
-import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icon'
+import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icons-vue'
 </script>
 
 <template>
@@ -122,7 +122,7 @@ import {
   SearchLayoutContent,
 } from '@vrx-arco/pro-components'
 import { Avatar, Button, Card } from '@arco-design/web-vue'
-import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icon'
+import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icons-vue'
 </script>
 
 <template>
@@ -197,7 +197,7 @@ import {
   SearchLayoutContent,
 } from '@vrx-arco/pro-components'
 import { Avatar, Button, Card } from '@arco-design/web-vue'
-import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icon'
+import { IconEdit, IconEye, IconMore, IconUser } from '@vrx-arco/icons-vue'
 </script>
 
 <template>

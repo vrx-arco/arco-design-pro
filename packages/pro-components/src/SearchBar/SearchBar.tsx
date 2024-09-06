@@ -1,9 +1,10 @@
 import { PropType, defineComponent, onMounted, ref, toRaw, toRef } from 'vue'
 import { Button, FieldRule, Form, Row, Space } from '@arco-design/web-vue'
-import { IconRefresh, IconSearch } from '@vrx-arco/icon'
 import { klona } from 'klona/lite'
 import { useAsyncLoading } from '@vrx/core'
 import { useGrid } from '@vrx-arco/use'
+import IconRefresh from '@vrx-arco/icons-vue/IconRefresh'
+import IconSearch from '@vrx-arco/icons-vue/IconSearch'
 import { style } from '../style/var'
 import { CardListColumnGrid } from '../ProCardList'
 import { provideSearchBar } from './context'
@@ -128,7 +129,7 @@ export const SearchBar = defineComponent({
             <Space direction="vertical">
               <Button
                 type="primary"
-                v-slots={{ icon: () => <IconSearch /> }}
+                v-slots={{ icon: () => <IconSearch class="arco-icon" /> }}
                 onClick={handleSearch}
                 loading={searchLoading.value}
                 disabled={disabled || resetLoading.value}
@@ -138,7 +139,7 @@ export const SearchBar = defineComponent({
               </Button>
               {!hideReset && (
                 <Button
-                  v-slots={{ icon: () => <IconRefresh /> }}
+                  v-slots={{ icon: () => <IconRefresh class="arco-icon" /> }}
                   onClick={handleReset}
                   loading={resetLoading.value}
                   disabled={disabled || searchLoading.value}

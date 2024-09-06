@@ -1,7 +1,9 @@
 import { Button } from '@arco-design/web-vue'
-import { IconDesktop, IconMoonFill, IconSunFill } from '@vrx-arco/icon'
 import { useColorMode } from '@vueuse/core'
 import { defineComponent } from 'vue'
+import IconDesktop from '@vrx-arco/icons-vue/IconDesktop'
+import IconMoonFill from '@vrx-arco/icons-vue/IconMoonFill'
+import IconSunFill from '@vrx-arco/icons-vue/IconSunFill'
 
 /**
  * 亮色暗色切换按钮
@@ -41,9 +43,9 @@ export const ThemeDarkLight = defineComponent({
       const renderIcon = () => {
         const colorMode = mode.store.value
         const config = {
-          auto: () => <IconDesktop />,
-          light: () => <IconSunFill />,
-          dark: () => <IconMoonFill />,
+          auto: () => <IconDesktop class="arco-icon" />,
+          light: () => <IconSunFill class="arco-icon" />,
+          dark: () => <IconMoonFill class="arco-icon" />,
         }
         return config[colorMode]()
       }

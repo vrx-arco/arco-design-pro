@@ -1,5 +1,6 @@
 <script setup lang="ts">
-  import { IconAlignCenter, IconArchive } from '@arco-design/web-vue/es/icon'
+  import IconAlignCenter from '@arco-design/web-vue/es/icon/icon-align-center'
+  import IconArchive from '@arco-design/web-vue/es/icon/icon-align-center'
   import { moduleRoute } from '../router/modules'
 </script>
 <template>
