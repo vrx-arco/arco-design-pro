@@ -40,8 +40,8 @@
   },
   "dependencies": {
     "@arco-design/web-vue": "catalog:",
-    "@nuxt/kit": "^3.13.0",
-    "@nuxt/schema": "^3.13.0",
+    "@nuxt/kit": "^3.13.1",
+    "@nuxt/schema": "^3.13.1",
     "@vrx-arco/color-picker-import-resolver": "catalog:",
     "@vrx-arco/helper": "workspace:*",
     "@vrx-arco/pro-components": "workspace:*",
