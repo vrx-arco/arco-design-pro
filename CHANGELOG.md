@@ -1,4 +1,16 @@
 
+## v1.7.1
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.7.0...v1.7.1)
+
+### 🩹 修复
+
+- 修复在 `nuxt@3.13.2` 中 `arco-design` 组件自动导入失败 ([7f224bb](https://github.com/vrx-arco/arco-design-pro/commit/7f224bb))
+
+### ❤️ 贡献者
+
+- Whitekite ([@Colourlessglow](http://github.com/Colourlessglow))
+
 ## v1.7.0
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.6.0...v1.7.0)
