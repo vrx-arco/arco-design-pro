@@ -7,7 +7,7 @@
 <!-- automd:badges color="orange" license licenseBranch  bundlephobia packagephobia name="@vrx-arco/pro-components" -->
 
 [![npm version](https://img.shields.io/npm/v/@vrx-arco/pro-components?color=orange)](https://npmjs.com/package/@vrx-arco/pro-components)
-[![npm downloads](https://img.shields.io/npm/dm/@vrx-arco/pro-components?color=orange)](https://npmjs.com/package/@vrx-arco/pro-components)
+[![npm downloads](https://img.shields.io/npm/dm/@vrx-arco/pro-components?color=orange)](https://npm.chart.dev/@vrx-arco/pro-components)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/@vrx-arco/pro-components?color=orange)](https://bundlephobia.com/package/@vrx-arco/pro-components)
 [![license](https://img.shields.io/github/license/vrx-arco/arco-design-pro?color=orange)](https://github.com/vrx-arco/arco-design-pro/blob/true/LICENSE)
 
@@ -36,6 +36,9 @@ pnpm install @vrx-arco/pro-components
 
 # bun
 bun install @vrx-arco/pro-components
+
+# deno
+deno install @vrx-arco/pro-components
 ```
 
 <!-- /automd -->

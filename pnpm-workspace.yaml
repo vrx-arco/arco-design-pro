@@ -3,9 +3,9 @@ packages:
   - playground/*
   - docs
 catalog:
-  '@arco-design/web-vue': ^2.56.1
+  '@arco-design/web-vue': ^2.56.2
   '@vrx-arco/color-picker': ~0.0.1-beta.12
   '@vrx-arco/color-picker-import-resolver': ~0.0.1-beta.12
   '@vrx-arco/icons-vue': ^0.3.1
-  '@vueuse/core': ^11.0.3
+  '@vueuse/core': ^11.1.0
   unplugin-vue-components: ^0.27.4

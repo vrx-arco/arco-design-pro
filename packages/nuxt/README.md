@@ -7,7 +7,7 @@
 <!-- automd:badges color="orange" license licenseBranch  bundlephobia packagephobia -->
 
 [![npm version](https://img.shields.io/npm/v/@vrx-arco/nuxt?color=orange)](https://npmjs.com/package/@vrx-arco/nuxt)
-[![npm downloads](https://img.shields.io/npm/dm/@vrx-arco/nuxt?color=orange)](https://npmjs.com/package/@vrx-arco/nuxt)
+[![npm downloads](https://img.shields.io/npm/dm/@vrx-arco/nuxt?color=orange)](https://npm.chart.dev/@vrx-arco/nuxt)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/@vrx-arco/nuxt?color=orange)](https://bundlephobia.com/package/@vrx-arco/nuxt)
 [![license](https://img.shields.io/github/license/vrx-arco/arco-design-pro?color=orange)](https://github.com/vrx-arco/arco-design-pro/blob/true/LICENSE)
 
@@ -34,6 +34,9 @@ pnpm install @vrx-arco/nuxt
 
 # bun
 bun install @vrx-arco/nuxt
+
+# deno
+deno install @vrx-arco/nuxt
 ```
 
 <!-- /automd -->
