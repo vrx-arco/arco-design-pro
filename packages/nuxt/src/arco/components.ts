@@ -5,7 +5,7 @@ export const arcoComponents = () => {
   arco.forEach((key) => {
     addComponent({
       name: `A${key}`,
-      filePath: '@arco-design/web-vue',
+      filePath: '@arco-design/web-vue/es',
       export: key,
       global: false,
     })
