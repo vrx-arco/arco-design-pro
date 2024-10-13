@@ -1,4 +1,16 @@
 
+## v1.7.2
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.7.1...v1.7.2)
+
+### 🔥 性能优化
+
+- **nuxt:** 减少开发时 `arco-design` 组件自动导入时请求数量 ([dd2c967](https://github.com/vrx-arco/arco-design-pro/commit/dd2c967))
+
+### ❤️ 贡献者
+
+- Whitekite ([@Colourlessglow](http://github.com/Colourlessglow))
+
 ## v1.7.1
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.7.0...v1.7.1)
