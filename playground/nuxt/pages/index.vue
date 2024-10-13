@@ -18,5 +18,6 @@
       <EditFormDialog id="id" />
     </SearchLayoutContent>
   </SearchLayout>
+  <IconAlignCenter />
   <AButton type="primary">sss</AButton>
 </template>

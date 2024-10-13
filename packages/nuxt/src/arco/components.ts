@@ -2,23 +2,16 @@ import { addComponent } from '@nuxt/kit'
 import { arco, arcoIcon } from '../config'
 
 export const arcoComponents = () => {
-  arco.forEach((key) => {
+  arco.forEach((item) => {
     addComponent({
-      name: `A${key}`,
-      filePath: '@arco-design/web-vue/es',
-      export: key,
-      global: false,
+      ...item,
+      name: `A${item.name}`,
     })
   })
 }
 
 export const arcoIconComponents = () => {
-  arcoIcon.forEach((key) => {
-    addComponent({
-      name: key,
-      filePath: '@arco-design/web-vue/es/icon',
-      export: key,
-      global: false,
-    })
+  arcoIcon.forEach((item) => {
+    addComponent(item)
   })
 }

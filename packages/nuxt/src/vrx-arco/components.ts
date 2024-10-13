@@ -1,5 +1,6 @@
 import { addComponent } from '@nuxt/kit'
-import { vrxArco,vrxArcoColorPicker } from '../config'
+import { vrxArco, vrxArcoColorPicker } from '../config'
+
 export const vrxArcoComponents = () => {
   vrxArco.forEach((key) => {
     if (/^[a-z]/.test(key)) {
