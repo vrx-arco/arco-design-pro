@@ -3,5 +3,7 @@ import { App } from 'vue'
 
 export * from './usePermissionStore'
 export const definePinia = (app: App) => {
-  app.use(createPinia())
+  const pinia = createPinia()
+  app.use(pinia)
+  return pinia
 }

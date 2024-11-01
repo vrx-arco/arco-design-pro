@@ -9,7 +9,7 @@ export const createVrxArcoApp = (options: IVrxArcoApp) => {
 
   const app = createApp(rootComponent, rootProps)
 
-  definePinia(app)
+  const pinia = definePinia(app)
 
   const router = defineRouter(app, options)
 
@@ -19,7 +19,7 @@ export const createVrxArcoApp = (options: IVrxArcoApp) => {
     app.mount(rootContainer)
   })
 
-  return { app, router }
+  return { app, router, pinia }
 }
 
 export { usePermissionStore } from './pinia'
