@@ -1,4 +1,21 @@
 
+## v1.8.0
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.7.2...v1.8.0)
+
+### 🚀 特性
+
+- **app:** `createVrxArcoApp` 返回 `pinia` 示例，方便额外增加 `pinia`  插件 ([c6a79a4](https://github.com/vrx-arco/arco-design-pro/commit/c6a79a4))
+- **app:** 允许 取消 `createVrxArcoApp`  自动初始化 vue app 行为 ([e998d52](https://github.com/vrx-arco/arco-design-pro/commit/e998d52))
+
+### 🏡 框架
+
+- Use node 22 in workspace ([80fa63b](https://github.com/vrx-arco/arco-design-pro/commit/80fa63b))
+
+### ❤️ 贡献者
+
+- Whitekite ([@Colourlessglow](http://github.com/Colourlessglow))
+
 ## v1.7.2
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.7.1...v1.7.2)
