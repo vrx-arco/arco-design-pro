@@ -88,4 +88,12 @@ export interface IVrxArcoApp {
   loading?: (value: boolean) => any
 
   authentication?: IVrxArcAuthentication
+
+  /**
+   * 是否立即初始化 vue app
+   *
+   * 设置为 false 可以取消默认的 vue app 初始化行为
+   * @default true
+   */
+  immediate?: boolean
 }

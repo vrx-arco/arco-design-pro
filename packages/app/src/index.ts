@@ -5,7 +5,7 @@ import { IVrxArcoApp } from './types'
 import { provideVrxArcoCheckPermission } from './permission'
 
 export const createVrxArcoApp = (options: IVrxArcoApp) => {
-  const { rootComponent, rootProps, rootContainer } = options
+  const { rootComponent, rootProps, rootContainer, immediate } = options
 
   const app = createApp(rootComponent, rootProps)
 
@@ -15,11 +15,16 @@ export const createVrxArcoApp = (options: IVrxArcoApp) => {
 
   provideVrxArcoCheckPermission(app, options)
 
-  router.isReady().then(() => {
-    app.mount(rootContainer)
-  })
+  const mount = async () => {
+    await router.isReady()
+    return app.mount(rootContainer)
+  }
 
-  return { app, router, pinia }
+  if (immediate ?? true) {
+    mount()
+  }
+
+  return { app, router, pinia, mount }
 }
 
 export { usePermissionStore } from './pinia'
