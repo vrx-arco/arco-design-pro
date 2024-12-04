@@ -45,7 +45,7 @@ export interface IVrxArcAuthentication {
   /**
    * 判断是否已登陆
    */
-  isLogin?: () => boolean
+  isLogin?: () => boolean | Promise<boolean>
   /**
    * 登陆过期回调
    * 从远程获取权限报错，也会触发该方法

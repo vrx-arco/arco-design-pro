@@ -21,8 +21,9 @@ export const defineRouterPolice = (router: Router, options: IVrxArcoApp) => {
     // 加载开始
     loading?.(true)
 
+    const _isLogin = await Promise.resolve().then(isLogin)
     // 未登陆逻辑
-    if (!isLogin()) {
+    if (!_isLogin) {
       resetRoute(router)
       // 如果是白名单与登陆页，则放权
       if (to.name === loginExpiredRedirect || whiteList.includes(to.name as string)) {
@@ -61,6 +62,7 @@ export const defineRouterPolice = (router: Router, options: IVrxArcoApp) => {
         permissionStore.dynamicRoutes.push(item)
         router.addRoute(item)
       })
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (e) {
       resetRoute(router)
       next({ name: loginExpiredRedirect })
