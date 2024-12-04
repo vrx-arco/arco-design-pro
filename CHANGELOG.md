@@ -1,4 +1,16 @@
 
+## v1.9.0
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.8.0...v1.9.0)
+
+### 🚀 特性
+
+- **app:** 是否登录判断传参允许返回 promise ([ec6b45c](https://github.com/vrx-arco/arco-design-pro/commit/ec6b45c))
+
+### ❤️ 贡献者
+
+- Whitekite ([@Colourlessglow](http://github.com/Colourlessglow))
+
 ## v1.8.0
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.7.2...v1.8.0)
