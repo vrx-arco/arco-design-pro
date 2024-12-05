@@ -1,4 +1,16 @@
 
+## v1.9.1
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.9.0...v1.9.1)
+
+### 🩹 修复
+
+- 修复 `<SpaceDivider/>` `wrap` 属性无效 ([c7a4a90](https://github.com/vrx-arco/arco-design-pro/commit/c7a4a90))
+
+### ❤️ 贡献者
+
+- Whitekite ([@Colourlessglow](http://github.com/Colourlessglow))
+
 ## v1.9.0
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.8.0...v1.9.0)
