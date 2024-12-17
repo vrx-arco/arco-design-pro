@@ -1,4 +1,5 @@
-@import '../../style/var.scss';
+@use '../../style/var.scss' as *;
+
 .#{$prefix}-search-layout {
   height: 100%;
   &-card {

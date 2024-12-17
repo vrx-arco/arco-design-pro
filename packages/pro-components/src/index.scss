@@ -1,9 +1,9 @@
-@import './AvatarDropDown/style/index.scss';
-@import './LoginForm/style/index.scss';
-@import './LoginPage/style/index.scss';
-@import './ProPagination/style/index.scss';
-@import './ProList/style/index.scss';
-@import './ProCardMeta/style/index.scss';
-@import './SearchBar/style/index.scss';
-@import './SearchLayout/style/index.scss';
-@import './SpaceDivider/style/index.scss';
+@use './AvatarDropDown/style/index.scss' as *;
+@use './LoginForm/style/index.scss' as *;
+@use './LoginPage/style/index.scss' as *;
+@use './ProPagination/style/index.scss' as *;
+@use './ProList/style/index.scss' as *;
+@use './ProCardMeta/style/index.scss' as *;
+@use './SearchBar/style/index.scss' as *;
+@use './SearchLayout/style/index.scss' as *;
+@use './SpaceDivider/style/index.scss' as *;

@@ -1,4 +1,4 @@
-@import '../../style/var.scss';
+@use '../../style/var.scss' as *;
 
 .#{$prefix}-pro-pagination {
   height: 100%;

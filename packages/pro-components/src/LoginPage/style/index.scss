@@ -1,2 +1,2 @@
-@import './login-page.scss';
-@import './banner.scss';
+@use './login-page.scss' as *;
+@use './banner.scss' as *;

@@ -1,2 +1,2 @@
-@import './ProLayout/style/index.scss';
-@import './PageWrapper/style/index.scss';
+@use './ProLayout/style/index.scss' as *;
+@use './PageWrapper/style/index.scss' as *;

@@ -1,4 +1,4 @@
-@import '../../style/var.scss';
+@use '../../style/var.scss' as *;
 
 .#{$prefix}-pro-card-meta {
   color: var(--color-text-1);

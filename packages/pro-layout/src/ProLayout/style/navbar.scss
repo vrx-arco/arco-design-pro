@@ -1,4 +1,5 @@
-@import '../../style/var.scss';
+@use '../../style/var.scss' as *;
+
 .#{$prefix}-pro-layout-navbar {
   display: flex;
   justify-content: space-between;

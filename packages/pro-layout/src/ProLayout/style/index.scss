@@ -1,4 +1,5 @@
-@import '../../style/var.scss';
+@use '../../style/var.scss' as *;
+@use './navbar.scss' as *;
 
 .#{$prefix}-pro-layout {
   height: 100%;
@@ -35,4 +36,3 @@
   }
 }
 
-@import './navbar.scss';
