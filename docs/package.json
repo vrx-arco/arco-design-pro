@@ -22,17 +22,17 @@
     "@vrx-arco/pro-components": "workspace:*",
     "@vrx/core": "^0.4.4",
     "@vueuse/core": "catalog:",
-    "workbox-window": "^7.1.0"
+    "workbox-window": "^7.3.0"
   },
   "devDependencies": {
     "@vite-pwa/assets-generator": "^0.2.6",
     "@vite-pwa/vitepress": "^0.5.3",
     "@vrx-arco/helper": "workspace:*",
     "gray-matter": "^4.0.3",
-    "less": "^4.2.0",
-    "unocss": "^0.63.4",
+    "less": "^4.2.1",
+    "unocss": "^0.65.1",
     "unplugin-vue-components": "catalog:",
-    "vite": "^5.4.8",
-    "vitepress": "^1.4.0"
+    "vite": "^6.0.3",
+    "vitepress": "^1.5.0"
   }
 }
