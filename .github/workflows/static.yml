@@ -4,9 +4,8 @@ name: Deploy VitePress site to Pages
 
 on:
   push:
-    tags: 
+    tags:
       - v*
-    
 
   # 允许你从 Actions 选项卡手动运行此工作流程
   workflow_dispatch:
@@ -36,7 +35,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: pnpm
       - name: Setup Pages
         uses: actions/configure-pages@v4
