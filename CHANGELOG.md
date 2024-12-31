@@ -1,4 +1,20 @@
 
+## v1.10.0
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.9.1...v1.10.0)
+
+### 🚀 特性
+
+- **EditFormDialog:** 表单提交请求传参，增加 `AbortSignal`，对接 `AbortSignal`,可在弹框关闭和当前组件销毁时主动取消请求的发送 ([f12c076](https://github.com/vrx-arco/arco-design-pro/commit/f12c076))
+
+### 🏡 框架
+
+- **style:** Scss replace deprecated `@import` to `@use` ([de858c9](https://github.com/vrx-arco/arco-design-pro/commit/de858c9))
+
+### ❤️ 贡献者
+
+- Whitekite ([@Colourlessglow](http://github.com/Colourlessglow))
+
 ## v1.9.1
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.9.0...v1.9.1)
