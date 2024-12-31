@@ -1,4 +1,20 @@
 
+## v1.10.1
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.10.0...v1.10.1)
+
+### 🩹 修复
+
+- **EditFormDialog:** 表单提交请求传参`AbortSignal` 拼写错误导致的功能异常 ([f2f0efd](https://github.com/vrx-arco/arco-design-pro/commit/f2f0efd))
+
+### 🏡 框架
+
+- Change github actions node version ([47151ee](https://github.com/vrx-arco/arco-design-pro/commit/47151ee))
+
+### ❤️ 贡献者
+
+- Whitekite ([@Colourlessglow](http://github.com/Colourlessglow))
+
 ## v1.10.0
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.9.1...v1.10.0)
