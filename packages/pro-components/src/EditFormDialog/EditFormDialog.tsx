@@ -195,15 +195,15 @@ export const EditFormDialog = defineComponent({
     const submitFn = () => {
       const formModel = klona(toRaw(model.value))
       if (props.onConfirm) {
-        return props.onConfirm(formModel, { singal: abortController.signal })
+        return props.onConfirm(formModel, { signal: abortController.signal })
       }
       if (!props.edit || !props.add) {
         return Promise.resolve()
       }
       if (isEdit.value) {
-        return props.edit(formModel, { singal: abortController.signal })
+        return props.edit(formModel, { signal: abortController.signal })
       }
-      return props.add(formModel, { singal: abortController.signal })
+      return props.add(formModel, { signal: abortController.signal })
     }
 
     /**

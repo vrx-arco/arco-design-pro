@@ -16,5 +16,5 @@ export interface EditFormDialogSlot<T extends Record<string, any> = any> {
  * `<EditFormDialog/>` 提交请求参数
  */
 export interface EditFormDialogConfirmOptions {
-  singal?: AbortSignal
+  signal?: AbortSignal
 }
