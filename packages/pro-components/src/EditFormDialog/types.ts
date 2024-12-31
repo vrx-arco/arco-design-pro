@@ -11,3 +11,10 @@ export interface EditFormDialogSlot<T extends Record<string, any> = any> {
    */
   isEdit: boolean
 }
+
+/**
+ * `<EditFormDialog/>` 提交请求参数
+ */
+export interface EditFormDialogConfirmOptions {
+  singal?: AbortSignal
+}

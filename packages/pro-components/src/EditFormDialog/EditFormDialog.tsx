@@ -1,9 +1,9 @@
 import { FunctionalComponent, PropType, computed, defineComponent, ref, toRaw } from 'vue'
 import { Drawer, Form, Modal, Notification } from '@arco-design/web-vue'
-import { controlVModel } from '@vrx-arco/use'
+import { controlVModel, useAbortController } from '@vrx-arco/use'
 import { klona } from 'klona/json'
 import { SlotsType } from 'vue'
-import { EditFormDialogSlot } from './types'
+import { type EditFormDialogConfirmOptions, EditFormDialogSlot } from './types'
 
 const Dialog: FunctionalComponent<{
   visible?: boolean
@@ -13,6 +13,7 @@ const Dialog: FunctionalComponent<{
   unmountOnClose?: boolean
   onSubmit?: () => Promise<any>
   onCancel?: () => any
+  onClose?: () => any
 }> = (props, { slots, emit }) => {
   const { type, title, width, visible, unmountOnClose } = props
 
@@ -25,6 +26,10 @@ const Dialog: FunctionalComponent<{
 
   const handleCancel = () => {
     emit('cancel')
+  }
+
+  const handleClose = () => {
+    emit('close')
   }
 
   if (type === 'modal') {
@@ -40,6 +45,7 @@ const Dialog: FunctionalComponent<{
           emit('update:visible', visible)
         }}
         onCancel={handleCancel}
+        onClose={handleClose}
       >
         {slots.default?.()}
       </Modal>
@@ -56,6 +62,7 @@ const Dialog: FunctionalComponent<{
         emit('update:visible', visible)
       }}
       onCancel={handleCancel}
+      onClose={handleClose}
     >
       {slots.default?.()}
     </Drawer>
@@ -122,11 +129,15 @@ export const EditFormDialog = defineComponent({
     /**
      * 新增方法
      */
-    add: Function as PropType<(model: Record<string, any>) => Promise<any>>,
+    add: Function as PropType<
+      (model: Record<string, any>, options: EditFormDialogConfirmOptions) => Promise<any>
+    >,
     /**
      * 编辑方法
      */
-    edit: Function as PropType<(model: Record<string, any>) => Promise<any>>,
+    edit: Function as PropType<
+      (model: Record<string, any>, options: EditFormDialogConfirmOptions) => Promise<any>
+    >,
     /**
      * 自定义新增编辑时标题的前缀 ['新增', '编辑']
      */
@@ -137,7 +148,9 @@ export const EditFormDialog = defineComponent({
     /**
      * 提交方法
      */
-    onConfirm: Function as PropType<(model: Record<string, any>) => Promise<any>>,
+    onConfirm: Function as PropType<
+      (model: Record<string, any>, options: EditFormDialogConfirmOptions) => Promise<any>
+    >,
   },
   emits: ['update:visible', 'update:model', 'confirm', 'success', 'close'],
   slots: Object as SlotsType<{ default: EditFormDialogSlot }>,
@@ -174,22 +187,23 @@ export const EditFormDialog = defineComponent({
      */
     const formRef = ref()
 
+    const abortController = useAbortController()
+
     /**
      * 提交方法
      */
     const submitFn = () => {
       const formModel = klona(toRaw(model.value))
       if (props.onConfirm) {
-        return props.onConfirm(formModel)
+        return props.onConfirm(formModel, { singal: abortController.signal })
       }
       if (!props.edit || !props.add) {
         return Promise.resolve()
       }
       if (isEdit.value) {
-        return props.edit(formModel)
+        return props.edit(formModel, { singal: abortController.signal })
       }
-
-      return props.add(formModel)
+      return props.add(formModel, { singal: abortController.signal })
     }
 
     /**
@@ -212,6 +226,10 @@ export const EditFormDialog = defineComponent({
     const handleCancel = () => {
       model.value = klona(props.initModel())
       formRef.value.clearValidate()
+    }
+
+    const handleClose = () => {
+      abortController.abort()
       emit('close')
     }
 
@@ -234,6 +252,7 @@ export const EditFormDialog = defineComponent({
           unmountOnClose={unmountOnClose}
           onSubmit={handleSubmit}
           onCancel={handleCancel}
+          onClose={handleClose}
         >
           <Form ref={formRef} model={model.value} autoLabelWidth rules={rules} disabled={disabled}>
             {slots.default?.({ model: model.value, isEdit: isEdit.value })}

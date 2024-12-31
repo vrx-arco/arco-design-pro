@@ -160,14 +160,14 @@ function request() {
     <ApiTableLine prop="rules" desc="表单验证规则" type="object" default=""  />
     <ApiTableLine prop="disabled" desc="是否禁用表单" type="boolean" default="false"  />
     <ApiTableLine prop="unmountOnClose" desc="是否在弹框关闭时销毁整个表单" type="boolean" default="true"  />
-    <ApiTableLine prop="add" desc="新增回调方法" type="(model: Record<string, any>) => Promise<any>" default=""  />
-    <ApiTableLine prop="edit" desc="编辑回调方法" type="(model: Record<string, any>) => Promise<any>" default=""  />
+    <ApiTableLine prop="add" desc="新增回调方法" type="(model: Record<string, any>,options: EditFormDialogConfirmOptions) => Promise<any>" default=""  />
+    <ApiTableLine prop="edit" desc="编辑回调方法" type="(model: Record<string, any>,options: EditFormDialogConfirmOptions) => Promise<any>" default=""  />
 </ApiTable>
 
 `<EditFormDialog>` Events
 
 <EventTable>
-    <EventTableLine event="confirm" desc="表单提交事件，使用该事件，会覆盖 props.add props.edit" attr="(model: Record<string, any>) => Promise<any>"  />
+    <EventTableLine event="confirm" desc="表单提交事件，使用该事件，会覆盖 props.add props.edit" attr="(model: Record<string, any>,options: EditFormDialogConfirmOptions) => Promise<any>"  />
     <EventTableLine event="success" desc="表单提交成功弹框关闭回调" attr="isEdit:boolean"  />
     <EventTableLine event="close" desc="弹框关闭回调" attr=""  />
 </EventTable>
