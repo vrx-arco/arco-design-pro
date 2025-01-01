@@ -20,7 +20,7 @@
     "@vrx-arco/color-picker": "catalog:",
     "@vrx-arco/icons-vue": "catalog:",
     "@vrx-arco/pro-components": "workspace:*",
-    "@vrx/core": "^0.4.4",
+    "@vrx/core": "^0.6.0",
     "@vueuse/core": "catalog:",
     "workbox-window": "^7.3.0"
   },
@@ -30,9 +30,9 @@
     "@vrx-arco/helper": "workspace:*",
     "gray-matter": "^4.0.3",
     "less": "^4.2.1",
-    "unocss": "^0.65.1",
+    "unocss": "^0.65.3",
     "unplugin-vue-components": "catalog:",
-    "vite": "^6.0.3",
+    "vite": "^6.0.6",
     "vitepress": "^1.5.0"
   }
 }

@@ -21,6 +21,6 @@
     "@vitejs/plugin-vue-jsx": "^4.1.1",
     "@vrx-arco/helper": "workspace:*",
     "unplugin-vue-components": "catalog:",
-    "vite": "^6.0.3"
+    "vite": "^6.0.6"
   }
 }

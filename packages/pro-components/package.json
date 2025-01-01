@@ -49,7 +49,7 @@
     "@vill-v/path-prop": "^1.3.3",
     "@vrx-arco/icons-vue": "catalog:",
     "@vrx-arco/use": "workspace:*",
-    "@vrx/core": "^0.4.4",
+    "@vrx/core": "^0.6.0",
     "@vueuse/core": "catalog:",
     "klona": "^2.0.6"
   },
