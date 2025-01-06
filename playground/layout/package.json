@@ -19,7 +19,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
     "@vitejs/plugin-vue-jsx": "^4.1.1",
-    "@vrx-arco/helper": "workspace:*",
+    "@vrx-arco/helper": "^1.10.2",
     "unplugin-vue-components": "catalog:",
     "vite": "^6.0.6"
   }
