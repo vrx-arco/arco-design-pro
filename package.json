@@ -2,7 +2,7 @@
   "name": "vrx-arco-pro-components",
   "version": "2.0.0",
   "private": true,
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.11.0",
   "type": "module",
   "author": {
     "name": "whitekite",
@@ -38,7 +38,7 @@
     "@vill-v/prettier-config": "^1.0.0",
     "@vill-v/tsconfig": "^1.0.1",
     "@vrx-arco/internal": "workspace:*",
-    "@vrx/cp": "^0.6.1",
+    "@vrx/cp": "^0.6.2",
     "automd": "^0.4.0",
     "eslint": "^9.26.0",
     "less": "^4.3.0",

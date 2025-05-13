@@ -12,5 +12,6 @@ catalog:
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - esbuild
+  - rolldown
   - sharp
   - unrs-resolver

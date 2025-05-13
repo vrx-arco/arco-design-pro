@@ -4,10 +4,6 @@
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
-    },
-    "build:components": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**"]
     }
   },
   "ui": "stream"
