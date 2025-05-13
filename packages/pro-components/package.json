@@ -38,7 +38,7 @@
     "./style/*": "./style/*"
   },
   "scripts": {
-    "build": "automd && vrx-cp build",
+    "build:components": "automd && vrx-cp build",
     "watch": "vrx-cp watch"
   },
   "peerDependencies": {
