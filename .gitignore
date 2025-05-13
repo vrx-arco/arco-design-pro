@@ -9,7 +9,7 @@ packages/*/arco-style.mjs
 packages/*/arco-style-css.mjs
 packages/*/arco-style.js
 packages/*/arco-style-css.js
-packages/*/components.d.ts
+components.d.ts
 playground/*/components.d.ts
 packages/*/web-types.json
 packages/*/style

@@ -27,7 +27,7 @@
   "devDependencies": {
     "@vite-pwa/assets-generator": "^1.0.0",
     "@vite-pwa/vitepress": "^1.0.0",
-    "@vrx-arco/helper": "^1.10.2",
+    "@vrx-arco/helper": "^2.0.0",
     "gray-matter": "^4.0.3",
     "less": "^4.3.0",
     "unocss": "^66.1.1",

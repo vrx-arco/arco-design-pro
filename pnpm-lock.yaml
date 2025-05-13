@@ -124,8 +124,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0(@vite-pwa/assets-generator@1.0.0)(vite-plugin-pwa@1.0.0(@vite-pwa/assets-generator@1.0.0)(vite@6.3.5(@types/node@22.15.17)(jiti@2.4.2)(less@4.3.0)(lightningcss@1.30.0)(sass@1.88.0)(terser@5.39.0)(yaml@2.7.1))(workbox-build@7.3.0)(workbox-window@7.3.0))
       '@vrx-arco/helper':
-        specifier: ^1.10.2
-        version: 1.10.2(@vrx-arco/color-picker@0.0.1(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3)))(@vrx-arco/pro-components@packages+pro-components)(@vrx-arco/pro-layout@1.10.1(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(typescript@5.8.3)(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3)))(unplugin-vue-components@28.5.0(@babel/parser@7.27.2)(vue@3.5.13(typescript@5.8.3)))
+        specifier: ^2.0.0
+        version: 2.0.0(@vrx-arco/color-picker@0.0.1(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3)))(@vrx-arco/pro-components@packages+pro-components)(@vrx-arco/pro-layout@2.0.0(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3)))(unplugin-vue-components@28.5.0(@babel/parser@7.27.2)(vue@3.5.13(typescript@5.8.3)))
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
@@ -257,8 +257,8 @@ importers:
         specifier: ^4.1.2
         version: 4.1.2(vite@6.3.5(@types/node@22.15.17)(jiti@2.4.2)(less@4.3.0)(lightningcss@1.30.0)(sass@1.88.0)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))
       '@vrx-arco/helper':
-        specifier: ^1.10.2
-        version: 1.10.2(@vrx-arco/color-picker@0.0.1(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3)))(@vrx-arco/pro-components@packages+pro-components)(@vrx-arco/pro-layout@packages+pro-layout)(unplugin-vue-components@28.5.0(@babel/parser@7.27.2)(vue@3.5.13(typescript@5.8.3)))
+        specifier: ^2.0.0
+        version: 2.0.0(@vrx-arco/color-picker@0.0.1(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3)))(@vrx-arco/pro-components@packages+pro-components)(@vrx-arco/pro-layout@packages+pro-layout)(unplugin-vue-components@28.5.0(@babel/parser@7.27.2)(vue@3.5.13(typescript@5.8.3)))
       unplugin-vue-components:
         specifier: 'catalog:'
         version: 28.5.0(@babel/parser@7.27.2)(vue@3.5.13(typescript@5.8.3))
@@ -2164,12 +2164,12 @@ packages:
       '@arco-design/web-vue': '>=2.39.2'
       vue: '>=3.2.45'
 
-  '@vrx-arco/helper@1.10.2':
-    resolution: {integrity: sha512-YKry8CsoxzPIUyZMnMFKw33RNlS5IpDps1PUG6M0HE06yg5v1ziDNwKebIXtxIXyzDaW+C6cGlw581eGAkHFXA==}
+  '@vrx-arco/helper@2.0.0':
+    resolution: {integrity: sha512-vqutGcAkHdqam4pQPd9cw6AblH1B8C4d8tTsG5Nb2ABmFcnVUGWejWWKqlBNWHUk1xcyrfMopQQQ7EbY6wycvw==}
     peerDependencies:
       '@vrx-arco/color-picker': ~0.0.1
-      '@vrx-arco/pro-components': ^1.10.1
-      '@vrx-arco/pro-layout': ^1.10.1
+      '@vrx-arco/pro-components': ^2.0.0
+      '@vrx-arco/pro-layout': ^2.0.0
       unplugin-vue-components: '>=0.26.0'
     peerDependenciesMeta:
       '@vrx-arco/color-picker':
@@ -2187,15 +2187,15 @@ packages:
       vue:
         optional: true
 
-  '@vrx-arco/pro-layout@1.10.1':
-    resolution: {integrity: sha512-8gJkPoLKDkdreo1LmVvjBPCkHi7YN63TFjSJve2ylzukQ7IyE89r10Nv6ig5CnLS6y7VfrFzR+DJBQlJGCfTbw==}
+  '@vrx-arco/pro-layout@2.0.0':
+    resolution: {integrity: sha512-rioJih71M06DvT53kCZUFt3M5+sQ+hUREAaIwJ0T+pa4dlxBXHxu1I+SbaFVcbP06FdOhIIAm6SBcvxASc3CYQ==}
     peerDependencies:
       '@arco-design/web-vue': '>=2.39.2'
       vue: '>=3.2.45'
       vue-router: '>=4.1.6'
 
-  '@vrx-arco/use@1.10.1':
-    resolution: {integrity: sha512-/TAqQQlJOZgMiDYQrPQMZ2M1Ezk5G6dqsrllfGeHk9aaA4AUCxk4ZImJnoI3LbV0coA66VDkXFbtDsBbDncjgA==}
+  '@vrx-arco/use@2.0.0':
+    resolution: {integrity: sha512-TxyWtpfZovrAkAgiXKMrPimxqXCjjuRlI3wlZ8R1ooiMhNWQidwEbl69cOHafj9vVZfhzgB+sS7HpVcDcBBvTQ==}
     peerDependencies:
       '@arco-design/web-vue': '>=2.39.2'
       vue: '>=3.2.45'
@@ -7335,16 +7335,16 @@ snapshots:
       '@vrx/color-picker-kit': 0.2.0(vue@3.5.13(typescript@5.8.3))
       vue: 3.5.13(typescript@5.8.3)
 
-  '@vrx-arco/helper@1.10.2(@vrx-arco/color-picker@0.0.1(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3)))(@vrx-arco/pro-components@packages+pro-components)(@vrx-arco/pro-layout@1.10.1(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(typescript@5.8.3)(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3)))(unplugin-vue-components@28.5.0(@babel/parser@7.27.2)(vue@3.5.13(typescript@5.8.3)))':
+  '@vrx-arco/helper@2.0.0(@vrx-arco/color-picker@0.0.1(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3)))(@vrx-arco/pro-components@packages+pro-components)(@vrx-arco/pro-layout@2.0.0(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3)))(unplugin-vue-components@28.5.0(@babel/parser@7.27.2)(vue@3.5.13(typescript@5.8.3)))':
     dependencies:
       '@vrx-arco/color-picker-import-resolver': 0.0.1(@vrx-arco/color-picker@0.0.1(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3)))(unplugin-vue-components@28.5.0(@babel/parser@7.27.2)(vue@3.5.13(typescript@5.8.3)))
       '@vrx-arco/pro-components': link:packages/pro-components
     optionalDependencies:
       '@vrx-arco/color-picker': 0.0.1(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))
-      '@vrx-arco/pro-layout': 1.10.1(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(typescript@5.8.3)(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))
+      '@vrx-arco/pro-layout': 2.0.0(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))
       unplugin-vue-components: 28.5.0(@babel/parser@7.27.2)(vue@3.5.13(typescript@5.8.3))
 
-  '@vrx-arco/helper@1.10.2(@vrx-arco/color-picker@0.0.1(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3)))(@vrx-arco/pro-components@packages+pro-components)(@vrx-arco/pro-layout@packages+pro-layout)(unplugin-vue-components@28.5.0(@babel/parser@7.27.2)(vue@3.5.13(typescript@5.8.3)))':
+  '@vrx-arco/helper@2.0.0(@vrx-arco/color-picker@0.0.1(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3)))(@vrx-arco/pro-components@packages+pro-components)(@vrx-arco/pro-layout@packages+pro-layout)(unplugin-vue-components@28.5.0(@babel/parser@7.27.2)(vue@3.5.13(typescript@5.8.3)))':
     dependencies:
       '@vrx-arco/color-picker-import-resolver': 0.0.1(@vrx-arco/color-picker@0.0.1(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3)))(unplugin-vue-components@28.5.0(@babel/parser@7.27.2)(vue@3.5.13(typescript@5.8.3)))
       '@vrx-arco/pro-components': link:packages/pro-components
@@ -7357,25 +7357,21 @@ snapshots:
     optionalDependencies:
       vue: 3.5.13(typescript@5.8.3)
 
-  '@vrx-arco/pro-layout@1.10.1(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(typescript@5.8.3)(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))':
+  '@vrx-arco/pro-layout@2.0.0(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))':
     dependencies:
       '@arco-design/web-vue': 2.57.0(vue@3.5.13(typescript@5.8.3))
       '@vrx-arco/icons-vue': 0.3.1(vue@3.5.13(typescript@5.8.3))
-      '@vrx-arco/use': 1.10.1(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(typescript@5.8.3)(vue@3.5.13(typescript@5.8.3))
-      '@vueuse/core': 12.8.2(typescript@5.8.3)
+      '@vrx-arco/use': 2.0.0(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))
+      '@vueuse/core': 13.1.0(vue@3.5.13(typescript@5.8.3))
       vue: 3.5.13(typescript@5.8.3)
       vue-router: 4.5.1(vue@3.5.13(typescript@5.8.3))
-    transitivePeerDependencies:
-      - typescript
     optional: true
 
-  '@vrx-arco/use@1.10.1(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(typescript@5.8.3)(vue@3.5.13(typescript@5.8.3))':
+  '@vrx-arco/use@2.0.0(@arco-design/web-vue@2.57.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))':
     dependencies:
       '@arco-design/web-vue': 2.57.0(vue@3.5.13(typescript@5.8.3))
-      '@vueuse/core': 12.8.2(typescript@5.8.3)
+      '@vueuse/core': 13.1.0(vue@3.5.13(typescript@5.8.3))
       vue: 3.5.13(typescript@5.8.3)
-    transitivePeerDependencies:
-      - typescript
     optional: true
 
   '@vrx-cp/css@0.6.1(less@4.3.0)(sass@1.88.0)':
