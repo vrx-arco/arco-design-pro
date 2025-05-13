@@ -22,7 +22,7 @@
     "arco-pro-vue"
   ],
   "scripts": {
-    "build": "automd && turbo run build build:components",
+    "build": "automd && turbo run build",
     "release": "vbumpp -r && pnpm build",
     "update:deps": "taze major -w -i -a -r -f",
     "clean:deps": "pnpm dlx void-fs del node_modules packages/*/node_modules playground/*/node_modules docs/node_modules",
