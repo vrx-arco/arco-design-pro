@@ -2,6 +2,7 @@
   "name": "@vrx-arco/use",
   "version": "1.10.1",
   "license": "MIT",
+  "type": "module",
   "author": {
     "name": "whitekite",
     "email": "1075790909@qq.com"
@@ -21,19 +22,20 @@
   ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "module": "./dist/index.mjs",
+  "module": "./dist/index.js",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
     }
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "automd && tsup-node"
+    "build": "automd && tsdown"
   },
   "dependencies": {
     "@vueuse/core": "catalog:"

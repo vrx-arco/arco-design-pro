@@ -6,4 +6,5 @@ export default defineConfig({
     exclude: [/^use/],
   },
   plugins: [vrxArcoPlugin()],
+  emitCJS: false,
 })

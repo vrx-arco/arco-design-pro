@@ -17,10 +17,10 @@
     "dayjs": "^1.11.13"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1",
-    "@vitejs/plugin-vue-jsx": "^4.1.1",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "@vitejs/plugin-vue-jsx": "^4.1.2",
     "@vrx-arco/helper": "^1.10.2",
     "unplugin-vue-components": "catalog:",
-    "vite": "^6.0.6"
+    "vite": "^6.3.5"
   }
 }

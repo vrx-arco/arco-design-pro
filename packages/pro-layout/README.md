@@ -9,6 +9,7 @@
 [![npm version](https://img.shields.io/npm/v/@vrx-arco/pro-layout?color=orange)](https://npmjs.com/package/@vrx-arco/pro-layout)
 [![npm downloads](https://img.shields.io/npm/dm/@vrx-arco/pro-layout?color=orange)](https://npm.chart.dev/@vrx-arco/pro-layout)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/@vrx-arco/pro-layout?color=orange)](https://bundlephobia.com/package/@vrx-arco/pro-layout)
+[![install size](https://badgen.net/packagephobia/install/@vrx-arco/pro-layout?color=orange)](https://packagephobia.com/result?p=@vrx-arco/pro-layout)
 [![license](https://img.shields.io/github/license/vrx-arco/arco-design-pro?color=orange)](https://github.com/vrx-arco/arco-design-pro/blob/true/LICENSE)
 
 <!-- /automd -->
