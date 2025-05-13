@@ -1,4 +1,23 @@
 
+## v2.0.0
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.10.1...v2.0.0)
+
+### 🏡 框架
+
+- **helper:** 迁移至 [vrx-arco/import-resolver](https://github.com/vrx-arco/import-resolver) ([694121f](https://github.com/vrx-arco/arco-design-pro/commit/694121f))
+- **nuxt:** 迁移至 [vrx-arco/nuxt](https://github.com/vrx-arco/nuxt) ([37c5a92](https://github.com/vrx-arco/arco-design-pro/commit/37c5a92))
+- **nuxt:** 迁移至 [vrx-arco/nuxt](https://github.com/vrx-arco/nuxt) ([4e8c475](https://github.com/vrx-arco/arco-design-pro/commit/4e8c475))
+- ⚠️  Update ESM-only dist ([dfc5756](https://github.com/vrx-arco/arco-design-pro/commit/dfc5756))
+
+#### 🚨 破坏性改动
+
+- ⚠️  Update ESM-only dist ([dfc5756](https://github.com/vrx-arco/arco-design-pro/commit/dfc5756))
+
+### ❤️ 贡献者
+
+- Whitekite ([@Colourlessglow](https://github.com/Colourlessglow))
+
 ## v1.10.1
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.10.0...v1.10.1)
