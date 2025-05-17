@@ -30,7 +30,7 @@
     "@vrx-arco/helper": "^2.0.0",
     "gray-matter": "^4.0.3",
     "less": "^4.3.0",
-    "unocss": "^66.1.1",
+    "unocss": "^66.1.2",
     "unplugin-vue-components": "catalog:",
     "vite": "^6.3.5",
     "vitepress": "^1.6.3"
