@@ -10,4 +10,6 @@ export default defineConfig({
   format: ['esm'],
   publint: true,
   unused: true,
+  exports: true,
+  platform: 'neutral',
 })
