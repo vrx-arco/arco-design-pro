@@ -11,12 +11,8 @@ export const writeArcoStyle = async (config: ResolveConfig, arcoStyle: ArcoStyle
 
   config.packageJson = await mergePackageJson({
     exports: {
-      './arco-style': {
-        import: `./arco-style${formatExt.mjs}`,
-      },
-      './arco-style-css': {
-        import: `./arco-style-css${formatExt.mjs}`,
-      },
+      './arco-style': `./arco-style${formatExt.mjs}`,
+      './arco-style-css': `./arco-style-css${formatExt.mjs}`,
     },
     files: [`arco-style-css${formatExt.mjs}`, `arco-style${formatExt.mjs}`],
   })
