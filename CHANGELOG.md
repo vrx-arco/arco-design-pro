@@ -1,4 +1,33 @@
 
+## v2.0.1
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v2.0.0...v2.0.1)
+
+### 🚀 特性
+
+- Update `package.json` `exports`字段规则 ([008c2b6](https://github.com/vrx-arco/arco-design-pro/commit/008c2b6))
+
+### 🩹 修复
+
+- **app:** 修复 `@oxc-project/runtime` 被错误处理 ([92822e8](https://github.com/vrx-arco/arco-design-pro/commit/92822e8))
+
+### 🏡 框架
+
+- Update github actions ([c5423d3](https://github.com/vrx-arco/arco-design-pro/commit/c5423d3))
+- Update github actions ([0a3a48d](https://github.com/vrx-arco/arco-design-pro/commit/0a3a48d))
+- Update github actions ([363a92d](https://github.com/vrx-arco/arco-design-pro/commit/363a92d))
+- Update github actions ([6dfde05](https://github.com/vrx-arco/arco-design-pro/commit/6dfde05))
+- Update github actions ([d84a0e8](https://github.com/vrx-arco/arco-design-pro/commit/d84a0e8))
+- Update github actions ([db81a35](https://github.com/vrx-arco/arco-design-pro/commit/db81a35))
+- Update github actions ([81ca258](https://github.com/vrx-arco/arco-design-pro/commit/81ca258))
+- Update github actions ([6348305](https://github.com/vrx-arco/arco-design-pro/commit/6348305))
+- Update github actions ([1a7ccdb](https://github.com/vrx-arco/arco-design-pro/commit/1a7ccdb))
+- Update `@vrx/cp` config ([396f3c3](https://github.com/vrx-arco/arco-design-pro/commit/396f3c3))
+
+### ❤️ 贡献者
+
+- Whitekite ([@Colourlessglow](https://github.com/Colourlessglow))
+
 ## v2.0.0
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v1.10.1...v2.0.0)
