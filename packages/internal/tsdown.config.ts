@@ -11,4 +11,5 @@ export default defineConfig({
   publint: true,
   unused: true,
   external: ['@vrx/cp', 'void-fs'],
+  exports: true,
 })
