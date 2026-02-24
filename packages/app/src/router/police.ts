@@ -16,7 +16,7 @@ export const defineRouterPolice = (router: Router, options: IVrxArcoApp) => {
 
   const { getPermission, onLoginExpired, isLogin = () => true } = options.authentication || {}
 
-  router.beforeEach(async (to, _from, next) => {
+  router.beforeEach(async (to) => {
     const permissionStore = usePermissionStore()
     // 加载开始
     loading?.(true)
@@ -27,25 +27,21 @@ export const defineRouterPolice = (router: Router, options: IVrxArcoApp) => {
       resetRoute(router)
       // 如果是白名单与登陆页，则放权
       if (to.name === loginExpiredRedirect || whiteList.includes(to.name as string)) {
-        next()
         return
       }
       // 其他页面，在未登陆时，重定向至登陆页面
-      next({ name: loginExpiredRedirect })
-      return
+      return { name: loginExpiredRedirect }
     }
 
     // 如果登陆后访问登陆页，则触发登陆过期回调
     if (to.name === loginExpiredRedirect) {
       resetRoute(router)
       onLoginExpired?.()
-      next()
       return
     }
 
     // 如果已经有缓存的 dynamicRoutes ,则直接放权
     if (!dynamicRoutes.length || permissionStore.dynamicRoutesName.length) {
-      next()
       return
     }
 
@@ -65,15 +61,13 @@ export const defineRouterPolice = (router: Router, options: IVrxArcoApp) => {
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (e) {
       resetRoute(router)
-      next({ name: loginExpiredRedirect })
       onLoginExpired?.()
+      return { name: loginExpiredRedirect }
     }
 
     if (to.name === pageNotFound.name) {
-      next({ path: to.fullPath, replace: true, query: to.query })
-      return
+      return { path: to.fullPath, replace: true, query: to.query }
     }
-    next()
   })
 
   router.afterEach(() => {
