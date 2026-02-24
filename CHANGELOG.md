@@ -1,4 +1,20 @@
 
+## v2.1.0
+
+[compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v2.0.1...v2.1.0)
+
+### 🚀 特性
+
+- **app:** 替换 `@vrx-arco/app` 中路由守卫的过时特性 `next()` ([1e6ce8f](https://github.com/vrx-arco/arco-design-pro/commit/1e6ce8f))
+
+### 🏡 框架
+
+- 使用 `mise`  管理项目 node 版本 ([43a3562](https://github.com/vrx-arco/arco-design-pro/commit/43a3562))
+
+### ❤️ 贡献者
+
+- Whitekite <1075790909@qq.com>
+
 ## v2.0.1
 
 [compare changes](https://github.com/vrx-arco/arco-design-pro/compare/v2.0.0...v2.0.1)
