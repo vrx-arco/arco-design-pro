@@ -1,0 +1,7 @@
+[tools]
+node = { version = "24", postinstall = "corepack enable" }
+[env]
+_.path = ['{{config_root}}/node_modules/.bin']
+MISE_NODE_COREPACK = true
+[settings]
+lockfile = true
